@@ -1322,65 +1322,69 @@ RECORD OF CHANGES MADE
 
 
 42013007
-	Addition:	420130070241	τί
+	Addition:	420130070241	τί	"why" -> pron
 	Deletion:	420130070221	οὖν
-	Substitution:	420130070241	420130070231	ἱνατί	ἵνα
-	Comment: splitting "ἱνατί" -> adv into "ἵνα" -> conj and "τί" "why" -> pron
+	Substitution:	420130070241	420130070231	ἱνατί	ἵνα	"-" -> conj
+	Comment: splitting "ἱνατί" -> adv into "ἵνα" -> conj and "τί" -> pron
 	Comment: So more like:
-	Addition:	420130070231	ἵνα
-	Substitution:	420130070241	420130070231	ἱνατί	τί
+	Addition:	420130070231	ἵνα	"-" -> conj
+	Substitution:	420130070241	420130070231	ἱνατί	τί	"why" -> pron
 	Modifications:	created [ἵνα -> conj -> CL(0)], inserted CL(0) between verse and CL(1) where CL(1) spans the rest of the verse
 	Modifications:	changed [ἱνατί -> adv -> advp] -> ADV to [τί -> pron -> np] -> ADV
 42013027
 	Deletion:	420130270071	ὑμᾶς
-	Modifications:	deleted [ὑμᾶς -> pron -> np -> O]
+	Modifications:	deleted [ὑμᾶς -> pron -> np -> O ->] CL
 42013035
 	Addition:	420130350131	ἴδητέ
 	Deletion:	420130350121	ἴδητέ
-	Comment: It is more like "ἴδητέ" --> V switches places with "με" --> O
-	Modifications:	swap V and O, resulting in ADV O V -> CL
+	Comment: It is more like "ἴδητέ" --> V and "με" --> O switched order
+	Modifications:	switched order of "ἴδητέ" --> V and "με" --> O, resulting in {ADV O V -> CL}
 
 
 42014026
-	Substitution:	420140260281	420140260281	τε	δὲ
+	Substitution:	420140260281	420140260281	τε	δὲ	"-" -> conj (coordinating)
 	Modifications:	changed τε -> conj Unicode to "δὲ", Lemma to "δέ", StrongNumber to 1161, morphId from 42014026028 to 420140260281
 42014027
-	Substitution:	420140270061	420140270061	ἑαυτοῦ	αὐτοῦ
+	Substitution:	420140270061	420140270061	ἑαυτοῦ	αὐτοῦ	"of himself" -> pron
 	Modifications:	changed ἑαυτοῦ -> pron Unicode to "αὐτοῦ", Lemma to "αὐτός", StrongNumber to 846, morphId from 42014027006 to 420140270061
 
 
 42015012
 	Deletion:	420150120171	δὲ
-	Substitution:	420150120161	420150120161	ὁ	καὶ
+	Substitution:	420150120161	420150120161	ὁ	καὶ	"and" -> conj
 	Comment: it is more like delete "ὁ" and substitute "δὲ" with "καὶ" where the former is a subordinating conj but latter is a coordinating conj
+	Deletion:	420150120161	ὁ
+	Substitution:	420150120171	420150120161	δὲ	καὶ	"and" -> conj
 	Comment: but it seems like coordinating conj at the beginning of a sentence (period before conj), the conj is in a subordinating conjunction position in the tree
-	Modifications:	deleted [ὁ -> det -> np -> S]
+	Modifications:	deleted [ὁ -> det -> np -> S ->] CL
 	Modifications:	changed δὲ -> conj Unicode to "καὶ", Lemma to "καί", StrongNumber to 2532
+	Comment: CHECK TREE
 
 
 42016027
 	Addition:	420160270051	σε
 	Deletion:	420160270041	σε
-	Comment: It is more like swapping positions between σε --> O and οὖν -> conj, but οὖν is already moved before ἐρωτῶ in the tree so there is no actual change needed in the tree.
-	Modifications:	none, but the below is to reflect what was automatically changed from NA28
-	Modifications:	changed σε -> pron morphId from 420160270041 to 420160270051
-	Modifications:	changed οὖν - conj morphId from 420160270051 to 420160270041
+	Comment: It is more like between "σε" --> O and "οὖν" -> conj switched order
+	Comment: But οὖν is already moved before ἐρωτῶ in the tree (a second position conjunction) so there is no actual change needed in the tree.
+	Comment: The below is to reflect what was automatically changed from NA28
+	Modifications:	changed σε -> pron morphId to 420160270051
+	Modifications:	changed οὖν -> conj morphId to 420160270041
 
 
 42017012
 	Deletion:	420170120081	αὐτῷ
-	Modifications:	deleted [αὐτῷ -> pron -> np -> O]
+	Modifications:	deleted [αὐτῷ -> pron -> np -> O ->] CL
 42017030
 	Deletion:	420170300031	αὐτὰ
 	Substitution:	420170300021	420170300021	τὰ	ταὐτὰ	"even thus, so" -> adv
 	Comment: It is more like "τὰ" -> det  and "αὐτὰ" -> pron merged into "ταὐτὰ" -> adv
 	Comment: "ταὐτὰ" is not in biblehub.com, 5024 does not have POS in biblehub.com
 	Q: Is there a mistake and "ταὐτὰ" should be "ταῦτα" "these" -> pron?
-	Comment: There exists an advp* -> np rule
-	Modifications:	deleted [τὰ -> det ->] np(0) and [αὐτὰ -> pron -> np(1)]
-	Modifications:	created ταὐτὰ -> adv -> advp, connect np(0) to advp
-	Modifications:	υἱὸς -> noun Unicode to "Υἱὸς", English to "Son" since the first letter is capitalized (?)
-	Modifications:	ἀνθρώπου -> noun Unicode to "Ἀνθρώπου", English to "of Man" since the first letter is capitalized (?)
+	Comment: There exists an {advp -> np} rule
+	Modifications:	deleted [τὰ -> det ->] np(0) and [αὐτὰ -> pron -> np(1) ->] np(0)
+	Modifications:	created [ταὐτὰ -> adv -> advp ->] np(0)
+	Modifications:	υἱὸς -> noun Unicode to "Υἱὸς", English to "Son" since the first letter is capitalized
+	Modifications:	ἀνθρώπου -> noun Unicode to "Ἀνθρώπου", English to "of Man" since the first letter is capitalized
 	Comment: CHECK TREE
 	Q: Is there a mistake and "ταὐτὰ" should be "ταῦτα"
 
@@ -1388,31 +1392,34 @@ RECORD OF CHANGES MADE
 42018004
 	Addition:	420180040081	δὲ
 	Deletion:	420180040071	δὲ
-	Comment: It is more like moving "δὲ" to after "ταῦτα", normally "δὲ" is the second word but moving it puts it after the full pp, not just the parentheses
-	Comment: I will leave the tree alone
-	Modifications:	Nothing to change from the starting tree, but will put down changes from NA28 tree
+	Comment: It is more like moving "δὲ" to after "ταῦτα"
+	Comment: Normally "δὲ" is the second p;osition of a clause but moving it puts it after the full pp, not just the prep
+	Comment: I will leave the tree alone and assume "δὲ" can be moved from the third position in a clause to the front
+	Modifications:	Nothing to change from the starting tree since the morphIds were automatically changed, but will put down changes from NA28 tree
 	Modifications:  δὲ -> conj morphId to 420180040081, ταῦτα -> pron morphId to 420180040071
 42018011
 	Addition:	420180110051	πρὸς
 	Addition:	420180110061	ἑαυτὸν
 	Deletion:	420180110041	πρὸς
 	Deletion:	420180110051	ἑαυτὸν
-	Comment: It is more like swapping "πρὸς ἑαυτὸν" --> ADV with "ταῦτα" --> O
-	Modifications:	swapped places of ADV and O so ADV is after O
+	Comment: It is more like "πρὸς ἑαυτὸν" --> ADV and "ταῦτα" --> O switched order
+	Modifications:	switched order of "πρὸς ἑαυτὸν" --> ADV and "ταῦτα" --> O
 	Modifications:	changed ταῦτα -> pron SrongNumber to 3778
 42018022
 	Deletion:	420180220221	τοῖς
-	Modifications:	deleted [τοῖς -> det -> np(0) ->] pp, connected pp to np(1) where "οὐρανοῖς" --> np(1)
+	Modifications:	deleted [τοῖς -> det -> np(0) ->] pp, connected pp to np(1) where {det np(1) -> np(0)}
 42018024
 	Deletion:	420180240061	περίλυπον
 	Deletion:	420180240071	γενόμενον
-	Modifications:	deleted [περίλυπον -> adj -> adjp -> P], deleted [γενόμενον -> verb -> vp -> VC -> CL]
+	Modifications:	deleted [περίλυπον -> adj -> adjp -> P ->] CL(0), deleted [γενόμενον -> verb -> vp -> VC -> CL(0)]
 	Modifications:	deleted αὐτὸν -> pron -> np [-> S ->] O, connected O to np
-	Comment: "ὁ Ἰησοῦς" --> S is not in the original position. It seems that after making the basic changes, we can put them back in the original word order
-	Modifications:	swap position of S and ADV to follow word order (except for δὲ), resulting in ADV S V -> CL
+	Comment: Word order in NA28 was changed in order to have "Ἰδὼν αὐτὸν περίλυπον γενόμενον" --> ADV to be a constituent
+	Comment: "ὁ Ἰησοῦς" --> S is not in the original position. 
+	Comment: It seems that after making the basic changes, we can put them back in the original word order
+	Modifications:	switched order of "ὁ Ἰησοῦς" --> S and "Ἰδὼν αὐτὸν" --> ADV to follow word order (except for δὲ), resulting in {ADV S V -> CL}
 42018028
-	Substitution:	420180280081	420180280081	τὰ	πάντα
-	Substitution:	420180280091	420180280091	ἴδια	καὶ
+	Substitution:	420180280081	420180280081	τὰ	πάντα	"all" -> pron
+	Substitution:	420180280091	420180280091	ἴδια	καὶ	"and" -> conj (coordinating)
 	Comment: It is more like replacing "τὰ ἴδια" --> np with "πάντα" --> np, and adding "καὶ" -> conj (coordinating)
 	Comment: I think the tree should be the coordination of two VPs, but the grammar doesn't have VP as a function
 	Comment: It does allow V O -> CL, but it doesn't have S CL conj CL -> CL
@@ -1420,28 +1427,32 @@ RECORD OF CHANGES MADE
 	Comment: So it seems like the only option I have is to do S V O -> CL, V O -> CL and then CL conj CL
 	Modifications:	deleted [τὰ -> det ->] np(0)
 	Modifications:	deleted [ἴδια -> adj -> adjp ->] np(0) -> O -> CL(0) [-> ADV ->] CL(1)
-	Modifications:	created πάντα -> pron, connected np(0) to pron
+	Modifications:	created [πάντα -> pron ->] np(0)
 	Modifications:	disconnected S from CL(1) and connect CL(0) to S
-	Modifications:	created καὶ -> conj, connected CL(1) to conj
-	Modifications:	disconnected ἠκολουθήσαμέν --> V and σοι --> O from CL(1)
+	Modifications:	created [καὶ -> conj ->] CL(1)
+	Modifications:	disconnected "ἠκολουθήσαμέν" --> V and "σοι" --> O from CL(1)
 	Modifications:	created CL(2) and connected CL(1) to CL(2), CL(2) to V and O
 	Comment: CHECK TREE
 
 
 42019030
 	Deletion:	420190300191	καὶ
-	Modifications:	deleted [καὶ -> conj]
+	Modifications:	deleted [καὶ -> conj ->] CL
 42019036
-	Substitution:	420190360071	420190360071	αὐτῶν	ἑαυτῶν
-	Modifications:	changed αὐτῶν -> pron Unicode to "ἑαυτῶν", Lemma to "ἑαυτοῦ", StrongNumber to 1438, English to "of themselves"
+	Substitution:	420190360071	420190360071	αὐτῶν	ἑαυτῶν	"of themselves" -> pron
+	Modifications:	changed αὐτῶν -> pron Unicode to "ἑαυτῶν", Lemma to "ἑαυτοῦ", StrongNumber to 1438
 42019038
 	Deletion:	420190380051	ὁ
-	Modifications:	deleted [ὁ -> det -> np(0) ->] np(1), connected np(1) to np(2), where "βασιλεὺς" --> np(2)
-	Comment: Without this determiner, I'm wondering if np(2) should more be an adjunct to the CL "coming in [the] name of [the] Lord" where the CL -> adjp (this rule exist) is a modifier of np(2) inside of the det
+	Comment: ὁ is moved way back in the verse
+	Modifications:	deleted [ὁ -> det -> np(0) ->] np(1), connected np(1) to np(2), where {det np(2) -> np(0)}
+	Comment: Without this determiner, I'm wondering if np(2) should more be an adjunct to the "coming in [the] name of [the] Lord" --> CL and then use CL -> adjp (this rule exist) to make it a modifier of np(2) inside of the det
+	Comment: But this is leaving "king" in an way out of order position. 
+	Comment: If we want to follow the real word order, maybe it should be [the [king coming in the name of the Lord]] where "βασιλεὺς" --> S for "ἐρχόμενος" --> V
+	Comment: Or if we move "βασιλεὺς" to before "ἐρχόμενος" in the tree, then we could have [the [[king] [coming in the name of the Lord]]
 	Comment: CHECK TREE
 42019040
 	Addition:	420190400061	ὅτι
-	Modifications:	created ὅτι -> conj -> CL(0), inserted CL(0) between CL(2) and CL(1) where CL(1) spans the rest of the verse
+	Modifications:	created [ὅτι -> conj -> CL(0)], inserted CL(0) between CL(1) and CL(2) where CL(2) spans the rest of the verse
 42019046
 	Deletion:	420190460041	καὶ
 	Deletion:	420190460051	ἔσται
@@ -1455,12 +1466,12 @@ RECORD OF CHANGES MADE
 
 42020009
 	Deletion:	420200090111	τις
-	Modifications:	deleted [τις -> pron -> adj -> adjp -> np(0) ->] S, connected S to np(1) where np(1) adjp -> np(0)
+	Modifications:	deleted [τις -> pron -> adj -> adjp -> np(0) ->] S, connected S to np(1) where {np(1) adjp -> np(0)}
 42020026
 	Substitution:	420200260051	420200260051	αὐτοῦ	τοῦ
 	Modifications:	changed αὐτοῦ -> pron Unicode to "τοῦ", Lemma to "ὁ", StrongNumber to 3588
 42020027
-	Substitution:	420200270071	420200270071	[ἀντι]λέγοντες	λέγοντες
+	Substitution:	420200270071	420200270071	[ἀντι]λέγοντες	λέγοντες	"saying" -> verb
 	Modifications:	changed [ἀντι]λέγοντες -> verb Unicode to "λέγοντες", Lemma to "λέγω", StrongNumber to 3004, English to "saying"
 	Modifications:	changed ἀνάστασιν -> noun English from "[the] resurrection [saying it]" to "[the] resurrection"
 	Modifications:	changed ἐπηρώτησαν -> verb English from "they questioned" to "questioned"
@@ -1471,20 +1482,20 @@ RECORD OF CHANGES MADE
 	Deletion:	420200330051	τῇ
 	Comment: It is more like deletion of "ἡ γυνὴ" --> S and moving "ἐν" and "τῇ" before "οὖν" -> conj, which is a second place conjunction and is at the beginning of the tree 
 	Comment: So the end effect is just to delete the S and change some morphIds
-	Modifications:	deleted ["ἡ γυνὴ" --> S]
+	Modifications:	deleted ["ἡ γυνὴ" --> S ->] CL
 	Modifications:	changed γίνεται -> verb English to "does (she) become"
 42020042
 	Addition:	420200420111	τῷ
 	Addition:	420200420121	Κυρίῳ
 	Deletion:	420200420091	κύριος
 	Comment: The diff analysis is incorrect. It is really addition of just ὁ 420200420091
-	Modifications:	created ὁ -> det, connected np to det where "Κύριος" --> np
+	Modifications:	created [ὁ -> det], connected np to det where "Κύριος" --> np
 	Modifications:	changed κύριος -> noun Unicode to Κύριος, English to "Lord"
 42020044
 	Addition:	420200440091	αὐτοῦ
 	Deletion:	420200440081	αὐτοῦ
-	Comment: It is more like switching positions of "αὐτοῦ" --> np(0) and "υἱός" --> np(1)
-	Modifications:	swapped positions of np(0) and np(1)
+	Comment: It is more like "αὐτοῦ" --> np(0) and "υἱός" --> np(1) switched order
+	Modifications:	switched the order of "αὐτοῦ" --> np(0) and "υἱός" --> np(1)
 
 
 42021011
@@ -1493,21 +1504,25 @@ RECORD OF CHANGES MADE
 	Deletion:	420210110141	ἀπ’
 	Deletion:	420210110151	οὐρανοῦ
 	Comment: It is more like moving "ἀπ’ οὐρανοῦ" --> pp to between "σημεῖα" --> np(0) and "μεγάλα" --> np(1)
-	Comment: But np(1) and np(2) are both neuter so I think they should be be kept together, so np(1) will not be in word order in the tree
-	Modifications:	swap positions of pp and np(2), where np(0) np(1) -> np(2)
+	Comment: "μεγάλα" changed from adj to noun
+	Comment: But np(0) and np(1) are both neuter so I think they should be be kept together, so np(1) will not be in word order in the tree
+	Modifications:	switched order of pp and np(2) where {np(0) np(1) -> np(2)}
+	Comment: CHECK TREE
 42021015
-	Substitution:	420210150141	420210150141	ἅπαντες	πάντες
-	Modifications:	changed ἅπαντες -> adj -> adjp to πάντες -> pron -> np, Lemma to "πᾶς", StrongNumber to 3956
+	Substitution:	420210150141	420210150141	ἅπαντες	πάντες	"all" -> pron	
+	Modifications:	changed [ἅπαντες -> adj -> adjp] to [πάντες -> pron -> np], Lemma to "πᾶς", StrongNumber to 3956
+	Comment: "οἱ" changed from det to pron
+	Modifications:	created [np(1)], inserted np(1) between np(2) and pron, where {pron CL -> np(2)}
 	Q: Why is not "πάντες" -> np(0) and "οἱ" -> np(1) first combined to np(2) and then combined with the following CL/np since that seems to modify "all the ones"?
 	Comment: CHECK TREE
 42021023
 	Addition:	420210230021	δὲ
-	Modifications:	created δὲ -> conj -> CL(0), inserted CL(0) between Verse and CL(1) where CL(1) CL(2) -> Verse
+	Modifications:	created [δὲ -> conj -> CL(0)], inserted CL(0) between Verse and CL(1) where {CL(1) CL(2) -> Verse}
 
 
 42022007
 	Deletion:	420220070071	ἐν
-	Modifications:	deleted [ἐν -> prep -> pp ->] ADV, connected ADV to np where "ᾗ" --> np
+	Modifications:	deleted [ἐν -> prep -> pp ->] ADV, connected ADV to np where {prep np -> pp}
 42022018
 	Deletion:	420220180041	ὅτι
 	Modifications:	deleted [ὅτι -> conj -> CL(0) ->] CL(1), connected CL(1) to CL(2) where CL(2) spans the rest of the verse
@@ -1520,8 +1535,8 @@ RECORD OF CHANGES MADE
 	Substitution:	420220500141	420220500101	οὖς	ἀρχιερέως
 	Substitution:	420220500151	420220500111	αὐτοῦ	καὶ
 	Substitution:	420220500171	420220500141	δεξιόν	οὖς
-	Comment: The diff analysis is incorrect. It is "τοῦ ἀρχιερέως" --> np(0) and "τὸν δοῦλον" --> np(1) swapping positions
-	Modifications:	swapped positions of np(0) and np(1), resulting in np(1) np(0) -> np(2) -> O
+	Comment: The diff analysis is incorrect. It is "τοῦ ἀρχιερέως" --> np(0) and "τὸν δοῦλον" --> np(1) switched order
+	Modifications:	switched order of of "τοῦ ἀρχιερέως" --> np(0) and "τὸν δοῦλον" --> np(1), resulting in {np(1) np(0) -> np(2) -> O}
 
 
 42023034
@@ -1537,24 +1552,31 @@ RECORD OF CHANGES MADE
 	Modifications:	changed αὐτοῦ -> pron Unicode to "αὐτοῦ,"
 	Modifications:	changed κλήρους -> verb Unicode to "κλῆρον."
 42023042
-	Substitution:	420230420081	420230420081	εἰς	ἐν
+	Substitution:	420230420081	420230420081	εἰς	ἐν	"into" -> prep
 	Modifications:	changed εἰς -> prep Unicode to "ἐν", Lemma to "ἐν", StrongNumber to 1722
 42023050
 	Deletion:	420230500081	καὶ
-	Comment: The NA28 tree has a problem. It has np -> np -> np -> np -> CL -> CL!
-	Comment: FIX TREE NA28?
-	Comment: With the conj deleted, it seems "βουλευτὴς" should/could return to being in the word order before ὑπάρχων since we don't need to coordinate two np'said
+	ERROR: The NA28 tree has a problem. It has {np -> np -> np -> np -> CL -> CL}!
+	Comment: FIX NA28 TREE?
+	Comment: With the conj deleted, it seems "βουλευτὴς" should/could return to being in the word order before ὑπάρχων since we don't need to coordinate two np's
 	Comment: The analysis of the VC can remain, though it seems the verb is not the typical copula verb so maybe it could be a V O -> CL -> np
-	Modifications:	deleted [καὶ -> conj -> np(1) ->] P
-	Modifications:	deleted "βουλευτὴς" --> np(0) [-> np(1) ->] P, connected P to np(2) where np(2) spans the rest of the verse
-	Modifications:	created np(3), connected np(3) to np(0), inserted np(3) between np(4) and adjp
+	Comment: Not sure if it should be "βουλευτὴς ὑπάρχων" --> CL that can be either a relative clause or CL -> np and be an np adjunct.
+	Comment: Or whether it should be "ὑπάρχων, ἀνὴρ ἀγαθὸς καὶ δίκαιος" --> CL as the relative clause (or adjp) to "βουλευτὴς" --> np
+	Q: Why is does NA28 have "βουλευτὴς ὑπάρχων καὶ ἀνὴρ ἀγαθὸς καὶ δίκαιος" --> CL -> adj rather than just let CL be a relative clause?
+	Comment: Based upon the UGNT punctuations, I think I'm going to treat it as a non-restrictive relative clause followed by an adjunct np
+	Modifications:	deleted [καὶ -> conj -> np(0) -> P ->] CL(0) [-> adjp ->] np(1), connected np(1) to CL(0)
+	Modifications:	created "βουλευτὴς" --> np(2) [-> P ->] CL(0)
+	Modifications:	created [np(3)], inserted np(3) between CL and np(1)
+	Modifications:	connected np(3) to np(4) where "ἀνὴρ ἀγαθὸς καὶ δίκαιος" --> np(4)
+	Comment: ἰδοὺ changed from verb to intj
+	Modifications:	changed [ἰδοὺ -> intj -> vp -> V -> CL] to [ἰδοὺ -> intj -> CL]
 	Comment: CHECK TREE
 
 
 42024032
 	Deletion:	420240320111	ἐν
 	Deletion:	420240320121	ἡμῖν
-	Modifications:	deleted ["ἐν ἡμῖν" --> ADV]
+	Modifications:	deleted ["ἐν ἡμῖν" --> ADV ->] CL
 42024046
 	Substitution:	420240460011	420240460011	καὶ	ὅτι
 	Substitution:	420240460021	420240460021	εἶπεν	οὕτως
@@ -1569,15 +1591,15 @@ RECORD OF CHANGES MADE
 	Substitution:	420240460111	420240460111	ἀναστῆναι	τῇ
 	Substitution:	420240460121	420240460121	ἐκ	τρίτῃ
 	Substitution:	420240460131	420240460131	νεκρῶν	ἡμέρᾳ
-	Comment: The diff analysis is incorrect. It is deletion of "καὶ εἶπεν αὐτοῖς"
-	Comment: The NA28 tree has an unnecessary CL node, CL(0) -> CL(1) -> np ->S
-	Comment: FIX TREE NA28?
-	Modifications:	deleted [καὶ -> conj -> CL(0) ->] Verse
-	Modifications:	deleted ["εἶπεν αὐτοῖς" --> CL(1) -> CL(2)]
-	Modifications:	connected Verse to CL that spans the rest of the verse
+	Comment: The diff analysis is incorrect. It is deletion of "καὶ εἶπεν αὐτοῖς" (420240460011-420240460031)
+	ERROR: The NA28 tree has an unnecessary CL node, CL(0) -> CL(1) -> np -> S
+	Comment: FIX NA28 TREE?
+	Modifications:	deleted ["εἶπεν αὐτοῖς" --> CL(0) -> CL(1) ->] CL(2)
+	Modifications:	deleted [καὶ -> conj -> CL(2) ->] Verse
+	Modifications:	connected Verse to CL(3) where CL(3) spans the rest of the verse
 42024049
 	Deletion:	420240490021	ἰδοὺ
-	Modifications:	deleted [ἰδοὺ -> verb -> vp -> V -> CL(0) -> CL(1) ->] CL(2), connected CL(2) to CL(3) where originally CL(1) CL(3) -> CL(2)
+	Modifications:	deleted [ἰδοὺ -> verb -> vp -> V -> CL(0) -> CL(1) ->] CL(2), connected CL(2) to CL(3) where {CL(0) CL(3) -> CL(1)}
 42024050
 	Deletion:	420240500041	ἔξω
 	Modifications:	deleted [ἔξω -> adv -> advp -> ADV ->] CL
@@ -1591,30 +1613,31 @@ RECORD OF CHANGES MADE
 
 43002012
 	Deletion:	430020120141	αὐτοῦ
-	Modifications:	deleted [αὐτοῦ -> pron -> np(0) -> np(1) ->] np(2), connected np(2) to np(3) where "ἀδελφοὶ" --> np(3)
+	Modifications:	deleted [αὐτοῦ -> pron -> np(0) -> np(1) ->] np(2), connected np(2) to np(3) where {np(3) np(0) -> np(1)}
 
 
 43003004
 	Deletion:	430030040041	ὁ
-	Modifications:	deleted [ὁ -> -> det -> np(0) ->] S, connected S to np(1) where "Νικόδημος" --> np(1)
+	Modifications:	deleted [ὁ -> -> det -> np(0) ->] S, connected S to np(1) where {det np(1) -> np(0)}
 43003028
 	Deletion:	430030280071	ὅτι
-	Modifications:	deleted [ὅτι -> conj -> CL(0) ->] CL(1), connected CL(1) to CL(2) where conj CL(2) -> CL(0)
+	Modifications:	deleted [ὅτι -> conj -> CL(0) ->] CL(1), connected CL(1) to CL(2) where {conj CL(2) -> CL(0)}
 
 
 43004051
 	Addition:	430040510101	καὶ	-> conj (coordinating)
-	Addition:	430040510111	ἀπήγγειλαν	-> verb	
+	Addition:	430040510111	ἀπήγγειλαν	"(they) reported" -> verb	
 	Comment: I made the least modifications but see comments below for what I think it probably should be
-	Modifications:	created καὶ	-> conj -> CL(0), inserted CL(0) between ADV and CL(1) where CL(1) spans the rest of the verse
-	Modifications:	created ἀπήγγειλαν	-> verb	-> vp -> V -> CL(2) -> CL(3), inserted CL(3) between CL(0) and CL(1)
+	Modifications:	created [καὶ -> conj -> CL(0)], inserted CL(0) between ADV and CL(1) where CL(1) spans the rest of the verse
+	Modifications:	created [ἀπήγγειλαν	-> verb	-> vp -> V -> CL(2) -> CL(3)], inserted CL(3) between CL(0) and CL(1)
 	Comment: This is another situation where it would be nice to have a VP node since the conj seems to be coordinating "met him" and "reported..." where they have the same subject and verbs have the same tense
 	Comment: Since there is no VP node, we would need to go from V O -> CL, remove the ADV so we have CL at the top and coordinate the two CL
 	Comment: Besides the coordination issue, I'm wondering if the CL spanning "λέγοντες, ὅτι ὁ παῖς αὐτοῦ ζῇ." should still be CL -> ADV and the ADV is the adjunct to "reported" --> V
-	Comment: FIX TREE
+	Q: Or now with the new conj, is it a conjoined CL to the a higher level CL rather than being an ADV?
+	Comment: CHECK TREE
 43004053
 	Deletion:	430040530061	ἐν
-	Modifications:	deleted [ἐν -> prep -> pp ->] ADV, connect ADV to np where prep np -> pp
+	Modifications:	deleted [ἐν -> prep -> pp ->] ADV, connect ADV to np where {prep np -> pp}
 
 
 43005005
