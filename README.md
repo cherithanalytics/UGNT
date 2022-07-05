@@ -3,6 +3,7 @@ These are trees based upon the Unlocked Greek New Testament (UGNT) text and morp
 
 Documentation/ - folder for documentation
   * UGNT - folder with files used to do automatic adjust of trees from NA28 to UGNT
+  * catDiff_modifications_edited.txt - has the documentation on the manual edits of the trees after doing the modifications documented in "tree_modifications_edited.txt"
   * greekgrammarNA28122319 - grammar used to create the NA28 trees, last modified on 12/23/2019.
   * NotesOnSystemticIssues.txt - notes on issues that came up during the manual modification
   * tree_modifications_edited.txt - has the documentation on the manual edits of the trees after automatic adjustment
