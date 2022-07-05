@@ -5,7 +5,7 @@
 	This was needed because some of the automatic identifications of differences in addition.tsv, deletion.tsv, and substitution.tsv were not always correct, sometimes leaving out changes, identifying the wrong instance of a word that is changed, or sometimes having a very complicated change list for a simple change.
 3. Used ugnt.normalized.tsv, ugnt-morphs.tsv to determine how to create added words.
 4. I used the NA28 trees in the folder NA28VerseTrees as a reference.
-5. I used the trees in UGNTVerseTrees as the starting point for making changes. These trees are different from the NA28 trees in the following ways:
+5. I used the trees in UGNTVerseTrees-Auto as the starting point for making changes. These trees are different from the NA28 trees in the following ways:
 	a. morphIds for the most part have been updated (except words to be deleted, and sometimes for substitutions)
 	b. The Unicode, Lemma, StrongNumber for substitutions (morphId was not updated for substitutions).
 	c. The Unicode, Lemma, StrongNumber, and morophId for the UGNT words that could be matched to NA28 words.

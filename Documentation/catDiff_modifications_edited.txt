@@ -1,8 +1,40 @@
-Unless otherwise stated, description of modifications is from the starting tree, not the NA28 tree.
+PROCEDURE
+
+1. Used the data in diffCat.tsv to know where to look.
+2. I used the NA28 trees in the folder NA28VerseTrees as a reference.
+5. I used the trees in UGNTVerseTrees/Pass2 as the starting point for making changes. These trees are different from the NA28 trees in the following ways:
+	a. morphIds for the most part have been updated (except words to be deleted, and sometimes for substitutions)
+	b. The Unicode, Lemma, StrongNumber for substitutions (morphId was not updated for substitutions).
+	c. The Unicode, Lemma, StrongNumber, and morophId for the UGNT words that could be matched to NA28 words.
+4. I would first compare what I see in Beyond Compare to the addtions, deletions, and substitutions to see if they were correct, documenting any corrections to the diff analysis.
+5. On occasion (I did not always do this step), I would check the words that had slight Unicode differences but not flagged as different to see if there were changes in category, case, tense, mood, person, number, etc.
+6. If there was potentially more than one "good" analysis, I would document that, chose one, and make changes to the tree based upon the one I chose.
+7. If there were some changes that required tree structures I had not seen before, I would check the existing grammar in greekgrammarNA28122319.cs (Randall said this was the one used to create the NA28 trees).
+8. If I had questions, I marked a verse with "Q:" followed by my question.
+9. If I wanted to record comments, I marked a verse with "Comment:" followed by my comment.
+10. Marked a verse with "Comment: CHECK TREE" for all verses that I felt should be checked by someone with a better understanding of Greek and/or the grammar.
+11. Marked a verse with "ERROR:" if I think there may be an ERROR in the UGNT data
+12. For substitutions, often the starting tree would already have it updated correctly, but not always. So I documented what was changed regardless of whether it was automatic or I had to do it manually.
+
+
+NOTATION
+
+1. To indicate a tree fragment that is a path from a terminal node up the tree through parent nodes:
+	a. "->" indicate a branch going up the tree in order to be consistent with the notation in the grammar file (i.e., it is a constituents to parent contraction rule, not an expansion rule).
+	b. square brackets enclose the fragment being referred to
+2. To indicate a subtree of constituents and parent, curly brackes are used to enclose the notation.
+3. To indicate a subtree that is more complex:
+	a. double quotes are used to indicate a surface Unicode string
+	b. "-->" is to indicates smallest subtree that includes the surface Unicode string on the left that leads to the category on the right that spans the whole string (possibly spans more).
+4. If a node is referred to more than once, and more than one node with the same category is referred to, the one referred to more than once will be indexed with "Cat(#)" where "Cat" is the category of the node, and "#" is a unique digit 
 
 NOTES:
 
-The morphId is the one in the NA28 tree, not the starting tree or the final tree.
+1. Unless otherwise stated, description of modifications is from the "Pass 2" trees that resulted from the modifications documented in the "diff_modifications_edited.txt" file, and not the NA28 tree.
+	For the most part, it was the same as the starting point trees, and many times, it was already corrected when fixing the trees based upon diff.tsv, addition.tsv, deletiong.tsv, and substitution.tsv files.
+2. The morphId next to the category change is the one in the NA28 tree, not the starting tree or the "Pass 2" trees.
+
+RECORD OF CHANGES MADE
 
 400050220231	noun	ptcl
 	Comment: Okay. There is a {ptcl -> np} rule
