@@ -529,8 +529,8 @@ RECORD OF CHANGES MADE
 	Comment: CHECK TREE
 40027046
 	Addition:	400270460231	τί	-> pron
-	Substitution:	400270460121	400270460121	ηλι	Ἐλωῒ	(already fixed in starting tree)
-	Substitution:	400270460131	400270460131	ηλι	Ἐλωῒ	(already fixed in starting tree)
+	Substitution:	400270460121	400270460121	ηλι	Ἐλωῒ	(already fixed in starting tree but it seems this was done manually)
+	Substitution:	400270460131	400270460131	ηλι	Ἐλωῒ	(already fixed in starting tree but it seems this was done manually)
 	Substitution:	400270460221	400270460221	ἱνατί	ἵνα	-> conj
 	Comment: Ἐλωῒ and lemma ἐλωῒ are not found in biblehub.com, though 1682 is found.
 	Comment: It seems like it is more like "ἱνατί" is split into "ἵνα" and "τί" where "τί" is a substitution for "ἱνατί"
@@ -832,7 +832,8 @@ RECORD OF CHANGES MADE
 41008017
 	Addition:	410080170031	ὁ
 	Addition:	410080170051	λέγει
-	Comment: The diff analysis is incorrect. It is the addition of:
+	Comment: The diff analysis is incorrect.
+	Comment: It is the addition of:
 	Addition:	410080170031	ὁ	"-" -> det
 	Addition:	410080170041	Ἰησοῦς	"Jesus" -> noun	
 	Modifications:	create [Ἰησοῦς -> noun -> np(0) -> np(1) -> S ->] CL
@@ -1153,6 +1154,9 @@ RECORD OF CHANGES MADE
 42005012
 	Addition:	420050120161	καὶ
 	Deletion:	420050120171	δὲ
+	Comment: The diff analysis is incorrect.
+	Comment: It should be:
+	Substitution:	420050120171	420050120161	δὲ	καὶ
 	Comment: The "δὲ" -> conj is already moved to the front of "ἰδὼν" -> verb in the tree so actually just need to substitute καὶ for δὲ in the tree
 	Comment: The modification to the starting tree was off, having the conj and verb in each other's place.
 	Comment: The modifications below are for starting with NA28 tree and not the starting point tree.
@@ -2811,7 +2815,7 @@ RECORD OF CHANGES MADE
 
 49002005
 	Substitution:	490020050081	490020050081	τῷ	ἐν	"in, with" -> prep
-	Comment: The original gloss has "with" for the verb, so I'll leave it that way.
+	Comment: The original gloss has "with" for the verb 490020050071, so I'll leave it alone but just move the gloss to the prep.
 	Modifications:	changed [τῷ -> det -> np ->] ADV to [ἐν -> prep -> pp ->] ADV
 	Modifications:	changed συνεζωοποίησεν -> verb English from "he made (us) alive with" to "he made (us) alive"
 
@@ -3168,6 +3172,7 @@ RECORD OF CHANGES MADE
 
 60005001
 	Substitution:	600050010021	600050010021	τοὺς	οὖν	"therefore" -> conj (coordinating)
+	Comment: The diff analysis is incorrect.
 	Comment: It is more like deleting τοὺς -> det and adding οὖν -> conj
 	Addition:	600050010021	οὖν	"therefore" -> conj (coordinating)
 	Deletion:	600050010021	τοὺς
@@ -3483,6 +3488,7 @@ RECORD OF CHANGES MADE
 	Substitution:	660160030191	660160030191	ζωῆς	ζῶσα	"is living" -> verb
 	Comment: There used to be a rule {np vp -> np}, but that was elminated so now we must go from {vp -> np} and then conjoin the two np's
 	Modifications:	changed [ζωῆς -> noun] -> np(0) to [ζῶσα -> verb -> vp] -> np(0), Lemma to "ζάω", StrongNumber to 2198
+	Modifications:	deleted [τὰ -> det -> np(0) -> np(1) ->] np(2), connected np(2) to pp(0) where {np(0) pp(0) -> np(1)}
 
 
 66017007
