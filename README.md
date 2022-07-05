@@ -12,6 +12,6 @@ NA28VerseTrees/ - folder for trees based off of NA28 text and morphology
 
 UGNTVerseTrees-Auto/ - folder for trees that were created automatically from NA28 but using UGNT text and morphology
 
-UGNTVerseTrees/ - folder for modified trees based off of UGNT text and morphology
+UGNTVerseTrees/ - folder for the most recent version of modified trees based off of UGNT text and morphology
  * Pass2/ - folder containing modified trees after modifications documented in tree_modifications_edited.txt
  * catDiff1/ - folder containing modified trees after modifications documented in catDiff_modifications_edited.txt
