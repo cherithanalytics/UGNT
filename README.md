@@ -4,6 +4,9 @@ These are trees based upon the Unlocked Greek New Testament (UGNT) text and morp
 Documentation/ - folder for documentation
   * UGNT - folder with files used to do automatic adjust of trees from NA28 to UGNT
   * catDiff_modifications_edited.txt - has the documentation on the manual edits of the trees after doing the modifications documented in "tree_modifications_edited.txt"
+  * Errors.CheckMorphDataAgainstTextUGNT - lists the inconsistent (not perfect string match) between what is in the text file "ugnt.normalized.test.txt" and what is in "ugnt.normalized-edited.tsv"
+  * Errors.CheckStrong2LemmaDataUGNT - lists the inconsistent (not one-to-one mapping) between UGNT Strong's Number and UGNT lemma in "ugnt.normalized-edited.tsv"
+  * Errors.CheckStrongAnalysis2LemmaDataUGNT - lists the inconsistent (not one-to-one mapping) between UGNT Strong's Number + Analysis and UGNT lemma in "ugnt.normalized.test-edited.tsv"
   * greekgrammarNA28122319 - grammar used to create the NA28 trees, last modified on 12/23/2019.
   * NotesOnSystemticIssues.txt - notes on issues that came up during the manual modification
   * tree_modifications_edited.txt - has the documentation on the manual edits of the trees after automatic adjustment
