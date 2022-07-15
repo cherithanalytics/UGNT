@@ -6,6 +6,9 @@ Error: Unicode mismatch for 400100330031 in verse 40010033
     Morph = ἂν [1f02][03bd]
 Error: Fewer terminal nodes than morph data in 40011015 (4-5)
 Error: Fewer terminal nodes than morph data in 40015015 (9-10)
+Error: Cat mismatch for 400150150101 in verse 40015015
+    Tree  = O
+    Morph = noun
 Error: More terminal nodes than morph data in 40016002 (13-5)
 Error: Missing morph 400160020061 in morphData
 Error: Missing morph 400160020071 in morphData
@@ -25,6 +28,15 @@ Error: Unicode mismatch for 400180260081 in verse 40018026
 Error: Fewer terminal nodes than morph data in 40019009 (17-22)
 Error: morphId 400190290141 appears more than once in verse 40019029 in the tree
 Error: No morphId in verse 40023019 in the tree
+Error: Cat mismatch for 400230260141 in verse 40023026
+    Tree  = conj
+    Morph = adv
+Error: Cat mismatch for 400230260151 in verse 40023026
+    Tree  = det
+    Morph = pron
+Error: Cat mismatch for 400230260181 in verse 40023026
+    Tree  = adj
+    Morph = noun
 Error: More terminal nodes than morph data in 40025006 (12-11)
 Error: Missing morph 400250060121 in morphData
 Error: Fewer terminal nodes than morph data in 40025016 (12-14)
@@ -38,11 +50,20 @@ Error: morphId 410050270021 appears more than once in verse 41005027 in the tree
 Error: Unicode mismatch for 410050270021 in verse 41005027
     Tree  = περὶ [03c0][03b5][03c1][1f76]
     Morph = τὰ [03c4][1f70]
+Error: Cat mismatch for 410050270021 in verse 41005027
+    Tree  = prep
+    Morph = pron
 Error: morphId 410050270021 appears more than once in verse 41005027 in the tree
 Error: Unicode mismatch for 410050270021 in verse 41005027
     Tree  = τοῦ [03c4][03bf][1fe6]
     Morph = τὰ [03c4][1f70]
+Error: Cat mismatch for 410050270021 in verse 41005027
+    Tree  = det
+    Morph = pron
 Error: Fewer terminal nodes than morph data in 41006007 (17-18)
+Error: Cat mismatch for 410060070091 in verse 41006007
+    Tree  = ADV
+    Morph = noun
 Error: No morphId in verse 41006016 in the tree
 Error: More terminal nodes than morph data in 41007004 (23-21)
 Error: Missing morph 410070040221 in morphData
@@ -51,6 +72,9 @@ Error: morphId 410070240011 appears more than once in verse 41007024 in the tree
 Error: Unicode mismatch for 410070240011 in verse 41007024
     Tree  = καὶ [03ba][03b1][1f76]
     Morph = ἐκεῖθεν [1f10][03ba][03b5][1fd6][03b8][03b5][03bd]
+Error: Cat mismatch for 410070240011 in verse 41007024
+    Tree  = conj
+    Morph = adv
 Error: Fewer terminal nodes than morph data in 41009029 (14-16)
 Error: More terminal nodes than morph data in 41010007 (16-10)
 Error: Missing morph 410100070111 in morphData
@@ -64,6 +88,9 @@ Error: More terminal nodes than morph data in 41014068 (20-17)
 Error: Missing morph 410140680181 in morphData
 Error: Missing morph 410140680191 in morphData
 Error: Missing morph 410140680201 in morphData
+Error: Cat mismatch for 410160010111 in verse 41016001
+    Tree  = det
+    Morph = pron
 Error: More terminal nodes than morph data in 41016008 (52-18)
 Error: Missing morph 410160080201 in morphData
 Error: Missing morph 410160080191 in morphData
@@ -108,10 +135,19 @@ Error: Unicode mismatch for 420030330041 in verse 42003033
 Error: Unicode mismatch for 420030330061 in verse 42003033
     Tree  = Ἀρνεὶ [1f08][03c1][03bd][03b5][1f76]
     Morph = Ἀρνεὶ, [1f08][03c1][03bd][03b5][1f76][002c]
+Error: Cat mismatch for 420110140051 in verse 42011014
+    Tree  = adj
+    Morph = noun
+Error: Cat mismatch for 420110140131 in verse 42011014
+    Tree  = adj
+    Morph = noun
 Error: More terminal nodes than morph data in 42013007 (29-28)
 Error: Unicode mismatch for 420130070221 in verse 42013007
     Tree  = [οὖν] [005b][03bf][1f56][03bd][005d]
     Morph = αὐτήν, [03b1][1f50][03c4][03ae][03bd][002c]
+Error: Cat mismatch for 420130070221 in verse 42013007
+    Tree  = conj
+    Morph = pron
 Error: morphId 420130070221 appears more than once in verse 42013007 in the tree
 Error: Fewer terminal nodes than morph data in 42015030 (15-19)
 Error: More terminal nodes than morph data in 42017024 (25-21)
@@ -122,14 +158,23 @@ Error: Missing morph 420170240251 in morphData
 Error: Fewer terminal nodes than morph data in 42018021 (8-9)
 Error: Fewer terminal nodes than morph data in 42019027 (15-19)
 Error: Fewer terminal nodes than morph data in 42020017 (19-21)
+Error: Cat mismatch for 420200170101 in verse 42020017
+    Tree  = S
+    Morph = verb
 Error: morphId 420200420091 appears more than once in verse 42020042 in the tree
 Error: Unicode mismatch for 420200420091 in verse 42020042
     Tree  = Κύριος [039a][03cd][03c1][03b9][03bf][03c2]
     Morph = ὁ [1f41]
+Error: Cat mismatch for 420200420091 in verse 42020042
+    Tree  = noun
+    Morph = det
 Error: morphId 420200420091 appears more than once in verse 42020042 in the tree
 Error: Unicode mismatch for 420200420091 in verse 42020042
     Tree  = τῷ [03c4][1ff7]
     Morph = ὁ [1f41]
+Error: Cat mismatch for 420220380081 in verse 42022038
+    Tree  = P
+    Morph = det
 Error: Fewer terminal nodes than morph data in 42024014 (6-10)
 Error: Fewer terminal nodes than morph data in 42024045 (9-12)
 Error: More terminal nodes than morph data in 43008002 (18-14)
@@ -155,6 +200,9 @@ Error: Unicode mismatch for 430080090021 in verse 43008009
 Error: Unicode mismatch for 430080110061 in verse 43008011
     Tree  = εἶπεν [03b5][1f36][03c0][03b5][03bd]
     Morph = ὁ [1f41]
+Error: Cat mismatch for 430080110061 in verse 43008011
+    Tree  = verb
+    Morph = det
 Error: morphId 430080110061 appears more than once in verse 43008011 in the tree
 Error: More terminal nodes than morph data in 43014026 (27-26)
 Error: Missing morph 430140260271 in morphData
@@ -162,12 +210,24 @@ Error: Missing morph 430190050021 in morphData
 Error: Unicode mismatch for 430190040201 in verse 43019004
     Tree  = εὑρίσκω. [03b5][1f51][03c1][03af][03c3][03ba][03c9][002e]
     Morph = οὐχ [03bf][1f50][03c7]
+Error: Cat mismatch for 430190040201 in verse 43019004
+    Tree  = verb
+    Morph = adv
 Error: Fewer terminal nodes than morph data in 43019018 (14-15)
 Error: Unicode mismatch for 430210180241 in verse 43021018
     Tree  = σε [03c3][03b5]
     Morph = σε, [03c3][03b5][002c]
+Error: Cat mismatch for 440010150211 in verse 44001015
+    Tree  = num
+    Morph = det
+Error: Cat mismatch for 440010150221 in verse 44001015
+    Tree  = num
+    Morph = det
 Error: Fewer terminal nodes than morph data in 44002010 (5-17)
 Error: Missing morph 440020090101 in morphData
+Error: Cat mismatch for 440040220051 in verse 44004022
+    Tree  = advp
+    Morph = det
 Error: Fewer terminal nodes than morph data in 44008022 (16-20)
 Error: More terminal nodes than morph data in 44019040 (27-21)
 Error: Missing morph 440190400221 in morphData
@@ -176,12 +236,27 @@ Error: Missing morph 440190400241 in morphData
 Error: Missing morph 440190400251 in morphData
 Error: Missing morph 440190400261 in morphData
 Error: Missing morph 440190400271 in morphData
+Error: Cat mismatch for 440230130041 in verse 44023013
+    Tree  = advp
+    Morph = det
+Error: Cat mismatch for 440230210131 in verse 44023021
+    Tree  = advp
+    Morph = det
 Error: Fewer terminal nodes than morph data in 44025006 (21-23)
+Error: Cat mismatch for 440250060081 in verse 44025006
+    Tree  = advp
+    Morph = det
 Error: Fewer terminal nodes than morph data in 44027037 (9-11)
+Error: Cat mismatch for 440270370091 in verse 44027037
+    Tree  = P
+    Morph = noun
 Error: More terminal nodes than morph data in 44027041 (24-22)
 Error: Missing morph 440270410231 in morphData
 Error: Missing morph 440270410241 in morphData
 Error: Fewer terminal nodes than morph data in 45002019 (5-10)
+Error: Cat mismatch for 450020190041 in verse 45002019
+    Tree  = P
+    Morph = noun
 Error: Fewer terminal nodes than morph data in 45002020 (12-15)
 Error: Missing morph 450020190041 in morphData
 Error: Unicode mismatch for 450030150061 in verse 45003015
@@ -191,38 +266,68 @@ Error: morphId 450080280101 appears more than once in verse 45008028 in the tree
 Error: Unicode mismatch for 450080280101 in verse 45008028
     Tree  = εἰς [03b5][1f30][03c2]
     Morph = ὁ [1f41]
+Error: Cat mismatch for 450080280101 in verse 45008028
+    Tree  = prep
+    Morph = det
 Error: morphId 450080280111 appears more than once in verse 45008028 in the tree
 Error: Unicode mismatch for 450080280111 in verse 45008028
     Tree  = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
     Morph = Θεὸς [0398][03b5][1f78][03c2]
+Error: Cat mismatch for 450080280111 in verse 45008028
+    Tree  = adj
+    Morph = noun
 Error: morphId 450080280101 appears more than once in verse 45008028 in the tree
 Error: Unicode mismatch for 450080280131 in verse 45008028
     Tree  = κατὰ [03ba][03b1][03c4][1f70]
     Morph = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
+Error: Cat mismatch for 450080280131 in verse 45008028
+    Tree  = prep
+    Morph = noun
 Error: Unicode mismatch for 450080280141 in verse 45008028
     Tree  = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
     Morph = τοῖς [03c4][03bf][1fd6][03c2]
+Error: Cat mismatch for 450080280141 in verse 45008028
+    Tree  = noun
+    Morph = pron
 Error: Unicode mismatch for 450080280151 in verse 45008028
     Tree  = κλητοῖς [03ba][03bb][03b7][03c4][03bf][1fd6][03c2]
     Morph = κατὰ [03ba][03b1][03c4][1f70]
+Error: Cat mismatch for 450080280151 in verse 45008028
+    Tree  = adj
+    Morph = prep
 Error: Unicode mismatch for 450080280161 in verse 45008028
     Tree  = οὖσιν. [03bf][1f56][03c3][03b9][03bd][002e]
     Morph = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
+Error: Cat mismatch for 450080280161 in verse 45008028
+    Tree  = verb
+    Morph = noun
 Error: Fewer terminal nodes than morph data in 45014021 (15-19)
 Error: Unicode mismatch for 460050040081 in verse 46005004
     Tree  = Χριστοῦ [03a7][03c1][03b9][03c3][03c4][03bf][1fe6]
     Morph = Χριστοῦ, [03a7][03c1][03b9][03c3][03c4][03bf][1fe6][002c]
 Error: Fewer terminal nodes than morph data in 46007033 (11-21)
 Error: Fewer terminal nodes than morph data in 46008009 (9-12)
+Error: Cat mismatch for 460080090061 in verse 46008009
+    Tree  = S
+    Morph = noun
 Error: Unicode mismatch for 460100200061 in verse 46010020
     Tree  = ἔθνη [1f14][03b8][03bd][03b7]
     Morph = ἔθνη, [1f14][03b8][03bd][03b7][002c]
 Error: Fewer terminal nodes than morph data in 46016024 (9-10)
 Error: Fewer terminal nodes than morph data in 47001012 (32-35)
+Error: Cat mismatch for 470010120031 in verse 47001012
+    Tree  = S
+    Morph = noun
 Error: Fewer terminal nodes than morph data in 47003004 (9-10)
+Error: Cat mismatch for 470030040011 in verse 47003004
+    Tree  = O
+    Morph = noun
 Error: Unicode mismatch for 480010150041 in verse 48001015
     Tree  = ὁ [1f41]
     Morph = ὁ, [1f41][002c]
+Error: Cat mismatch for 480010150041 in verse 48001015
+    Tree  = det
+    Morph = pron
 Error: Unicode mismatch for 480050020011 in verse 48005002
     Tree  = ἴδε [1f34][03b4][03b5]
     Morph = ἴδε, [1f34][03b4][03b5][002c]
@@ -245,6 +350,9 @@ Error: Missing morph 550030020051 in morphData
 Error: More terminal nodes than morph data in 55004021 (17-16)
 Error: Missing morph 550040210171 in morphData
 Error: Fewer terminal nodes than morph data in 56002007 (11-12)
+Error: Cat mismatch for 560020070111 in verse 56002007
+    Tree  = O
+    Morph = noun
 Error: No morphId in verse 57001025 in the tree
 Error: Unicode mismatch for 580100160261 in verse 58010016
     Tree  = αὐτούς… [03b1][1f50][03c4][03bf][03cd][03c2][2026]
@@ -253,8 +361,14 @@ Error: Unicode mismatch for 580110370031 in verse 58011037
     Tree  = ἐπειράσθησαν [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd]
     Morph = ἐπειράσθησαν, [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd][002c]
 Error: Fewer terminal nodes than morph data in 61001017 (27-28)
+Error: Cat mismatch for 610010170091 in verse 61001017
+    Tree  = S
+    Morph = noun
 Error: Fewer terminal nodes than morph data in 61003018 (22-23)
 Error: Fewer terminal nodes than morph data in 65001012 (13-23)
+Error: Cat mismatch for 650010120131 in verse 65001012
+    Tree  = P
+    Morph = noun
 Error: Unicode mismatch for 650010130091 in verse 65001013
     Tree  = πλανῆται [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9]
     Morph = πλανῆται, [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9][002c]
@@ -265,173 +379,335 @@ Error: More terminal nodes than morph data in 66013010 (26-24)
 Error: Unicode mismatch for 660130100051 in verse 66013010
     Tree  = εἰς [03b5][1f30][03c2]
     Morph = ὑπάγει, [1f51][03c0][03ac][03b3][03b5][03b9][002c]
+Error: Cat mismatch for 660130100051 in verse 66013010
+    Tree  = prep
+    Morph = verb
 Error: Unicode mismatch for 660130100061 in verse 66013010
     Tree  = αἰχμαλωσίαν [03b1][1f30][03c7][03bc][03b1][03bb][03c9][03c3][03af][03b1][03bd]
     Morph = εἴ [03b5][1f34]
+Error: Cat mismatch for 660130100061 in verse 66013010
+    Tree  = noun
+    Morph = conj
 Error: morphId 660130100051 appears more than once in verse 66013010 in the tree
 Error: morphId 660130100061 appears more than once in verse 66013010 in the tree
 Error: morphId 660170130091 appears more than once in verse 66017013 in the tree
 Error: Unicode mismatch for 660170130091 in verse 66017013
     Tree  = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
     Morph = τὴν [03c4][1f74][03bd]
+Error: Cat mismatch for 660170130091 in verse 66017013
+    Tree  = noun
+    Morph = det
 Error: Unicode mismatch for 660170130101 in verse 66017013
     Tree  = αὐτῶν [03b1][1f50][03c4][1ff6][03bd]
     Morph = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
+Error: Cat mismatch for 660170130101 in verse 66017013
+    Tree  = pron
+    Morph = noun
 Error: morphId 660170130091 appears more than once in verse 66017013 in the tree
 Error: Unicode mismatch for 660170130121 in verse 66017013
     Tree  = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
     Morph = τῷ [03c4][1ff7]
+Error: Cat mismatch for 660170130121 in verse 66017013
+    Tree  = noun
+    Morph = det
 Error: Unicode mismatch for 660170130131 in verse 66017013
     Tree  = διδόασιν. [03b4][03b9][03b4][03cc][03b1][03c3][03b9][03bd][002e]
     Morph = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
+Error: Cat mismatch for 660170130131 in verse 66017013
+    Tree  = verb
+    Morph = noun
 Error: Unicode mismatch for 660180020261 in verse 66018002
     Tree  = μεμισημένου, [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][002c]
     Morph = μεμισημένου; [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][003b]
 Error: Unicode mismatch for 660180070201 in verse 66018007
     Tree  = βασίλισσα… [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][2026]
     Morph = βασίλισσα... [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][002e][002e][002e]
+Error: Cat mismatch for 660200120051 in verse 66020012
+    Tree  = conj
+    Morph = adv
 Error: morphId 660200120051 appears more than once in verse 66020012 in the tree
 Error: morphId 660220210071 appears more than once in verse 66022021 in the tree
 Error: Unicode mismatch for 660220210071 in verse 66022021
     Tree  = ἁγίων. [1f01][03b3][03af][03c9][03bd][002e]
     Morph = τῶν [03c4][1ff6][03bd]
+Error: Cat mismatch for 660220210071 in verse 66022021
+    Tree  = noun
+    Morph = det
 
-Unique Errors (46):
+Unique Errors (92):
 1.1: 400090180081
     Tree  = προσελθὼν [03c0][03c1][03bf][03c3][03b5][03bb][03b8][1f7c][03bd]
     Morph = προσελθὼν, [03c0][03c1][03bf][03c3][03b5][03bb][03b8][1f7c][03bd][002c]
 2.1: 400100330031
     Tree  = ἄν [1f04][03bd]
     Morph = ἂν [1f02][03bd]
-3.1: 400180260081
+3.1: 400150150101
+    Tree  = O
+    Morph = noun
+4.1: 400180260081
     Tree  = Κύριε [039a][03cd][03c1][03b9][03b5]
     Morph = Κύριε, [039a][03cd][03c1][03b9][03b5][002c]
-4.1: 400270460121
+5.1: 400230260141
+    Tree  = conj
+    Morph = adv
+6.1: 400230260151
+    Tree  = det
+    Morph = pron
+7.1: 400230260181
+    Tree  = adj
+    Morph = noun
+8.1: 400270460121
     Tree  = Ἐλωῒ [1f18][03bb][03c9][1fd2]
     Morph = Ἐλωῒ, [1f18][03bb][03c9][1fd2][002c]
-5.1: 400270460131
+9.1: 400270460131
     Tree  = Ἐλωῒ [1f18][03bb][03c9][1fd2]
     Morph = Ἐλωῒ, [1f18][03bb][03c9][1fd2][002c]
-6.1: 410050270021
+10.1: 410050270021
+    Tree  = det
+    Morph = pron
+10.2: 410050270021
+    Tree  = prep
+    Morph = pron
+10.3: 410050270021
     Tree  = περὶ [03c0][03b5][03c1][1f76]
     Morph = τὰ [03c4][1f70]
-6.2: 410050270021
+10.4: 410050270021
     Tree  = τοῦ [03c4][03bf][1fe6]
     Morph = τὰ [03c4][1f70]
-7.1: 410070240011
+11.1: 410060070091
+    Tree  = ADV
+    Morph = noun
+12.1: 410070240011
+    Tree  = conj
+    Morph = adv
+12.2: 410070240011
     Tree  = καὶ [03ba][03b1][1f76]
     Morph = ἐκεῖθεν [1f10][03ba][03b5][1fd6][03b8][03b5][03bd]
-8.1: 420030330041
+13.1: 410160010111
+    Tree  = det
+    Morph = pron
+14.1: 420030330041
     Tree  = Ἀδμεὶν [1f08][03b4][03bc][03b5][1f76][03bd]
     Morph = Ἀδμεὶν, [1f08][03b4][03bc][03b5][1f76][03bd][002c]
-9.1: 420030330061
+15.1: 420030330061
     Tree  = Ἀρνεὶ [1f08][03c1][03bd][03b5][1f76]
     Morph = Ἀρνεὶ, [1f08][03c1][03bd][03b5][1f76][002c]
-10.1: 420130070221
+16.1: 420110140051
+    Tree  = adj
+    Morph = noun
+17.1: 420110140131
+    Tree  = adj
+    Morph = noun
+18.1: 420130070221
     Tree  = [οὖν] [005b][03bf][1f56][03bd][005d]
     Morph = αὐτήν, [03b1][1f50][03c4][03ae][03bd][002c]
-11.1: 420200420091
+18.2: 420130070221
+    Tree  = conj
+    Morph = pron
+19.1: 420200170101
+    Tree  = S
+    Morph = verb
+20.1: 420200420091
+    Tree  = noun
+    Morph = det
+20.2: 420200420091
     Tree  = Κύριος [039a][03cd][03c1][03b9][03bf][03c2]
     Morph = ὁ [1f41]
-11.2: 420200420091
+20.3: 420200420091
     Tree  = τῷ [03c4][1ff7]
     Morph = ὁ [1f41]
-12.1: 430080040131
+21.1: 420220380081
+    Tree  = P
+    Morph = det
+22.1: 430080040131
     Tree  = οἱ [03bf][1f31]
     Morph = ἡ [1f21]
-13.1: 430080050011
+23.1: 430080050011
     Tree  = Μωϋσῆς [039c][03c9][03cb][03c3][1fc6][03c2]
     Morph = Μωσῆς [039c][03c9][03c3][1fc6][03c2]
-14.1: 430080080061
+24.1: 430080080061
     Tree  = ἔγραφεν [1f14][03b3][03c1][03b1][03c6][03b5][03bd]
     Morph = κατέγραφεν [03ba][03b1][03c4][03ad][03b3][03c1][03b1][03c6][03b5][03bd]
-15.1: 430080080081
+25.1: 430080080081
     Tree  = τῷ [03c4][1ff7]
     Morph = τὴν [03c4][1f74][03bd]
-16.1: 430080090021
+26.1: 430080090021
     Tree  = δὲ [03b4][1f72]
     Morph = δέ [03b4][03ad]
-17.1: 430080110061
+27.1: 430080110061
+    Tree  = verb
+    Morph = det
+27.2: 430080110061
     Tree  = εἶπεν [03b5][1f36][03c0][03b5][03bd]
     Morph = ὁ [1f41]
-18.1: 430190040201
+28.1: 430190040201
+    Tree  = verb
+    Morph = adv
+28.2: 430190040201
     Tree  = εὑρίσκω. [03b5][1f51][03c1][03af][03c3][03ba][03c9][002e]
     Morph = οὐχ [03bf][1f50][03c7]
-19.1: 430210180241
+29.1: 430210180241
     Tree  = σε [03c3][03b5]
     Morph = σε, [03c3][03b5][002c]
-20.1: 450030150061
+30.1: 440010150211
+    Tree  = num
+    Morph = det
+31.1: 440010150221
+    Tree  = num
+    Morph = det
+32.1: 440040220051
+    Tree  = advp
+    Morph = det
+33.1: 440230130041
+    Tree  = advp
+    Morph = det
+34.1: 440230210131
+    Tree  = advp
+    Morph = det
+35.1: 440250060081
+    Tree  = advp
+    Morph = det
+36.1: 440270370091
+    Tree  = P
+    Morph = noun
+37.1: 450020190041
+    Tree  = P
+    Morph = noun
+38.1: 450030150061
     Tree  = αἷμα… [03b1][1f37][03bc][03b1][2026]
     Morph = αἷμα... [03b1][1f37][03bc][03b1][002e][002e][002e]
-21.1: 450080280101
+39.1: 450080280101
+    Tree  = prep
+    Morph = det
+39.2: 450080280101
     Tree  = εἰς [03b5][1f30][03c2]
     Morph = ὁ [1f41]
-22.1: 450080280111
+40.1: 450080280111
+    Tree  = adj
+    Morph = noun
+40.2: 450080280111
     Tree  = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
     Morph = Θεὸς [0398][03b5][1f78][03c2]
-23.1: 450080280131
+41.1: 450080280131
+    Tree  = prep
+    Morph = noun
+41.2: 450080280131
     Tree  = κατὰ [03ba][03b1][03c4][1f70]
     Morph = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
-24.1: 450080280141
+42.1: 450080280141
+    Tree  = noun
+    Morph = pron
+42.2: 450080280141
     Tree  = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
     Morph = τοῖς [03c4][03bf][1fd6][03c2]
-25.1: 450080280151
+43.1: 450080280151
+    Tree  = adj
+    Morph = prep
+43.2: 450080280151
     Tree  = κλητοῖς [03ba][03bb][03b7][03c4][03bf][1fd6][03c2]
     Morph = κατὰ [03ba][03b1][03c4][1f70]
-26.1: 450080280161
+44.1: 450080280161
+    Tree  = verb
+    Morph = noun
+44.2: 450080280161
     Tree  = οὖσιν. [03bf][1f56][03c3][03b9][03bd][002e]
     Morph = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
-27.1: 460050040081
+45.1: 460050040081
     Tree  = Χριστοῦ [03a7][03c1][03b9][03c3][03c4][03bf][1fe6]
     Morph = Χριστοῦ, [03a7][03c1][03b9][03c3][03c4][03bf][1fe6][002c]
-28.1: 460100200061
+46.1: 460080090061
+    Tree  = S
+    Morph = noun
+47.1: 460100200061
     Tree  = ἔθνη [1f14][03b8][03bd][03b7]
     Morph = ἔθνη, [1f14][03b8][03bd][03b7][002c]
-29.1: 480010150041
+48.1: 470010120031
+    Tree  = S
+    Morph = noun
+49.1: 470030040011
+    Tree  = O
+    Morph = noun
+50.1: 480010150041
+    Tree  = det
+    Morph = pron
+50.2: 480010150041
     Tree  = ὁ [1f41]
     Morph = ὁ, [1f41][002c]
-30.1: 480050020011
+51.1: 480050020011
     Tree  = ἴδε [1f34][03b4][03b5]
     Morph = ἴδε, [1f34][03b4][03b5][002c]
-31.1: 540020070111
+52.1: 540020070111
     Tree  = Χριστῷ [03a7][03c1][03b9][03c3][03c4][1ff7]
     Morph = Χριστῷ, [03a7][03c1][03b9][03c3][03c4][1ff7][002c]
-32.1: 580100160261
+53.1: 560020070111
+    Tree  = O
+    Morph = noun
+54.1: 580100160261
     Tree  = αὐτούς… [03b1][1f50][03c4][03bf][03cd][03c2][2026]
     Morph = αὐτούς... [03b1][1f50][03c4][03bf][03cd][03c2][002e][002e][002e]
-33.1: 580110370031
+55.1: 580110370031
     Tree  = ἐπειράσθησαν [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd]
     Morph = ἐπειράσθησαν, [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd][002c]
-34.1: 650010130091
+56.1: 610010170091
+    Tree  = S
+    Morph = noun
+57.1: 650010120131
+    Tree  = P
+    Morph = noun
+58.1: 650010130091
     Tree  = πλανῆται [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9]
     Morph = πλανῆται, [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9][002c]
-35.1: 660020260171
+59.1: 660020260171
     Tree  = ἐθνῶν… [1f10][03b8][03bd][1ff6][03bd][2026]
     Morph = ἐθνῶν... [1f10][03b8][03bd][1ff6][03bd][002e][002e][002e]
-36.1: 660130100051
+60.1: 660130100051
+    Tree  = prep
+    Morph = verb
+60.2: 660130100051
     Tree  = εἰς [03b5][1f30][03c2]
     Morph = ὑπάγει, [1f51][03c0][03ac][03b3][03b5][03b9][002c]
-37.1: 660130100061
+61.1: 660130100061
+    Tree  = noun
+    Morph = conj
+61.2: 660130100061
     Tree  = αἰχμαλωσίαν [03b1][1f30][03c7][03bc][03b1][03bb][03c9][03c3][03af][03b1][03bd]
     Morph = εἴ [03b5][1f34]
-38.1: 660170130091
+62.1: 660170130091
+    Tree  = noun
+    Morph = det
+62.2: 660170130091
     Tree  = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
     Morph = τὴν [03c4][1f74][03bd]
-39.1: 660170130101
+63.1: 660170130101
+    Tree  = pron
+    Morph = noun
+63.2: 660170130101
     Tree  = αὐτῶν [03b1][1f50][03c4][1ff6][03bd]
     Morph = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
-40.1: 660170130121
+64.1: 660170130121
+    Tree  = noun
+    Morph = det
+64.2: 660170130121
     Tree  = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
     Morph = τῷ [03c4][1ff7]
-41.1: 660170130131
+65.1: 660170130131
+    Tree  = verb
+    Morph = noun
+65.2: 660170130131
     Tree  = διδόασιν. [03b4][03b9][03b4][03cc][03b1][03c3][03b9][03bd][002e]
     Morph = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
-42.1: 660180020261
+66.1: 660180020261
     Tree  = μεμισημένου, [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][002c]
     Morph = μεμισημένου; [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][003b]
-43.1: 660180070201
+67.1: 660180070201
     Tree  = βασίλισσα… [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][2026]
     Morph = βασίλισσα... [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][002e][002e][002e]
-44.1: 660220210071
+68.1: 660200120051
+    Tree  = conj
+    Morph = adv
+69.1: 660220210071
+    Tree  = noun
+    Morph = det
+69.2: 660220210071
     Tree  = ἁγίων. [1f01][03b3][03af][03c9][03bd][002e]
     Morph = τῶν [03c4][1ff6][03bd]
