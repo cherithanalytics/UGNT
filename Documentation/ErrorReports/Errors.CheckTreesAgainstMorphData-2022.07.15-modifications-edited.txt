@@ -1,0 +1,1287 @@
+﻿The following are errors discovered when comparing the tree terminal nodes with the morphId and Unicode data in ugnt.normalized.text.txt
+They do not contain any comparison of category.
+
+
+Error: Unicode mismatch for 400090180081 in verse 40009018
+    Tree  = προσελθὼν [03c0][03c1][03bf][03c3][03b5][03bb][03b8][1f7c][03bd]
+    Morph = προσελθὼν, [03c0][03c1][03bf][03c3][03b5][03bb][03b8][1f7c][03bd][002c]
+Modification:	changed προσελθὼν -> verb Unicode to "προσελθὼν,"
+
+
+Error: Unicode mismatch for 400100330031 in verse 40010033
+    Tree  = ἄν [1f04][03bd]
+    Morph = ἂν [1f02][03bd]
+Modification:	Copy and pasted Unicode from text to tree Unicode.
+
+
+Error: Fewer terminal nodes than morph data in 40011015 (4-5)
+Comment: tree is missing 400110150051 ἀκουέτω..
+Modifications:	deleted "ἀκούειν," --> V(0) [->] CL(0) -> Verse, changed English to "to hear,"
+Modifications:	created [CL(1) -> ADV(0)], connected CL(2) to ADV(0) where "ἔχων ὦτα" --> CL(2)
+Modifications:	created [ἀκουέτω. -> verb -> vp -> V(1)], English to "hear"
+Modifications:	connected CL(0) to V(1)
+Modifications:	changed ὦτα -> noun English from "ears," to "ears"
+Comment: CHECK TREE
+
+
+Error: Fewer terminal nodes than morph data in 40015015 (9-10)
+Error: Cat mismatch for 400150150101 in verse 40015015
+    Tree  = O
+    Morph = noun
+Comment: tree is missing the 400150150091 τὴν (the) -> det, and missing proper terminal node for παραβολήν.
+Modifications:	changed [παραβολήν. -> O] -> CL(0) to [παραβολήν. -> noun] -> CL, English from "this ~ parable." to "parable."
+Modifications:	changed [παραβολήν. -> noun] -> CL to [παραβολήν. -> noun -> np(0) -> np(1) -> O] -> CL
+Modifications:	created [τὴν -> det ->] np(1), English to "the"
+Comment: CHECK TREE
+
+
+Error: More terminal nodes than morph data in 40016002 (13-5)
+Error: Missing morph 400160020061 in morphData
+Error: Missing morph 400160020071 in morphData
+Error: Missing morph 400160020081 in morphData
+Error: Missing morph 400160020091 in morphData
+Error: Missing morph 400160020111 in morphData
+Error: Missing morph 400160020101 in morphData
+Error: Missing morph 400160020121 in morphData
+Error: Missing morph 400160020131 in morphData
+Comment: tree has extra phrase "ὀψίας γενομένης λέγετε εὐδία πυρράζει γὰρ ὁ οὐρανός" -> CL
+Modifications:	deleted "ὀψίας γενομένης λέγετε εὐδία πυρράζει γὰρ ὁ οὐρανός" -> CL(0) -> CL(1) ->] CL(2) -> Verse, connected CL(2) to CL(3) where "ὁ ἀποκριθεὶς εἶπεν αὐτοῖς," -> CL(3)
+
+
+Error: Empty morphId in verse 40017010 in the tree
+Error: morphId 400170100061 is missing in verse 40017010 in the tree
+Comment: 400170100061 αὐτοῦ -> pron missing a morphId
+Modifications:	added αὐτοῦ -> pron morphId 400170100061
+
+
+Error: Non-digits in morphId '
+400180070091' in verse 40018007 in the tree
+Modifications:	deleted field/value and recreated morphId 400180070091
+
+Error: Fewer terminal nodes than morph data in 40018022 (11-13)
+Error: morphId 400180220121 is missing in verse 40018022 in the tree
+Error: morphId 400180220131 is missing in verse 40018022 in the tree
+Comment: missing 400180220121 ἑβδομηκοντάκις (seventy times) -> adv and 400180220131 ἑπτά! (seven) -> noun
+Modifications:	created [ἑπτά! -> noun -> np(0) -> np(1)], connected pp to np(1) where "ἕως" --> pp
+Modificaitons:	created [ἑβδομηκοντάκις -> adv -> advp ->] np(1)
+Comment: CHECK TREE
+
+Error: Unicode mismatch for 400180260081 in verse 40018026
+    Tree  = Κύριε [039a][03cd][03c1][03b9][03b5]
+    Morph = Κύριε, [039a][03cd][03c1][03b9][03b5][002c]
+Modifications:	changed Κύριε -> noun Unicode to "Κύριε,", English to "Lord,"
+
+
+Error: Fewer terminal nodes than morph data in 40019009 (17-22)
+Error: morphId 400190090181 is missing in verse 40019009 in the tree
+Error: morphId 400190090191 is missing in verse 40019009 in the tree
+Error: morphId 400190090201 is missing in verse 40019009 in the tree
+Error: morphId 400190090211 is missing in verse 40019009 in the tree
+Error: morphId 400190090221 is missing in verse 40019009 in the tree
+Comment: missing "καὶ ὁ ἀπολελυμένην γαμήσας μοιχᾶται." at the end of the verse.
+Addition:	400190090181	καὶ "and" -> conj (coordinating)
+Addition:	400190090191	ὁ "the (man)" -> pron
+Addition:	400190090201	ἀπολελυμένην "having set free" -> verb
+Addition:	400190090211	γαμήσας "marrying" -> verb
+Addition:	400190090221	μοιχᾶται. "commits adultery" -> verb
+Comment: I will follow the basic structure of the preceding CL since it seems parallel in meaning.
+Modifications:	created [καὶ -> conj -> CL(0)], inserted CL(0) between CL(1) and CL(2) where "ἂν ἀπολύσῃ τὴν γυναῖκα αὐτοῦ μὴ ἐπὶ πορνείᾳ, καὶ γαμήσῃ ἄλλην, μοιχᾶται;" --> CL(2)
+Modifications:	created [μοιχᾶται. -> verb -> vp -> V -> CL(3) ->] CL(0)
+Modifications:	created [γαμήσας -> verb -> vp -> V -> CL(4) -> np -> S ->] CL(3), English to "marrying [another woman]"
+Modifications:	created [ὁ -> pron -> np -> S ->] CL(3), English to "the (man)"
+Modifications:	created [ἀπολελυμένην -> verb -> vp -> ADV ->] CL(3), English to "(wife) having been set free"
+Comment: CHECK TREE
+
+Error: morphId 400190290141 appears more than once in verse 40019029 in the tree
+Error: morphId 400190290161 is missing in verse 40019029 in the tree
+Modification:	changed the second occurance of 400190290141 (ἢ -> conj) to 400190290161
+
+
+Error: Empty morphId in verse 40023019 in the tree
+Error: morphId 400230190021 is missing in verse 40023019 in the tree
+Comment: καὶ -> conj did not have the attribute morphId
+Modifications:	added morphId 400230190021 to καὶ -> conj
+
+Error: Cat mismatch for 400230260141 in verse 40023026
+    Tree  = conj
+    Morph = adv
+Error: Cat mismatch for 400230260151 in verse 40023026
+    Tree  = det
+    Morph = pron
+Error: Cat mismatch for 400230260181 in verse 40023026
+    Tree  = adj
+    Morph = noun
+Comment: These changes were not flagged in catDiff.tsv
+Modifications:	changed [καὶ -> conj] -> advp to [καὶ -> adv] -> advp
+Modifications:	changed [τὸ -> det] -> np to [τὸ -> pron] -> np
+Modifications:	changed [καθαρόν. -> adj -> adjp] -> P to [καθαρόν. -> noun -> np] -> P
+	
+	
+Error: More terminal nodes than morph data in 40025006 (12-11)
+Error: Missing morph 400250060121 in morphData
+Comment: tree has the extra word 400250060121 αὐτοῦ. -> pron
+Modifications:	deleted [αὐτοῦ. -> pron -> np(0) -> np(1) ->] np(2), connected np(2) to np(3) where {np(3) np(0) -> np(1)}
+Modifications:	changed ἀπάντησιν. -> noun English from "meet" to "meet [him]"
+
+Error: Fewer terminal nodes than morph data in 40025016 (12-14)
+Error: morphId 400250160131 is missing in verse 40025016 in the tree
+Error: morphId 400250160141 is missing in verse 40025016 in the tree
+Comment: missing "πέντε τάλαντα." at the end of the verse
+Addition:	400250160131	πέντε "five" -> det
+Addition:	400250160141	τάλαντα. "talents" -> noun
+Modifications:	changed ἄλλα -> [det -> adjp -> np(0)] -> O to ἄλλα -> [det -> np(0)] -> O, English from "five ~ others" to "another"
+Modifications:	created [τάλαντα. -> noun -> np -> np(1) ->] np(0)
+Modifications:	created [πέντε -> det ->] np(1)
+Comment: CHECK TREE
+
+
+Error: Unicode mismatch for 400270460121 in verse 40027046
+    Tree  = Ἐλωῒ [1f18][03bb][03c9][1fd2]
+    Morph = Ἐλωῒ, [1f18][03bb][03c9][1fd2][002c]
+Error: Unicode mismatch for 400270460131 in verse 40027046
+    Tree  = Ἐλωῒ [1f18][03bb][03c9][1fd2]
+    Morph = Ἐλωῒ, [1f18][03bb][03c9][1fd2][002c]
+Modifications:	changed 400270460121 Ἐλωῒ -> ptcl Unicode to "Ἐλωῒ,"
+Modifications:	changed 400270460131 Ἐλωῒ -> ptcl Unicode to "Ἐλωῒ,"
+	
+	
+Error: morphId 410050270021 appears more than once in verse 41005027 in the tree
+Error: Unicode mismatch for 410050270021 in verse 41005027
+    Tree  = περὶ [03c0][03b5][03c1][1f76]
+    Morph = τὰ [03c4][1f70]
+Error: Cat mismatch for 410050270021 in verse 41005027
+    Tree  = prep
+    Morph = pron
+Error: morphId 410050270021 appears more than once in verse 41005027 in the tree
+Comment: περὶ -> prep has the wrong morphId of 41005027002
+Error: Unicode mismatch for 410050270021 in verse 41005027
+    Tree  = τοῦ [03c4][03bf][1fe6]
+    Morph = τὰ [03c4][1f70]
+Error: Cat mismatch for 410050270021 in verse 41005027
+    Tree  = det
+    Morph = pron
+Comment: τοῦ -> det has the wrong morphId of 410050270021
+Error: morphId 410050270031 is missing in verse 41005027 in the tree
+Error: morphId 410050270041 is missing in verse 41005027 in the tree
+Modifications:	changed περὶ -> prep morphId from 41005027002 to 410050270031
+Modifications:	changed τοῦ -> det morphId from 410050270021 to 410050270041
+
+
+Error: Fewer terminal nodes than morph data in 41006007 (17-18)
+Error: Cat mismatch for 410060070091 in verse 41006007
+    Tree  = ADV
+    Morph = noun
+Comment: ADV is not a proper lexical Cat
+Error: morphId 410060070101 is missing in verse 41006007 in the tree
+Addition:	δύο, "two" -> noun
+Modifications:	changed 410060070091 [δύο -> ADV] to [δύο -> noun -> np -> np(0) -> ADV]
+Modifications:	created [δύο, -> noun -> np ->] np(0)
+Comment: CHECK TREE
+
+
+Error: Empty morphId in verse 41006016 in the tree
+Error: morphId 410060160061 is missing in verse 41006016 in the tree
+Comment: ὅτι -> conj is missing a morphId attribute
+Modifications:	added morphId 410060160061 to ὅτι -> conj
+
+
+Error: More terminal nodes than morph data in 41007004 (23-21)
+Error: Missing morph 410070040221 in morphData
+Error: Missing morph 410070040231 in morphData
+Comment: tree has extra "[καὶ κλινῶν]" at the end of the verse
+Modifications:	deleted [καὶ -> conj ->] np(0)
+Modifications:	deleted [κλινῶν -> noun -> np ->] np(0)
+
+
+Error: morphId 410070240011 appears more than once in verse 41007024 in the tree
+Error: Unicode mismatch for 410070240011 in verse 41007024
+    Tree  = καὶ [03ba][03b1][1f76]
+    Morph = ἐκεῖθεν [1f10][03ba][03b5][1fd6][03b8][03b5][03bd]
+Error: Cat mismatch for 410070240011 in verse 41007024
+    Tree  = conj
+    Morph = adv
+Error: morphId 410070240111 is missing in verse 41007024 in the tree
+Comment: 410070240011 καὶ -> conj has the wrong morphId, should be 410070240111
+Modifications:	changed καὶ -> conj morphId from 410070240011 to 410070240111
+
+
+Error: Fewer terminal nodes than morph data in 41009029 (14-16)
+Error: morphId 410090290151 is missing in verse 41009029 in the tree
+Error: morphId 410090290161 is missing in verse 41009029 in the tree
+Comment: tree is missing "καὶ νηστείᾳ." at the end of the verse
+Addition:	410090290151	καὶ "and" -> conj
+Addtions:	410090290161	νηστείᾳ. "fasting" -> noun
+Modifications:	changed [προσευχῇ -> noun -> np(0) -> pp] to [προσευχῇ -> noun -> np(0) -> np(1) -> pp]
+Modifications:	created [καὶ -> conj ->] np(1)
+Modifications:	created [νηστείᾳ. -> noun -> np ->] np(1)
+
+
+Error: More terminal nodes than morph data in 41010007 (16-10)
+Error: Missing morph 410100070111 in morphData
+Error: Missing morph 410100070121 in morphData
+Error: Missing morph 410100070131 in morphData
+Error: Missing morph 410100070141 in morphData
+Error: Missing morph 410100070151 in morphData
+Error: Missing morph 410100070161 in morphData
+Comment: tree has extra "καὶ προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ" at the end of the verse
+Modifications:	deleted [καὶ -> conj ->] CL(0)
+Modifications:	deleted ["προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ" -> CL(1) -> CL(0) ->] Verse, connected Verse to CL(2) where {CL(2) conj CL(1) -> CL(0)}
+
+
+Error: Empty morphId in verse 41013033 in the tree
+Error: morphId 410130330041 is missing in verse 41013033 in the tree
+Comment: προσεύχεσθε, -> verb has the attribute morphId misspelled as "mrophId", also the Unicode is missing the punctuation
+Modifications:	changed προσεύχεσθε, -> verb morphId attribute name from "mrophId" to "morphId", Unicode to "προσεύχεσθε,"
+
+
+Error: More terminal nodes than morph data in 41014068 (20-17)
+Error: Missing morph 410140680181 in morphData
+Error: Missing morph 410140680191 in morphData
+Error: Missing morph 410140680201 in morphData
+Comment: tree has extra "καὶ ἀλέκτωρ ἐφώνησεν" at the end of the verse
+Modifications:	deleted [καὶ -> conj ->]  CL(0)
+Modifications:	deleted ["ἀλέκτωρ ἐφώνησεν" --> CL(1) -> CL(0) ->] CL(2), connected CL(2) to CL(3) where {CL(3) conj CL(1) -> CL(0)}
+
+
+Error: Cat mismatch for 410160010111 in verse 41016001
+    Tree  = det
+    Morph = pron
+Modifications:	changed ἡ -> [det -> np] -> np(0) to ἡ -> [pron] -> np(0)
+Comment: There is a rule {pron np -> np} but there are comments that make it sound this rule is very restricted or may not be needed.
+Comment: So I left it as {np np -> np} even though the promotion rule {pron -> np} does not include the lemma ὁ
+Comment: I may want to CHECK all examples of {pron np -> np} in the trees since I most likely used it in other places where it is not appropriate.
+Comment: CHECK TREE 
+	
+	
+Error: More terminal nodes than morph data in 41016008 (52-18)
+Error: Missing morph 410160080201 in morphData
+Error: Missing morph 410160080191 in morphData
+Error: Missing morph 410160080211 in morphData
+Error: Missing morph 410160080221 in morphData
+Error: Missing morph 410160080231 in morphData
+Error: Missing morph 410160080241 in morphData
+Error: Missing morph 410160080251 in morphData
+Error: Missing morph 410160080261 in morphData
+Error: Missing morph 410160080271 in morphData
+Error: Missing morph 410160080281 in morphData
+Error: Missing morph 410160080301 in morphData
+Error: Missing morph 410160080291 in morphData
+Error: Missing morph 410160080311 in morphData
+Error: Missing morph 410160080321 in morphData
+Error: Missing morph 410160080331 in morphData
+Error: Missing morph 410160080341 in morphData
+Error: Missing morph 410160080351 in morphData
+Error: Missing morph 410160080361 in morphData
+Error: Missing morph 410160080371 in morphData
+Error: Missing morph 410160080381 in morphData
+Error: Missing morph 410160080391 in morphData
+Error: Missing morph 410160080401 in morphData
+Error: Missing morph 410160080411 in morphData
+Error: Missing morph 410160080421 in morphData
+Error: Missing morph 410160080431 in morphData
+Error: Missing morph 410160080441 in morphData
+Error: Missing morph 410160080451 in morphData
+Error: Missing morph 410160080461 in morphData
+Error: Missing morph 410160080471 in morphData
+Error: Missing morph 410160080481 in morphData
+Error: Missing morph 410160080491 in morphData
+Error: Missing morph 410160080501 in morphData
+Error: Missing morph 410160080511 in morphData
+Error: Missing morph 410160080521 in morphData
+Comment: tree has extra "Πάντα δὲ τὰ παρηγγελμένα τοῖς περὶ τὸν Πέτρον συντόμως ἐξήγγειλαν. Μετὰ δὲ ταῦτα καὶ αὐτὸς ὁ Ἰησοῦς ἀπὸ ἀνατολῆς καὶ ἄχρι δύσεως ἐξαπέστειλεν δι’ αὐτῶν τὸ ἱερὸν καὶ ἄφθαρτον κήρυγμα τῆς αἰωνίου σωτηρίας ἀμήν" at the end of the verse
+Modifications:	deleted ["Πάντα δὲ τὰ παρηγγελμένα τοῖς περὶ τὸν Πέτρον συντόμως ἐξήγγειλαν." --> CL ->] Verse
+Modifications:	deleted ["Μετὰ δὲ ταῦτα καὶ αὐτὸς ὁ Ἰησοῦς ἀπὸ ἀνατολῆς καὶ ἄχρι δύσεως ἐξαπέστειλεν δι’ αὐτῶν τὸ ἱερὸν καὶ ἄφθαρτον κήρυγμα τῆς αἰωνίου σωτηρίας ἀμήν" -> CL ->] Verse
+
+Error: Empty morphId in verse 41016014 in the tree
+Error: morphId 410160140211 is missing in verse 41016014 in the tree
+Comment: νεκρῶν -> noun morphId attribute name is misspelled as "mrophId"
+Modifications:	changed νεκρῶν -> noun morphId attribute name from "mrophId" to "morphId"
+
+Error: Missing morph 410160180411 in morphData
+Error: morphId 410160180041 is missing in verse 41016018 in the tree
+Comment: θανάσιμόν -> adj has the wrong morphId 41016018041
+Modifications:	changed θανάσιμόν -> adj morphId from 41016018041 to 410160180041
+
+Error: Fewer terminal nodes than morph data in 41016020 (16-17)
+Error: morphId 410160200171 is missing in verse 41016020 in the tree
+Comment: tree is missing "Ἀμήν]" at the end of the verse
+Addition:	410160200171 Ἀμήν] "Amen" -> intj
+ERROR: The Unicode for 410160200171 is "Ἀμήν]" but there is no matching "[" before it. I think it should be at the beginning of 41016009 (as it is in the NASB).
+ERROR: Actually, searching through ugnt.normalized.text.txt, there are no occurances of the character "[" at all, but 20 occurances of "]".
+Comment: For now, I'll leave the Unicode as it is since there are 19 other places that it will have to be fixed. We can do that later.
+ERROR: because of the "]", it got analyzed as "pos:particle;type:foreign" where as other occurances of are analyzed as "pos:interjection;type:exclamation"
+Comment: I will chose to use the Cat ptcl since it will be consistent with the current morph data, even though the other occurances of "amen" are intj.
+Comment: We will have to remember to decide on this situation and correct the morph data if need be and then revise the tree. This will avoid having it flagged as inconsistent with the morph data.
+Q: Since we don't have control over the analysis, should we just leave the Cat as ptcl?
+Comment: If we use it, it will be consistent with the rest of the analyses, but it will be flagged as inconsistent with the morph data, unless we change the morph data ourselves.
+Comment: I am also assuming the "Amen" is for much more than just the preceding clause and probably even more than just this verse.
+Modifications:	created ["Ἀμήν]" -> ptcl -> intj -> CL -> CL(0)], inserted CL(0) between Verse and CL(1) where CL(1) spans all of the preceding words before "Ἀμήν]"
+Comment: CHECK TREE TEXT ANALYSIS
+
+
+
+
+Error: Unicode mismatch for 420030330041 in verse 42003033
+    Tree  = Ἀδμεὶν [1f08][03b4][03bc][03b5][1f76][03bd]
+    Morph = Ἀδμεὶν, [1f08][03b4][03bc][03b5][1f76][03bd][002c]
+Error: Unicode mismatch for 420030330061 in verse 42003033
+    Tree  = Ἀρνεὶ [1f08][03c1][03bd][03b5][1f76]
+    Morph = Ἀρνεὶ, [1f08][03c1][03bd][03b5][1f76][002c]
+Modifications:	changed Ἀδμεὶν -> noun Unicode to "Ἀδμεὶν,"
+Modifications:	changed Ἀρνεὶ -> noun Unicode to "Ἀρνεὶ,"
+	
+	
+Error: Cat mismatch for 420110140051 in verse 42011014
+    Tree  = adj
+    Morph = noun
+Error: Cat mismatch for 420110140131 in verse 42011014
+    Tree  = adj
+    Morph = noun
+Modifications:	changed 420110140051 κωφόν; -> [adj -> adjp] -> np(0) to κωφόν; -> [noun -> np] -> np(0)
+Modifications:	changed 420110140131 κωφός. -> [adj -> adjp] -> np(1) to κωφός. -> [noun -> np] -> np(1)
+	
+	
+Error: More terminal nodes than morph data in 42013007 (29-28)
+Error: Unicode mismatch for 420130070221 in verse 42013007
+    Tree  = [οὖν] [005b][03bf][1f56][03bd][005d]
+    Morph = αὐτήν, [03b1][1f50][03c4][03ae][03bd][002c]
+Error: Cat mismatch for 420130070221 in verse 42013007
+    Tree  = conj
+    Morph = pron
+Error: morphId 420130070221 appears more than once in verse 42013007 in the tree
+Comment: the tree has 42013007022 "[οὖν]" -> conj, but "οὖν" is not in the text.
+Modifications:	deleted ["[οὖν]" -> conj -> CL(0) ->] Verse, connected Verse to CL(1) where {conj CL(1) -> CL(0)}
+
+
+Error: Fewer terminal nodes than morph data in 42015030 (15-19)
+Error: morphId 420150300031 is missing in verse 42015030 in the tree
+Error: morphId 420150300041 is missing in verse 42015030 in the tree
+Error: morphId 420150300051 is missing in verse 42015030 in the tree
+Error: morphId 420150300061 is missing in verse 42015030 in the tree
+Comment: the tree is missing "ὁ υἱός σου οὗτος," --> np, but it existed in NA28 tree so will reconstruct the same tree structure in NA28.
+Comment: the tree is already missing this phrase in the auto-generated UGNT tree that is the starting point for the manual edits.
+Addition:	420150300031	ὁ "-" -> det
+Addition:	420150300041	υἱός "son" -> noun
+Addition:	420150300051	σου "of you" -> pron
+Addition:	420150300061	οὗτος, "this" -> pron
+Modifications:	created [οὗτος, -> pron -> np -> np(0) -> np(1)], inserted np(1) between S and np(2) where "ὁ καταφαγών σου τὸν βίον μετὰ πορνῶν" --> np(2)
+Modifications:	created [υἱός -> noun -> np -> np(3) -> np(4) ->] np(0)
+Modifications:	created [σου -> pron -> np ->] np(3)
+Modifications:	created [ὁ -> det ->] np(4)
+Comment: I think "ὅτε ὁ υἱός σου οὗτος, ὁ καταφαγών σου τὸν βίον μετὰ πορνῶν ἦλθεν," --> CL should be an ADV in the following CL rather than a separate CL.
+Comment: CHECK TREE
+
+
+Error: More terminal nodes than morph data in 42017024 (25-21)
+Error: Missing morph 420170240221 in morphData
+Error: Missing morph 420170240231 in morphData
+Error: Missing morph 420170240241 in morphData
+Error: Missing morph 420170240251 in morphData
+Comment: trees have extra "ἐν τῇ ἡμέρᾳ αὐτοῦ" --> ADV at the end of the verse
+Modifications:	deleted ["ἐν τῇ ἡμέρᾳ αὐτοῦ" --> ADV ->] CL
+
+
+Error: Fewer terminal nodes than morph data in 42018021 (8-9)
+Error: morphId 420180210091 is missing in verse 42018021 in the tree
+Addition:	420180210091	μου. "my" -> pron
+Modifications:	created [μου. -> pron -> np -> np(0)], inserted np(0) between pp and np(1) where "νεότητος" --> np(1)
+Modifications:	changed ἐκ -> prep English from "from [my]" to "from"
+
+
+Error: Fewer terminal nodes than morph data in 42019027 (15-19)
+Error: morphId 420190270021 is missing in verse 42019027 in the tree
+Error: morphId 420190270031 is missing in verse 42019027 in the tree
+Error: morphId 420190270041 is missing in verse 42019027 in the tree
+Error: morphId 420190270051 is missing in verse 42019027 in the tree
+Comment: tree is missing "τοὺς ἐχθρούς μου τούτους," --> np, even though this was in NA28 as well. The auto editing of the trees must have accidentally deleted this phrase.
+Comment: I will recreate the same tree structure for this phrase as it is in the NA28 tree, though there are some differences in categories.
+Comment: This accidental deletion looks very similar to a earlier verse.
+Addition:	420190270021	τοὺς "-" -> det
+Addition:	420190270031	ἐχθρούς "enemies" -> noun
+Addition:	420190270041	μου "of me" -> pron
+Addition:	420190270051	τούτους, "these" -> pron
+Modifications:	created [τούτους, -> pron -> np -> np(0) -> np(1)], inserted np(1) between O and np(2) where "τοὺς μὴ θελήσαντάς με βασιλεῦσαι ἐπ’ αὐτοὺς," --> np(2)
+Modifications:	created [τοὺς -> det -> np(3) ->] np(0)
+Modifications:	created [ἐχθρούς -> noun -> np -> np(4) ->] np(3)
+Modifications:	created [μου -> pron -> np ->] np(4)
+
+
+Error: Fewer terminal nodes than morph data in 42020017 (19-21)
+Error: Cat mismatch for 420200170101 in verse 42020017
+    Tree  = S
+    Morph = verb
+Error: morphId 420200170091 is missing in verse 42020017 in the tree
+Error: morphId 420200170111 is missing in verse 42020017 in the tree
+Comment: the terminal node for 420200170101 is not correct and much of the tree above it was already deleted in the auto starting tree.
+Comment: a word before it, and a word after it are missing. These were in the original NA28 tree.
+Comment: I will follow the structure in the original NA28 tree except there is also a category change (det to pron), but this requires a change since we can no longer use the rule {det CL -> np}
+Addition:	420200170091	τὸ "this" -> pron
+Addition:	420200170111	τοῦτο, "*" -> pron
+Modifications:	changed [γεγραμμένον -> ] S -> CL(0) to [γεγραμμένον -> verb -> vp -> V -> CL -> np -> np(0) -> np(1) ->] S -> CL(0)
+Modifications:	created [τοῦτο, -> pron -> np ->] np(1)
+Modifications:	created [τὸ -> pron -> np ->] np(0)
+Comment: I am not sure if the original NA28 structure is correct. 
+Comment: CHECK TREE
+
+Error: morphId 420200420091 appears more than once in verse 42020042 in the tree
+Error: Unicode mismatch for 420200420091 in verse 42020042
+    Tree  = Κύριος [039a][03cd][03c1][03b9][03bf][03c2]
+    Morph = ὁ [1f41]
+Error: Cat mismatch for 420200420091 in verse 42020042
+    Tree  = noun
+    Morph = det
+Error: morphId 420200420091 appears more than once in verse 42020042 in the tree
+Error: Unicode mismatch for 420200420091 in verse 42020042
+    Tree  = τῷ [03c4][1ff7]
+    Morph = ὁ [1f41]
+Error: morphId 420200420111 is missing in verse 42020042 in the tree
+Error: morphId 420200420121 is missing in verse 42020042 in the tree
+Comment: Κύριος -> noun had the wrong morphId of 42020042009, should be 420200420101
+Comment: τῷ -> det had the wrong morphId of 420200420091, should be 420200420111
+Comment: Κύριος -> noun had the wrong morphId of 420200420101, should be 420200420121
+Comment: I believe this was my error when updating the tree. I forgot to also update all the morphIds after the word that was added.
+Modifications:	changed Κύριος -> noun morphId from 42020042009 to 420200420101
+Modifications:	changed τῷ -> det morphId from 420200420091 to 420200420111
+Modifications:	changed Κύριος -> noun morphId from 420200420101 to 420200420121, Unicode to "Κυρίῳ"
+
+
+Error: Cat mismatch for 420220380081 in verse 42022038
+    Tree  = P
+    Morph = det
+Comment: The terminal node for 420220380081 is wrong. The auto start tree deleted too much during the change of category from num to det.
+Modifications:	changed [δύο. ->] P to [δύο. -> det -> np ->] P
+
+	
+Error: Fewer terminal nodes than morph data in 42024014 (6-10)
+Error: morphId 420240140071 is missing in verse 42024014 in the tree
+Error: morphId 420240140081 is missing in verse 42024014 in the tree
+Error: morphId 420240140091 is missing in verse 42024014 in the tree
+Error: morphId 420240140101 is missing in verse 42024014 in the tree
+Comment: tree is missing "πάντων τῶν συμβεβηκότων τούτων." --> np, which is also missing in the auto start tree, but it is in the NA28 tree
+Comment: I will use the same basic NA28 structure, though there are some category changes.
+Comment: But because one of the changes is from det to pron, we cannot use {det CL -> np} rule anymore and instead must first make CL -> np and pron -> np and then join the two np's.
+Addition:	420240140071	πάντων "all" -> det
+Addition:	420240140081	τῶν "-" -> pron
+Addition:	420240140091	συμβεβηκότων "things having happened" -> verb
+Addition:	420240140101	τούτων. "these" -> pron
+Modifications:	created [τούτων. -> pron -> np -> np(0) ->] pp
+Modifications:	created [πάντων -> det -> np(1) ->] np(0)
+Modifications:	created [τῶν -> pron -> np -> np(2) ->] np(1)
+Modifications:	created [συμβεβηκότων -> verb -> vp -> V -> CL -> np ->] np(2)
+Comment: I'm not sure if the original tree structure is correct. It seems that "all" should have a wider scope than "these".
+Comment: CHECK TREE
+
+Error: Fewer terminal nodes than morph data in 42024045 (9-12)
+Error: morphId 420240450101 is missing in verse 42024045 in the tree
+Error: morphId 420240450111 is missing in verse 42024045 in the tree
+Error: morphId 420240450121 is missing in verse 42024045 in the tree
+Comment: tree is missing "καὶ εἶπεν αὐτοῖς," at the end of the verse, and they are not in NA28. The diff didn't catch these additions.
+Addition:	420240450101	καὶ	"and" -> conj (coordinating)
+Addition:	420240450111	εἶπεν "(he) said" -> verb
+Addition:	420240450121	αὐτοῖς, "(to) them" -> pron
+Modifications:	created [καὶ -> conj -> CL(0)], inserted CL(0) between Verse and CL(1) where CL(1) spans the verse before this word
+Modifications:	created [εἶπεν -> verb -> vp -> V -> CL(2) ->] CL(0)
+Modifications:	created [αὐτοῖς, -> pron -> np -> IO ->] CL(2)
+Modifications:	changed Γραφάς. -> noun English from "scriptures" to "Scriptures"
+Comment: CHECK TREE
+
+
+Error: More terminal nodes than morph data in 43008002 (18-14)
+Error: Missing morph 430080020151 in morphData
+Error: Missing morph 430080020161 in morphData
+Error: Missing morph 430080020171 in morphData
+Error: Missing morph 430080020181 in morphData
+Comment: tree has an extra "καὶ καθίσας ἐδίδασκεν αὐτούς" at the end of the verse
+Comment: this was not identified in deletion.tsv
+Modifications:	deleted [καὶ -> conj ->] CL(0)
+Modifications:	deleted ["καθίσας ἐδίδασκεν αὐτούς" --> CL ->] CL(0)
+
+Error: Unicode mismatch for 430080040131 in verse 43008004
+    Tree  = οἱ [03bf][1f31]
+    Morph = ἡ [1f21]
+Comment: the tree has the wrong Unicode but Cat, StrongNumber, and Lemma are correct.
+Comment: Auto correction had the wrong analysis, and it changed the tree to "οἱ", which it should not have.
+Comment: I missed this when correcting the tree.
+Modifications:	changed οἱ -> det Unicode to "ἡ"
+	
+Error: Unicode mismatch for 430080050011 in verse 43008005
+    Tree  = Μωϋσῆς [039c][03c9][03cb][03c3][1fc6][03c2]
+    Morph = Μωσῆς [039c][03c9][03c3][1fc6][03c2]
+Comment: I should have made this manual correction, but I didn't (or did, but didn't properly save it).
+Modifications:	changed Μωϋσῆς -> noun Unicode to "Μωσῆς"
+	
+Error: Unicode mismatch for 430080080061 in verse 43008008
+    Tree  = ἔγραφεν [1f14][03b3][03c1][03b1][03c6][03b5][03bd]
+    Morph = κατέγραφεν [03ba][03b1][03c4][03ad][03b3][03c1][03b1][03c6][03b5][03bd]
+Error: Unicode mismatch for 430080080081 in verse 43008008
+    Tree  = τῷ [03c4][1ff7]
+    Morph = τὴν [03c4][1f74][03bd]
+Comment: I should have made this manual correction, but I didn't (or did, but didn't properly save it)
+Modifications:	changed ἔγραφεν -> verb Unicode to "κατέγραφεν"
+Comment: Auto correct had the wrong analysis and changed the Unicode to "τῷ" and I didn't catch it. Original NA28 is also "τὴν" 
+Modifications:	changed τῷ -> det Unicode to "τὴν"
+	
+Error: Unicode mismatch for 430080090021 in verse 43008009
+    Tree  = δὲ [03b4][1f72]
+    Morph = δέ [03b4][03ad]
+Comment: I created a different diff analysis, but overlooked this slight difference in Unicode
+Modifications:	changed δὲ -> conj Unicode to "δέ"
+	
+Error: Unicode mismatch for 430080110061 in verse 43008011
+    Tree  = εἶπεν [03b5][1f36][03c0][03b5][03bd]
+    Morph = ὁ [1f41]
+Error: Cat mismatch for 430080110061 in verse 43008011
+    Tree  = verb
+    Morph = det
+Error: morphId 430080110061 appears more than once in verse 43008011 in the tree
+Error: morphId 430080110081 is missing in verse 43008011 in the tree
+Comment: εἶπεν -> verb has 43008011006  but it should be 430080110081
+Comment: I had a different diff analysis but the auto one changed the morphId for this word but I must not have noticed it.
+Modifications:	changed εἶπεν -> verb morphId from 43008011006 to 430080110081
+
+
+Error: More terminal nodes than morph data in 43014026 (27-26)
+Error: Missing morph 430140260271 in morphData
+Comment: tree has an extra "ἐγώ" --> S at the end of the verse.
+Modifications:	deleted ["ἐγώ" --> S ->] CL
+
+Error: Missing morph 430190050021 in morphData
+Error: Unicode mismatch for 430190040201 in verse 43019004
+    Tree  = εὑρίσκω. [03b5][1f51][03c1][03af][03c3][03ba][03c9][002e]
+    Morph = οὐχ [03bf][1f50][03c7]
+Error: Cat mismatch for 430190040201 in verse 43019004
+    Tree  = verb
+    Morph = adv
+Error: morphId 430190040211 is missing in verse 43019004 in the tree
+Comment: Had wrong morphId for 430190050021 οὖν -> adv, should be 430190040201, also Unicode should be "οὐχ"
+Comment: Had wrong morphId for 43019004020 εὑρίσκω. -> verb, should be 430190040211
+Comment: This is a tree I manually corrected, and I didn't check the morphIds or Unicode but probably focused just on the tree structure.
+Modifications:	changed οὖν -> adv morphId from 430190050021 to 430190040201, Unicode to "οὐχ"
+Modifications:	changed εὑρίσκω. -> verb morphId from 43019004020 to 430190040211
+
+Error: Fewer terminal nodes than morph data in 43019018 (14-15)
+Error: morphId 430190180081 is missing in verse 43019018 in the tree
+Comment: δύο, -> det is missing from the tree. I think it got deleted when auto changing the category from num to det
+Comment: This verse was not flagged in catDiff or any of the other diffs.
+Comment: The word is in NA28 and so I will use the same tree structure just slightly different nodes because of two category changes.
+Modifications:	created [δύο, -> det -> np -> np(0)], inserted np(0) between O and np(1) where "ἄλλους" --> np(1)
+Comment: CHECK TREE
+
+
+Error: Unicode mismatch for 430210180241 in verse 43021018
+    Tree  = σε [03c3][03b5]
+    Morph = σε, [03c3][03b5][002c]
+Modifications:	changed σε -> pron Unicode to "σε,"
+
+
+Error: Cat mismatch for 440010150211 in verse 44001015
+    Tree  = num
+    Morph = det
+Error: Cat mismatch for 440010150221 in verse 44001015
+    Tree  = num
+    Morph = det
+Comment: This was missing from the starting tree and I recreated from NA28. But I did not check the category and num to det is one of the category changes throughout.
+Modifications:	changed ἑκατὸν -> [num -> nump -> nump] -> np(0) to ἑκατὸν -> [det -> np] -> np(0)
+Modifications:	changed εἴκοσι, -> [num -> nump -> nump] -> np(0) to ἑκατὸν -> [det -> np] -> np(0)
+
+
+Error: Fewer terminal nodes than morph data in 44002010 (5-17)
+Error: Missing morph 440020090101 in morphData
+Error: morphId 440020100011 is missing in verse 44002010 in the tree
+Error: morphId 440020100021 is missing in verse 44002010 in the tree
+Error: morphId 440020100031 is missing in verse 44002010 in the tree
+Error: morphId 440020100041 is missing in verse 44002010 in the tree
+Error: morphId 440020100051 is missing in verse 44002010 in the tree
+Error: morphId 440020100061 is missing in verse 44002010 in the tree
+Error: morphId 440020100071 is missing in verse 44002010 in the tree
+Error: morphId 440020100081 is missing in verse 44002010 in the tree
+Error: morphId 440020100091 is missing in verse 44002010 in the tree
+Error: morphId 440020100101 is missing in verse 44002010 in the tree
+Error: morphId 440020100111 is missing in verse 44002010 in the tree
+Error: morphId 440020100121 is missing in verse 44002010 in the tree
+Error: morphId 440020100131 is missing in verse 44002010 in the tree
+Comment: the tree is missing "Φρυγίαν, τε καὶ Παμφυλίαν, Αἴγυπτον, καὶ τὰ μέρη τῆς Λιβύης τῆς κατὰ Κυρήνην," --> np at the beginning of the verse
+Comment: There is also the word "Μεσοποταμίαν," from the previous verse! How did it end up in this verse? How did it delete the 
+ERROR: The original NA28 tree has the sequence [np -> ADV -> CL -> np], which seems totally meaningless.
+Comment: Will create the missing subtree based upon NA28 but adjust based upon punctuations and changes in categories
+
+Addition:	440020100011	Φρυγίαν, "* Phrygia" -> noun
+Addition:	440020100021	τε "* both" -> adv (correlative)
+Addition:	440020100031	καὶ "and" -> conj (correlative)
+Addition:	440020100041	Παμφυλίαν, "Pamphylia," -> noun
+Addition:	440020100051	Αἴγυπτον, "Egypt," -> noun
+Addition:	440020100061	καὶ "and" -> conj (correlative)
+Addition:	440020100071	τὰ "the" -> det
+Addition:	440020100081	μέρη "regions" -> noun
+Addition:	440020100091	τῆς "-" -> det
+Addition:	440020100101	Λιβύης "(of) Libya" -> noun
+Addition:	440020100111	τῆς "-" -> pron
+Addition:	440020100121	κατὰ "toward" -> prep
+Addition:	440020100131	Κυρήνην, "Cyrene," -> noun
+Q: Why is 440020100091 a det but 440020100111 a pron?
+Modifications:	deleted [Μεσοποταμίαν, -> ADV -> CL ->] np(0)
+Modifications:	created [Φρυγίαν, -> noun -> np(1) -> np(2) ->] np(0)
+Modifications:	created [καὶ -> conj(0) ->] np(2)
+Modifications:	created [Παμφυλίαν, -> noun -> np(3) ->] np(2)
+Modifications:	created [τε -> adv -> advp ->] np(2), resulting in {advp np(1) conj(0) np(3) -> np(2)}
+Modifications:	created [Αἴγυπτον,-> noun -> np -> np(4) ->] np(0)
+Modifications:	created [καὶ -> conj ->] np(4)
+Modifications:	created [τὰ -> det -> np(5) ->] np(4)
+Modifications:	created [μέρη -> noun -> np -> np(6) ->] np(5)
+Modifications:	created [τῆς -> det -> np(7) -> np(8) ->] np(6)
+Modifications:	created [Λιβύης -> noun -> np ->] np(7)
+Modifications:	created [τῆς -> pron -> np -> np(9) ->] np(8)
+Modifications:	created [κατὰ -> prep -> pp(0) ->] np(9)
+Modifications:	created [Κυρήνην, -> noun -> np ->] pp(0)
+Modifications:	created [np(10)], inserted np(10) between np(11) and pron(0) where 440020100151 οἱ -> pron(0)
+Comment: I think the NA28 tree/analysis may not be the best. 
+Comment: Maybe "τῆς κατὰ Κυρήνην," --> np should be attached higher up so it is adjunct to "μέρη τῆς Λιβύης" --> np or even "τὰ μέρη τῆς Λιβύης" --> np rather than to "τῆς Λιβύης" --> np
+Comment: CHECK TREE
+
+
+Error: Cat mismatch for 440040220051 in verse 44004022
+    Tree  = advp
+    Morph = det
+Comment: the starting tree was incorrectly auto corrected when changing num to det
+Modifications:	changed τεσσεράκοντα -> [advp ->] adjp(0) to τεσσεράκοντα -> [det -> np ->] adjp(0)
+
+
+Error: Fewer terminal nodes than morph data in 44008022 (16-20)
+Error: morphId 440080220041 is missing in verse 44008022 in the tree
+Error: morphId 440080220051 is missing in verse 44008022 in the tree
+Error: morphId 440080220061 is missing in verse 44008022 in the tree
+Error: morphId 440080220071 is missing in verse 44008022 in the tree
+Comment: tree is missing "τῆς κακίας σου ταύτης," --> np, which is in the NA28 tree.
+Comment: Will follow the NA28 tree
+Addition:	440080220041	τῆς "-" -> det
+Addition:	440080220051	κακίας "wickedness" -> noun
+Addition:	440080220061	σου "(of) you" -> pron
+Addition:	440080220071	ταύτης, "this" -> pron
+Modifications:	created [τῆς -> det -> np(0) -> np(1) ->] pp where "ἀπὸ" --> pp
+Modifications:	created [κακίας -> noun -> np -> np(2) ->] np(0)
+Modifications:	created [σου -> pron -> np ->] np(2)
+Modifications:	created [ταύτης, -> pron -> np ->] np(1)
+
+
+Error: More terminal nodes than morph data in 44019040 (27-21)
+Error: Missing morph 440190400221 in morphData
+Error: Missing morph 440190400231 in morphData
+Error: Missing morph 440190400241 in morphData
+Error: Missing morph 440190400251 in morphData
+Error: Missing morph 440190400261 in morphData
+Error: Missing morph 440190400271 in morphData
+Comment: the tree has an extra "καὶ ταῦτα εἰπὼν ἀπέλυσεν τὴν ἐκκλησίαν" --> CL at the end of the verse
+Modifications:	deleted "καὶ ταῦτα εἰπὼν ἀπέλυσεν τὴν ἐκκλησίαν" --> CL]
+
+
+Error: Cat mismatch for 440230130041 in verse 44023013
+    Tree  = advp
+    Morph = det
+Modifications:	changed [τεσσεράκοντα -> advp -> adjp] -> P to [τεσσεράκοντα -> det -> np -> np] -> P
+Comment: CHECK TREE
+	
+Error: Cat mismatch for 440230210131 in verse 44023021
+    Tree  = advp
+    Morph = det
+Comment: why is 440230210121 πλείους -> adj but 440230130031 πλείους -> noun? It seems they could both be adj.
+Comment: even though there is a {adjp np -> adjp} rule, this current situation doesn't seem to meet the dependencies so it is better to utilize the {adjp np -> np} rule
+Modifications:	 changed τεσσεράκοντα, -> [advp -> adjp] -> np(0) to τεσσεράκοντα, -> [det -> np -> np] -> np(0)
+
+
+Error: Fewer terminal nodes than morph data in 44025006 (21-23)
+Error: Cat mismatch for 440250060081 in verse 44025006
+    Tree  = advp
+    Morph = det
+Error: morphId 440250060091 is missing in verse 44025006 in the tree
+Error: morphId 440250060101 is missing in verse 44025006 in the tree
+Comment: tree is missing "ἢ δέκα," but NA28 tree has it but the starting tree doesn't have it. It is not in deletion.tsv or addition.tsv
+Comment: I think it is related to the auto correction of changing num to det.
+Comment: As with the previous error, 440250060071 πλείους -> noun rather than adj no no clear reason.
+Comment: even though there is the {advp adjp -> adjp} rule, since the change in categories, it is best to use the {advp np -> np} rule.
+Addition:	440250060091	ἢ "or" -> conj
+Addition:	440250060101	δέκα, "ten" -> det
+Modifications:	changed πλείους -> noun -> np -> [adjp -> adjp] -> np(0) to πλείους -> noun -> np -> [np(1) -> np(2)] -> np(0)
+Modifications:	changed ὀκτὼ -> [advp] -> np(1) to ὀκτὼ -> [det -> np(3) -> np(4)] -> np(1)
+Modifications:	created [ἢ -> conj ->] np(4)
+Modifications:	created [δέκα, -> det -> np ->] np(4)
+Comment: the negation 440250060061 "οὐ" --> advp, should it be first combined with πλείους so "οὐ πλείους" --> np before it is combined with "ὀκτὼ ἢ δέκα,"?
+Comment: that is, the current tree has the reading of "not" - "more than [eight or ten]", or should it be "not more than" - "eight or ten"?
+Comment: that is, the negation seems like it should be closer to "more" since that is what it is directly negativing. Just like "less than or equal to" seems to act as a constituent.
+Comment: CHECK TREE
+
+Error: Fewer terminal nodes than morph data in 44027037 (9-11)
+Error: Cat mismatch for 440270370091 in verse 44027037
+    Tree  = P
+    Morph = noun
+Error: morphId 440270370101 is missing in verse 44027037 in the tree
+Error: morphId 440270370111 is missing in verse 44027037 in the tree
+Comment: tree is missing "ἑβδομήκοντα ἕξ." at the end of the verse. It is in the NA28 tree but not the starting tree.
+Comment: Most likely something went wrong with the auto correction to create the starting tree.
+Comment: I will follow the NA28 tree making changes because of the category changes.
+Addition:	440270370101	ἑβδομήκοντα "seventy" -> noun
+Addition:	440270370111	ἕξ. "six" -> noun
+Modifications:	changed [διακόσιαι -> P] -> CL to [διακόσιαι -> noun -> np -> np(0) -> P] -> CL, English from "two hundred and seventy six" to "two hundred"
+Modifications:	created [ἑβδομήκοντα -> noun -> np ->] np(0)
+Modifications:	created [ἕξ. -> noun -> np ->] np(0)
+Q: Normally in UGNT a number is now det instead of num, but here they are noun instead of num
+Comment: CHECK TREE
+
+Error: More terminal nodes than morph data in 44027041 (24-22)
+Error: Missing morph 440270410231 in morphData
+Error: Missing morph 440270410241 in morphData
+Comment: tree has extra "τῶν κυμάτων" --> np at the end of the verse
+Modifications:	deleted ["τῶν κυμάτων" --> np(0) -> np(1) ->] np(2), connected np(2) to np(3) where {np(3) np(0) -> np(1)}
+
+
+Error: Fewer terminal nodes than morph data in 45002019 (5-10)
+Error: Cat mismatch for 450020190041 in verse 45002019
+    Tree  = P
+    Morph = noun
+Error: morphId 450020190061 is missing in verse 45002019 in the tree
+Error: morphId 450020190071 is missing in verse 45002019 in the tree
+Error: morphId 450020190081 is missing in verse 45002019 in the tree
+Error: morphId 450020190091 is missing in verse 45002019 in the tree
+Error: morphId 450020190101 is missing in verse 45002019 in the tree
+Comment: tree is missing "τυφλῶν, φῶς τῶν ἐν σκότει," --> at the end of the verse
+Comment: the NA28 tree has these words, but not the starting tree, so auto correction deleted the subtree and also made P a lexical category
+Addition:	450020190061	τυφλῶν, "(of) blind ones" -> noun
+Addition:	450020190071	φῶς "a light" -> noun
+Addition:	450020190081	τῶν "(of) the ones" -> pron
+Addition:	450020190091	ἐν "in" -> prep
+Addition:	450020190101	σκότει, "darkness" -> noun
+Modifications:	changed ὁδηγὸν [->] P to ὁδηγὸν [-> noun -> np -> np(0) -> np(1) ->] P
+Modifications:	created [τυφλῶν, -> noun -> np ->] np(0)
+Modifications:	created [φῶς -> noun -> np -> np(1) ->] np(0)
+Modifications:	created [τῶν -> pron -> np -> np(2) ->] np(1)
+Modifications:	created [ἐν -> prep -> pp(0) ->] np(2)
+Modifications:	created [σκότει, -> noun -> np ->] pp(0)
+Comment: CHECK TREE
+
+
+Error: Fewer terminal nodes than morph data in 45002020 (12-15)
+Error: Missing morph 450020190041 in morphData
+Error: morphId 450020200011 is missing in verse 45002020 in the tree
+Error: morphId 450020200021 is missing in verse 45002020 in the tree
+Error: morphId 450020200031 is missing in verse 45002020 in the tree
+Error: morphId 450020200041 is missing in verse 45002020 in the tree
+Comment: the tree is missing "παιδευτὴν ἀφρόνων, διδάσκαλον νηπίων," --> P at the begining of the verse
+Comment: it is in NA28 tree but not the starting tree so it must have been deleted in the auto correction
+Comment: 450020190041 ὁδηγὸν -> P is actually from the previous verse! How did it get put into this verse?
+Addition:	450020200011	παιδευτὴν "an instructor" -> noun
+Addition:	450020200021	ἀφρόνων, "(of) foolish ones," -> noun
+Addition:	450020200031	διδάσκαλον "a teacher" -> noun
+Addition:	450020200041	νηπίων, "(of) babes," -> noun
+Modifications:	deleted [ὁδηγὸν -> P ->] CL(0)
+Modifications:	created [παιδευτὴν -> noun -> np -> np(0) -> np(1) -> P ->] CL(0)
+Modifications:	created [ἀφρόνων, -> noun -> np ->] np(0)
+Modifications:	created [διδάσκαλον -> noun -> np -> np(2) ->] np(1)
+Modifications:	created [νηπίων, -> noun -> np ->] np(2)
+Comment: This is an example of where it would be nice to have trees that span verses. The P at the beginning belongs with the P at the end of the previous verse.
+Q: Is it worth it to find a way to change the way trees are represented to let them span verses, but still let you search by verse and see partial trees by verse?
+
+
+Error: Unicode mismatch for 450030150061 in verse 45003015
+    Tree  = αἷμα… [03b1][1f37][03bc][03b1][2026]
+    Morph = αἷμα... [03b1][1f37][03bc][03b1][002e][002e][002e]
+Comment: This is part of the mismatch that we see. 
+Comment: For now, I think I will leave it as it is. If we choose to change how elipses are represented so they are consistent, we can update the trees/text/morph data
+
+	
+Error: morphId 450080280101 appears more than once in verse 45008028 in the tree
+Error: Unicode mismatch for 450080280101 in verse 45008028
+    Tree  = εἰς [03b5][1f30][03c2]
+    Morph = ὁ [1f41]
+Error: Cat mismatch for 450080280101 in verse 45008028
+    Tree  = prep
+    Morph = det
+Error: morphId 450080280111 appears more than once in verse 45008028 in the tree
+Error: Unicode mismatch for 450080280111 in verse 45008028
+    Tree  = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
+    Morph = Θεὸς [0398][03b5][1f78][03c2]
+Error: Cat mismatch for 450080280111 in verse 45008028
+    Tree  = adj
+    Morph = noun
+Error: morphId 450080280101 appears more than once in verse 45008028 in the tree
+Error: Unicode mismatch for 450080280131 in verse 45008028
+    Tree  = κατὰ [03ba][03b1][03c4][1f70]
+    Morph = ἀγαθόν, [1f00][03b3][03b1][03b8][03cc][03bd][002c]
+Error: Cat mismatch for 450080280131 in verse 45008028
+    Tree  = prep
+    Morph = noun
+Error: Unicode mismatch for 450080280141 in verse 45008028
+    Tree  = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
+    Morph = τοῖς [03c4][03bf][1fd6][03c2]
+Error: Cat mismatch for 450080280141 in verse 45008028
+    Tree  = noun
+    Morph = pron
+Error: Unicode mismatch for 450080280151 in verse 45008028
+    Tree  = κλητοῖς [03ba][03bb][03b7][03c4][03bf][1fd6][03c2]
+    Morph = κατὰ [03ba][03b1][03c4][1f70]
+Error: Cat mismatch for 450080280151 in verse 45008028
+    Tree  = adj
+    Morph = prep
+Error: Unicode mismatch for 450080280161 in verse 45008028
+    Tree  = οὖσιν. [03bf][1f56][03c3][03b9][03bd][002e]
+    Morph = πρόθεσιν [03c0][03c1][03cc][03b8][03b5][03c3][03b9][03bd]
+Error: Cat mismatch for 450080280161 in verse 45008028
+    Tree  = verb
+    Morph = noun
+Error: morphId 450080280121 is missing in verse 45008028 in the tree
+Error: morphId 450080280171 is missing in verse 45008028 in the tree
+Error: morphId 450080280181 is missing in verse 45008028 in the tree
+Comment: This is a verse that was manually corrected, and the diff analysis was wrong and in modifying it, I didn't go and check whether auto corrections were correct.
+Comment: 7 morphIds were not shifted right after the addition of "ὁ Θεὸς"
+Comment: also several words changed categories
+Modifications:	changed εἰς -> prep morphId from 45008028010 to 450080280121
+Modifications:	changed ἀγαθόν, -> [adj -> adjp] -> np(0) to ἀγαθόν, -> [noun] -> np(0), morphId from 45008028011 to 450080280131
+Modifications:	changed [ὁ -> det] -> np(1) to [τοῖς -> pron -> np] -> np(1), Unicode to τοῖς, morphId from 450080280101 to 450080280141
+Modifications:	changed κατὰ -> prep morphId from 45008028013 to 450080280151
+Modifications:	changed πρόθεσιν -> noun morphId from 45008028014 to 450080280161
+Modifications:	changed κλητοῖς -> [adj -> adjp] -> P to κλητοῖς -> [noun -> np] -> P, morphId from 45008028015 to 450080280171
+Modifications:	changed οὖσιν. -> verb morphId from 45008028016 to 450080280181
+
+
+Error: Fewer terminal nodes than morph data in 45014021 (15-19)
+Error: morphId 450140210161 is missing in verse 45014021 in the tree
+Error: morphId 450140210171 is missing in verse 45014021 in the tree
+Error: morphId 450140210181 is missing in verse 45014021 in the tree
+Error: morphId 450140210191 is missing in verse 45014021 in the tree
+Comment: tree is missing "ἢ σκανδαλίζεται, ἢ ἀσθενεῖ." at the end of the verse.
+Comment: these are not in the NA28 tree and these additions were not part of addition.tsv.
+Addition:	450140210161	ἢ "or" -> conj (coordinating)
+Addition:	450140210171	σκανδαλίζεται, "is snared," -> verb (passive)
+Addition:	450140210181	ἢ "or" -> conj (coordinating)
+Addition:	450140210191	ἀσθενεῖ. "is weakened." -> verb
+Modifications:	changed προσκόπτει, -> verb -> [vp ->] V to προσκόπτει, -> verb -> [vp -> vp(0) ->] V
+Modifications:	created [ἢ -> conj ->] vp(0)
+Modifications:	created [σκανδαλίζεται, -> verb -> vp ->] vp(0)
+Modifications:	created [ἢ -> conj ->] vp(0)
+Modifications:	created [ἀσθενεῖ. -> verb -> vp ->] vp(0)
+Comment: CHECK TREE
+
+
+Error: Unicode mismatch for 460050040081 in verse 46005004
+    Tree  = Χριστοῦ [03a7][03c1][03b9][03c3][03c4][03bf][1fe6]
+    Morph = Χριστοῦ, [03a7][03c1][03b9][03c3][03c4][03bf][1fe6][002c]
+Modifications:	changed Χριστοῦ -> noun Unicode to "Χριστοῦ,"
+	
+	
+Error: Fewer terminal nodes than morph data in 46007033 (11-21)
+Error: morphId 460070330121 is missing in verse 46007033 in the tree
+Error: morphId 460070330131 is missing in verse 46007033 in the tree
+Error: morphId 460070330141 is missing in verse 46007033 in the tree
+Error: morphId 460070330151 is missing in verse 46007033 in the tree
+Error: morphId 460070330161 is missing in verse 46007033 in the tree
+Error: morphId 460070330171 is missing in verse 46007033 in the tree
+Error: morphId 460070330181 is missing in verse 46007033 in the tree
+Error: morphId 460070330191 is missing in verse 46007033 in the tree
+Error: morphId 460070330201 is missing in verse 46007033 in the tree
+Error: morphId 460070330211 is missing in verse 46007033 in the tree
+Comment: tree is missing "καὶ μεμέρισται καὶ. ἡ γυνὴ ἡ ἄγαμος καὶ ἡ παρθένος" at the end of the verse
+Comment: these words are not in the NA28 tree
+Addition:	460070330121	καὶ "and" -> conj (coordinating)
+Addition:	460070330131	μεμέρισται "is divided" -> verb
+Addition:	460070330141	καὶ. "also" -> adv
+Addition:	460070330151	ἡ "the" -> det
+Addition:	460070330161	γυνὴ "woman" -> noun
+Addition:	460070330171	ἡ "the" -> det
+Addition:	460070330181	ἄγαμος "unmarried" -> noun
+Addition:	460070330191	καὶ "and" -> conj (correlative, should it be "also/even" instead of "and"?)
+Addition:	460070330201	ἡ "the" -> det
+Addition:	460070330211	παρθένος "virgin" -> noun
+Comment: I will create a structure that is consistent with the NASB version, which has the sense of "the unmarried woman and the virgin"
+Modifications:	created [καὶ -> conj -> CL(0)], inserted CL(0) between CL(1) and CL(2) where "πῶς ἀρέσῃ τῇ γυναικί," --> CL(2)
+Modifications:	created [μεμέρισται -> verb -> vp -> V -> CL(3) ->] CL(0)
+Modifications:	created [καὶ. -> adv -> advp -> ADV ->] CL(3)
+Modifications:	created [ἡ -> det -> np(0) -> np(1) -> np(2) -> S -> CL ->] Verse
+Modifications:	created [γυνὴ -> noun -> np ->] np(0)
+Modifications:	created [ἡ -> det -> np(3) ->] np(1)
+Modifications:	created [ἄγαμος -> noun -> np ->] np(3)
+Modifications:	created [καὶ -> conj ->] np(2)
+Modifications:	created [ἡ -> det -> np(4) ->] np(2)
+Modifications:	created [παρθένος -> noun -> np ->] np(4)
+Comment: It may make more sense to make "ἡ ἄγαμος καὶ ἡ παρθένος" --> np to be an adjunct to "ἡ γυνὴ" (the woman [the unmarried and the virgin])
+Q: Is analysis of 460070330191 as a correlative conjunction have the same sense as for English (a pair of words that work together to conjoin, eg. either...or...)?
+Q: Should the English for 460070330191 be "and also" to give that correlative meaning even though it is only one word?
+Comment: CHECK TREE
+
+
+Error: Fewer terminal nodes than morph data in 46008009 (9-12)
+Error: Cat mismatch for 460080090061 in verse 46008009
+    Tree  = S
+    Morph = noun
+Error: morphId 460080090051 is missing in verse 46008009 in the tree
+Error: morphId 460080090071 is missing in verse 46008009 in the tree
+Error: morphId 460080090081 is missing in verse 46008009 in the tree
+Comment: the starting tree has a non-lexical category for 460080090061
+Comment: the tree is missing three words which are all in NA28 but not in the starting tree.
+Comment: there are no category changes so I will use the same subtree as in NA28 tree
+Comment: not sure how the auto correction messed up the subtree of S since all lexical nodes under did not change
+Addition:	460080090051	ἡ "-" -> det
+Addition:	460080090071	ὑμῶν "(of) you" -> pron
+Addition:	460080090081	αὕτη, "this" -> pron
+Modifications:	changed [ἐξουσία -> S] -> CL to [ἐξουσία -> noun -> np -> np(0) -> np(1) -> np(2) -> S] -> CL, English from "right" to "liberty"
+Modifications:	created [ἡ -> det ->] np(1)
+Modifications:	created [ὑμῶν -> pron -> np ->] np(0)
+Modifications:	created [αὕτη, -> pron -> np ->] np(2)
+
+
+Error: Unicode mismatch for 460100200061 in verse 46010020
+    Tree  = ἔθνη [1f14][03b8][03bd][03b7]
+    Morph = ἔθνη, [1f14][03b8][03bd][03b7][002c]
+Modifications:	changed ἔθνη -> noun Unicode to "ἔθνη,"
+
+	
+Error: Fewer terminal nodes than morph data in 46016024 (9-10)
+Error: morphId 460160240101 is missing in verse 46016024 in the tree
+Comment: tree is missing "ἀμήν!", which is also not in the NA28 tree and not in addition.tsv
+Comment: since the scope of the "amen" is probably for more than just this verse so I will have the CL attach directly to the Verse node
+Addition:	460160240101	ἀμήν! "Amen!" -> intj
+Modifications:	created [ἀμήν! -> intj -> CL ->] Verse
+Q: Why does sometimes ἀμήν start with a capital "alpha" and sometimes not?
+Comment: CHECK TREE
+ 
+
+Error: Fewer terminal nodes than morph data in 47001012 (32-35)
+Error: Cat mismatch for 470010120031 in verse 47001012
+    Tree  = S
+    Morph = noun
+Error: morphId 470010120011 is missing in verse 47001012 in the tree
+Error: morphId 470010120041 is missing in verse 47001012 in the tree
+Error: morphId 470010120051 is missing in verse 47001012 in the tree
+Comment: the tree is missing the three words, but these are all in the NA28 trees, though there are some differences with the Unicode but not with Cat
+Addition:	470010120011	ἡ "-" -> det
+Addition:	470010120041	ἡμῶν "(of) us" -> pron
+Addition:	470010120051	αὕτη "this" -> pron
+Modifications:	changed καύχησις -> [S] -> CL to καύχησις -> [noun -> np -> np(0) -> np(1) -> np(2) -> S] -> CL
+Modifications:	created [ἡ -> det ->] np(1)
+Modifications:	created [ἡμῶν -> pron -> np ->] np(0)
+Modifications:	created [αὕτη -> pron -> np ->] np(2)
+
+
+Error: Fewer terminal nodes than morph data in 47003004 (9-10)
+Error: Cat mismatch for 470030040011 in verse 47003004
+    Tree  = O
+    Morph = noun
+Error: morphId 470030040031 is missing in verse 47003004 in the tree
+Comment: the tree is missing "τοιαύτην" -> pron, which is in the NA28 tree but not the starting tree. Also, the word 470030040011 πεποίθησιν does not have a proper lexical category.
+Comment: it seems that once again, the auto correction program removed a large amount of subtree and just left the functional node "O" as the lexical node.
+Comment: retored the subtree under "O" to the same as in NA28 since no categories or words have changed.
+Addition:	470030040031	τοιαύτην "such" -> pron
+Modifications:	changed πεποίθησιν [->] O to πεποίθησιν [-> noun -> np -> np(0) ->] O
+Modifications:	created [τοιαύτην -> pron -> np ->] np(0)
+
+
+Error: Unicode mismatch for 480010150041 in verse 48001015
+    Tree  = ὁ [1f41]
+    Morph = ὁ, [1f41][002c]
+Error: Cat mismatch for 480010150041 in verse 48001015
+    Tree  = det
+    Morph = pron
+Comment: there is no {pron CL -> np} rule like there is a {det CL -> np} rule so we will need to use the {np CL -> CL} rule
+Modifications:	changed ὁ -> [det] -> np(0) to ὁ -> [pron -> np] -> np(0), Unicode to "ὁ,"
+
+
+Error: Unicode mismatch for 480050020011 in verse 48005002
+    Tree  = ἴδε [1f34][03b4][03b5]
+    Morph = ἴδε, [1f34][03b4][03b5][002c]
+Modifications:	changed ἴδε -> intj Unicode to "ἴδε,"
+
+Error: Fewer terminal nodes than morph data in 48005023 (7-8)
+Error: Missing morph 480050220071 in morphData
+Error: morphId 480050230011 is missing in verse 48005023 in the tree
+Error: morphId 480050230021 is missing in verse 48005023 in the tree
+Comment: the tree is missing "πραΰτης, ἐνκράτεια;" --> CL, which is in the NA28 tree but not the starting tree. 
+Comment: the tree has an extra "ἀγάπη," --> CL with morphId 480050220071, and the word isn't even in this verse but is from the previous verse!
+Comment: the NA28 tree is correct
+Comment: How did it get into this verse? This is not the first time this has happened.
+Addition:	480050230011	πραΰτης, "meekness," -> noun
+Addition:	480050230021	ἐνκράτεια; "self-control;" -> noun
+Modifications:	deleted ["ἀγάπη," --> CL ->] CL(0) -> Verse
+Modifications:	created [πραΰτης, -> noun -> np -> np(0) -> P -> CL -> CL ->] CL(0)
+Modifications:	created [ἐνκράτεια; -> noun -> np ->] np(0)
+Comment: The reason there is the sequence P -> CL -> CL is to mirror what is in the previous verse since these two np's are actually part of the conjoined np's at the end of the previous verse
+
+Error: Fewer terminal nodes than morph data in 49005013 (8-14)
+Error: morphId 490050130091 is missing in verse 49005013 in the tree
+Error: morphId 490050130101 is missing in verse 49005013 in the tree
+Error: morphId 490050130111 is missing in verse 49005013 in the tree
+Error: morphId 490050130121 is missing in verse 49005013 in the tree
+Error: morphId 490050130131 is missing in verse 49005013 in the tree
+Error: morphId 490050130141 is missing in verse 49005013 in the tree
+Comment: the tree is missing "πᾶν γὰρ τὸ φανερούμενον φῶς ἐστιν." at the end of the verse, which is also not in NA28. These are not in addition.tsv
+Addition:	490050130091	πᾶν "every" -> pron
+Addition:	490050130101	γὰρ "for" -> conj (coordinating)
+Addition:	490050130111	τὸ "thing" -> pron
+Addition:	490050130121	φανερούμενον "being revealed" -> verb
+Addition:	490050130131	φῶς "light" -> noun
+Addition:	490050130141	ἐστιν. "is" -> verb
+Comment: I will create the tree to fit the NASB translation of "for everything that becomes visible is light"
+Modifications:	created [γὰρ -> conj -> CL(0) -> CL(1)], inserted CL(1) between Verse and CL(2) where CL(2) spans the verse before this word.
+Modifications:	created [πᾶν -> pron -> np -> np(0) -> np(1) -> S -> CL(3) ->] CL(0)
+Modifications:	created [τὸ -> pron -> np ->] np(0)
+Modifications:	created [φανερούμενον ->> verb -> vp -> V -> CL ->] np(1)
+Modifications:	created [φῶς -> noun -> np -> P ->] CL(3)
+Modifications:	created [ἐστιν. -> verb -> vp -> VC ->] CL(3)
+Modifications:	changed φανεροῦται, -> verb English from "becomes visible" to "becomes visible,"
+Comment: CHECK TREE
+
+Error: Fewer terminal nodes than morph data in 50004023 (10-11)
+Error: morphId 500040230111 is missing in verse 50004023 in the tree
+Comment: tree is missing "ἀμήν!" --> CL, which is not in the NA28 tree
+Comment: it seems this "amen" is only for this verse and not for the whole paragraph or chapter, so I will just put the scope of it within this verse.
+Modifications:	created [ἀμήν! -> intj -> CL -> CL(0)], inserted CL(0) between Verse and CL(1) where the original verse spans CL(1)
+Modifications:	changed ὑμῶν. -> pron English from "of you" to "(of) you."
+Comment: CHECK TREE
+
+
+Error: Fewer terminal nodes than morph data in 51001002 (17-21)
+Error: morphId 510010020181 is missing in verse 51001002 in the tree
+Error: morphId 510010020191 is missing in verse 51001002 in the tree
+Error: morphId 510010020201 is missing in verse 51001002 in the tree
+Error: morphId 510010020211 is missing in verse 51001002 in the tree
+Comment: tree is missing "καὶ Κυρίου Ἰησοῦ Χριστοῦ." at the end of the verse, which is also not in NA28 tree
+Addition:	510010020181	καὶ "and" -> conj
+Addition:	510010020191	Κυρίου "(the) Lord" -> noun
+Addition:	510010020201	Ἰησοῦ "Jesus" -> noun
+Addition:	510010020211	Χριστοῦ. "Christ." -> noun
+Comment: from 1Co8:6, the three np's are grouped as [Κυρίου [Ἰησοῦ Χριστοῦ]]
+
+
+Error: More terminal nodes than morph data in 51003006 (12-7)
+Error: Missing morph 510030060081 in morphData
+Error: Missing morph 510030060091 in morphData
+Error: Missing morph 510030060101 in morphData
+Error: Missing morph 510030060111 in morphData
+Error: Missing morph 510030060121 in morphData
+Comment: the tree has an extra "ἐπὶ τοὺς υἱοὺς τῆς ἀπειθείας" --> ADV at the end of the verse
+Modifications:	deleted ["ἐπὶ τοὺς υἱοὺς τῆς ἀπειθείας" --> ADV ->] CL
+
+
+Error: Unicode mismatch for 540020070111 in verse 54002007
+    Tree  = Χριστῷ [03a7][03c1][03b9][03c3][03c4][1ff7]
+    Morph = Χριστῷ, [03a7][03c1][03b9][03c3][03c4][1ff7][002c]
+Modifications:	changed Χριστῷ -> noun Unicode to "Χριστῷ,"
+
+
+Error: Fewer terminal nodes than morph data in 55003004 (6-7)
+Error: Missing morph 550030020051 in morphData
+Error: morphId 550030040011 is missing in verse 55003004 in the tree
+Error: morphId 550030040021 is missing in verse 55003004 in the tree
+Comment: The previous verse 55003003 doesn't seem to follow what I thought was the standard for creating pieces of trees that belong in another verse (55003002)
+Comment: 550030020051 comes from two verses ago and doesn't belong in this verse. 
+Comment: the tree is missing "προδόται, προπετεῖς," --> CL, which is in the NA28 tre but not in the starting tree.
+Comment: This is another case of where there is something strange going on where some portion of the tree at the beginning is deleted and replaced by a word from a previous verse.
+Comment: it may be related to the fact many of these were changed from adj to noun
+Addition:	550030040011	προδόται, "treacherous," -> noun
+Addition:	550030040021	προπετεῖς, "reckless," -> noun
+Modifications:	deleted [φίλαυτοι, -> P -> CL ->] CL(0)
+Modifications:	created [προδόται, -> noun -> np -> np(0) -> P -> CL ->] CL(0)
+
+
+Error: More terminal nodes than morph data in 55004021 (17-16)
+Error: Missing morph 550040210171 in morphData
+Comment: tree has an extra "πάντες" --> adjp at the end of the verse
+Modificaions:	deleted [πάντες --> adjp(0) -> np(0) ->] np(1), connected np(1) to np(2) where {np(2) adj(0) -> np(0)}
+
+
+Error: Fewer terminal nodes than morph data in 56002007 (11-12)
+Error: Cat mismatch for 560020070111 in verse 56002007
+    Tree  = O
+    Morph = noun
+Error: morphId 560020070121 is missing in verse 56002007 in the tree
+Comment: 560020070111 does not have a lexical category, also a subtree under "O" is deleted.
+Comment: tree is missing "σεμνότητα," --> np at the end of the verse, but this is in the NA28 tree.
+Addition:	560020070121	σεμνότητα, "seriousness," -> noun
+Comment: will use the tree from NA28 since it has the same words and categories
+Modifications:	changed ἀφθορίαν, [->] O -> CL(0) to ἀφθορίαν, [-> noun -> np -> np(0) ->] O -> CL(0), English from "(show) integrity" to "(show) integrity,"
+Modifications:	created [σεμνότητα, -> noun -> np ->] np(0)
+
+
+Error: Empty morphId in verse 57001025 in the tree
+Error: morphId 570010250051 is missing in verse 57001025 in the tree
+Comment: this was a verse I manually corrected, but forgot to put the morphId and Unicode into the terminal node
+Modifications:	added to 570010250051 ἡμῶν, -> pron morphId 570010250051, Unicode "ἡμῶν,"
+
+
+Error: Unicode mismatch for 580100160261 in verse 58010016
+    Tree  = αὐτούς… [03b1][1f50][03c4][03bf][03cd][03c2][2026]
+    Morph = αὐτούς... [03b1][1f50][03c4][03bf][03cd][03c2][002e][002e][002e]
+Comment: This is part of the mismatch that we see. 
+Comment: For now, I think I will leave it as it is. If we choose to change how elipses are represented so they are consistent, we can update the trees/text/morph data
+
+
+Error: Unicode mismatch for 580110370031 in verse 58011037
+    Tree  = ἐπειράσθησαν [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd]
+    Morph = ἐπειράσθησαν, [1f10][03c0][03b5][03b9][03c1][03ac][03c3][03b8][03b7][03c3][03b1][03bd][002c]
+Modifications:	changed ἐπειράσθησαν -> verb Unicode to "ἐπειράσθησαν,"
+
+	
+Error: Fewer terminal nodes than morph data in 61001017 (27-28)
+Error: Cat mismatch for 610010170091 in verse 61001017
+    Tree  = S
+    Morph = noun
+Error: morphId 610010170121 is missing in verse 61001017 in the tree
+Comment: 610010170091 φωνῆς does not have a valid lexical category. It again appears the auto correction incorrectly deleted some nodes
+Comment: tree is missing "τοιᾶσδε" --> np, which is in the NA28 tree but not the starting tree.
+Comment: recreated the missing tree structure following the NA28 tree
+Addition:	610010170121	τοιᾶσδε "such" -> pron
+Modifications:	change φωνῆς [->] S -> CL to φωνῆς [noun -> np -> np(0) ->] S -> CL
+Modifications:	created [τοιᾶσδε -> pron -> np ->] np(0)
+
+
+Error: Fewer terminal nodes than morph data in 61003018 (22-23)
+Error: morphId 610030180231 is missing in verse 61003018 in the tree
+Comment: the tree is missing "ἀμήν!" at the end of the verse.
+Addition:	610030180231	ἀμήν! "Amen!" -> intj
+Comment: It seems the "Amen!" is related to just the previoius CL and not more, so we will make it attached to that one.
+Modification:	created [ἀμήν! -> intj -> CL -> CL(0)], inserted CL(0) between Verse and CL(1) where "αὐτῷ ἡ δόξα καὶ νῦν καὶ εἰς ἡμέραν αἰῶνος." --> CL(1)
+Comment: CHECK TREE
+
+
+Error: Fewer terminal nodes than morph data in 65001012 (13-23)
+Error: Cat mismatch for 650010120131 in verse 65001012
+    Tree  = P
+    Morph = noun
+Error: morphId 650010120141 is missing in verse 65001012 in the tree
+Error: morphId 650010120151 is missing in verse 65001012 in the tree
+Error: morphId 650010120161 is missing in verse 65001012 in the tree
+Error: morphId 650010120171 is missing in verse 65001012 in the tree
+Error: morphId 650010120181 is missing in verse 65001012 in the tree
+Error: morphId 650010120191 is missing in verse 65001012 in the tree
+Error: morphId 650010120201 is missing in verse 65001012 in the tree
+Error: morphId 650010120211 is missing in verse 65001012 in the tree
+Error: morphId 650010120221 is missing in verse 65001012 in the tree
+Error: morphId 650010120231 is missing in verse 65001012 in the tree
+Comment: 650010120131 νεφέλαι does not have a valid lexical category and it appears the rest of the tree after it has been deleted.
+Comment: the tree is missing "ἄνυδροι ὑπὸ ἀνέμων παραφερόμεναι, δένδρα φθινοπωρινὰ ἄκαρπα δὶς ἀποθανόντα ἐκριζωθέντα," at the end of the verse
+Addition:	650010120141	ἄνυδροι "waterless" -> adj
+Addition:	650010120151	ὑπὸ "by" -> prep
+Addition:	650010120161	ἀνέμων "winds" -> noun
+Addition:	650010120171	παραφερόμεναι, "being carried about," -> verb
+Addition:	650010120181	δένδρα "trees" -> noun
+Addition:	650010120191	φθινοπωρινὰ "late autumn" -> adj
+Addition:	650010120201	ἄκαρπα "without fruit" -> adj
+Addition:	650010120211	δὶς "twice" -> adv
+Addition:	650010120221	ἀποθανόντα "having died" -> verb
+Addition:	650010120231	ἐκριζωθέντα, "having been uprooted," -> verb
+Modifications:	changed νεφέλαι [->] P -> CL to νεφέλαι [-> noun -> np -> np(0) -> np(1) -> np(2) ->] P -> CL
+Modifications:	created [ἄνυδροι -> adj -> adjp
+Modifications:	created [ὑπὸ -> prep -> pp
+Modifications:	created [ἀνέμων -> noun -> np
+Modifications:	created [παραφερόμεναι, -verb -> vp
+Modifications:	created [δένδρα -> noun -> np
+Modifications:	created [φθινοπωρινὰ -> adj -> adjp
+Modifications:	created [ἄκαρπα -> adj -> adjp
+Modifications:	created [δὶς -> adv -> advp
+Modifications:	created [ἀποθανόντα -> verb -> vp
+Modifications:	created [ἐκριζωθέντα, -> verb -> vp
+Q: Why is the CL -> adjp needed since we could just have the CL be a relative clause to the np rather than an adjp?
+Q: Why are the adjp's at the end a left-branching structure rather than all conjoined together first then adjunct to np? There doesn't seem to be any semantic signficance to the order, or is there?
+
+
+Error: Unicode mismatch for 650010130091 in verse 65001013
+    Tree  = πλανῆται [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9]
+    Morph = πλανῆται, [03c0][03bb][03b1][03bd][1fc6][03c4][03b1][03b9][002c]
+Modifications:	changed πλανῆται -> adj Unicode to "πλανῆται,"
+
+	
+Error: Unicode mismatch for 660020260171 in verse 66002026
+    Tree  = ἐθνῶν… [1f10][03b8][03bd][1ff6][03bd][2026]
+    Morph = ἐθνῶν... [1f10][03b8][03bd][1ff6][03bd][002e][002e][002e]
+Comment: This is part of the mismatch that we see. 
+Comment: For now, I think I will leave it as it is. If we choose to change how elipses are represented so they are consistent, we can update the trees/text/morph data
+
+
+Error: More terminal nodes than morph data in 66013010 (26-24)
+Error: Unicode mismatch for 660130100051 in verse 66013010
+    Tree  = εἰς [03b5][1f30][03c2]
+    Morph = ὑπάγει, [1f51][03c0][03ac][03b3][03b5][03b9][002c]
+Error: Cat mismatch for 660130100051 in verse 66013010
+    Tree  = prep
+    Morph = verb
+Error: Unicode mismatch for 660130100061 in verse 66013010
+    Tree  = αἰχμαλωσίαν [03b1][1f30][03c7][03bc][03b1][03bb][03c9][03c3][03af][03b1][03bd]
+    Morph = εἴ [03b5][1f34]
+Error: Cat mismatch for 660130100061 in verse 66013010
+    Tree  = noun
+    Morph = conj
+Error: morphId 660130100051 appears more than once in verse 66013010 in the tree
+Error: morphId 660130100061 appears more than once in verse 66013010 in the tree
+Comment: this was a verse that was manually modified and I forgot to delete (66013010005 - 66013010006) "εἰς αἰχμαλωσίαν" --> ADV
+Modifications:	deleted [ "εἰς αἰχμαλωσίαν" --> ADV ->] CL
+
+
+Error: morphId 660170130091 appears more than once in verse 66017013 in the tree
+Error: Unicode mismatch for 660170130091 in verse 66017013
+    Tree  = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
+    Morph = τὴν [03c4][1f74][03bd]
+Error: Cat mismatch for 660170130091 in verse 66017013
+    Tree  = noun
+    Morph = det
+Error: Unicode mismatch for 660170130101 in verse 66017013
+    Tree  = αὐτῶν [03b1][1f50][03c4][1ff6][03bd]
+    Morph = ἐξουσίαν [1f10][03be][03bf][03c5][03c3][03af][03b1][03bd]
+Error: Cat mismatch for 660170130101 in verse 66017013
+    Tree  = pron
+    Morph = noun
+Error: morphId 660170130091 appears more than once in verse 66017013 in the tree
+Error: Unicode mismatch for 660170130121 in verse 66017013
+    Tree  = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
+    Morph = τῷ [03c4][1ff7]
+Error: Cat mismatch for 660170130121 in verse 66017013
+    Tree  = noun
+    Morph = det
+Error: Unicode mismatch for 660170130131 in verse 66017013
+    Tree  = διδόασιν. [03b4][03b9][03b4][03cc][03b1][03c3][03b9][03bd][002e]
+    Morph = θηρίῳ [03b8][03b7][03c1][03af][1ff3]
+Error: Cat mismatch for 660170130131 in verse 66017013
+    Tree  = verb
+    Morph = noun
+Error: morphId 660170130111 is missing in verse 66017013 in the tree
+Error: morphId 660170130141 is missing in verse 66017013 in the tree
+Comment: this is a verse I manually edited and forgot to check all of the morphIds after adding a word rather than following the incorrect diff analysis.
+Modifications:	changed ἐξουσίαν -> noun morphId from 66017013009 to 660170130101
+Modifications:	changed αὐτῶν -> noun morphId from 66017013010 to 660170130111
+Modifications:	changed τὴν -> noun morphId from 660170130091 to 660170130121, Unicode to "τῷ"
+Modifications:	changed θηρίῳ -> noun morphId from 66017013012 to 660170130131
+Modifications:	changed διδόασιν. -> noun morphId from 66017013013 to 660170130141
+
+
+Error: Unicode mismatch for 660180020261 in verse 66018002
+    Tree  = μεμισημένου, [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][002c]
+    Morph = μεμισημένου; [03bc][03b5][03bc][03b9][03c3][03b7][03bc][03ad][03bd][03bf][03c5][003b]
+Modifications:	changed μεμισημένου, -> verb Unicode to "μεμισημένου;"
+	
+Error: Unicode mismatch for 660180070201 in verse 66018007
+    Tree  = βασίλισσα… [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][2026]
+    Morph = βασίλισσα... [03b2][03b1][03c3][03af][03bb][03b9][03c3][03c3][03b1][002e][002e][002e]
+Comment: This is part of the mismatch that we see. 
+Comment: For now, I think I will leave it as it is. If we choose to change how elipses are represented so they are consistent, we can update the trees/text/morph data
+
+
+Error: Cat mismatch for 660200120051 in verse 66020012
+    Tree  = conj
+    Morph = adv
+Error: morphId 660200120051 appears more than once in verse 66020012 in the tree
+Error: morphId 660200120071 is missing in verse 66020012 in the tree
+Comment: this is a verse I manually edited. I accidentally changed 660200120071 καὶ category instead of 660200120051's 
+Modifications:	changed 660200120071 καὶ -> adv Cat to conj, morphId from 660200120051 to 660200120071
+Modifications:	changed 660200120051 καὶ -> conj Cat to adv
+Comment: must use {advp np -> np} rule
+Modifications:	deleted καὶ -> adv [->] np(0)
+Modifications:	deleted "μεγάλους καὶ τοὺς μικρούς," --> np(1) [->] np(0)
+Modifications:	created καὶ -> adv [-> advp -> np(2) ->] np(0), connected np(2) and np(1)
+Modifications:	changed μεγάλους -> noun English from "great," to "(the) great"
+
+
+Error: morphId 660220210071 appears more than once in verse 66022021 in the tree
+Error: Unicode mismatch for 660220210071 in verse 66022021
+    Tree  = ἁγίων. [1f01][03b3][03af][03c9][03bd][002e]
+    Morph = τῶν [03c4][1ff6][03bd]
+Error: Cat mismatch for 660220210071 in verse 66022021
+    Tree  = noun
+    Morph = det
+Error: morphId 660220210081 is missing in verse 66022021 in the tree
+Comment: this is a verse that I manually edited and forgot to check the morphIds since the diff analysis was incorrect.
+Modifications:	changed ἁγίων. -> noun morphId from 66022021007 to 660220210081
