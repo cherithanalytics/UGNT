@@ -978,7 +978,7 @@ Error: Unicode mismatch for 480010150041 in verse 48001015
 Error: Cat mismatch for 480010150041 in verse 48001015
     Tree  = det
     Morph = pron
-Comment: there is no {pron CL -> np} rule like there is a {det CL -> np} rule so we will need to use the {np CL -> CL} rule
+Comment: there is no {pron CL -> np} rule like there is a {det CL -> np} rule so we will need to use the {np CL -> np} rule
 Modifications:	changed ὁ -> [det] -> np(0) to ὁ -> [pron -> np] -> np(0), Unicode to "ὁ,"
 
 
@@ -1165,6 +1165,7 @@ Addition:	650010120201	ἄκαρπα "without fruit" -> adj
 Addition:	650010120211	δὶς "twice" -> adv
 Addition:	650010120221	ἀποθανόντα "having died" -> verb
 Addition:	650010120231	ἐκριζωθέντα, "having been uprooted," -> verb
+Comment: Since the missing words are in the NA28 tree, will recreate the tree according to the NA28 tree
 Modifications:	changed νεφέλαι [->] P -> CL to νεφέλαι [-> noun -> np -> np(0) -> np(1) -> np(2) ->] P -> CL
 Modifications:	created [ἄνυδροι -> adj -> adjp
 Modifications:	created [ὑπὸ -> prep -> pp

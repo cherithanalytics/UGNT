@@ -1,0 +1,700 @@
+﻿Unique Errors (83), Instances (615):
+1 (1): adjp adjp np -> adjp
+2 (8): adjp conj np -> adjp
+3 (1): adjp conj np conj adjp conj adjp conj adjp -> adjp
+4 (1): adjp conj np conj np -> adjp
+5 (2): adjp np np -> adjp
+6 (1): ADV adv ADV -> ADV
+7 (3): adv advp conj advp -> advp
+8 (1): adv advp conj advp conj advp conj advp -> advp
+9 (1): adv advp conj pp -> advp
+10 (1): ADV conj ADV conj CL -> ADV
+11 (1): adv np -> np
+12 (1): adv np adv np -> np
+13 (3): adv np conj np -> adjp
+14 (95): adv np conj np -> np
+15 (1): adv np conj np adv np conj np -> np
+16 (6): adv np conj np conj np -> np
+17 (5): adv np conj np conj np conj np -> np
+18 (1): adv np conj np conj np conj np conj np -> np
+19 (1): adv np conj np conj np conj np conj np conj np conj np conj np -> np
+20 (1): adv pp adv pp conj pp -> pp
+21 (12): adv pp conj pp -> pp
+22 (3): adv pp conj pp conj pp -> pp
+23 (1): ADV S ADV V O2 O ADV -> CL
+24 (11): adv vp conj vp -> vp
+25 (1): adv vp conj vp adv vp conj vp -> vp
+26 (2): adv vp conj vp conj vp -> vp
+27 (1): adv vp conj vp conj vp conj vp conj vp -> vp
+28 (6): advp advp -> adjp
+29 (39): advp np -> adjp
+30 (1): advp np adv np -> np
+31 (6): CL adv CL -> CL
+32 (1): CL adv CL conj CL -> CL
+33 (1): CL P -> O
+34 (13): conj -> advp
+35 (1): conj CL CL CL conj CL -> CL
+36 (2): det -> advp
+37 (1): det noun -> np
+38 (7): intj -> adv
+39 (1): IO O V S ADV -> CL
+40 (10): noun -> advp
+41 (71): noun -> nump
+42 (2): noun -> P
+43 (2): noun -> S
+44 (1): np adjp adjp adjp -> adjp
+45 (1): np adjp adjp np -> adjp
+46 (1): np adjp np adjp -> adjp
+47 (8): np adv np -> np
+48 (4): np adv np conj np -> np
+49 (1): np adv np conj np conj np -> np
+50 (2): np advp -> advp
+51 (6): np CL -> adjp
+52 (12): np conj adjp -> adjp
+53 (47): np conj np -> adjp
+54 (1): np conj np conj adjp -> adjp
+55 (3): np conj np conj np -> adjp
+56 (1): np conj np conj np conj np conj np -> adjp
+57 (1): np conj np np -> np
+58 (2): np conj nump -> nump
+59 (22): np np -> adjp
+60 (1): np np -> O
+61 (1): np np adjp adjp adjp np adjp -> adjp
+62 (2): np np np -> adjp
+63 (2): np np np adjp -> adjp
+64 (1): np np np np adjp -> adjp
+65 (1): np np np np np -> adjp
+66 (2): np np np np np np -> adjp
+67 (2): np np nump -> nump
+68 (11): np pp -> adjp
+69 (4): nump conj np -> nump
+70 (7): nump np -> nump
+71 (4): nump nump np -> nump
+72 (1): pp -> CL
+73 (1): pp -> O
+74 (1): pp adv pp conj pp -> pp
+75 (3): pp np -> adjp
+76 (1): prep -> ADV
+77 (86): prep CL -> CL
+78 (6): pron -> advp
+79 (9): pron adjp -> np
+80 (22): pron adv -> advp
+81 (2): pron advp -> np
+82 (1): verb -> VC
+83 (1): vp -> ADV
+
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40005013
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 40005036
+Error: No grammar rule to match noun -> S structure in tree in verse 40005037
+Error: No grammar rule to match noun -> P structure in tree in verse 40005037
+Error: No grammar rule to match noun -> S structure in tree in verse 40005037
+Error: No grammar rule to match noun -> P structure in tree in verse 40005037
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 40006020
+Error: No grammar rule to match noun -> nump structure in tree in verse 40008028
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 40008028
+Error: No grammar rule to match noun -> nump structure in tree in verse 40010005
+Error: No grammar rule to match conj -> advp structure in tree in verse 40010018
+Error: No grammar rule to match np adv np -> np structure in tree in verse 40010018
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 40010028
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 40011018
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40011027
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40011027
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 40011029
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40012004
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 40012006
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 40012022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40012024
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 40012032
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40012039
+Error: No grammar rule to match intj -> adv structure in tree in verse 40013029
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40013057
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40014017
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 40014021
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40015024
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40016004
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40017008
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 40018008
+Error: No grammar rule to match noun -> nump structure in tree in verse 40018012
+Error: No grammar rule to match noun -> nump structure in tree in verse 40018012
+Error: No grammar rule to match noun -> nump structure in tree in verse 40018013
+Error: No grammar rule to match noun -> nump structure in tree in verse 40018013
+Error: No grammar rule to match nump conj np -> nump structure in tree in verse 40018016
+Error: No grammar rule to match noun -> nump structure in tree in verse 40019005
+Error: No grammar rule to match vp -> ADV structure in tree in verse 40019009
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 40020005
+Error: No grammar rule to match noun -> nump structure in tree in verse 40020024
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 40021005
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40021019
+Error: No grammar rule to match noun -> nump structure in tree in verse 40021031
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 40022010
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 40022026
+Error: No grammar rule to match noun -> nump structure in tree in verse 40022026
+Error: No grammar rule to match noun -> nump structure in tree in verse 40022028
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 40022030
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 40022038
+Error: No grammar rule to match ADV S ADV V O2 O ADV -> CL structure in tree in verse 40022043
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 40023015
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 40023017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40024022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 40024036
+Error: No grammar rule to match noun -> nump structure in tree in verse 40025017
+Error: No grammar rule to match noun -> nump structure in tree in verse 40026014
+Error: No grammar rule to match noun -> nump structure in tree in verse 40026020
+Error: No grammar rule to match noun -> nump structure in tree in verse 40026047
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 40026053
+Error: No grammar rule to match noun -> nump structure in tree in verse 40027021
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 41001035
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41002007
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41002026
+Error: No grammar rule to match noun -> nump structure in tree in verse 41003016
+Error: No grammar rule to match noun -> nump structure in tree in verse 41004010
+Error: No grammar rule to match pp -> CL structure in tree in verse 41004020
+Error: No grammar rule to match ADV conj ADV conj CL -> ADV structure in tree in verse 41004020
+Error: No grammar rule to match noun -> advp structure in tree in verse 41004028
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41005037
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41006004
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41006005
+Error: No grammar rule to match noun -> nump structure in tree in verse 41006007
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41006008
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 41007032
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41008014
+Error: No grammar rule to match noun -> nump structure in tree in verse 41008020
+Error: No grammar rule to match det -> advp structure in tree in verse 41009008
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41009009
+Error: No grammar rule to match conj -> advp structure in tree in verse 41009011
+Error: No grammar rule to match conj -> advp structure in tree in verse 41009028
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41009029
+Error: No grammar rule to match noun -> nump structure in tree in verse 41009035
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 41009039
+Error: No grammar rule to match noun -> advp structure in tree in verse 41009043
+Error: No grammar rule to match noun -> advp structure in tree in verse 41009045
+Error: No grammar rule to match noun -> nump structure in tree in verse 41010008
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41010018
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 41010024
+Error: No grammar rule to match noun -> nump structure in tree in verse 41010032
+Error: No grammar rule to match noun -> nump structure in tree in verse 41010041
+Error: No grammar rule to match noun -> nump structure in tree in verse 41011011
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41011013
+Error: No grammar rule to match noun -> advp structure in tree in verse 41012003
+Error: No grammar rule to match noun -> advp structure in tree in verse 41012006
+Error: No grammar rule to match noun -> nump structure in tree in verse 41012022
+Error: No grammar rule to match noun -> nump structure in tree in verse 41012023
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41013020
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 41013032
+Error: No grammar rule to match adv advp conj advp conj advp conj advp -> advp structure in tree in verse 41013035
+Error: No grammar rule to match noun -> nump structure in tree in verse 41014010
+Error: No grammar rule to match noun -> nump structure in tree in verse 41014017
+Error: No grammar rule to match noun -> nump structure in tree in verse 41014020
+Error: No grammar rule to match noun -> advp structure in tree in verse 41014025
+Error: No grammar rule to match noun -> nump structure in tree in verse 41014043
+Error: No grammar rule to match noun -> advp structure in tree in verse 41014052
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 41015024
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 41015040
+Error: No grammar rule to match noun -> nump structure in tree in verse 41016014
+Error: No grammar rule to match noun -> advp structure in tree in verse 42001006
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 42002016
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 42002025
+Error: No grammar rule to match nump np -> nump structure in tree in verse 42002037
+Error: No grammar rule to match CL adv CL conj CL -> CL structure in tree in verse 42002046
+Error: No grammar rule to match conj -> advp structure in tree in verse 42004025
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42004026
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42004027
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42005021
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42006004
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 42006035
+Error: No grammar rule to match noun -> nump structure in tree in verse 42007018
+Error: No grammar rule to match noun -> nump structure in tree in verse 42008001
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42008051
+Error: No grammar rule to match noun -> nump structure in tree in verse 42009001
+Error: No grammar rule to match noun -> nump structure in tree in verse 42009012
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 42009014
+Error: No grammar rule to match conj -> advp structure in tree in verse 42010004
+Error: No grammar rule to match conj -> advp structure in tree in verse 42010004
+Error: No grammar rule to match noun -> nump structure in tree in verse 42010017
+Error: No grammar rule to match noun -> nump structure in tree in verse 42010017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42010022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42010022
+Error: No grammar rule to match noun -> nump structure in tree in verse 42011026
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42011029
+Error: No grammar rule to match np np -> adjp structure in tree in verse 42011036
+Error: No grammar rule to match adv vp conj vp conj vp -> vp structure in tree in verse 42012045
+Error: No grammar rule to match intj -> adv structure in tree in verse 42012051
+Error: No grammar rule to match intj -> adv structure in tree in verse 42013003
+Error: No grammar rule to match noun -> nump structure in tree in verse 42013004
+Error: No grammar rule to match intj -> adv structure in tree in verse 42013005
+Error: No grammar rule to match noun -> nump structure in tree in verse 42014019
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 42014035
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 42015002
+Error: No grammar rule to match noun -> nump structure in tree in verse 42015004
+Error: No grammar rule to match noun -> nump structure in tree in verse 42015004
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 42015013
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 42015032
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 42016010
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 42016010
+Error: No grammar rule to match pp np -> adjp structure in tree in verse 42016010
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 42016010
+Error: No grammar rule to match pp np -> adjp structure in tree in verse 42016015
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 42016015
+Error: No grammar rule to match intj -> adv structure in tree in verse 42016030
+Error: No grammar rule to match noun -> nump structure in tree in verse 42017017
+Error: No grammar rule to match noun -> nump structure in tree in verse 42017017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42017018
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 42018019
+Error: No grammar rule to match noun -> nump structure in tree in verse 42018031
+Error: No grammar rule to match noun -> nump structure in tree in verse 42019016
+Error: No grammar rule to match noun -> nump structure in tree in verse 42020031
+Error: No grammar rule to match noun -> nump structure in tree in verse 42020033
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 42020035
+Error: No grammar rule to match det noun -> np structure in tree in verse 42020042
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 42021011
+Error: No grammar rule to match noun -> nump structure in tree in verse 42022003
+Error: No grammar rule to match noun -> nump structure in tree in verse 42022047
+Error: No grammar rule to match np adv np conj np -> np structure in tree in verse 42022066
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 42023012
+Error: No grammar rule to match noun -> nump structure in tree in verse 42024009
+Error: No grammar rule to match noun -> nump structure in tree in verse 42024033
+Error: No grammar rule to match conj -> advp structure in tree in verse 43001016
+Error: No grammar rule to match intj -> adv structure in tree in verse 43001021
+Error: No grammar rule to match noun -> nump structure in tree in verse 43001040
+Error: No grammar rule to match nump conj np -> nump structure in tree in verse 43002006
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 43002012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 43002015
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43003013
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 43003027
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 43004021
+Error: No grammar rule to match np np -> adjp structure in tree in verse 43004041
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43006022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43006046
+Error: No grammar rule to match noun -> nump structure in tree in verse 43006067
+Error: No grammar rule to match noun -> nump structure in tree in verse 43006070
+Error: No grammar rule to match noun -> nump structure in tree in verse 43006071
+Error: No grammar rule to match conj -> advp structure in tree in verse 43008011
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 43009013
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43009033
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43010010
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 43011048
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43013010
+Error: No grammar rule to match prep -> ADV structure in tree in verse 43013018
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43014006
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 43015018
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43015022
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 43015024
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 43015024
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43017012
+Error: No grammar rule to match verb -> VC structure in tree in verse 43018016
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43018030
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43019011
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 43019015
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 43019023
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 43019029
+Error: No grammar rule to match noun -> nump structure in tree in verse 43020004
+Error: No grammar rule to match noun -> nump structure in tree in verse 43020024
+Error: No grammar rule to match intj -> adv structure in tree in verse 43021005
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 43021015
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44001001
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 44001008
+Error: No grammar rule to match adv np conj np conj np conj np -> np structure in tree in verse 44001013
+Error: No grammar rule to match noun -> nump structure in tree in verse 44001024
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44002009
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44002011
+Error: No grammar rule to match noun -> nump structure in tree in verse 44002014
+Error: No grammar rule to match np np -> adjp structure in tree in verse 44002023
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44002029
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44002033
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44002036
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44002041
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 44002043
+Error: No grammar rule to match np adv np -> np structure in tree in verse 44003001
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 44003014
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44004003
+Error: No grammar rule to match pron -> advp structure in tree in verse 44004021
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44004027
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44004029
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44005014
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44005024
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44005036
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44005038
+Error: No grammar rule to match noun -> nump structure in tree in verse 44006002
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44007035
+Error: No grammar rule to match np np -> adjp structure in tree in verse 44007051
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 44007051
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44008003
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44008012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44008013
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44008038
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44009002
+Error: No grammar rule to match np adv np -> np structure in tree in verse 44009015
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44009015
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44009024
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44009029
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 44010002
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44010009
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44010023
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44010024
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 44010028
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 44011008
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 44011017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 44011019
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 44011024
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 44012010
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44012018
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44013001
+Error: No grammar rule to match np conj nump -> nump structure in tree in verse 44013020
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44014001
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44014005
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44014020
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44014028
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44015002
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44015003
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44015009
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44015010
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44015032
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 44016001
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44017004
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44017004
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44017010
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44017012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44017014
+Error: No grammar rule to match conj -> advp structure in tree in verse 44017015
+Error: No grammar rule to match advp advp -> adjp structure in tree in verse 44017015
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44017018
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44017022
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44017030
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 44017034
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44018004
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44018005
+Error: No grammar rule to match pp -> O structure in tree in verse 44019008
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44019010
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 44019016
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44019017
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44019023
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44019024
+Error: No grammar rule to match np adv np -> np structure in tree in verse 44019025
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44019037
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44020007
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44020021
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44020032
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44021001
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44021008
+Error: No grammar rule to match noun -> nump structure in tree in verse 44021008
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44021012
+Error: No grammar rule to match adv np conj np conj np conj np -> np structure in tree in verse 44021025
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44022004
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44022030
+Error: No grammar rule to match conj -> advp structure in tree in verse 44023003
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44023012
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 44023021
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44023032
+Error: No grammar rule to match adv advp conj advp -> advp structure in tree in verse 44024003
+Error: No grammar rule to match adv pp adv pp conj pp -> pp structure in tree in verse 44024012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44024015
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44025006
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 44025007
+Error: No grammar rule to match adv pp conj pp conj pp -> pp structure in tree in verse 44025008
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44025017
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 44025020
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44025023
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44025023
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44025024
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026003
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026016
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026020
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026020
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026022
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026022
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44026023
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 44026029
+Error: No grammar rule to match adv np adv np -> np structure in tree in verse 44026030
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44026031
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 44026032
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44027001
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44027014
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44027018
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44027020
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 44027020
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 44027022
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 44028023
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45001012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45001014
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45001014
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45001016
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45001020
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45002009
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45002010
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 45002015
+Error: No grammar rule to match CL P -> O structure in tree in verse 45002019
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45003009
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 45004021
+Error: No grammar rule to match pron -> advp structure in tree in verse 45005009
+Error: No grammar rule to match np advp -> advp structure in tree in verse 45005017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45007007
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45007007
+Error: No grammar rule to match np conj np conj np -> adjp structure in tree in verse 45007012
+Error: No grammar rule to match np np -> O structure in tree in verse 45008011
+Error: No grammar rule to match IO O V S ADV -> CL structure in tree in verse 45008028
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45008038
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 45009011
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45009029
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45010012
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 45011008
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 45011008
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45011015
+Error: No grammar rule to match np adv np conj np -> np structure in tree in verse 45011033
+Error: No grammar rule to match np np -> adjp structure in tree in verse 45012001
+Error: No grammar rule to match adjp conj np conj np -> adjp structure in tree in verse 45012002
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45013001
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45013008
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 45014009
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 45014014
+Error: No grammar rule to match pron advp -> np structure in tree in verse 45015022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46001014
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 46001024
+Error: No grammar rule to match np adv np conj np conj np -> np structure in tree in verse 46001030
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46002002
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46002011
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46002011
+Error: No grammar rule to match adv np conj np conj np conj np conj np conj np conj np conj np -> np structure in tree in verse 46003022
+Error: No grammar rule to match np adv np conj np -> np structure in tree in verse 46004009
+Error: No grammar rule to match adv vp conj vp conj vp conj vp conj vp -> vp structure in tree in verse 46004011
+Error: No grammar rule to match advp np adv np -> np structure in tree in verse 46004019
+Error: No grammar rule to match adv np conj np conj np conj np conj np -> np structure in tree in verse 46006009
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 46006013
+Error: No grammar rule to match noun -> nump structure in tree in verse 46006016
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46007017
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 46007034
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 46007035
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 46007035
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46008004
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 46008005
+Error: No grammar rule to match nump np -> nump structure in tree in verse 46010008
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46010013
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 46010032
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 46011030
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46012003
+Error: No grammar rule to match conj CL CL CL conj CL -> CL structure in tree in verse 46012010
+Error: No grammar rule to match adv np conj np conj np conj np -> np structure in tree in verse 46012013
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46014005
+Error: No grammar rule to match adv pp conj pp conj pp -> pp structure in tree in verse 46014006
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 46014007
+Error: No grammar rule to match nump conj np -> nump structure in tree in verse 46014029
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 46015002
+Error: No grammar rule to match noun -> nump structure in tree in verse 46015005
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 46015011
+Error: No grammar rule to match np np -> adjp structure in tree in verse 46015058
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 46016009
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 47002002
+Error: No grammar rule to match adv vp conj vp -> vp structure in tree in verse 47005009
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 47012005
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 47012013
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 47013002
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 48001007
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 48001019
+Error: No grammar rule to match pron -> advp structure in tree in verse 48002006
+Error: No grammar rule to match np conj nump -> nump structure in tree in verse 48003017
+Error: No grammar rule to match pron -> advp structure in tree in verse 48004012
+Error: No grammar rule to match np np -> adjp structure in tree in verse 48005021
+Error: No grammar rule to match det -> advp structure in tree in verse 48006004
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 48006014
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 49001004
+Error: No grammar rule to match np np -> adjp structure in tree in verse 49002012
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 49002012
+Error: No grammar rule to match noun -> nump structure in tree in verse 49002015
+Error: No grammar rule to match pron advp -> np structure in tree in verse 49002017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 49004009
+Error: No grammar rule to match adv np conj np conj np conj np -> np structure in tree in verse 49004011
+Error: No grammar rule to match np np -> adjp structure in tree in verse 49004032
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 49005027
+Error: No grammar rule to match noun -> nump structure in tree in verse 49005031
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 49006009
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 50001001
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 50001006
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 50001007
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 50001010
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 50001018
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 50001020
+Error: No grammar rule to match noun -> nump structure in tree in verse 50001023
+Error: No grammar rule to match np adv np -> np structure in tree in verse 50002008
+Error: No grammar rule to match np advp -> advp structure in tree in verse 50002012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 50002013
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 50002027
+Error: No grammar rule to match np np -> adjp structure in tree in verse 50003021
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 50004003
+Error: No grammar rule to match adv vp conj vp adv vp conj vp -> vp structure in tree in verse 50004009
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 50004015
+Error: No grammar rule to match adv advp conj advp -> advp structure in tree in verse 50004016
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 51001016
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 51001020
+Error: No grammar rule to match np conj np conj np -> adjp structure in tree in verse 51001022
+Error: No grammar rule to match np conj np np -> np structure in tree in verse 51002023
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 51003012
+Error: No grammar rule to match noun -> advp structure in tree in verse 51004012
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 52001009
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 52002006
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 52002015
+Error: No grammar rule to match adv advp conj advp -> advp structure in tree in verse 52002018
+Error: No grammar rule to match pron -> advp structure in tree in verse 52003001
+Error: No grammar rule to match noun -> advp structure in tree in verse 52005023
+Error: No grammar rule to match conj -> advp structure in tree in verse 53002002
+Error: No grammar rule to match adv pp conj pp conj pp -> pp structure in tree in verse 53002002
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 53002015
+Error: No grammar rule to match pron -> advp structure in tree in verse 53003011
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 54001007
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54001015
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 54001015
+Error: No grammar rule to match adjp adjp np -> adjp structure in tree in verse 54001017
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 54002003
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54003008
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54003008
+Error: No grammar rule to match np adjp adjp adjp -> adjp structure in tree in verse 54003008
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54003011
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 54003011
+Error: No grammar rule to match np adjp np adjp -> adjp structure in tree in verse 54003011
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54004009
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 54004009
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 54004016
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54005013
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 54005013
+Error: No grammar rule to match nump conj np -> nump structure in tree in verse 54005019
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 54005019
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 54006001
+Error: No grammar rule to match np np -> adjp structure in tree in verse 54006014
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 54006015
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 54006017
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 55001012
+Error: No grammar rule to match np np -> adjp structure in tree in verse 55002015
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 55002020
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 55002024
+Error: No grammar rule to match adjp np np -> adjp structure in tree in verse 55002024
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 55003002
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 55003008
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 55003016
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 55003016
+Error: No grammar rule to match ADV adv ADV -> ADV structure in tree in verse 55004001
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 56001007
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 56001007
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 56001007
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 56001007
+Error: No grammar rule to match np np np np np np -> adjp structure in tree in verse 56001008
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 56001009
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 56001015
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 56001015
+Error: No grammar rule to match pp np -> adjp structure in tree in verse 56001016
+Error: No grammar rule to match np conj np conj adjp -> adjp structure in tree in verse 56001016
+Error: No grammar rule to match np np np adjp -> adjp structure in tree in verse 56002002
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 56002003
+Error: No grammar rule to match np adjp adjp np -> adjp structure in tree in verse 56002003
+Error: No grammar rule to match np np -> adjp structure in tree in verse 56002004
+Error: No grammar rule to match np np np np adjp -> adjp structure in tree in verse 56002005
+Error: No grammar rule to match np np -> adjp structure in tree in verse 56002011
+Error: No grammar rule to match np np adjp adjp adjp np adjp -> adjp structure in tree in verse 56003003
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 56003008
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 56003009
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 56003010
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 57001001
+Error: No grammar rule to match np np -> adjp structure in tree in verse 57001011
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 57001011
+Error: No grammar rule to match np np -> adjp structure in tree in verse 57001011
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 57001011
+Error: No grammar rule to match adv pp conj pp -> pp structure in tree in verse 57001016
+Error: No grammar rule to match adv np conj np conj np conj np -> np structure in tree in verse 58002004
+Error: No grammar rule to match np np -> adjp structure in tree in verse 58002008
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58002011
+Error: No grammar rule to match np np -> adjp structure in tree in verse 58002015
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 58002017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 58003018
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 58004012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58004012
+Error: No grammar rule to match np np -> adjp structure in tree in verse 58004012
+Error: No grammar rule to match adjp conj np conj adjp conj adjp conj adjp -> adjp structure in tree in verse 58004012
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 58004013
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58005007
+Error: No grammar rule to match np np -> adjp structure in tree in verse 58005013
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58005014
+Error: No grammar rule to match np conj adjp -> adjp structure in tree in verse 58006009
+Error: No grammar rule to match adv np conj np -> adjp structure in tree in verse 58006019
+Error: No grammar rule to match np np np -> adjp structure in tree in verse 58007003
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58007003
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 58007015
+Error: No grammar rule to match np np np adjp -> adjp structure in tree in verse 58007026
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58008003
+Error: No grammar rule to match pron adjp -> np structure in tree in verse 58008013
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 58009002
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58009009
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 58009011
+Error: No grammar rule to match conj -> advp structure in tree in verse 58009011
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58009019
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 58009021
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 58010028
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 58011032
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 58012021
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 59001004
+Error: No grammar rule to match np adv np -> np structure in tree in verse 59001027
+Error: No grammar rule to match np CL -> adjp structure in tree in verse 59003002
+Error: No grammar rule to match adv np conj np adv np conj np -> np structure in tree in verse 59003007
+Error: No grammar rule to match adjp np np -> adjp structure in tree in verse 59003008
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 59003013
+Error: No grammar rule to match np np np -> adjp structure in tree in verse 59003015
+Error: No grammar rule to match np np np np np np -> adjp structure in tree in verse 59003017
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 59005011
+Error: No grammar rule to match adv np conj np conj np -> np structure in tree in verse 59005012
+Error: No grammar rule to match adv np -> np structure in tree in verse 60002013
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 60002018
+Error: No grammar rule to match np np np np np -> adjp structure in tree in verse 60003008
+Error: No grammar rule to match np np -> adjp structure in tree in verse 60005009
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 61002014
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 61003014
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 61003016
+Error: No grammar rule to match adv advp conj pp -> advp structure in tree in verse 61003018
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 62001009
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 62002022
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 62005005
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 63001009
+Error: No grammar rule to match conj -> advp structure in tree in verse 63001012
+Error: No grammar rule to match np adv np -> np structure in tree in verse 66001006
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66002017
+Error: No grammar rule to match adv np conj np -> adjp structure in tree in verse 66003015
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66003015
+Error: No grammar rule to match adv np conj np -> adjp structure in tree in verse 66003016
+Error: No grammar rule to match np conj np conj np conj np conj np -> adjp structure in tree in verse 66003017
+Error: No grammar rule to match nump np -> nump structure in tree in verse 66004004
+Error: No grammar rule to match nump np -> nump structure in tree in verse 66004004
+Error: No grammar rule to match nump np -> nump structure in tree in verse 66004010
+Error: No grammar rule to match pp adv pp conj pp -> pp structure in tree in verse 66005003
+Error: No grammar rule to match nump np -> nump structure in tree in verse 66005008
+Error: No grammar rule to match np adv np conj np -> np structure in tree in verse 66007003
+Error: No grammar rule to match nump nump np -> nump structure in tree in verse 66007004
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66009004
+Error: No grammar rule to match adv vp conj vp conj vp -> vp structure in tree in verse 66009020
+Error: No grammar rule to match pron adv -> advp structure in tree in verse 66011002
+Error: No grammar rule to match np np nump -> nump structure in tree in verse 66011003
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66011009
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66011011
+Error: No grammar rule to match nump np -> nump structure in tree in verse 66011016
+Error: No grammar rule to match np np nump -> nump structure in tree in verse 66012006
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66013017
+Error: No grammar rule to match nump nump np -> nump structure in tree in verse 66014001
+Error: No grammar rule to match nump nump np -> nump structure in tree in verse 66014003
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66014003
+Error: No grammar rule to match np np -> adjp structure in tree in verse 66014020
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66015001
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66015003
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66015003
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66016007
+Error: No grammar rule to match advp np -> adjp structure in tree in verse 66016021
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66017004
+Error: No grammar rule to match noun -> nump structure in tree in verse 66017010
+Error: No grammar rule to match noun -> nump structure in tree in verse 66017011
+Error: No grammar rule to match np conj np conj np -> adjp structure in tree in verse 66017014
+Error: No grammar rule to match adjp conj np -> adjp structure in tree in verse 66017016
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66019002
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66019012
+Error: No grammar rule to match adv np conj np -> np structure in tree in verse 66019018
+Error: No grammar rule to match np adv np -> np structure in tree in verse 66019018
+Error: No grammar rule to match noun -> nump structure in tree in verse 66019020
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66020006
+Error: No grammar rule to match CL adv CL -> CL structure in tree in verse 66021004
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66021005
+Error: No grammar rule to match nump nump np -> nump structure in tree in verse 66021017
+Error: No grammar rule to match prep CL -> CL structure in tree in verse 66021027
+Error: No grammar rule to match np pp -> adjp structure in tree in verse 66022001
+Error: No grammar rule to match np conj np -> adjp structure in tree in verse 66022006

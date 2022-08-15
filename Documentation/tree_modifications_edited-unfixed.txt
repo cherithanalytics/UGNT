@@ -1,0 +1,63 @@
+﻿PROCEDURE
+
+This file is based upon tree_modifications_edited.txt where the trees were modified based upon the different diff files 
+(addition.tsv, deletion.tsv, substitution.tsv)
+
+However, later on, I Andi let me know that even though there are no "num" lexical part-of-speech in the UGNT morphology,
+he wanted to keep the "num" and "nump" nodes in the tree as the original were regardless of whether the words changed to 
+"det" or other categories. He felt the best solution was to change something like det -> nump to det -> num -> nump.
+So in essense we would add lexical rules that changed a lexical category back to num, but we still want the UGNT
+category to be in the terminal notes of the trees.
+
+The trees used are the ones after Errors.CheckTreesAgainstMorphData-2022.07.15-modifications-edited.txt
+
+NOTATION
+
+1. To indicate a tree fragment that is a path from a terminal node up the tree through parent nodes:
+	a. "->" indicate a branch going up the tree in order to be consistent with the notation in the grammar file (i.e., it is a constituents to parent contraction rule, not an expansion rule).
+	b. square brackets enclose the fragment being referred to
+2. To indicate a subtree of constituents and parent, curly brackes are used to enclose the notation.
+3. To indicate a subtree that is more complex:
+	a. double quotes are used to indicate a surface Unicode string
+	b. "-->" is to indicates smallest subtree that includes the surface Unicode string on the left that leads to the category on the right that spans the whole string (possibly spans more).
+4. If a node is referred to more than once, and more than one node with the same category is referred to, the one referred to more than once will be indexed with "Cat(#)" where "Cat" is the category of the node, and "#" is a unique digit 
+
+
+RESULTS BASED UPON CHANGES MADE
+
+Grammar:
+	Add {noun* -> num} rule
+	Add {det* -> num} rule
+
+
+RECORD OF UNIFIXING MADE TO KEEP NUM AND NUMP NODES
+
+
+40027051
+	Modifications:	changed 400270510091 δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+42010001
+	Modifications:	changed 420100010151 δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+43005005
+	Modifications:	changed 430050050061 τριάκοντα -> det [-> np -> np] -> np(0) to τριάκοντα -> det [-> num -> nump -> nump] -> np(0)
+	Modifications:	changed 430050050071 ὀκτὼ -> det [-> np] to ὀκτὼ -> det [-> num -> nump]
+44001015
+	Modifications:	changed 440010150211 ἑκατὸν -> det [-> np -> np(0)] -> pp to ἑκατὸν -> det [-> num -> nump(0) -> np] -> pp
+	Modifications:	changed 440010150221 εἴκοσι, -> det [-> np] -> nump(0) to εἴκοσι, -> det [-> num -> nump] -> nump(0)
+44023023
+	Modifications:	changed 440230230041 δύο -> det [-> np] to δύο -> det [-> num -> nump]
+66009016
+	Modifications:	deleted 660090160091 μυριάδες -> noun -> np(0) [->] np(1) [->] np(2) [->] P, connected P to np(1), np(1) to np(2), np(2) to np(0)
+	Modifications:	changed 660090160081 δύο -> det [->] np(1) to δύο -> det [-> num -> nump ->] np(1)
+66011002
+	Modifications:	changed 660110020251 τεσσεράκοντα -> det [-> np -> np] to τεσσεράκοντα -> det [-> num -> nump -> nump]
+	Modifications:	changed 660110020261 δύο -> det [-> np] to δύο -> det [-> num -> nump]
+66013005
+	Modifications:	changed 660130050151 τεσσεράκοντα -> det [-> np -> np] to τεσσεράκοντα -> det [-> num -> nump -> nump]
+	Modifications:	changed 660130050161 δύο -> det [-> np] to δύο -> det [-> num -> nump]
+66013018
+	Modifications:	changed 660130180221 ἑξακόσιοι -> noun [-> np -> np(0)] -> P to ἑξακόσιοι -> noun [-> num -> nump -> nump(0) -> np] -> P
+	Modifications:	changed 660130180231 ἑξήκοντα -> noun [-> np] -> nump(0) to ἑξήκοντα -> noun [-> num -> nump] -> nump(0)
+	Modifications:	changed 660130180241 ἕξ -> noun [-> np] -> nump(0) to ἕξ -> noun [-> num -> nump] -> nump(0)
+
+=============================================
+

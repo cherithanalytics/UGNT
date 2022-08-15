@@ -1,0 +1,1340 @@
+This file documents the changes made after going through each verse that is flagged with a "num" node in the NA28 trees.
+Some of them have already be changed and is documented in the tree_modifications_edited-unfixed.txt file.
+However, there are some that need to be changed (e.g., rev21:17) which were automatically changed, but not manually changed, and yet would need to be checked (e.g., det -> adjp should be det -> num -> nump)
+
+I started by just listing the verses that show up in the "Find Nodes in Files" in TreeEditor for all of the NA28 trees.
+Finding that there are also many cases where NA28 has a number as adj but UGNT changes the adj to a det.
+
+The trees used are the ones after Errors.CheckTreesAgainstMorphData-2022.07.15-modifications-edited.txt
+
+Auto changes to keep num/nump
+
+	0a. Change [noun -> nump] to [noun -> num -> nump] (Done)
+	0b. Change [det -> nump] to [det -> num -> nump] (Done)
+	0c. Change [adj -> nump] to [adj -> num -> nump] (Done)
+
+Planned auto changes to keep original adj/adjp? Andi said I can change them so they also go to num/nump
+Previously num changed to det seem to be always type:number (there is also type:ordinal) and these should be treated differently
+So this could be used to destinguish it from other det's.
+	1. Change [det -> adjp] to [det -> num -> nump] where {adjp np -> np} (e.g., 400050180161) (Done)
+	2. Change [det -> adjp] to [det -> num -> nump] where {np adjp -> np} (e.g., 400010170101) (Done)
+	3. Change [det -> adjp] to [det -> num -> nump] where {nump adjp -> nump} (e.g., 420020370071) (Done)
+	4. Change [det -> adjp] to [det -> num -> nump] where {nump conj adjp -> nump} (e.g., 400180160181) (Done)
+	5. Change [det -> adjp] to [det -> num -> nump] where {adjp conj nump -> nump} (e.g., 440130200031) (Done)
+	6. Change [det -> adjp] to [det -> num -> nump] where {det adjp -> np} (or 51?) (e.g., 420180100091) (Done)
+	7. Change [det -> adjp] to [det -> num -> nump] where {nump nump adjp -> nump} (e.g., 660070040091) (Done) or {adjp adjp nump -> nump} (e.g., 660110030101)  (Done)
+	
+Ordinal numbers in NA28 are adj but noun in UGNT. Andi says that for ordinal numbers, there is no need to try and also have num/nump.
+Ordinal "last" is sometimes noun (type:substantive_adj) and sometimes det (type:ordinal). Cardinal numbers that are det have type:number.
+
+Some cardinal numbers (e.g., "the twelve") are num in NA28 but are noun in UGNT and so not all noun -> np should have num/nump inserted.
+Can't automatically identify these noun since they are marked as "pos:noun;type:substantive_adj" but other nouns are also marked this way. 
+The only way would be to look at the Unicode or OldCat, but not all of these have OldCat since some were created from scratch.
+
+Cases where a word was changed from adj to det (type:quantifier, type:differential, type:ordinal):
+	10a. Change [det -> adj -> adjp] to [det -> np]
+		or Change Change [det -> adj -> adjp] to [det -> pron -> adj -> adjp] <== leaning towards this one
+		where {np adjp -> np} ??? 44024001 τινῶν, "some" type:quantifier (440240010111) 
+	10b. Change [det -> adjp -> np(0)] to [det -> np(0)] 
+		or Change [det -> adjp -> np(0)] to [det -> adj -> adjp -> np(0)]
+		or Change [det -> adjp -> np(0)] to [det -> adj -> adjp(0)]
+		where {np(0) np -> np} ἕκαστος "each" type:quantifier (660210210091)
+	11. Change [det -> adjp] to [det -> pron -> adj -> adjp]  (was adj -> adjp in NA28)
+		where {adjp -> P} Lemma is ἄλλος/243 "another" type:differential (460150390111 460150390151)
+		where {adjp np -> np}
+			Lemma is ἄλλος/243 "other" type:differential (43020004 430200040081)
+			Lemma is πᾶς/3956 "every" type:quantifier (400100010171 420100010201) 400010170011 400020030081 "all" Quantifier
+		where {np adjp -> np} 
+			400010170101 400010170191 400010170291 "fourteen" Number, <== should change to [det -> num -> nump] since this seems to be fixing NA28 having some numbers as adj
+			400010220031 "all" Quantifier (Type="") 400020180081 "great" Quantifier
+			400040250051 "many" Quantifier
+			400040040091 "alone" Differential
+	12. Change [det -> adjp] to [det -> adj -> adjp] (was adj -> adjp in NA28)
+		or Change [det -> adjp] to [det -> adj -> adjp -> np] (since other ordinals are noun -> np)
+		where {det adjp -> np}
+			Lemma is ἔσχατος/2078 "last" type:ordinal (660210090191)
+			420010260061 "sixth" Ordinal
+			420010590071 "eigth" Ordinal
+			420070470101 "many" Quantifier
+			420150220131 "best" Ordinal
+			420180100091 "one" Number
+		
+	I think 10b, 11, and 12 couild be handled with changing [det -> adjp] to {det -> adj -> adjp] and adding the lexical rule {det* -> adj}
+	This would maintain the original adj/adjp as well as indicate it is an np following UGNT's changing it to det.
+
+
+NOT
+	1. Change [det -> adjp] to [det -> adj -> adjp] where {adjp np -> np}
+	2. Change [det -> adjp] to [det -> adj -> adjp] where {np adjp -> np}
+	3. Change [det -> adjp] to [det -> adj -> adjp] where {nump adjp -> nump}
+	4. Change [det -> adjp] to [det -> adj -> adjp] where {nump conj adjp -> nump}
+	5. Change [det -> adjp] to [det -> adj -> adjp] where {adjp conj nump -> nump}
+	6. Change [det -> adjp] to [det -> adj -> adjp] where {det adjp -> np}
+	10a. Change [det -> adj -> adjp] to [det -> num -> nump] where {np adjp -> np}
+		or Change [det -> adj -> adjp] to [det -> pron -> num -> nump] where {np adjp -> np}
+
+There are some numbers that were changed to adj and noun but the node above it was not left as nump (changed to np)
+So it is hard to tell automatically (unless we have a map from NA28 num morphId to UGNT morphId).
+So I have manually changed them since they are not too many of these.
+
+Should we change?:
+	50. Change [det -> nump] to [det -> num -> nump -> np] where {det nump -> np} (I think this is better than 0b., which can be used where {nump np -> np} or {np nump -> np})
+	51. Change [det -> adjp] to [det -> num -> nump -> np] where {det adjp -> np} and det type=number (I think this is better than 6.) NOT for det's that are ordinal
+
+=========================
+
+10a:
+There are some places where NA28 had [pron -> adj -> adjp] but now after auto change for UGNT it is [det -> adj -> adjp]
+Originally, I thought changing it to [det -> np] or [det -> pron -> adj -> adjp] (i.e., 10a above)
+But now I'm leaning towards leaving the top node as adjp because it keeps the most amount of information.
+It let's us identify this situation later and do something different if we want to.
+
+
+=========================
+
+RECORD OF CHANGES MADE TO KEEP NUM AND NUMP NODES
+
+46006016
+	det -> adjp (1)
+	noun -> nump
+	det -> adjp (2)
+46010008
+	det -> adjp (1)
+	det -> nump
+	det -> adjp (2)
+46014019
+	det -> nump
+	det -> adjp (1)
+46014027
+	noun -> np
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	noun -> np
+	Modifications:	Changed τρεῖς, -> noun [->] np to τρεῖς, -> noun [-> num -> nump ->] np
+46014029
+	det -> nump
+	det -> adjp	(4)
+46015005
+	noun -> nump
+
+60003020
+	det -> nump
+
+54005009
+	det -> nump
+54005019
+	det -> nump
+	det -> adjp (4)
+
+47011024
+	noun -> np
+	Modifications:	Changed τεσσεράκοντα -> noun [->] np to τεσσεράκοντα -> noun [-> num -> nump ->] np
+	noun -> np
+	Modifications:	Changed μίαν -> noun [->] np to μίαν -> noun [-> num -> nump ->] np
+47013001
+	det -> nump
+	det -> adjp (not one that can be auto fixed)
+	Modifications:	Changed τριῶν -> det [-> adjp ->] np to τριῶν -> det [-> num -> nump ->] np
+
+44001003
+	det -> nump
+44001010
+	det -> nump
+44001015
+	Comment: already corrected
+44001023
+	noun -> np
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+44001024
+	noun -> nump
+	noun -> np
+	Modifications:	Changed ἕνα, -> noun [->] np to ἕνα, -> noun [-> num -> nump ->] np
+44001026
+	det -> nump
+44002012
+	noun -> nump
+44004004
+	det -> nump
+44004022
+	Comment: already corrected
+44006002
+	noun -> nump
+44006003
+	det -> nump
+44007008
+	det -> adjp (6)
+44007014
+	det -> nump
+	det -> nump
+44007029
+	det -> nump
+44007030
+	det -> nump
+	Comment: Decided against making the changes below since we can always combine the English of the children but it can't break them up
+	(Modifications:	Changed ἐτῶν -> noun English from "forty" to "forty years" (semantic head and so English gets passed up))
+	(Modifications:	Changed τεσσεράκοντα, -> det English to "*")
+44007036
+	det -> nump
+44007042
+	det -> nump
+44009033
+	det -> nump
+44009038
+	det -> nump
+44010007
+	noun -> np
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+44011012
+	det -> nump
+44012006
+	det -> nump
+	det -> adjp (2)
+44013019
+	det -> nump
+44013020
+	det -> adjp (5)
+	det -> nump
+44013021
+	det -> nump
+44018011
+	det -> nump
+44019007
+	noun -> np
+	Modifications:	Changed δώδεκα. -> noun [->] np to δώδεκα. -> noun [-> num -> nump ->] np
+44019010
+	det -> nump
+44019014
+	det -> nump
+44019019
+	det -> nump
+44019022
+	noun -> np
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+44019034
+	noun -> np
+	Modifications:	Changed μία -> noun [-> np(0)] to μία -> noun [-> num -> nump(0)]
+	Comment: the np(0) node is adjp in the NA28 tree so made it nump instead of leaving it np
+	det -> nump
+44020006
+	det -> nump
+	det -> nump
+44021004
+	det -> nump
+44021008
+	noun -> nump
+44021027
+	det -> nump
+44023013
+	Comment: already corrected, doesn't go to advp since previous word was changed from adj to noun
+44023021
+	Comment: already corrected, goes to advp since previous word is adj
+44023023
+	Comment: 440230230041 already corrected
+	det -> adjp (2)
+	det -> nump
+	det -> adjp (2)
+	Q: This will all be nump in UGNT, but I wonder why NA28 had different categories for the numbers
+	det -> adjp (1)
+44024001
+	det -> nump
+	Comment: I noticed for 440240010111 "τινῶν," and 440240010151 "τινός,", the tree has det -> adj -> adjp. It is pron -> adj -> adjp in NA28.
+	det -> adj (10a?)
+	det -> adj (10a?)
+44024011
+	det -> nump
+44025006
+	Comment: already corrected
+44027028
+	det -> nump
+	det -> nump
+44027037
+	Comment: already corrected.
+	Comment: Decided against making the changes below since we can always combine the English of the children but it can't break them up
+	(Modifications:	Changed διακόσιαι -> noun English from "two hundred" to "two hundred and seventy six")
+	(Modifications:	Changed ἑβδομήκοντα -> noun English from "seventy" to "*")
+	(Modifications:	Changed ἕξ. -> noun English from "six" to "*")
+44028014
+	det -> nump
+
+49002015
+	noun -> nump
+	det -> adjp (1)
+49005031
+	noun -> nump
+	det -> adjp (2)
+
+
+48001018
+	det -> nump
+48003017
+	det -> adjp (5)
+	det -> nump
+48004022
+	det -> nump
+	noun -> np
+	Modifications:	Changed 480040220081 ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+	noun -> np
+	Modifications:	Changed 480040220131 ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+48004024
+	det -> nump
+	noun -> np
+	Modifications:	Changed μία -> noun [->] np to μία -> noun [-> num -> nump ->] np
+
+58003010
+	det -> nump
+58003017
+	det -> nump
+58006018
+	det -> nump
+58011030
+	det -> nump
+
+43001035
+	noun -> np
+	Modifications:	Changed δύο. -> noun [->] np to δύο. -> noun [-> num -> nump ->] np
+43001037
+	det -> nump
+43001040
+	noun -> nump
+43002006
+	det -> nump
+	det -> nump
+	det -> adjp (4)
+43002020
+	det -> nump
+	det -> nump
+	det -> adjp (1)
+43004018
+	det -> nump
+43004040
+	det -> nump
+43004043
+	det -> nump
+43005002
+	det -> nump
+43005005
+	Comment: already corrected
+43006009
+	det -> nump
+	det -> nump
+43006013
+	det -> nump
+	det -> nump
+43006019
+	det -> nump
+	det -> nump
+	det -> nump
+43006067
+	noun -> nump
+43006070
+	noun -> nump
+43006071
+	noun -> np
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+43008017
+	det -> nump
+43008057
+	det -> nump
+43011006
+	det -> nump
+43011009
+	det -> nump
+43011018
+	det -> nump
+43012001
+	det -> nump
+43019018
+	Comment: already corrected
+	Comment: I noticed for 430190180071 [ἄλλους -> pron -> np], it is [ἄλλους -> adj -> adjp] in the NA28 tree. 
+	Comment: If we want to keep as much information as possible, it should probably be changed to [ἄλλους -> pron -> adj -> adjp]
+	Comment: {pron* -> adj} rule already exists
+	Comment: If we choose to do this, it means going back to see where this has been changed before and change it to the new structure
+43019039
+	det -> nump
+43020004
+	noun -> nump
+	Comment: 430200040081 [ἄλλος "other" -> det -> adjp] is not really a number so we should NOT change it to [ἄλλος -> det -> num -> nump]
+	Comment: This maybe should be changed to [det -> np] or [det -> pron -> adj -> adjp]
+	Comment: The majority of cases, ἄλλος is a pron, but even in the same verse 46015039 (460150390081, 460150390111, 460150390151, 460150390191) 
+	Comment: there is both pron -> np and det -> adjp. It is tempting to change the det -> adjp to det -> np to match the others that are np's.
+	Comment: I think to be "faithful" (i.e., not change them all to np) we should make these situations into [det -> pron -> adj -> adjp]
+	Comment: It will maintain the adjp top node, not have num (not really a number), and also have the sense it is a pron,
+	Comment: and we already are adding the rule {det* -> pron} for when UGNT changed pron into det (this situation is changing adj into det)
+	Comment: We can always change this to [det -> pron -> np] later if we want to
+	Comment: So for 46015039 use det -> adjp (11), but here we can't tell the difference with number so best to change this manually
+	Modifications:	Changed ἄλλος -> det [->] adjp to ἄλλος -> det [-> pron -> adj ->] adjp
+43020012
+	det -> nump
+	noun -> np
+	Modifications:	Changed 430200120081 ἕνα -> noun [->] np to ἕνα -> noun [->num -> nump ->] np (was adj -> adjp)
+	noun -> np
+	Modifications:	Changed 430200120131 ἕνα -> noun [->] np to ἕνα -> noun [->num -> nump ->] np (was adj -> adjp)
+43020024
+	noun -> np
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [->num -> nump ->] np (was adj -> adjp)
+	noun -> nump
+43020026
+	det -> nump
+43021002
+	Comment: already corrected
+	Comment: 430210020221 ἄλλοι (ἄλλος) "others" changed from adjp -> adjp to pron -> np. 
+	Comment: I'm again wondering if these situations should be changed to pron -> adj -> adjp to keep the top node adjp.
+43021011
+	Comment: Here is a situation where the NA28 had {nump nump adjp -> nump}, but UGNT changed the two num's to adj's. 
+	Comment: I initially thought they should all be changed to adjp, but Andi wanted to keep nump.
+	Comment: But there was another place where I believe I changed it to all nump since they are all numbers and the top node is nump.
+	Comment: There are a bunch of grammar rules that are a mix of nump and adjp children all going to nump
+	Comment: with the leftmost child is the head regardless of whether it is nump or adjp
+	Comment: I think this was done because NA28 (noes say Logos?) was not consistent in all the lexical nodes being num or adj. UGNT has made them consistent.
+	Modifications:	Changed τριῶν; -> adj [-> adjp] to τριῶν; -> adj [-> num -> nump] so now it is {nump nump nump -> nump}
+	Comment: I've decided I will not make the changes below since we can always combine the English of the chidren, but it is harder to split it from the head.
+	(Modifications:	Changed ἑκατὸν -> adj English from "a hundred [and]" to "a hundred and fifty three")
+	(Modifications:	Changed πεντήκοντα -> adj English from "fifty" to "*")
+	(Modifications:	Changed τριῶν; -> adj English from "three" to "*")
+
+59001001
+	det -> nump
+59005017
+	det -> adjp
+	det -> nump
+
+42001024
+	det -> nump
+	Modifications:	Changed μῆνας -> noun English from "five ~ months" to "months"
+	Modifications:	Changed πέντε -> det English from "five ~ months" to "five"
+42002021
+	det -> nump
+42002024
+	det -> nump
+42002036
+	det -> nump
+	Modifications:	Changed ἔτη -> noun English from "seven years" to "years"
+	Modifications:	Changed -> det English from "*" to "seven"
+42002037
+	det -> nump
+	det -> adjp
+	Modifications:	Changed ὀγδοήκοντα -> det English from "eighty four" to "eighty"
+	Modifications:	Changed τεσσάρων, -> det English from "*" to "four"
+42002042
+	det -> nump
+42003011
+	det -> nump
+42003023
+	det -> nump
+42004002
+	det -> nump
+	Modifications:	Changed ἡμέρας -> noun English from "forty days" to "days"
+	Modifications:	Changed τεσσεράκοντα -> det English from "*" to "forty"
+42004025
+	det -> adjp
+	Modifications:	Changed ἔτη -> noun English from "three years" to "years"
+	Modifications:	Changed τρία -> det English from "*" to "three"
+	det -> nump
+	Modifications:	Changed μῆνας -> noun English from "six months" to "months"
+	Modifications:	Changed ἕξ, -> det English from "*" to "six"
+42005002
+	det -> nump
+42006013
+	noun -> np
+	Modifications:	Changed δώδεκα, -> noun [->] np to δώδεκα, -> noun [-> num -> nump ->] np
+42007018
+	noun -> nump
+	Modifications:	Changed δύο -> noun English from "a certain two" to "two"
+	Modificaitons:	Changed τινὰς -> det English from "*" to "a certain"
+	Comment: it seems now that it is {noun det} it seems it shouldn't be {nump np* -> np} but {np* det -> np} but there isn't this rule so maybe {np* np -> np}
+	Comment: If we add a {np* det -> np} rule, then I think I would want to change the subtree to that.
+	Comment: For now, I think changing it to {np* np -> np} is a compromise and I think I might have done this elsewhere when I encountered {np det -> np}
+	Modifications:	Changed δύο -> noun [-> nump ->] np(0) to δύο -> noun [-> nump -> np ->] np(0)
+42007041
+	det -> nump
+	noun -> np (changed from adj -> adjp)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	Modifications:	Changed πεντήκοντα. -> noun [->] np to πεντήκοντα. -> noun [-> num -> nump ->] np
+42008001
+
+	noun -> nump
+	Q: Where it is {noun -> num -> nump} and {det nump -> np}, should we change it to {noun -> num -> nump -> np} and {det np -> np} since the nump is functioning as an np?
+	Comment: I will leave it as it is for now since we can change it automatically later
+42008002
+	det -> adj -> adjp (10a?)
+	det -> nump
+42008042
+	det -> nump
+	Modifications:	Changed ἐτῶν -> noun English from "of years" to "years"
+42008043
+	det -> nump
+	Modifications:	Changed ἐτῶν -> noun English from "twelve years" to "years"
+	Modifications:	Changed δώδεκα, -> det English from "*" to "twelve"
+42009001
+	noun -> nump
+42009003
+	det -> nump
+42009012
+	noun -> nump
+42009013
+	det -> nump
+	Modifications:	Changed ἄρτοι -> noun English "five loaves" to "loaves"
+	Modifications:	Changed πέντε -> det English "*" to "five"
+	det -> nump
+	Modifications:	Changed ἰχθύες -> noun English "two fish" to "fish"
+	Modifications:	Changed δύο, -> det English "*" to "two"
+42009014
+	det -> adjp -> adjp -> P (with {advp adjp -> adjp -> P}
+	Comment: We can't do the typical change to det -> num -> nump since there is no {advp nump -> adjp}
+	Comment: So I think the best is to follow the structure for the similar phrase at the end of the verse
+	Comment: to do {det -> num -> nump -> np} and {advp np -> np -> P}
+	Modifications:	Changed πεντακισχίλιοι) -> det [-> adjp(0) -> adjp(1) ->] P to πεντακισχίλιοι) -> det [-> num -> nump -> np(0) -> np(1) ->] P
+	Modificaitons:	Changed πεντακισχίλιοι) -> det English from "*" to "five thousand"
+	Modifications:	Changed ἄνδρες -> noun English from "five thousand men" to "men"
+	Comment: There could be other changes of gloss in this verse but I'll leave the rest alone for now.
+	noun -> np
+	Modifications:	Changed πεντήκοντα. -> noun [->] np to πεντήκοντα. -> noun [-> num -> nump ->] np
+42009016
+	det -> nump
+	det -> nump
+42009017
+	det -> nump
+42009028
+	det -> nump
+	Modifications:	Changed ἡμέραι -> noun English from "eight days" to "days"
+	Modficiations:	Changed ὀκτὼ, -> det English from "*" to "eight"
+42009030
+	det -> nump
+42009032
+	det -> nump
+	Comment: I accidently looked at 42009033 and saw a number that went from adj to noun and now it is noun -> np. 
+	Comment: But since there are no num in that verse, I am not going to deal with it here.
+	Comment: But this reminds me that I need to have something special (auto) to deal with this special situation.
+	Comment: Probably need to search based upon Lemma since type:substantive_adj is used for more than numerals that are nouns
+	Comment: Maybe I should use OldCat, but I don't think those are always correct since there are bad analyses in the initial diffs
+42010001
+	det -> nump
+	det -> nump
+	Modifications:	Changed ἑβδομήκοντα -> det English from "seventy two" to "seventy"
+	Modifications:	Changed δύο, -> det English from "*" to "two"
+	noun -> np (already corrected)
+	det -> adjp (8?)
+42010017
+	noun -> nump
+	noun -> nump
+42010035
+	det -> nump
+42011026
+	noun -> nump
+	Comment: 420110260231 πρώτων. "first" -> noun -> np is adj -> adjp in NA28, but this is an ordinal number, not a cardinal number.
+	Q: How should ordinal number be treated in the tress in UGNT? As adjp as it is in NA28 (keep tree similar) or np since they are noun in UGNT?
+42012006
+	det -> nump
+	det -> nump
+	Modifications:	Changed -> noun English from "[for] two assarion?" to "[for] assarion"
+	Modifications:	Changed -> det English from "*" to "two?"
+	noun -> np
+	Modifications:	Changed ἓν -> noun [->] np to ἓν -> noun [-> num -> nump ->] np
+42012052
+	noun -> np (was num in NA28)
+	Modifications:	Changed πέντε -> noun [->] np to πέντε -> noun [-> num -> nump ->] np
+	det -> adjp (1)
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 420120520111 τρεῖς -> noun [->] np to τρεῖς -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 420120520131 δυσὶν, -> noun [->] np to δυσὶν, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed 420120520151 δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 420120520171 τρισίν. -> noun [->] np to τρισίν. -> noun [-> num -> nump ->] np
+	Q: Here is another example of inconsistency in NA28 (i.e. they are not all adj or not all num)
+	Comment: If we had a richer grammar representation, we could leave numbers as adj, but let them categorize whether a head noun is required or not.
+	Comment: There could be a "Ref" field that will point to the head noun if present otherwise it is left blank and other means of resolving the reference will be required.
+	Comment: This may avoid having number be det, num, or adj (or adv?) if there exists a head noun, and having it as noun when there isn't a head noun.
+42013004
+	noun -> nump
+42013011
+	det -> nump
+42013014
+	det -> nump
+42013016
+	det -> nump
+	det -> nump
+42014019
+	noun -> nump
+42014031
+	det -> nump
+	det -> nump
+42015004
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἓν, -> noun [->] np to ἓν, -> noun [-> num -> nump ->] np
+	noun -> nump
+	noun -> nump
+	Modifications:	Changed ἐνενήκοντα -> noun English from "ninety-nine" to "ninety"
+	Modifications:	Changed ἐννέα -> noun English from "*" to "nine"
+42015007
+	det -> adjp (1)
+	det -> nump
+	det -> nump
+	Modifications:	Changed ἐνενήκοντα -> det English from "ninety-nine" to "ninety"
+	Modifications:	Changed ἐννέα -> det English from "*" to "nine"
+42015008
+	det -> nump
+	det -> adjp (2)
+	Modifications:	Changed δραχμὴν -> noun English from "one drachma" to "drachma"
+	Modifications:	Changed μίαν, -> det English from "*" to "one"
+	Comment: number of drachmas is a num in one instance and an adj in another in NA28
+42015011
+	det -> nump
+42016006
+	det -> nump
+	noun -> np (was num in NA28)
+	Modifications:	Changed πεντήκοντα. -> noun [->] np to πεντήκοντα. -> noun [-> num -> nump ->] np
+42016007
+	det -> nump
+	noun -> np (was num in NA28)
+	Modifications:	Changed ὀγδοήκοντα. -> noun [->] np to ὀγδοήκοντα. -> noun [-> num -> nump ->] np
+42016028
+	det -> nump
+42017012
+	det -> nump
+42017017
+	noun -> nump
+	noun -> nump
+42017034
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+42017035
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+42018010
+	det -> nump
+	det -> adjp (2)
+	det -> adjp (8?) 420180100131 "other"
+42018031
+	noun -> nump
+42019013
+	det -> nump
+	det -> nump
+42019016
+	noun -> np (was adj in NA28, ordinal number)
+	noun -> nump
+42019017
+	det -> nump
+	Comment: The "ten" is a noun in 42019016 but a det in this verse, though both have a head noun.
+42019018
+	det -> nump
+42019019
+	det -> nump
+42019024
+	det -> nump
+42019025
+	det -> nump
+42019029
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+42020029
+	det -> nump
+	noun -> np (was adj in NA28, ordinal number) 420200290071 "first"
+42020031
+	noun -> np (was adj in NA28, ordinal number) "third"
+	noun -> nump
+42020033
+	noun -> nump
+42021002
+	det -> nump
+42022003
+	noun -> nump
+42022030
+	det -> nump
+42022038
+	det -> nump (already corrected)
+42022047
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+42023032
+	det -> nump
+42024004
+	det -> nump
+	Modifications:	Changed -> noun English from "two men" to "men"
+	Modifications:	Changed -> det English from "*" to "two"
+42024009
+	noun -> nump
+42024013
+	noun -> np (num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	det -> nump
+42024033
+	noun -> nump
+
+
+40004002
+	det -> nump
+	Modifications:	Changed ἡμέρας -> noun English from "forty ~ days" to "days"
+	Modifications:	Changed τεσσεράκοντα -> det English "*" to "forty"
+	det -> nump
+	Modifications:	Changed νύκτας -> noun English from "forty ~ nights," to "nights"
+	Modifications:	Changed τεσσεράκοντα, -> det English "*" to "forty,"
+40004018
+	det -> nump
+40004021
+	det -> adjp (8?)
+	det -> nump
+	Modifications:	Changed -> det English from "two ~ other" to "other"
+	Modifications:	Changed -> det English from "*" to "two"
+40005041
+	det -> adjp (2)
+	noun -> np (num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+40008028
+	noun -> nump
+40009020
+	det -> nump
+40009027
+	det -> nump
+40010001
+	det -> nump
+	det -> adjp (8?) "every"
+	det -> adjp (8?) "every"
+40010002
+	det -> nump
+	noun -> np (was adj in NA28, ordinal number) 400100020091 "first"
+40010005
+	noun -> nump
+40010010
+	det -> nump
+40010029
+	det -> nump
+	noun -> np (adj in NA28)
+	Modifications:	Changed ἓν -> noun [->] np to ἓν -> noun [-> num -> nump ->] np
+40011001
+	det -> nump
+40012045
+	det -> nump
+	noun -> np (was adj in NA28, like ordinal, but not a number) 400120450191 "last"
+	noun -> np (was adj in NA28, ordinal number) 400120450251 "first"
+40013008
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑκατὸν, -> noun [->] np to ἑκατὸν, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑξήκοντα, -> noun [->] np to ἑξήκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed τριάκοντα. -> noun [->] np to τριάκοντα. -> noun [-> num -> nump ->] np
+40013023
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑκατὸν, -> noun [->] np to ἑκατὸν, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑξήκοντα, -> noun [->] np to ἑξήκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed τριάκοντα. -> noun [->] np to τριάκοντα. -> noun [-> num -> nump ->] np
+40014017
+	det -> nump
+	det -> nump
+40014019
+	det -> nump
+	det -> nump
+40014020
+	det -> nump
+	Q: It seems it should be first "twelve basekets" and then add "full" and not "baskets full" then "twelve"
+	Comment: The order of the words in Greek may suggest the above, but it is also possible the meaning is "seven full baskets", in which case "full baskets" could be grouped first
+40015034
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑπτά, -> noun [->] np to ἑπτά, -> noun [-> num -> nump ->] np
+40015036
+	det -> nump
+40015037
+	det -> nump
+40016009
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed πεντακισχιλίων, -> noun [->] np to πεντακισχιλίων, -> noun [-> num -> nump ->] np
+40016010
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed τετρακισχιλίων, -> noun [->] np to τετρακισχιλίων, -> noun [-> num -> nump ->] np
+40017001
+	det -> nump
+40018008
+	det -> nump
+40018009
+	det -> nump
+40018012
+	det -> adj -> adjp (10a?)
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἓν -> noun [->] np to ἓν -> noun [-> num -> nump ->] np
+	noun -> nump
+	noun -> nump
+	Modifications:	Changed ἐνενήκοντα -> noun English from "ninety - nine" to "ninety"
+	Modifications:	Changed ἐννέα -> noun English from "*" to "nine"
+40018013
+	noun -> nump
+	noun -> nump
+	Modifications:	Changed ἐνενήκοντα -> noun English from "ninety - nine" to "ninety"
+	Modifications:	Changed ἐννέα -> noun English from "*" to "nine"
+40018016
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+	det -> nump
+	det -> adjp (4)
+40018019
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+40018020
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed τρεῖς -> noun [->] np to τρεῖς -> noun [-> num -> nump ->] np
+40018022
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑπτά! -> noun [->] np to ἑπτά! -> noun [-> num -> nump ->] np
+40018028
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+	det -> nump
+40019005
+	noun -> nump
+	det -> adjp (2)
+40019006
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+	det -> adjp (2)
+40019028
+	det -> nump
+	det -> nump
+40020017
+	det -> nump
+40020021
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400200210171 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400200210211 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+40020024
+	noun -> nump
+	det -> nump
+40020030
+	det -> nump
+40021001
+	det -> nump
+40021028
+	det -> nump
+	noun -> np (was adj in NA28, ordinal number) 400210280121 "first"
+40021031
+	noun -> np
+	noun -> np (was adj in NA28, ordinal number) 400210310121 "first"
+40022025
+	det -> nump
+	noun -> np (was adj in NA28, ordinal number) 400220250091 "first"
+40022026
+	noun -> np (was adj in NA28, ordinal number) 400220260041 "second"
+	noun -> np (was adj in NA28, ordinal number) 400220260071 "third"
+	noun -> nump 400220260101 "seventh"
+	Comment: The first two are ordinal numbers while the last one is a cardinal number
+40022028
+	noun -> nump
+40024040
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	Modifications:	Changed δύο -> noun English from "two men" to "two [men]"
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400240400071 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400240400101 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+40024041
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+	Modifications:	Changed δύο -> noun English from "two women" to "two [women]"
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400240400061 μία -> noun [->] np to μία -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400240400091 μία -> noun [->] np to μία -> noun [-> num -> nump ->] np
+40025001
+	det -> nump
+40025002
+	noun -> np (was num in NA28)
+	Modifications:	Changed 400250020011 πέντε -> noun [->] np to πέντε -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed 400250020081 πέντε -> noun [->] np to πέντε -> noun [-> num -> nump ->] np
+40025015
+	det -> nump
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἕν, -> noun [->] np to ἕν, -> noun [-> num -> nump ->] np
+40025016
+	det -> nump
+	det -> nump (1, already corrected)
+40025017
+	noun -> nump
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο. -> noun [->] np to δύο. -> noun [-> num -> nump ->] np
+40025020
+	det -> nump
+	det -> adjp (8?) 400250200091 "more"
+	Modifications:	Changed ἄλλα -> det English from "five ~ more" to "more"
+	det -> nump
+	Modifications:	Changed 400250200101 πέντε -> det English from "*" to "five"
+	det -> nump
+	det -> adjp (8?) 400250200191 "more"
+	Modifications:	Changed ἄλλα -> det English from "five ~ more" to "more"
+	det -> nump
+	Modifications:	Changed 400250200201 πέντε -> det English from "*" to "five"
+40025022
+	det -> nump
+	det -> nump
+	det -> adjp (8?) 400250220141 "more"
+	det -> nump
+	Modifications:	Changed 400250200201 πέντε -> det English from "two ~ " to "two"
+40025028
+	det -> nump
+40026002
+	det -> nump
+40026014
+	noun -> nump
+40026015
+	det -> nump
+40026020
+	noun -> nump
+40026037
+	det -> nump
+40026047
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+40026053
+	det -> nump
+40026060
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+40027003
+	det -> nump
+40027009
+	det -> nump
+40027021
+	noun -> nump
+40027038
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400270380071 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 400270380111 εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+40027051
+	Comment: num in NA28 is no longer part of UGNT
+40028016
+	det -> nump
+
+
+41001013
+	det -> nump
+41003014
+	noun -> np (was num in NA28)
+	Modifications:	Changed δώδεκα, -> noun [->] np to δώδεκα, -> noun [-> num -> nump ->] np
+41003016
+	noun -> nump
+41004008
+	noun -> np (was num in NA28)
+	Modifications:	Changed τριάκοντα, -> noun [->] np to τριάκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑξήκοντα, -> noun [->] np to ἑξήκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑκατόν. -> noun [->] np to ἑκατόν. -> noun [-> num -> nump ->] np
+41004010
+	noun -> nump
+	Modifications:	Changed τοῖς -> det English from "the ones" to "the"
+41004020
+	noun -> np (was num in NA28)
+	Modifications:	Changed τριάκοντα, -> noun [->] np to τριάκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑξήκοντα, -> noun [->] np to ἑξήκοντα, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑκατόν. -> noun [->] np to ἑκατόν. -> noun [-> num -> nump ->] np
+41005025
+	det -> nump
+41005042
+	det -> nump
+41006007
+	noun -> nump
+	noun -> nump (already corrected)
+	noun -> nump (already corrected)
+41006009
+	det -> nump
+41006038
+	noun -> np (was num in NA28)
+	Modifications:	Changed πέντε -> noun [->] np to πέντε -> noun [-> num -> nump ->] np
+	det -> nump
+41006040
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑκατὸν -> noun [->] np to ἑκατὸν -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed πεντήκοντα. -> noun [->] np to πεντήκοντα. -> noun [-> num -> nump ->] np
+41006041
+	det -> nump
+	det -> nump
+	det -> nump
+41006043
+	det -> nump
+41008005
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑπτά. -> noun [->] np to ἑπτά. -> noun [-> num -> nump ->] np
+41008006
+	det -> nump
+41008008
+	det -> nump
+41008009 (No num in verse)
+	noun -> np (was adj in NA28)
+	Modifications:	Changed τετρακισχίλιοι. -> noun [->] np to τετρακισχίλιοι. -> noun [-> num -> nump ->] np
+	Modifications:	Changed τετρακισχίλιοι. -> noun English from "for thousand [people]" to "four thousand [people]"
+41008019
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed πεντακισχιλίους, -> noun [->] np to πεντακισχιλίους, -> noun [-> num -> nump ->] np
+	noun -> np (was num in NA28)
+	Modifications:	Changed δώδεκα. -> noun [->] np to δώδεκα. -> noun [-> num -> nump ->] np
+41008020
+	noun -> nump
+	noun -> np (was num in NA28)
+	Modifications:	Changed ἑπτά. -> noun [->] np to ἑπτά. -> noun [-> num -> nump ->] np
+41009002
+	det -> nump
+	Modifications:	Changed -> noun English from "* ~days" to "days"
+	Modifications:	Changed -> det English from "* six) to "six"
+41009035
+	noun -> nump
+	noun -> np (was adj in NA28) ordinal "first"
+41009043
+	det -> nump
+41009045
+	det -> nump
+41009047
+	det -> nump
+41010008
+	noun -> nump
+	det -> adjp (was adj in NA28)
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+	det -> adjp (was adj in NA28)
+41010032
+	noun -> nump
+41010041
+	noun -> nump
+41011001
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+41011011
+	noun -> nump
+41012020
+	det -> nump
+	noun -> np (was adj in NA28) ordinal "first"
+41012022
+	noun -> nump
+41012023
+	noun -> nump
+41012042
+	det -> adjp
+	det -> nump
+41014001
+	det -> nump
+41014010
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+41014013
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο -> noun [->] np to δύο -> noun [-> num -> nump ->] np
+41014017
+	noun -> nump
+41014020
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+41014043
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	noun -> nump
+41015027
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 410150270071 ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 410150270111 ἕνα -> noun [->] np to ἕνα -> noun [-> num -> nump ->] np
+41015038
+	noun -> np (was num in NA28)
+	Modifications:	Changed δύο, -> noun [->] np to δύο, -> noun [-> num -> nump ->] np
+41016009
+	Q: Why is 410160090041 πρώτῃ "first" an adj and not noun in UGNT (is adj in NA28)? Other places, it is a noun.
+	det -> nump
+41016014
+	noun -> nump
+
+50001023
+	noun -> nump
+
+66001004
+	det -> nump
+	det -> nump
+66001011
+	det -> nump
+66001012
+	det -> nump
+06601016
+	det -> nump
+66001020
+	det -> nump
+	det -> nump
+	det -> nump
+	det -> nump
+	det -> nump
+	det -> nump
+66002001
+	det -> nump
+	det -> nump
+66002010
+	det -> nump
+66003001
+	det -> nump
+	det -> nump
+66004004
+	det -> nump
+	det -> adjp (3)
+	det -> nump
+	det -> adjp (3)
+66004005
+	det -> nump
+	det -> nump
+66004008
+	det -> adjp (1)
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 660040080051 ἓν -> noun [->] np to ἓν -> noun [-> num -> nump ->] np
+	noun -> np (was adj in NA28)
+	Modifications:	Changed 660040080071 ἓν -> noun [->] np to ἓν -> noun [-> num -> nump ->] np
+	Q: Should αὐτῶν, be attached higher so it is first "one by one" and then "of them"?
+	det -> nump
+66004010
+	det -> nump
+	det -> adjp (3)
+66005001
+	det -> nump
+66005005
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	det -> nump
+66005006
+	det -> adjp (1)
+	det -> nump
+	det -> nump
+	det -> nump
+66005008
+	det -> nump
+	det -> adjp (3)
+66006001
+	noun -> np (was adj in NA28)
+	Modifications:	Changed μίαν -> noun [->] np to μίαν -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed ἑνὸς -> noun [->] np to ἑνὸς -> noun [-> num -> nump ->] np
+	det -> adjp (1)
+66007004
+	det -> nump
+	det -> nump
+	det -> adjp (7)
+66007005
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070050051 χιλιάδες -> noun [->] np to χιλιάδες -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070050111 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070050161 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+66007006
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070060051 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070060101 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070060151 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+66007007
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070070051 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070070101 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070070151 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+66007008
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070080051 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070080101 χιλιάδες, -> noun [->] np to χιλιάδες, -> noun [-> num -> nump ->] np
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed 660070080151 χιλιάδες -> noun [->] np to χιλιάδες -> noun [-> num -> nump ->] np
+66008002
+	det -> nump
+	det -> nump
+66008006
+	det -> nump
+	det -> nump
+66009005
+	det -> nump
+66009010
+	det -> nump
+66009012
+	Q: Why is 660090120041 μία "one" an adj (also adj in NA28) where as some numbers are noun in UGNT in other places? If it is adj, it is usually ordinal number, not cardinal number.
+	det -> nump
+66010003
+	det -> nump
+66010004
+	det -> nump
+	det -> nump
+66011002
+	det -> nump (already corrected)
+	det -> nump (already corrected)
+66011003
+	det -> adjp (7)
+	det -> adjp (7)
+	det -> nump
+66011004
+	det -> nump
+	det -> nump
+66011010
+	det -> nump
+66011013
+	noun -> np (was adj in NA28) ordinal "tenth"
+	det -> nump
+66011016
+	det -> nump
+	det -> adjp (3)
+66012001
+	det -> nump
+66012003
+	det -> nump
+	det -> nump
+	det -> nump
+66012006
+	det -> adjp (7)
+	det -> adjp (7)
+	det -> nump
+66012014
+	det -> nump
+66013001
+	det -> nump
+	det -> nump
+	Modifications:	Changed κεφαλὰς -> noun English from "seven" to "heads"
+	Modifications:	Changed ἑπτά, -> det English from "heads" to "seven"
+	det -> nump
+66013005
+	det -> nump (already corrected)
+	det -> nump (already corrected)
+66013011
+	det -> nump
+66013018
+	noun -> adjp (already corrected)
+	noun -> nump (already corrected)
+	noun -> nump (already corrected)
+66014001
+	det -> nump
+	det -> nump
+	det -> adjp (7)
+	noun -> np (was noun in NA28)
+	Modifications:	Changed χιλιάδες -> noun [->] np to χιλιάδες -> noun [-> num -> nump ->] np
+66014003
+	det -> nump
+	det -> nump
+	det -> adjp (7)
+	noun -> np (was noun in NA28)
+	Modifications:	Changed χιλιάδες -> noun [->] np to χιλιάδες -> noun [-> num -> nump ->] np
+66015001
+	det -> nump
+	det -> nump
+66015006
+	det -> nump
+	det -> nump
+66015007
+	det -> nump
+	det -> nump
+66015008
+	det -> nump
+	det -> nump
+66016001
+	det -> nump
+	det -> nump
+66017001
+	det -> nump
+	det -> nump
+66017003
+	det -> nump
+	det -> nump
+66017007
+	det -> nump
+	det -> nump
+66017009
+	det -> nump
+	det -> nump
+	det -> nump
+66017010
+	noun -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+66017011
+	noun -> np (was adj in NA28) ordinal 660170110111 ὄγδοός "eigth"
+	noun -> nump
+66017012
+	det -> nump
+	det -> nump
+	det -> adjp (1)
+66017016
+	det -> nump
+66019004
+	det -> nump
+	det -> adjp -> np where {nump np -> np}
+	Comment: This situation is rare (I think) so I don't think it is worth it to do auto correction. 
+	Comment: It is also a situation where I have taken the analysis that the two nump's should form one nump, rather than an np (since there is no rule {nump* nump -> np})
+	I will leave it as {det nump -> np} but as indicated elsewhere, we may want to change this to {det np -> np} by adding an np above nump
+	Modifications:	Changed τέσσαρες, -> det [-> adj -> adjp -> np(0) -> np(1) ->] np to τέσσαρες, -> det [-> num -> nump(0) -> nump(1) ->] np
+	det -> adjp (1)
+66019020
+	noun -> nump
+66021009
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	det -> nump
+	det -> nump
+	det -> nump
+	det -> adjp (was adj in NA28, like and ordinal, but not a number) 660210090191 ἐσχάτων, "last" type:ordinal
+66021012
+	det -> nump
+	det -> nump
+	det -> nump
+66021014
+	det -> nump
+	det -> nump
+	det -> nump
+66021016
+	det -> nump
+	noun -> np (was noun in NA28)
+	Modifications:	Changed χιλιάδων— -> noun [->] np to χιλιάδων— -> noun [-> num -> nump ->] np
+	Q: Should "twelve thousand" be an nump instead of np?
+66021017
+	det -> nump
+	det -> nump
+	det -> adjp (7)
+66021021
+	det -> nump
+	det -> nump
+	noun -> np (was adj in NA28)
+	Modifications:	Changed εἷς -> noun [->] np to εἷς -> noun [-> num -> nump ->] np
+	det -> adjp -> np (10b?) ἕκαστος "each" type:quantifier
+	det -> adjp (1)
+66022002
+	det -> nump
