@@ -20,3 +20,4 @@ Below is the description of the repository contents:
 **Trees/** - folder for the most recent version of UGNT Trees.
 
 See [UGNT Trees License](https://github.com/cherithanalytics/UGNT-Trees/blob/main/LICENSE.md) for license information.
+See [UGNT Trees License](https://github.com/cherithanalytics/UGNT-Trees/LICENSE.md) for license information.
