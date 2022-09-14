@@ -4,4 +4,5 @@ These are trees based upon the unfoldingWord® Greek New Testament (UGNT) text a
 Documentation/ - folder for documentation
   * Known-Issues.txt
   * Modifications-to-UGNT-Morphology.txt
+
 Trees/ - folder for the most recent version of modified trees based off of UGNT text and morphology.
