@@ -9,5 +9,6 @@ Issues related to syntax or other data in the trees are the sole responsibility 
 
 Documentation/ - folder for documentation
   * Modifications-to-UGNT-Morphology.txt - documents places where modifications were made to the unfoldingWord UGNT morphology data.
+  * ugnt.glosses.tsv - contains the English gloss used for each instance of the words.
 
 Trees/ - folder for the most recent version of modified trees based off of UGNT text and morphology.
