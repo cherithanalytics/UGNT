@@ -1,0 +1,33 @@
+This file documents the changes made to the UGNT morphology v0.27 for Unicode, Lemma, Strong, Analysis, Gloss.
+The morphId is a CherithAnalytics created index to the instance based morphology.
+The morphId is 12 digts long with the format BBCCCVVVWWWP where:
+    BB = two digits for the book with 40 for Matthew
+    CCC = three digits for the chapter
+    VVV = three digits for the verse
+    WWW = three digits for the word
+    P = one digit for the part of the word
+
+            morphId         Unicode         Lemma           Strong    Analysis      Gloss
+Original:   410070370021    ὑπέρπερισσῶς    ὑπέρπερισσῶς    52490     D,,,,,,,,,    -
+Modified:   410070370021    ὑπέρπερισσῶς    ὑπέρπερισσῶς    G52490    D,,,,,,,,,    -
+
+Original:   420220440121    ὡσεὶ            Χριστιανός      G56160    D,,,,,,,,,    -
+Modified:   420220440121    ὡσεὶ            ὡσεί            G56160    D,,,,,,,,,    -
+
+Original:   430080060081    κατέγραφεν      Χριστιανός      G99237    V,IIA3,,S,    -
+Modified:   430080060081    κατέγραφεν      γράφω           G99237    V,IIA3,,S,    -
+
+Original:   430080070011    Ὡς              Χριστιανός      G56130    D,,,,,,,,,    -
+Modified:   430080070011    Ὡς              ὡς              G56130    D,,,,,,,,,    -
+
+Original:   430080080031    κατακύψας       Χριστιανός      G99241    V,PAA,NMS,    -
+Modified:   430080080031    κατακύψας       κύπτω           G99241    V,PAA,NMS,    -
+
+Original:   430080080061    κατέγραφεν      Χριστιανός      G99237    V,IIA3,,S,    -
+Modified:   430080080061    κατέγραφεν      γράφω           G99237    V,IIA3,,S,    -
+
+Original:   430080090101    ὥστε            Χριστιανός      G56200    CS,,,,,,,,    -
+Modified:   430080090101    ὥστε            ὥστε            G56200    CS,,,,,,,,    -
+
+Original:   440080370201    Χριστὸν         Χριστιανός      G55470    N,,,,,AMS,    -
+Modified:   440080370201    Χριστὸν         Χριστός         G55470    N,,,,,AMS,    -
