@@ -18,3 +18,5 @@ Below is the description of the repository contents:
   * **ugnt.glosses.tsv** - contains the English gloss used for each instance of the words.
 
 **Trees/** - folder for the most recent version of UGNT Trees.
+
+See [UGNT Trees License](https://github.com/cherithanalytics/UGNT-Trees/blob/main/LICENSE.md) for license information.
