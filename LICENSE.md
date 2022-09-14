@@ -6,7 +6,7 @@
 
 CherithAnalytics® is a registered trademark of Cherith Analytics. Use of the Cherith Analytics name or logo requires the written permission of Cherith Analytics. Under the terms of the CC BY-SA license, you may copy and redistribute this unmodified work as long as you keep the CherithAnalytics® trademark intact. If you modify a copy or translate this work, thereby creating a derivative work, you must remove the CherithAnalytics® trademark.
 
-On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You must also make your derivative work available under the same license (CC BY-SA).
+On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You must also make your derivative work available under the same license (CC BY-SA). You may not in any way suggest that the licensor endorses you or your use.
 
 If you would like to notify Cherith Analytics regarding your modification or translation of this work, please contact Cherith Analytics at [cherith.io](https://cherith.io/).
 
