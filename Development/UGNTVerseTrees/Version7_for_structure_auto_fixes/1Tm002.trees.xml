@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sentences>
+  <Sentence ID="54002001">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020010020121" Length="12" Start="0" End="11">
+          <Node Id="1.1" Cat="CL" Lemma="παρακαλέω" Rule="Conj-CL" Head="1" StrongNumber="3870" Voice="Active" English="I urge" Tense="Present" Number="Singular" morphId="540020010011" StrongNumberX="3870" Mood="Indicative" Language="G" Role="Event" Person="First" Unicode="παρακαλῶ" Chinese="劝" Frame="{A0:54001001001 A1:54002001005}" nodeId="540020010020120" Length="12" Start="0" End="11">
+            <Node Id="1.2" Cat="conj" Lemma="οὖν" StrongNumber="3767" Language="G" morphId="540020010021" StrongNumberX="3767" English="Therefore" Unicode="οὖν," Chinese="（所以）" nodeId="540020010020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.3" Cat="CL" Lemma="παρακαλέω" Rule="V-O" Head="0" StrongNumber="3870" English="I urge" Tense="Present" Number="Singular" morphId="540020010011" StrongNumberX="3870" Chinese="劝" Mood="Indicative" Language="G" Role="Event" Person="First" Unicode="παρακαλῶ" Voice="Active" Frame="{A0:54001001001 A1:54002001005}" nodeId="540020010010110" Length="11" Start="1" End="11">
+              <Node Id="1.4" Cat="V" Lemma="παρακαλέω" Rule="Vp2V" Head="0" StrongNumber="3870" Language="G" Voice="Active" English="I urge" Tense="Present" Number="Singular" morphId="540020010011" StrongNumberX="3870" Role="Event" Mood="Indicative" Person="First" Chinese="劝" Unicode="παρακαλῶ" Frame="{A0:54001001001 A1:54002001005}" nodeId="540020010010012" Length="1" Start="1" End="1">
+                <Node Id="1.5" Cat="vp" Lemma="παρακαλέω" Rule="V2VP" Head="0" StrongNumber="3870" Tense="Present" English="I urge" Number="Singular" morphId="540020010011" StrongNumberX="3870" Chinese="劝" Mood="Indicative" Language="G" Role="Event" Person="First" Unicode="παρακαλῶ" Voice="Active" Frame="{A0:54001001001 A1:54002001005}" nodeId="540020010010011" Length="1" Start="1" End="1">
+                  <Node Id="1.6" Cat="verb" Lemma="παρακαλέω" StrongNumber="3870" Language="G" Person="First" Voice="Active" Mood="Indicative" Tense="Present" Number="Singular" morphId="540020010011" StrongNumberX="3870" English="I urge" ClType="Verbal" Role="Event" Unicode="παρακαλῶ" Chinese="劝" SubjRef="{54001001001}" Frame="{A0:54001001001 A1:54002001005}" nodeId="540020010010010" Start="1" End="1" SubjRefEnglish="{Paul}" SubjRefLemma="{Παῦλος}" SubjRefStrong="{3972}" FrameGloss="{A0:Paul A1:to be made}" Analysis="V,IPA1,,S," />
+                </Node>
+              </Node>
+              <Node Id="1.7" Cat="O" Lemma="ποιέω" Rule="CL2Ox" Head="0" StrongNumber="4160" Voice="Passive" English="to be made" Tense="Present" morphId="540020010051" StrongNumberX="4160" Chinese="（献上）" Mood="Infinitive" Language="G" Role="Event" Unicode="ποιεῖσθαι" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020010030102" Length="10" Start="2" End="11">
+                <Node Id="1.9" Cat="CL" Lemma="ποιέω" Rule="ADV-V-S-ADV" Head="1" StrongNumber="4160" Language="G" Voice="Passive" English="to be made" Tense="Present" morphId="540020010051" StrongNumberX="4160" Chinese="（献上）" Mood="Infinitive" Role="Event" Unicode="ποιεῖσθαι" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020010030100" Length="10" Start="2" End="11">
+                  <Node Id="1.10" Cat="ADV" Lemma="πρῶτον" Rule="Np2ADV" Head="0" Substantive="True" StrongNumber="4412" Gender="Neuter" English="first" Number="Singular" morphId="540020010031" StrongNumberX="4412" Language="G" Role="Relation" Case="Accusative" Unicode="πρῶτον" Chinese="第一" nodeId="540020010030021" Length="2" Start="2" End="3">
+                    <Node Id="1.11" Cat="np" Lemma="πρῶτον" Rule="NPofNP" Head="0" Substantive="True" StrongNumber="4412" Language="G" Number="Singular" morphId="540020010031" StrongNumberX="4412" Chinese="第一" English="first" Role="Relation" Case="Accusative" Unicode="πρῶτον" Gender="Neuter" nodeId="540020010030020" Length="2" Start="2" End="3">
+                      <Node Id="1.12" Cat="np" Lemma="πρῶτον" Rule="Adj2NP" Head="0" Substantive="True" StrongNumber="4412" Gender="Neuter" English="first" Number="Singular" morphId="540020010031" StrongNumberX="4412" Language="G" Role="Relation" Case="Accusative" Unicode="πρῶτον" Chinese="第一" nodeId="540020010030012" Length="1" Start="2" End="2">
+                        <Node Id="1.13" Cat="advp" Lemma="πρῶτον" Rule="Adv2Advp" Head="0" Substantive="True" StrongNumber="4412" Language="G" Number="Singular" morphId="540020010031" StrongNumberX="4412" Chinese="第一" English="first" Role="Relation" Case="Accusative" Unicode="πρῶτον" Gender="Neuter" nodeId="540020010030011" Length="1" Start="2" End="2">
+                          <Node Id="1.14" OldCat="adj" Cat="adv" Lemma="πρῶτον" Substantive="True" StrongNumber="4412" Gender="" English="first" Number="" morphId="540020010031" StrongNumberX="4412" Language="G" Role="Relation" Case="" Unicode="πρῶτον" Chinese="第一" Ref="{}" nodeId="540020010030010" Start="2" End="2" Analysis="D,,,,,,,,S" />
+                        </Node>
+                      </Node>
+                      <Node Id="1.16" Cat="np" Lemma="πᾶς" Rule="Pron2NP" Head="0" Substantive="False" StrongNumber="3956" Number="Plural" morphId="540020010041" StrongNumberX="3956" Chinese="（要）" English="of all" Language="G" Case="Genitive" Unicode="πάντων" Gender="Neuter" nodeId="540020010040011" Length="1" Start="3" End="3">
+                        <Node Id="1.17" OldCat="adj" Cat="pron" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Neuter" Number="Plural" morphId="540020010041" StrongNumberX="3956" English="of all" Case="Genitive" Unicode="πάντων" Chinese="（要）" Ref="{}" nodeId="540020010040010" Start="3" End="3" Analysis="RI,,,,GNP," />
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.18" Cat="V" Lemma="ποιέω" Rule="Vp2V" Head="0" StrongNumber="4160" Tense="Present" Mood="Infinitive" morphId="540020010051" StrongNumberX="4160" Role="Event" English="to be made" Language="G" Unicode="ποιεῖσθαι" Chinese="（献上）" Voice="Passive" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020010050012" Length="1" Start="4" End="4">
+                    <Node Id="1.19" Cat="vp" Lemma="ποιέω" Rule="V2VP" Head="0" StrongNumber="4160" Language="G" English="to be made" Tense="Present" morphId="540020010051" StrongNumberX="4160" Chinese="（献上）" Mood="Infinitive" Role="Event" Unicode="ποιεῖσθαι" Voice="Passive" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020010050011" Length="1" Start="4" End="4">
+                      <Node Id="1.20" Cat="verb" Lemma="ποιέω" StrongNumber="4160" Tense="Present" Voice="Passive" English="to be made" morphId="540020010051" StrongNumberX="4160" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="ποιεῖσθαι" Chinese="（献上）" SubjRef="{}" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020010050010" Start="4" End="4" FrameGloss="{A1:supplications;prayers;intercessions;thanksgiving}" Analysis="V,NPP,,,,," />
+                    </Node>
+                  </Node>
+                  <Node Id="1.21" Cat="S" Lemma="δέησις" Rule="Np2S" Head="0" StrongNumber="1162" Number="Plural" morphId="540020010061" StrongNumberX="1162" Chinese="祈求" English="supplications" Language="G" Role="Goal" Case="Accusative" Unicode="δεήσεις," Gender="Feminine" nodeId="540020010060041" Length="4" Start="5" End="8">
+                    <Node Id="1.22" Cat="np" Lemma="δέησις" Rule="NpNpNpNp" Head="0" Coord="True" StrongNumber="1162" Language="G" Gender="Feminine" Number="Plural" morphId="540020010061" StrongNumberX="1162" English="supplications" Role="Goal" Case="Accusative" Unicode="δεήσεις," Chinese="祈求" nodeId="540020010060040" Length="4" Start="5" End="8">
+                      <Node Id="1.23" Cat="np" Lemma="δέησις" Rule="N2NP" Head="0" StrongNumber="1162" Number="Plural" morphId="540020010061" StrongNumberX="1162" Chinese="祈求" English="supplications" Language="G" Role="Goal" Case="Accusative" Unicode="δεήσεις," Gender="Feminine" nodeId="540020010060011" Length="1" Start="5" End="5">
+                        <Node Id="1.24" Cat="noun" Lemma="δέησις" StrongNumber="1162" Language="G" Gender="Feminine" Number="Plural" morphId="540020010061" StrongNumberX="1162" English="supplications" Role="Goal" Case="Accusative" Unicode="δεήσεις," Chinese="祈求" Ref="{}" nodeId="540020010060010" Start="5" End="5" Analysis="N,,,,,AFP," />
+                      </Node>
+                      <Node Id="1.25" Cat="np" Lemma="προσευχή" Rule="N2NP" Head="0" StrongNumber="4335" Number="Plural" morphId="540020010071" StrongNumberX="4335" Chinese="祷告" English="prayers" Language="G" Case="Accusative" Unicode="προσευχάς," Gender="Feminine" nodeId="540020010070011" Length="1" Start="6" End="6">
+                        <Node Id="1.26" Cat="noun" Lemma="προσευχή" StrongNumber="4335" Language="G" Gender="Feminine" Number="Plural" morphId="540020010071" StrongNumberX="4335" English="prayers" Case="Accusative" Unicode="προσευχάς," Chinese="祷告" Ref="{}" nodeId="540020010070010" Start="6" End="6" Analysis="N,,,,,AFP," />
+                      </Node>
+                      <Node Id="1.27" Cat="np" Lemma="ἔντευξις" Rule="N2NP" Head="0" StrongNumber="1783" Number="Plural" morphId="540020010081" StrongNumberX="1783" Chinese="请求" English="intercessions" Language="G" Case="Accusative" Unicode="ἐντεύξεις," Gender="Feminine" nodeId="540020010080011" Length="1" Start="7" End="7">
+                        <Node Id="1.28" Cat="noun" Lemma="ἔντευξις" StrongNumber="1783" Language="G" Gender="Feminine" Number="Plural" morphId="540020010081" StrongNumberX="1783" English="intercessions" Case="Accusative" Unicode="ἐντεύξεις," Chinese="请求" Ref="{}" nodeId="540020010080010" Start="7" End="7" Analysis="N,,,,,AFP," />
+                      </Node>
+                      <Node Id="1.29" Cat="np" Lemma="εὐχαριστία" Rule="N2NP" Head="0" StrongNumber="2169" Number="Plural" morphId="540020010091" StrongNumberX="2169" Chinese="感谢" English="thanksgiving" Language="G" Case="Accusative" Unicode="εὐχαριστίας," Gender="Feminine" nodeId="540020010090011" Length="1" Start="8" End="8">
+                        <Node Id="1.30" Cat="noun" Lemma="εὐχαριστία" StrongNumber="2169" Language="G" Gender="Feminine" Number="Plural" morphId="540020010091" StrongNumberX="2169" English="thanksgiving" Case="Accusative" Unicode="εὐχαριστίας," Chinese="感谢" Ref="{}" nodeId="540020010090010" Start="8" End="8" Analysis="N,,,,,AFP," />
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.31" Cat="ADV" Lemma="ἄνθρωπος" Rule="pp2ADV" Head="0" StrongNumber="444" Language="G" Number="Plural" morphId="540020010121" StrongNumberX="0444" Chinese="人" English="men" PrepLemma="" Role="Location" Case="" Unicode="ἀνθρώπων;" Gender="Masculine" nodeId="540020010100032" Length="3" Start="9" End="11">
+                    <Node Id="1.33" Cat="pp" Lemma="ἄνθρωπος" Rule="PrepNp" Head="1" StrongNumber="444" Language="G" Number="Plural" morphId="540020010121" StrongNumberX="0444" Chinese="人" English="men" PrepLemma="ὑπέρ" Role="Location" Case="" Unicode="ἀνθρώπων;" Gender="Masculine" nodeId="540020010100030" Length="3" Start="9" End="11">
+                      <Node Id="1.34" Cat="prep" Lemma="ὑπέρ" StrongNumber="5228" English="on behalf of" morphId="540020010101" StrongNumberX="5228" PrepositionType="Located above" Language="G" Unicode="ὑπὲρ" Chinese="（为）" nodeId="540020010100010" Start="9" End="9" Analysis="P,,,,,G,,," />
+                      <Node Id="1.35" Cat="np" Lemma="ἄνθρωπος" Rule="All-NP" Head="1" StrongNumber="444" Gender="Masculine" English="men" Number="Plural" morphId="540020010121" StrongNumberX="0444" Language="G" Role="Location" Case="Genitive" Unicode="ἀνθρώπων;" Chinese="人" nodeId="540020010110020" Length="2" Start="10" End="11">
+                        <Node Id="1.36" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Plural" morphId="540020010111" StrongNumberX="3956" Chinese="万" English="all" Language="G" Case="Genitive" Unicode="πάντων" Gender="Masculine" nodeId="540020010110011" Length="1" Start="10" End="10">
+                          <Node Id="1.37" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Masculine" Number="Plural" morphId="540020010111" StrongNumberX="3956" English="all" Case="Genitive" Unicode="πάντων" Chinese="万" Ref="{}" nodeId="540020010110010" Start="10" End="10" Analysis="EQ,,,,GMP," />
+                        </Node>
+                        <Node Id="1.38" Cat="np" Lemma="ἄνθρωπος" Rule="N2NP" Head="0" StrongNumber="444" Language="G" Number="Plural" morphId="540020010121" StrongNumberX="0444" Chinese="人" English="men" Role="Location" Case="Genitive" Unicode="ἀνθρώπων;" Gender="Masculine" nodeId="540020010120011" Length="1" Start="11" End="11">
+                          <Node Id="1.39" Cat="noun" Lemma="ἄνθρωπος" StrongNumber="444" Gender="Masculine" English="men" Number="Plural" morphId="540020010121" StrongNumberX="0444" Language="G" Role="Location" Case="Genitive" Unicode="ἀνθρώπων;" Chinese="人" Ref="{}" nodeId="540020010120010" Start="11" End="11" Analysis="N,,,,,GMP," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002002">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020020010191" Length="19" Start="0" End="18">
+          <Node Id="1.8" Cat="CL" Lemma="ποιέω" Rule="ClCl" Head="0" StrongNumber="4160" Mood="Infinitive" Tense="Present" morphId="540020010051" StrongNumberX="4160" English="to be made" Language="G" Role="Event" Unicode="ποιεῖσθαι" Chinese="（献上）" Voice="Passive" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020020010190" Length="19" Start="0" End="18">
+            <Node Id="1.9" Cat="CL" Lemma="ποιέω" Rule="ADV2CL" Head="0" StrongNumber="4160" Language="G" Voice="Passive" English="to be made" Tense="Present" morphId="540020010051" StrongNumberX="4160" Chinese="（献上）" Mood="Infinitive" Role="Event" Unicode="ποιεῖσθαι" Frame="{A1:54002001006;54002001007;54002001008;54002001009}" nodeId="540020020010083" Length="8" Start="0" End="7">
+              <Node Id="1.31" Cat="ADV" Lemma="ἄνθρωπος" Rule="pp2ADV" Head="0" StrongNumber="444" Language="G" Number="Plural" morphId="540020010121" StrongNumberX="0444" Chinese="人" English="men" PrepLemma="" Role="Location" Case="" Unicode="ἀνθρώπων;" Gender="Masculine" nodeId="540020020010082" Length="8" Start="0" End="7">
+                <Node Id="1.40" Cat="pp" Lemma="βασιλεύς" Rule="PrepNp" Head="1" StrongNumber="935" Language="G" Number="Plural" morphId="540020020021" StrongNumberX="0935" Chinese="君王" English="kings" PrepLemma="ὑπέρ" Role="Location" Case="" Unicode="βασιλέων" Gender="Masculine" nodeId="540020020010080" Length="8" Start="0" End="7">
+                  <Node Id="1.41" Cat="prep" Lemma="ὑπέρ" StrongNumber="5228" English="on behalf of" morphId="540020020011" StrongNumberX="5228" PrepositionType="Located above" Language="G" Unicode="ὑπὲρ" Chinese="（为）" nodeId="540020020010010" Start="0" End="0" Analysis="P,,,,,G,,," />
+                  <Node Id="1.42" Cat="np" Lemma="βασιλεύς" Rule="NpaNp" Head="0" Coord="True" StrongNumber="935" Gender="Masculine" English="kings" Number="Plural" morphId="540020020021" StrongNumberX="0935" Language="G" Role="Location" Case="Genitive" Unicode="βασιλέων" Chinese="君王" nodeId="540020020020070" Length="7" Start="1" End="7">
+                    <Node Id="1.43" Cat="np" Lemma="βασιλεύς" Rule="N2NP" Head="0" StrongNumber="935" Language="G" Number="Plural" morphId="540020020021" StrongNumberX="0935" Chinese="君王" English="kings" Role="Location" Case="Genitive" Unicode="βασιλέων" Gender="Masculine" nodeId="540020020020011" Length="1" Start="1" End="1">
+                      <Node Id="1.44" Cat="noun" Lemma="βασιλεύς" StrongNumber="935" Gender="Masculine" English="kings" Number="Plural" morphId="540020020021" StrongNumberX="0935" Language="G" Role="Location" Case="Genitive" Unicode="βασιλέων" Chinese="君王" Ref="{}" nodeId="540020020020010" Start="1" End="1" Analysis="N,,,,,GMP," />
+                    </Node>
+                    <Node Id="1.45" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020020031" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020020030010" Start="2" End="2" Analysis="CC,,,,,,,," />
+                    <Node Id="1.46" Cat="np" Lemma="ὑπεροχή" Rule="All-NP" Head="1" StrongNumber="5247" Gender="Feminine" Mood="Participle" Number="Singular" morphId="540020020071" StrongNumberX="5247" English="authority" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑπεροχῇ" Chinese="上位" nodeId="540020020040050" Length="5" Start="3" End="7">
+                      <Node Id="1.47" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Plural" morphId="540020020041" StrongNumberX="3956" Chinese="一切" English="of all" Language="G" Case="Genitive" Unicode="πάντων" Gender="Masculine" nodeId="540020020040011" Length="1" Start="3" End="3">
+                        <Node Id="1.48" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Masculine" Number="Plural" morphId="540020020041" StrongNumberX="3956" English="of all" Case="Genitive" Unicode="πάντων" Chinese="一切" Ref="{}" nodeId="540020020040010" Start="3" End="3" Analysis="EQ,,,,GMP," />
+                      </Node>
+                      <Node Id="1.49" Cat="np" Lemma="ὑπεροχή" Rule="PronCL" Head="1" StrongNumber="5247" Language="G" English="authority" Number="Singular" morphId="540020020071" StrongNumberX="5247" Chinese="上位" Mood="Participle" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑπεροχῇ" Gender="Feminine" nodeId="540020020050040" Length="4" Start="4" End="7">
+                        <Node Id="1.50" OldCat="det" Cat="pron" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Masculine" Number="Plural" morphId="540020020051" StrongNumberX="3588" English="the ones" Case="Genitive" Unicode="τῶν" Chinese="（者）" Ref="{}" nodeId="540020020050010" Start="4" End="4" Analysis="RR,,,,GMP," />
+                        <Node Id="1.51" Cat="CL" Lemma="ὑπεροχή" Rule="P-VC" Head="0" StrongNumber="5247" Gender="Feminine" English="authority" Number="Singular" morphId="540020020071" StrongNumberX="5247" Mood="Participle" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑπεροχῇ" Chinese="上位" nodeId="540020020060030" Length="3" Start="5" End="7">
+                          <Node Id="1.52" Cat="P" Lemma="ὑπεροχή" Rule="pp2P" Head="0" StrongNumber="5247" Language="G" Number="Singular" morphId="540020020071" StrongNumberX="5247" Chinese="上位" English="authority" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑπεροχῇ" Gender="Feminine" nodeId="540020020060021" Length="2" Start="5" End="6">
+                            <Node Id="1.53" Cat="pp" Lemma="ὑπεροχή" Rule="PrepNp" Head="1" StrongNumber="5247" Gender="Feminine" English="authority" Number="Singular" morphId="540020020071" StrongNumberX="5247" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑπεροχῇ" Chinese="上位" nodeId="540020020060020" Length="2" Start="5" End="6">
+                              <Node Id="1.54" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020020061" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="（于）" nodeId="540020020060010" Start="5" End="5" Analysis="P,,,,,D,,," />
+                              <Node Id="1.55" Cat="np" Lemma="ὑπεροχή" Rule="N2NP" Head="0" StrongNumber="5247" Language="G" Number="Singular" morphId="540020020071" StrongNumberX="5247" Chinese="上位" English="authority" Role="Location" Case="Dative" Unicode="ὑπεροχῇ" Gender="Feminine" nodeId="540020020070011" Length="1" Start="6" End="6">
+                                <Node Id="1.56" Cat="noun" Lemma="ὑπεροχή" StrongNumber="5247" Gender="Feminine" English="authority" Number="Singular" morphId="540020020071" StrongNumberX="5247" Language="G" Role="Location" Case="Dative" Unicode="ὑπεροχῇ" Chinese="上位" Ref="{}" nodeId="540020020070010" Start="6" End="6" Analysis="N,,,,,DFS," />
+                              </Node>
+                            </Node>
+                          </Node>
+                          <Node Id="1.57" Cat="VC" Lemma="εἰμί" Rule="vp2VC" Head="0" StrongNumber="1510" Language="G" Gender="Masculine" English="being" Tense="Present" Number="Plural" morphId="540020020081" StrongNumberX="5607" Mood="Participle" Case="Genitive" Unicode="ὄντων," Chinese="" Voice="Active" Frame="{A0:00000000000}" nodeId="540020020080012" Length="1" Start="7" End="7">
+                            <Node Id="1.58" Cat="vp" Lemma="εἰμί" Rule="V2VP" Head="0" StrongNumber="1510" Tense="Present" English="being" Number="Plural" morphId="540020020081" StrongNumberX="5607" Chinese="" Mood="Participle" Language="G" Case="Genitive" Unicode="ὄντων," Gender="Masculine" Voice="Active" Frame="{A0:00000000000}" nodeId="540020020080011" Length="1" Start="7" End="7">
+                              <Node Id="1.59" Cat="verb" Lemma="εἰμί" StrongNumber="1510" Language="G" Gender="Masculine" Mood="Participle" Tense="Present" Number="Plural" morphId="540020020081" StrongNumberX="5607" English="being" ClType="Verbal" Case="Genitive" Unicode="ὄντων," Chinese="" Voice="Active" SubjRef="{}" Frame="{A0:00000000000}" nodeId="540020020080010" Start="7" End="7" FrameGloss="{A0:Unspecified}" Analysis="V,PPA,GMP," />
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node Id="1.60" Cat="CL" Lemma="διάγω" Rule="sub-CL" Head="1" StrongNumber="1236" Voice="Active" English="we may lead" Tense="Present" Number="Plural" morphId="540020020141" StrongNumberX="1236" Mood="Subjunctive" Language="G" Role="State" Person="First" Unicode="διάγωμεν" Chinese="度" Frame="{A0:54001001001;54001018006;54001016018 A1:54002002013}" nodeId="540020020090110" Length="11" Start="8" End="18">
+              <Node Id="1.61" Cat="conj" Lemma="ἵνα" StrongNumber="2443" English="that" morphId="540020020091" StrongNumberX="2443" Language="G" Unicode="ἵνα" Chinese="（使）" nodeId="540020020090010" Start="8" End="8" Analysis="CS,,,,,,,," />
+              <Node Id="1.62" Cat="CL" Lemma="διάγω" Rule="O-V-ADV" Head="1" StrongNumber="1236" English="we may lead" Tense="Present" Number="Plural" morphId="540020020141" StrongNumberX="1236" Chinese="度" Mood="Subjunctive" Language="G" Role="State" Person="First" Unicode="διάγωμεν" Voice="Active" Frame="{A0:54001001001;54001018006;54001016018 A1:54002002013}" nodeId="540020020100100" Length="10" Start="9" End="18">
+                <Node Id="1.63" Cat="O" Lemma="βίος" Rule="Np2O" Head="0" StrongNumber="979" Number="Singular" morphId="540020020131" StrongNumberX="0979" Chinese="生" English="life" Language="G" Role="Goal" Case="Accusative" Unicode="βίον" Gender="Masculine" nodeId="540020020100041" Length="4" Start="9" End="12">
+                  <Node Id="1.64" Cat="np" Lemma="βίος" Rule="AdjpNp" Head="1" StrongNumber="979" Language="G" Gender="Masculine" Number="Singular" morphId="540020020131" StrongNumberX="0979" English="life" Role="Goal" Case="Accusative" Unicode="βίον" Chinese="生" nodeId="540020020100040" Length="4" Start="9" End="12">
+                    <Node Id="1.65" Cat="adjp" Lemma="ἤρεμος" Rule="AdjpaAdjp" Head="0" Coord="True" Substantive="False" StrongNumber="2263" Language="G" Gender="Masculine" Number="Singular" morphId="540020020101" StrongNumberX="2263" English="a tranquil" Case="Accusative" Unicode="ἤρεμον" Chinese="（稳定）" nodeId="540020020100030" Length="3" Start="9" End="11">
+                      <Node Id="1.66" Cat="adjp" Lemma="ἤρεμος" Rule="Adj2Adjp" Head="0" Substantive="False" StrongNumber="2263" Number="Singular" morphId="540020020101" StrongNumberX="2263" Chinese="（稳定）" English="a tranquil" Language="G" Case="Accusative" Unicode="ἤρεμον" Gender="Masculine" nodeId="540020020100011" Length="1" Start="9" End="9">
+                        <Node Id="1.67" Cat="adj" Lemma="ἤρεμος" Substantive="False" StrongNumber="2263" Language="G" Gender="Masculine" Number="Singular" morphId="540020020101" StrongNumberX="2263" English="a tranquil" Case="Accusative" Unicode="ἤρεμον" Chinese="（稳定）" Ref="{}" nodeId="540020020100010" Start="9" End="9" Analysis="AA,,,,AMS," />
+                      </Node>
+                      <Node Id="1.68" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020020111" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020020110010" Start="10" End="10" Analysis="CC,,,,,,,," />
+                      <Node Id="1.69" Cat="adjp" Lemma="ἡσύχιος" Rule="Adj2Adjp" Head="0" Substantive="False" StrongNumber="2272" Number="Singular" morphId="540020020121" StrongNumberX="2272" Chinese="安静" English="quiet" Language="G" Case="Accusative" Unicode="ἡσύχιον" Gender="Masculine" nodeId="540020020120011" Length="1" Start="11" End="11">
+                        <Node Id="1.70" Cat="adj" Lemma="ἡσύχιος" Substantive="False" StrongNumber="2272" Language="G" Gender="Masculine" Number="Singular" morphId="540020020121" StrongNumberX="2272" English="quiet" Case="Accusative" Unicode="ἡσύχιον" Chinese="安静" Ref="{}" nodeId="540020020120010" Start="11" End="11" Analysis="AA,,,,AMS," />
+                      </Node>
+                    </Node>
+                    <Node Id="1.71" Cat="np" Lemma="βίος" Rule="N2NP" Head="0" StrongNumber="979" Number="Singular" morphId="540020020131" StrongNumberX="0979" Chinese="生" English="life" Language="G" Role="Goal" Case="Accusative" Unicode="βίον" Gender="Masculine" nodeId="540020020130011" Length="1" Start="12" End="12">
+                      <Node Id="1.72" Cat="noun" Lemma="βίος" StrongNumber="979" Language="G" Gender="Masculine" Number="Singular" morphId="540020020131" StrongNumberX="0979" English="life" Role="Goal" Case="Accusative" Unicode="βίον" Chinese="生" Ref="{}" nodeId="540020020130010" Start="12" End="12" Analysis="N,,,,,AMS," />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node Id="1.73" Cat="V" Lemma="διάγω" Rule="Vp2V" Head="0" StrongNumber="1236" Language="G" Voice="Active" English="we may lead" Tense="Present" Number="Plural" morphId="540020020141" StrongNumberX="1236" Role="State" Mood="Subjunctive" Person="First" Chinese="度" Unicode="διάγωμεν" Frame="{A0:54001001001;54001018006;54001016018 A1:54002002013}" nodeId="540020020140012" Length="1" Start="13" End="13">
+                  <Node Id="1.74" Cat="vp" Lemma="διάγω" Rule="V2VP" Head="0" StrongNumber="1236" Tense="Present" English="we may lead" Number="Plural" morphId="540020020141" StrongNumberX="1236" Chinese="度" Mood="Subjunctive" Language="G" Role="State" Person="First" Unicode="διάγωμεν" Voice="Active" Frame="{A0:54001001001;54001018006;54001016018 A1:54002002013}" nodeId="540020020140011" Length="1" Start="13" End="13">
+                    <Node Id="1.75" Cat="verb" Lemma="διάγω" StrongNumber="1236" Language="G" Person="First" Voice="Active" Mood="Subjunctive" Tense="Present" Number="Plural" morphId="540020020141" StrongNumberX="1236" English="we may lead" ClType="Verbal" Role="State" Unicode="διάγωμεν" Chinese="度" SubjRef="{54001001001 54001018006 54001016018}" Frame="{A0:54001001001;54001018006;54001016018 A1:54002002013}" nodeId="540020020140010" Start="13" End="13" SubjRefEnglish="{Paul child being about}" SubjRefLemma="{Παῦλος τέκνον μέλλω}" SubjRefStrong="{3972 5043 3195}" FrameGloss="{A0:Paul;child;being about A1:life}" Analysis="V,SPA1,,P," />
+                  </Node>
+                </Node>
+                <Node Id="1.76" Cat="ADV" Lemma="εὐσέβεια" Rule="pp2ADV" Head="0" StrongNumber="2150" Language="G" Number="Singular" morphId="540020020171" StrongNumberX="2150" Chinese="敬虔" English="piety" PrepLemma="" Role="Location" Case="" Unicode="εὐσεβείᾳ" Gender="Feminine" nodeId="540020020150051" Length="5" Start="14" End="18">
+                  <Node Id="1.77" Cat="pp" Lemma="εὐσέβεια" Rule="PrepNp" Head="1" StrongNumber="2150" Gender="Feminine" English="piety" Number="Singular" morphId="540020020171" StrongNumberX="2150" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="εὐσεβείᾳ" Chinese="敬虔" nodeId="540020020150050" Length="5" Start="14" End="18">
+                    <Node Id="1.78" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020020151" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="（用）" nodeId="540020020150010" Start="14" End="14" Analysis="P,,,,,D,,," />
+                    <Node Id="1.79" Cat="np" Lemma="εὐσέβεια" Rule="All-NP" Head="1" StrongNumber="2150" Language="G" Number="Singular" morphId="540020020171" StrongNumberX="2150" Chinese="敬虔" English="piety" Role="Location" Case="Dative" Unicode="εὐσεβείᾳ" Gender="Feminine" nodeId="540020020160040" Length="4" Start="15" End="18">
+                      <Node Id="1.80" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Singular" morphId="540020020161" StrongNumberX="3956" Chinese="（十二分）" English="all" Language="G" Case="Dative" Unicode="πάσῃ" Gender="Feminine" nodeId="540020020160011" Length="1" Start="15" End="15">
+                        <Node Id="1.81" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Feminine" Number="Singular" morphId="540020020161" StrongNumberX="3956" English="all" Case="Dative" Unicode="πάσῃ" Chinese="（十二分）" Ref="{}" nodeId="540020020160010" Start="15" End="15" Analysis="EQ,,,,DFS," />
+                      </Node>
+                      <Node Id="1.82" Cat="np" Lemma="εὐσέβεια" Rule="NpaNp" Head="0" Coord="True" StrongNumber="2150" Gender="Feminine" English="piety" Number="Singular" morphId="540020020171" StrongNumberX="2150" Language="G" Role="Location" Case="Dative" Unicode="εὐσεβείᾳ" Chinese="敬虔" nodeId="540020020170030" Length="3" Start="16" End="18">
+                        <Node Id="1.83" Cat="np" Lemma="εὐσέβεια" Rule="N2NP" Head="0" StrongNumber="2150" Language="G" Number="Singular" morphId="540020020171" StrongNumberX="2150" Chinese="敬虔" English="piety" Role="Location" Case="Dative" Unicode="εὐσεβείᾳ" Gender="Feminine" nodeId="540020020170011" Length="1" Start="16" End="16">
+                          <Node Id="1.84" Cat="noun" Lemma="εὐσέβεια" StrongNumber="2150" Gender="Feminine" English="piety" Number="Singular" morphId="540020020171" StrongNumberX="2150" Language="G" Role="Location" Case="Dative" Unicode="εὐσεβείᾳ" Chinese="敬虔" Ref="{}" nodeId="540020020170010" Start="16" End="16" Analysis="N,,,,,DFS," />
+                        </Node>
+                        <Node Id="1.85" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020020181" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020020180010" Start="17" End="17" Analysis="CC,,,,,,,," />
+                        <Node Id="1.86" Cat="np" Lemma="σεμνότης" Rule="N2NP" Head="0" StrongNumber="4587" Number="Singular" morphId="540020020191" StrongNumberX="4587" Chinese="庄重" English="reverence" Language="G" Case="Dative" Unicode="σεμνότητι." Gender="Feminine" nodeId="540020020190011" Length="1" Start="18" End="18">
+                          <Node Id="1.87" Cat="noun" Lemma="σεμνότης" StrongNumber="4587" Language="G" Gender="Feminine" Number="Singular" morphId="540020020191" StrongNumberX="4587" English="reverence" Case="Dative" Unicode="σεμνότητι." Chinese="庄重" Ref="{}" nodeId="540020020190010" Start="18" End="18" Analysis="N,,,,,DFS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002003">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020030010091" Length="9" Start="0" End="8">
+          <Node Id="1.1" Cat="CL" Lemma="καλός" Rule="S-P-ADV" Head="1" Substantive="False" StrongNumber="2570" Language="G" Gender="Neuter" Number="Singular" morphId="540020030021" StrongNumberX="2570" English="(is) good" ClType="Verbless" Role="Attribute" Case="Nominative" Unicode="καλὸν" Chinese="美好" nodeId="540020030010090" Length="9" Start="0" End="8">
+            <Node Id="1.2" Cat="S" Lemma="οὗτος" Rule="Np2S" Head="0" StrongNumber="3778" Language="G" Gender="Neuter" Number="Singular" morphId="540020030011" StrongNumberX="5124" English="this" Role="Subject Matter" Case="Nominative" Unicode="τοῦτο" Chinese="（这）" nodeId="540020030010012" Length="1" Start="0" End="0">
+              <Node Id="1.3" Cat="np" Lemma="οὗτος" Rule="Pron2NP" Head="0" StrongNumber="3778" Number="Singular" morphId="540020030011" StrongNumberX="5124" Chinese="（这）" English="this" Language="G" Role="Subject Matter" Case="Nominative" Unicode="τοῦτο" Gender="Neuter" nodeId="540020030010011" Length="1" Start="0" End="0">
+                <Node Id="1.4" Cat="pron" Lemma="οὗτος" StrongNumber="3778" Language="G" Gender="Neuter" Number="Singular" morphId="540020030011" StrongNumberX="5124" English="this" Role="Subject Matter" Case="Nominative" Unicode="τοῦτο" Chinese="（这）" Ref="{54002001005}" nodeId="540020030010010" Start="0" End="0" RefEnglish="{to be made}" RefLemma="{ποιέω}" RefStrong="{4160}" Analysis="RD,,,,NNS," />
+              </Node>
+            </Node>
+            <Node Id="1.5" Cat="P" Lemma="καλός" Rule="Adjp2P" Head="0" Substantive="False" StrongNumber="2570" Number="Singular" morphId="540020030021" StrongNumberX="2570" Chinese="美好" English="(is) good" Language="G" Role="Attribute" Case="Nominative" Unicode="καλὸν" Gender="Neuter" nodeId="540020030020031" Length="3" Start="1" End="3">
+              <Node Id="1.6" Cat="adjp" Lemma="καλός" Rule="AdjpaAdjp" Head="0" Coord="True" Substantive="False" StrongNumber="2570" Language="G" Gender="Neuter" Number="Singular" morphId="540020030021" StrongNumberX="2570" English="(is) good" Role="Attribute" Case="Nominative" Unicode="καλὸν" Chinese="美好" nodeId="540020030020030" Length="3" Start="1" End="3">
+                <Node Id="1.7" Cat="np" Lemma="καλός" Rule="N2NP" Head="0" Substantive="False" StrongNumber="2570" Number="Singular" morphId="540020030021" StrongNumberX="2570" Chinese="美好" English="(is) good" Language="G" Role="Attribute" Case="Nominative" Unicode="καλὸν" Gender="Neuter" nodeId="540020030020011" Length="1" Start="1" End="1">
+                  <Node Id="1.8" OldCat="adj" Cat="noun" Lemma="καλός" Substantive="False" StrongNumber="2570" Language="G" Gender="Neuter" Number="Singular" morphId="540020030021" StrongNumberX="2570" English="(is) good" Role="Attribute" Case="Nominative" Unicode="καλὸν" Chinese="美好" Ref="{}" nodeId="540020030020010" Start="1" End="1" Analysis="NS,,,,NNS," />
+                </Node>
+                <Node Id="1.9" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020030031" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="且" nodeId="540020030030010" Start="2" End="2" Analysis="CC,,,,,,,," />
+                <Node Id="1.10" Cat="np" Lemma="ἀπόδεκτος" Rule="N2NP" Head="0" Substantive="False" StrongNumber="587" Number="Singular" morphId="540020030041" StrongNumberX="0587" Chinese="蒙悦纳" English="acceptance" Language="G" Case="Nominative" Unicode="ἀπόδεκτον" Gender="Neuter" nodeId="540020030040011" Length="1" Start="3" End="3">
+                  <Node Id="1.11" OldCat="adj" Cat="noun" Lemma="ἀπόδεκτος" Substantive="False" StrongNumber="587" Language="G" Gender="Neuter" Number="Singular" morphId="540020030041" StrongNumberX="0587" English="acceptance" Case="Nominative" Unicode="ἀπόδεκτον" Chinese="蒙悦纳" Ref="{}" nodeId="540020030040010" Start="3" End="3" Analysis="NS,,,,NNS," />
+                </Node>
+              </Node>
+            </Node>
+            <Node Id="1.12" Cat="ADV" Lemma="σωτήρ" Rule="pp2ADV" Head="0" HasDet="True" StrongNumber="4990" Language="G" Number="Singular" morphId="540020030071" StrongNumberX="4990" Chinese="救主" English="Savior" PrepLemma="" Role="Location" Case="" Unicode="Σωτῆρος" Gender="Masculine" nodeId="540020030050051" Length="5" Start="4" End="8">
+              <Node Id="1.13" Cat="pp" Lemma="σωτήρ" Rule="PrepNp" Head="1" HasDet="True" StrongNumber="4990" Gender="Masculine" English="Savior" Number="Singular" morphId="540020030071" StrongNumberX="4990" Language="G" PrepLemma="ἐνώπιον" Role="Location" Case="" Unicode="Σωτῆρος" Chinese="救主" nodeId="540020030050050" Length="5" Start="4" End="8">
+                <Node Id="1.14" Cat="prep" Lemma="ἐνώπιον" StrongNumber="1799" English="before" morphId="540020030051" StrongNumberX="1799" PrepositionType="Located in front of" Language="G" Unicode="ἐνώπιον" Chinese="在..面前" nodeId="540020030050010" Start="4" End="4" Analysis="PI,,,,G,,," />
+                <Node Id="1.16" Cat="np" Lemma="σωτήρ" Rule="DetNP" Head="1" HasDet="True" StrongNumber="4990" Gender="Masculine" English="Savior" Number="Singular" morphId="540020030071" StrongNumberX="4990" Language="G" Role="Location" Case="Genitive" Unicode="Σωτῆρος" Chinese="救主" nodeId="540020030060040" Length="4" Start="5" End="8">
+                  <Node Id="1.17" Cat="det" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Masculine" Number="Singular" morphId="540020030061" StrongNumberX="3588" English="the" Case="Genitive" Unicode="τοῦ" Chinese="" Ref="{}" nodeId="540020030060010" Start="5" End="5" Analysis="EA,,,,GMS," />
+                  <Node Id="1.18" Cat="np" Lemma="σωτήρ" Rule="Np-Appos" Head="0" StrongNumber="4990" Language="G" Number="Singular" morphId="540020030071" StrongNumberX="4990" Chinese="救主" English="Savior" Role="Location" Case="Genitive" Unicode="Σωτῆρος" Gender="Masculine" nodeId="540020030070030" Length="3" Start="6" End="8">
+                    <Node Id="1.19" Cat="np" Lemma="σωτήρ" Rule="NPofNP" Head="0" StrongNumber="4990" Gender="Masculine" English="Savior" Number="Singular" morphId="540020030071" StrongNumberX="4990" Language="G" Role="Location" Case="Genitive" Unicode="Σωτῆρος" Chinese="救主" nodeId="540020030070020" Length="2" Start="6" End="7">
+                      <Node Id="1.20" Cat="np" Lemma="σωτήρ" Rule="N2NP" Head="0" StrongNumber="4990" Language="G" Number="Singular" morphId="540020030071" StrongNumberX="4990" Chinese="救主" English="Savior" Role="Location" Case="Genitive" Unicode="Σωτῆρος" Gender="Masculine" nodeId="540020030070011" Length="1" Start="6" End="6">
+                        <Node Id="1.21" Cat="noun" Lemma="σωτήρ" StrongNumber="4990" Gender="Masculine" English="Savior" Number="Singular" morphId="540020030071" StrongNumberX="4990" Language="G" Role="Location" Case="Genitive" Unicode="Σωτῆρος" Chinese="救主" Ref="{}" nodeId="540020030070010" Start="6" End="6" Analysis="N,,,,,GMS," />
+                      </Node>
+                      <Node Id="1.22" Cat="np" Lemma="ἐγώ" Rule="Pron2NP" Head="0" StrongNumber="1473" Number="Plural" morphId="540020030081" StrongNumberX="2257" Chinese="我们的" English="of us" Language="G" Case="Genitive" Unicode="ἡμῶν," nodeId="540020030080011" Length="1" Start="7" End="7">
+                        <Node Id="1.23" Cat="pron" Lemma="ἐγώ" StrongNumber="1473" Language="G" Number="Plural" morphId="540020030081" StrongNumberX="2257" English="of us" Case="Genitive" Unicode="ἡμῶν," Chinese="我们的" Ref="{54001001001 54001018006 54001016018}" nodeId="540020030080010" Start="7" End="7" RefEnglish="{Paul child being about}" RefLemma="{Παῦλος τέκνον μέλλω}" RefStrong="{3972 5043 3195}" Analysis="RP,,,1G,P," />
+                      </Node>
+                    </Node>
+                    <Node Id="1.24" Cat="np" Lemma="θεός" Rule="N2NP" Head="0" StrongNumber="2316" Number="Singular" morphId="540020030091" StrongNumberX="2316" Chinese="上帝" English="God" Language="G" Case="Genitive" Unicode="Θεοῦ," Gender="Masculine" nodeId="540020030090011" Length="1" Start="8" End="8">
+                      <Node Id="1.25" Cat="noun" Lemma="θεός" StrongNumber="2316" Language="G" Gender="Masculine" Number="Singular" morphId="540020030091" StrongNumberX="2316" English="God" Case="Genitive" Unicode="Θεοῦ," Chinese="上帝" Ref="{}" nodeId="540020030090010" Start="8" End="8" Analysis="N,,,,,GMS," />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002004">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020040010101" Length="10" Start="0" End="9">
+          <Node Id="1.26" Cat="CL" Lemma="θέλω" Rule="S-V-O" Head="1" StrongNumber="2309" English="wants" Tense="Present" Number="Singular" morphId="540020040041" StrongNumberX="2309" Chinese="愿意" Mood="Indicative" Language="G" Role="Modal" Person="Third" Unicode="θέλει" Voice="Active" Frame="{A0:54002004001 A1:54002004005;54002004010}" nodeId="540020040010100" Length="10" Start="0" End="9">
+            <Node Id="1.27" Cat="S" Lemma="ὅς" Rule="Np2S" Head="0" StrongNumber="3739" Language="G" Gender="Masculine" Number="Singular" morphId="540020040011" StrongNumberX="3739" English="who" Role="Source" Case="Nominative" Unicode="ὃς" Chinese="他" nodeId="540020040010012" Length="1" Start="0" End="0">
+              <Node Id="1.28" Cat="np" Lemma="ὅς" Rule="Pron2NP" Head="0" StrongNumber="3739" Number="Singular" morphId="540020040011" StrongNumberX="3739" Chinese="他" English="who" Language="G" Role="Source" Case="Nominative" Unicode="ὃς" Gender="Masculine" nodeId="540020040010011" Length="1" Start="0" End="0">
+                <Node Id="1.29" Cat="pron" Lemma="ὅς" StrongNumber="3739" Language="G" Gender="Masculine" Number="Singular" morphId="540020040011" StrongNumberX="3739" English="who" Role="Source" Case="Nominative" Unicode="ὃς" Chinese="他" Ref="{54002003007}" nodeId="540020040010010" Start="0" End="0" RefEnglish="{Savior}" RefLemma="{σωτήρ}" RefStrong="{4990}" Analysis="RR,,,,NMS," />
+              </Node>
+            </Node>
+            <Node Id="1.30" Cat="V" Lemma="θέλω" Rule="Vp2V" Head="0" StrongNumber="2309" Language="G" Voice="Active" English="wants" Tense="Present" Number="Singular" morphId="540020040041" StrongNumberX="2309" Role="Modal" Mood="Indicative" Person="Third" Chinese="愿意" Unicode="θέλει" Frame="{A0:54002004001 A1:54002004005;54002004010}" nodeId="540020040040012" Length="1" Start="1" End="1">
+              <Node Id="1.31" Cat="vp" Lemma="θέλω" Rule="V2VP" Head="0" StrongNumber="2309" Tense="Present" English="wants" Number="Singular" morphId="540020040041" StrongNumberX="2309" Chinese="愿意" Mood="Indicative" Language="G" Role="Modal" Person="Third" Unicode="θέλει" Voice="Active" Frame="{A0:54002004001 A1:54002004005;54002004010}" nodeId="540020040040011" Length="1" Start="1" End="1">
+                <Node Id="1.32" Cat="verb" Lemma="θέλω" StrongNumber="2309" Language="G" Person="Third" Voice="Active" Mood="Indicative" Tense="Present" Number="Singular" morphId="540020040041" StrongNumberX="2309" English="wants" ClType="Verbal" Role="Modal" Unicode="θέλει" Chinese="愿意" SubjRef="{}" Frame="{A0:54002004001 A1:54002004005;54002004010}" nodeId="540020040040010" Start="1" End="1" FrameGloss="{A0:who A1:to be saved;to come}" Analysis="V,IPA3,,S," />
+              </Node>
+            </Node>
+            <Node Id="1.33" Cat="O" Lemma="σῴζω" Rule="CL2Ox" Head="0" StrongNumber="4982" Mood="Infinitive" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" English="to be saved" Language="G" Role="Event" Unicode="σωθῆναι," Chinese="得" Voice="Passive" Frame="{A1:00000000000}" nodeId="540020040020081" Length="8" Start="2" End="9">
+              <Node Id="1.34" Cat="CL" Lemma="σῴζω" Rule="S-V" Head="1" StrongNumber="4982" Voice="Passive" English="to be saved" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" Chinese="得" Mood="Infinitive" Language="G" Role="Event" Unicode="σωθῆναι," Frame="{A1:00000000000}" nodeId="540020040020080" Length="8" Start="2" End="9">
+                <Node Id="1.35" Cat="S" Lemma="ἄνθρωπος" Rule="Np2S" Head="0" StrongNumber="444" Number="Plural" morphId="540020040031" StrongNumberX="0444" Chinese="人" English="men" Language="G" Role="Goal" Case="Accusative" Unicode="ἀνθρώπους" Gender="Masculine" nodeId="540020040020021" Length="2" Start="2" End="3">
+                  <Node Id="1.36" Cat="np" Lemma="ἄνθρωπος" Rule="All-NP" Head="1" StrongNumber="444" Language="G" Gender="Masculine" Number="Plural" morphId="540020040031" StrongNumberX="0444" English="men" Role="Goal" Case="Accusative" Unicode="ἀνθρώπους" Chinese="人" nodeId="540020040020020" Length="2" Start="2" End="3">
+                    <Node Id="1.37" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Plural" morphId="540020040021" StrongNumberX="3956" Chinese="万" English="all" Language="G" Case="Accusative" Unicode="πάντας" Gender="Masculine" nodeId="540020040020011" Length="1" Start="2" End="2">
+                      <Node Id="1.38" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Masculine" Number="Plural" morphId="540020040021" StrongNumberX="3956" English="all" Case="Accusative" Unicode="πάντας" Chinese="万" Ref="{}" nodeId="540020040020010" Start="2" End="2" Analysis="EQ,,,,AMP," />
+                    </Node>
+                    <Node Id="1.39" Cat="np" Lemma="ἄνθρωπος" Rule="N2NP" Head="0" StrongNumber="444" Number="Plural" morphId="540020040031" StrongNumberX="0444" Chinese="人" English="men" Language="G" Role="Goal" Case="Accusative" Unicode="ἀνθρώπους" Gender="Masculine" nodeId="540020040030011" Length="1" Start="3" End="3">
+                      <Node Id="1.40" Cat="noun" Lemma="ἄνθρωπος" StrongNumber="444" Language="G" Gender="Masculine" Number="Plural" morphId="540020040031" StrongNumberX="0444" English="men" Role="Goal" Case="Accusative" Unicode="ἀνθρώπους" Chinese="人" Ref="{}" nodeId="540020040030010" Start="3" End="3" Analysis="N,,,,,AMP," />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node Id="1.41" Cat="V" Lemma="σῴζω" Rule="Vp2V" Head="0" StrongNumber="4982" Mood="Infinitive" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" English="to be saved" Language="G" Role="Event" Unicode="σωθῆναι," Chinese="得" Voice="Passive" Frame="{A1:00000000000}" nodeId="540020040050062" Length="6" Start="4" End="9">
+                  <Node Id="1.42" Cat="vp" Lemma="σῴζω" Rule="CL2VP" Head="0" StrongNumber="4982" Voice="Passive" English="to be saved" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" Chinese="得" Mood="Infinitive" Language="G" Role="Event" Unicode="σωθῆναι," Frame="{A1:00000000000}" nodeId="540020040050061" Length="6" Start="4" End="9">
+                    <Node Id="1.43" Cat="CL" Lemma="σῴζω" Rule="CLaCL" Head="0" Coord="True" StrongNumber="4982" Mood="Infinitive" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" English="to be saved" Language="G" Role="Event" Unicode="σωθῆναι," Chinese="得" Voice="Passive" Frame="{A1:00000000000}" nodeId="540020040050060" Length="6" Start="4" End="9">
+                      <Node Id="1.44" Cat="CL" Lemma="σῴζω" Rule="V2CL" Head="0" StrongNumber="4982" Language="G" Voice="Passive" English="to be saved" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" Chinese="得" Mood="Infinitive" Role="Event" Unicode="σωθῆναι," Frame="{A1:00000000000}" nodeId="540020040050013" Length="1" Start="4" End="4">
+                        <Node Id="1.45" Cat="V" Lemma="σῴζω" Rule="Vp2V" Head="0" StrongNumber="4982" Tense="Aorist" Mood="Infinitive" morphId="540020040051" StrongNumberX="4982" Role="Event" English="to be saved" Language="G" Unicode="σωθῆναι," Chinese="得" Voice="Passive" Frame="{A1:00000000000}" nodeId="540020040050012" Length="1" Start="4" End="4">
+                          <Node Id="1.46" Cat="vp" Lemma="σῴζω" Rule="V2VP" Head="0" StrongNumber="4982" Language="G" English="to be saved" Tense="Aorist" morphId="540020040051" StrongNumberX="4982" Chinese="得" Mood="Infinitive" Role="Event" Unicode="σωθῆναι," Voice="Passive" Frame="{A1:00000000000}" nodeId="540020040050011" Length="1" Start="4" End="4">
+                            <Node Id="1.47" Cat="verb" Lemma="σῴζω" StrongNumber="4982" Tense="Aorist" Voice="Passive" English="to be saved" morphId="540020040051" StrongNumberX="4982" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="σωθῆναι," Chinese="得" SubjRef="{}" Frame="{A1:00000000000}" nodeId="540020040050010" Start="4" End="4" FrameGloss="{A1:Unspecified}" Analysis="V,NAP,,,,," />
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node Id="1.48" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020040061" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="（而）" nodeId="540020040060010" Start="5" End="5" Analysis="CC,,,,,,,," />
+                      <Node Id="1.49" Cat="CL" Lemma="ἔρχομαι" Rule="ADV-V" Head="1" StrongNumber="2064" Language="G" Voice="Active" English="to come" Tense="Aorist" morphId="540020040101" StrongNumberX="2064" Chinese="到" Mood="Infinitive" Role="Event" Unicode="ἐλθεῖν." Frame="{A0:00000000000}" nodeId="540020040070040" Length="4" Start="6" End="9">
+                        <Node Id="1.50" Cat="ADV" Lemma="ἐπίγνωσις" Rule="pp2ADV" Head="0" StrongNumber="1922" Gender="Feminine" English="a knowledge" Number="Singular" morphId="540020040081" StrongNumberX="1922" Language="G" PrepLemma="" Role="Direction" Case="" Unicode="ἐπίγνωσιν" Chinese="认识" nodeId="540020040070031" Length="3" Start="6" End="8">
+                          <Node Id="1.51" Cat="pp" Lemma="ἐπίγνωσις" Rule="PrepNp" Head="1" StrongNumber="1922" Language="G" Number="Singular" morphId="540020040081" StrongNumberX="1922" Chinese="认识" English="a knowledge" PrepLemma="εἰς" Role="Direction" Case="" Unicode="ἐπίγνωσιν" Gender="Feminine" nodeId="540020040070030" Length="3" Start="6" End="8">
+                            <Node Id="1.52" Cat="prep" Lemma="εἰς" StrongNumber="1519" English="to" morphId="540020040071" StrongNumberX="1519" PrepositionType="Directed into" Language="G" Unicode="εἰς" Chinese="" nodeId="540020040070010" Start="6" End="6" Analysis="P,,,,,A,,," />
+                            <Node Id="1.53" Cat="np" Lemma="ἐπίγνωσις" Rule="NPofNP" Head="0" StrongNumber="1922" Gender="Feminine" English="a knowledge" Number="Singular" morphId="540020040081" StrongNumberX="1922" Language="G" Role="Direction" Case="Accusative" Unicode="ἐπίγνωσιν" Chinese="认识" nodeId="540020040080020" Length="2" Start="7" End="8">
+                              <Node Id="1.54" Cat="np" Lemma="ἐπίγνωσις" Rule="N2NP" Head="0" StrongNumber="1922" Language="G" Number="Singular" morphId="540020040081" StrongNumberX="1922" Chinese="认识" English="a knowledge" Role="Direction" Case="Accusative" Unicode="ἐπίγνωσιν" Gender="Feminine" nodeId="540020040080011" Length="1" Start="7" End="7">
+                                <Node Id="1.55" Cat="noun" Lemma="ἐπίγνωσις" StrongNumber="1922" Gender="Feminine" English="a knowledge" Number="Singular" morphId="540020040081" StrongNumberX="1922" Language="G" Role="Direction" Case="Accusative" Unicode="ἐπίγνωσιν" Chinese="认识" Ref="{}" nodeId="540020040080010" Start="7" End="7" Analysis="N,,,,,AFS," />
+                              </Node>
+                              <Node Id="1.56" Cat="np" Lemma="ἀλήθεια" Rule="N2NP" Head="0" StrongNumber="225" Number="Singular" morphId="540020040091" StrongNumberX="0225" Chinese="真理" English="of (the) truth" Language="G" Case="Genitive" Unicode="ἀληθείας" Gender="Feminine" nodeId="540020040090011" Length="1" Start="8" End="8">
+                                <Node Id="1.57" Cat="noun" Lemma="ἀλήθεια" StrongNumber="225" Language="G" Gender="Feminine" Number="Singular" morphId="540020040091" StrongNumberX="0225" English="of (the) truth" Case="Genitive" Unicode="ἀληθείας" Chinese="真理" Ref="{}" nodeId="540020040090010" Start="8" End="8" Analysis="N,,,,,GFS," />
+                              </Node>
+                            </Node>
+                          </Node>
+                        </Node>
+                        <Node Id="1.58" Cat="V" Lemma="ἔρχομαι" Rule="Vp2V" Head="0" StrongNumber="2064" Tense="Aorist" Mood="Infinitive" morphId="540020040101" StrongNumberX="2064" Role="Event" English="to come" Language="G" Unicode="ἐλθεῖν." Chinese="到" Voice="Active" Frame="{A0:00000000000}" nodeId="540020040100012" Length="1" Start="9" End="9">
+                          <Node Id="1.59" Cat="vp" Lemma="ἔρχομαι" Rule="V2VP" Head="0" StrongNumber="2064" Language="G" English="to come" Tense="Aorist" morphId="540020040101" StrongNumberX="2064" Chinese="到" Mood="Infinitive" Role="Event" Unicode="ἐλθεῖν." Voice="Active" Frame="{A0:00000000000}" nodeId="540020040100011" Length="1" Start="9" End="9">
+                            <Node Id="1.60" Cat="verb" Lemma="ἔρχομαι" StrongNumber="2064" Tense="Aorist" Voice="Active" English="to come" morphId="540020040101" StrongNumberX="2064" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="ἐλθεῖν." Chinese="到" SubjRef="{}" Frame="{A0:00000000000}" nodeId="540020040100010" Start="9" End="9" FrameGloss="{A0:Unspecified}" Analysis="V,NAA,,,,," />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002005">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020050020121" Length="12" Start="0" End="11">
+          <Node Id="1.1" Cat="CL" Lemma="εἷς" Rule="Conj-CL" Head="1" Substantive="True" StrongNumber="1520" Number="Singular" morphId="540020050011" StrongNumberX="1520" Chinese="一位" English="one" Language="G" Role="Attribute" Case="Nominative" Unicode="εἷς" Gender="Masculine" nodeId="540020050020120" Length="12" Start="0" End="11">
+            <Node Id="1.2" Cat="conj" Lemma="γάρ" StrongNumber="1063" English="for (there is)" morphId="540020050021" StrongNumberX="1063" Language="G" Unicode="γὰρ" Chinese="因为" nodeId="540020050020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.3" Cat="CL" Lemma="εἷς" Rule="ClCl" Head="0" Substantive="True" StrongNumber="1520" Language="G" Gender="Masculine" Number="Singular" morphId="540020050011" StrongNumberX="1520" English="one" Role="Attribute" Case="Nominative" Unicode="εἷς" Chinese="一位" nodeId="540020050010110" Length="11" Start="1" End="11">
+              <Node Id="1.4" Cat="CL" Lemma="εἷς" Rule="P-S" Head="0" Substantive="True" StrongNumber="1520" Number="Singular" morphId="540020050011" StrongNumberX="1520" Chinese="一位" English="one" Language="G" ClType="Verbless" Role="Attribute" Case="Nominative" Unicode="εἷς" Gender="Masculine" nodeId="540020050010020" Length="2" Start="1" End="2">
+                <Node Id="1.5" Cat="P" Lemma="εἷς" Rule="Adjp2P" Head="0" Substantive="True" StrongNumber="1520" Language="G" Gender="Masculine" Number="Singular" morphId="540020050011" StrongNumberX="1520" English="one" Role="Attribute" Case="Nominative" Unicode="εἷς" Chinese="一位" nodeId="540020050010012" Length="1" Start="1" End="1">
+                  <Node Id="1.6" Cat="adjp" Lemma="εἷς" Rule="Det2Adjp" Head="0" Substantive="True" StrongNumber="1520" Number="Singular" morphId="540020050011" StrongNumberX="1520" Chinese="一位" English="one" Language="G" Role="Attribute" Case="Nominative" Unicode="εἷς" Gender="Masculine" nodeId="540020050010011" Length="1" Start="1" End="1">
+                    <Node Id="1.7" OldCat="adj" Cat="det" Lemma="εἷς" Substantive="True" StrongNumber="1520" Language="G" Gender="Masculine" Number="Singular" morphId="540020050011" StrongNumberX="1520" English="one" Role="Attribute" Case="Nominative" Unicode="εἷς" Chinese="一位" Ref="{}" nodeId="540020050010010" Start="1" End="1" Analysis="EN,,,,NMS," />
+                  </Node>
+                </Node>
+                <Node Id="1.8" Cat="S" Lemma="θεός" Rule="Np2S" Head="0" StrongNumber="2316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050031" StrongNumberX="2316" English="God" Role="Subject Matter" Case="Nominative" Unicode="Θεός," Chinese="上帝" nodeId="540020050030012" Length="1" Start="2" End="2">
+                  <Node Id="1.9" Cat="np" Lemma="θεός" Rule="N2NP" Head="0" StrongNumber="2316" Number="Singular" morphId="540020050031" StrongNumberX="2316" Chinese="上帝" English="God" Language="G" Role="Subject Matter" Case="Nominative" Unicode="Θεός," Gender="Masculine" nodeId="540020050030011" Length="1" Start="2" End="2">
+                    <Node Id="1.10" Cat="noun" Lemma="θεός" StrongNumber="2316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050031" StrongNumberX="2316" English="God" Role="Subject Matter" Case="Nominative" Unicode="Θεός," Chinese="上帝" Ref="{}" nodeId="540020050030010" Start="2" End="2" Analysis="N,,,,,NMS," />
+                  </Node>
+                </Node>
+              </Node>
+              <Node Id="1.11" Cat="CL" Lemma="εἷς" Rule="P-S" Head="0" Substantive="True" StrongNumber="1520" Number="Singular" morphId="540020050041" StrongNumberX="1520" Chinese="一位" English="one" Language="G" ClType="Verbless" Role="Attribute" Case="Nominative" Unicode="εἷς" Gender="Masculine" nodeId="540020050040090" Length="9" Start="3" End="11">
+                <Node Id="1.12" Cat="P" Lemma="εἷς" Rule="Adjp2P" Head="0" Substantive="True" StrongNumber="1520" Language="G" Gender="Masculine" Number="Singular" morphId="540020050041" StrongNumberX="1520" English="one" Role="Attribute" Case="Nominative" Unicode="εἷς" Chinese="一位" nodeId="540020050040012" Length="1" Start="3" End="3">
+                  <Node Id="1.13" Cat="adjp" Lemma="εἷς" Rule="Det2Adjp" Head="0" Substantive="True" StrongNumber="1520" Number="Singular" morphId="540020050041" StrongNumberX="1520" Chinese="一位" English="one" Language="G" Role="Attribute" Case="Nominative" Unicode="εἷς" Gender="Masculine" nodeId="540020050040011" Length="1" Start="3" End="3">
+                    <Node Id="1.14" OldCat="adj" Cat="det" Lemma="εἷς" Substantive="True" StrongNumber="1520" Language="G" Gender="Masculine" Number="Singular" morphId="540020050041" StrongNumberX="1520" English="one" Role="Attribute" Case="Nominative" Unicode="εἷς" Chinese="一位" Ref="{}" nodeId="540020050040010" Start="3" End="3" Analysis="EN,,,,NMS," />
+                  </Node>
+                </Node>
+                <Node Id="1.15" Cat="S" Lemma="μεσίτης" Rule="Np2S" Head="0" StrongNumber="3316" Number="Singular" morphId="540020050061" StrongNumberX="3316" Chinese="中保" English="Mediator" Language="G" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Gender="Masculine" nodeId="540020050050081" Length="8" Start="4" End="11">
+                  <Node Id="1.16" Cat="np" Lemma="μεσίτης" Rule="AdvpNp" Head="1" StrongNumber="3316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050061" StrongNumberX="3316" English="Mediator" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Chinese="中保" nodeId="540020050050080" Length="8" Start="4" End="11">
+                    <Node Id="1.17" Cat="advp" Lemma="καί" Rule="Adv2Advp" Head="0" StrongNumber="2532" English="and" StrongNumberX="2532" Unicode="καὶ" Chinese="也" Language="G" morphId="540020050051" nodeId="540020050050011" Length="1" Start="4" End="4">
+                      <Node Id="1.18" Cat="adv" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020050051" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="也" Ref="{}" nodeId="540020050050010" Start="4" End="4" Analysis="D,,,,,,,,," />
+                    </Node>
+                    <Node Id="1.19" Cat="np" Lemma="μεσίτης" Rule="Np-Appos" Head="0" StrongNumber="3316" Number="Singular" morphId="540020050061" StrongNumberX="3316" Chinese="中保" English="Mediator" Language="G" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Gender="Masculine" nodeId="540020050060070" Length="7" Start="5" End="11">
+                      <Node Id="1.20" Cat="np" Lemma="μεσίτης" Rule="NPofNP" Head="0" StrongNumber="3316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050061" StrongNumberX="3316" English="Mediator" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Chinese="中保" nodeId="540020050060040" Length="4" Start="5" End="8">
+                        <Node Id="1.21" Cat="np" Lemma="μεσίτης" Rule="N2NP" Head="0" StrongNumber="3316" Number="Singular" morphId="540020050061" StrongNumberX="3316" Chinese="中保" English="Mediator" Language="G" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Gender="Masculine" nodeId="540020050060011" Length="1" Start="5" End="5">
+                          <Node Id="1.22" Cat="noun" Lemma="μεσίτης" StrongNumber="3316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050061" StrongNumberX="3316" English="Mediator" Role="Subject Matter" Case="Nominative" Unicode="μεσίτης" Chinese="中保" Ref="{}" nodeId="540020050060010" Start="5" End="5" Analysis="N,,,,,NMS," />
+                        </Node>
+                        <Node Id="1.23" Cat="np" Lemma="θεός" Rule="NpaNp" Head="0" Coord="True" StrongNumber="2316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050071" StrongNumberX="2316" English="of God" Case="Genitive" Unicode="Θεοῦ" Chinese="上帝" nodeId="540020050070030" Length="3" Start="6" End="8">
+                          <Node Id="1.24" Cat="np" Lemma="θεός" Rule="N2NP" Head="0" StrongNumber="2316" Number="Singular" morphId="540020050071" StrongNumberX="2316" Chinese="上帝" English="of God" Language="G" Case="Genitive" Unicode="Θεοῦ" Gender="Masculine" nodeId="540020050070011" Length="1" Start="6" End="6">
+                            <Node Id="1.25" Cat="noun" Lemma="θεός" StrongNumber="2316" Language="G" Gender="Masculine" Number="Singular" morphId="540020050071" StrongNumberX="2316" English="of God" Case="Genitive" Unicode="Θεοῦ" Chinese="上帝" Ref="{}" nodeId="540020050070010" Start="6" End="6" Analysis="N,,,,,GMS," />
+                          </Node>
+                          <Node Id="1.26" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020050081" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="与" nodeId="540020050080010" Start="7" End="7" Analysis="CC,,,,,,,," />
+                          <Node Id="1.27" Cat="np" Lemma="ἄνθρωπος" Rule="N2NP" Head="0" StrongNumber="444" Number="Plural" morphId="540020050091" StrongNumberX="0444" Chinese="人" English="of men" Language="G" Case="Genitive" Unicode="ἀνθρώπων," Gender="Masculine" nodeId="540020050090011" Length="1" Start="8" End="8">
+                            <Node Id="1.28" Cat="noun" Lemma="ἄνθρωπος" StrongNumber="444" Language="G" Gender="Masculine" Number="Plural" morphId="540020050091" StrongNumberX="0444" English="of men" Case="Genitive" Unicode="ἀνθρώπων," Chinese="人" Ref="{}" nodeId="540020050090010" Start="8" End="8" Analysis="N,,,,,GMP," />
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node Id="1.30" Cat="np" Lemma="ἄνθρωπος" Rule="Np-Appos" Head="0" StrongNumber="444" Language="G" Gender="Masculine" Number="Singular" morphId="540020050101" StrongNumberX="0444" English="a man" Case="Nominative" Unicode="ἄνθρωπος" Chinese="人" nodeId="540020050100030" Length="3" Start="9" End="11">
+                        <Node Id="1.31" Cat="np" Lemma="ἄνθρωπος" Rule="N2NP" Head="0" StrongNumber="444" Number="Singular" morphId="540020050101" StrongNumberX="0444" Chinese="人" English="a man" Language="G" Case="Nominative" Unicode="ἄνθρωπος" Gender="Masculine" nodeId="540020050100011" Length="1" Start="9" End="9">
+                          <Node Id="1.32" Cat="noun" Lemma="ἄνθρωπος" StrongNumber="444" Language="G" Gender="Masculine" Number="Singular" morphId="540020050101" StrongNumberX="0444" English="a man" Case="Nominative" Unicode="ἄνθρωπος" Chinese="人" Ref="{}" nodeId="540020050100010" Start="9" End="9" Analysis="N,,,,,NMS," />
+                        </Node>
+                        <Node Id="1.33" Cat="np" Lemma="χριστός" Rule="Np-Appos" Head="0" StrongNumber="5547" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020050111" StrongNumberX="5547" English="Christ" Case="Nominative" Unicode="Χριστὸς" Chinese="基督" nodeId="540020050110020" Length="2" Start="10" End="11">
+                          <Node Id="1.34" Cat="np" Lemma="χριστός" Rule="N2NP" Head="0" StrongNumber="5547" Number="Singular" Type="Proper" morphId="540020050111" StrongNumberX="5547" Chinese="基督" English="Christ" Language="G" Case="Nominative" Unicode="Χριστὸς" Gender="Masculine" nodeId="540020050110011" Length="1" Start="10" End="10">
+                            <Node Id="1.35" Cat="noun" Lemma="χριστός" StrongNumber="5547" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020050111" StrongNumberX="5547" English="Christ" Case="Nominative" Unicode="Χριστὸς" Chinese="基督" Ref="{}" nodeId="540020050110010" Start="10" End="10" Analysis="N,,,,,NMS," />
+                          </Node>
+                          <Node Id="1.36" Cat="np" Lemma="Ἰησοῦς" Rule="N2NP" Head="0" StrongNumber="2424" Number="Singular" Type="Proper" morphId="540020050121" StrongNumberX="2424" Chinese="耶稣" English="Jesus" Language="G" Case="Nominative" Unicode="Ἰησοῦς," Gender="Masculine" nodeId="540020050120011" Length="1" Start="11" End="11">
+                            <Node Id="1.37" Cat="noun" Lemma="Ἰησοῦς" StrongNumber="2424" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020050121" StrongNumberX="2424" English="Jesus" Case="Nominative" Unicode="Ἰησοῦς," Chinese="耶稣" Ref="{}" nodeId="540020050120010" Start="11" End="11" Analysis="N,,,,,NMS," />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002006">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020060010100" Length="10" Start="0" End="9">
+          <Node Id="1.38" Cat="np" Lemma="δίδωμι" Rule="PronCL" Head="1" StrongNumber="1325" Language="G" Gender="Masculine" English="having given" Tense="Aorist" Number="Singular" morphId="540020060021" StrongNumberX="1325" Mood="Participle" Role="Event" Case="Nominative" Unicode="δοὺς" Chinese="（献出）" Voice="Active" Frame="{A0:54002005010 A1:54002006003}" nodeId="540020060010060" Length="6" Start="0" End="5">
+            <Node Id="1.39" OldCat="det" Cat="pron" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Masculine" Number="Singular" morphId="540020060011" StrongNumberX="3588" English="the one" Case="Nominative" Unicode="ὁ" Chinese="" Ref="{}" nodeId="540020060010010" Start="0" End="0" Analysis="RD,,,,NMS," />
+            <Node Id="1.40" Cat="CL" Lemma="δίδωμι" Rule="V-O-O2-ADV" Head="0" StrongNumber="1325" Tense="Aorist" Voice="Active" English="having given" Number="Singular" morphId="540020060021" StrongNumberX="1325" Chinese="（献出）" Mood="Participle" Language="G" Role="Event" Case="Nominative" Unicode="δοὺς" Gender="Masculine" Frame="{A0:54002005010 A1:54002006003}" nodeId="540020060020050" Length="5" Start="1" End="5">
+              <Node Id="1.41" Cat="V" Lemma="δίδωμι" Rule="Vp2V" Head="0" StrongNumber="1325" Language="G" Gender="Masculine" English="having given" Tense="Aorist" Number="Singular" morphId="540020060021" StrongNumberX="1325" Role="Event" Mood="Participle" Case="Nominative" Unicode="δοὺς" Chinese="（献出）" Voice="Active" Frame="{A0:54002005010 A1:54002006003}" nodeId="540020060020012" Length="1" Start="1" End="1">
+                <Node Id="1.42" Cat="vp" Lemma="δίδωμι" Rule="V2VP" Head="0" StrongNumber="1325" Tense="Aorist" English="having given" Number="Singular" morphId="540020060021" StrongNumberX="1325" Chinese="（献出）" Mood="Participle" Language="G" Role="Event" Case="Nominative" Unicode="δοὺς" Gender="Masculine" Voice="Active" Frame="{A0:54002005010 A1:54002006003}" nodeId="540020060020011" Length="1" Start="1" End="1">
+                  <Node Id="1.43" Cat="verb" Lemma="δίδωμι" StrongNumber="1325" Language="G" Gender="Masculine" Voice="Active" Mood="Participle" Tense="Aorist" Number="Singular" morphId="540020060021" StrongNumberX="1325" English="having given" ClType="Verbal" Role="Event" Case="Nominative" Unicode="δοὺς" Chinese="（献出）" SubjRef="{54002005010}" Frame="{A0:54002005010 A1:54002006003}" nodeId="540020060020010" Start="1" End="1" SubjRefEnglish="{a man}" SubjRefLemma="{ἄνθρωπος}" SubjRefStrong="{444}" FrameGloss="{A0:a man A1:Himself}" Analysis="V,PAA,NMS," />
+                </Node>
+              </Node>
+              <Node Id="1.44" Cat="O" Lemma="ἑαυτοῦ" Rule="Np2O" Head="0" StrongNumber="1438" Language="G" Gender="Masculine" Number="Singular" morphId="540020060031" StrongNumberX="1438" English="Himself" Role="Goal" Case="Accusative" Unicode="ἑαυτὸν" Chinese="自己" nodeId="540020060030012" Length="1" Start="2" End="2">
+                <Node Id="1.45" Cat="np" Lemma="ἑαυτοῦ" Rule="Pron2NP" Head="0" StrongNumber="1438" Number="Singular" morphId="540020060031" StrongNumberX="1438" Chinese="自己" English="Himself" Language="G" Role="Goal" Case="Accusative" Unicode="ἑαυτὸν" Gender="Masculine" nodeId="540020060030011" Length="1" Start="2" End="2">
+                  <Node Id="1.46" Cat="pron" Lemma="ἑαυτοῦ" StrongNumber="1438" Language="G" Gender="Masculine" Number="Singular" morphId="540020060031" StrongNumberX="1438" English="Himself" Role="Goal" Case="Accusative" Unicode="ἑαυτὸν" Chinese="自己" Ref="{54002005010}" nodeId="540020060030010" Start="2" End="2" RefEnglish="{a man}" RefLemma="{ἄνθρωπος}" RefStrong="{444}" Analysis="RE,,,3AMS," />
+                </Node>
+              </Node>
+              <Node Id="1.47" Cat="O2" Lemma="ἀντίλυτρον" Rule="Np2O2" Head="0" StrongNumber="487" Language="G" Gender="Neuter" Number="Singular" morphId="540020060041" StrongNumberX="0487" English="a ransom" Role="Attribute" Case="Accusative" Unicode="ἀντίλυτρον" Chinese="赎价" nodeId="540020060040012" Length="1" Start="3" End="3">
+                <Node Id="1.48" Cat="np" Lemma="ἀντίλυτρον" Rule="N2NP" Head="0" StrongNumber="487" Number="Singular" morphId="540020060041" StrongNumberX="0487" Chinese="赎价" English="a ransom" Language="G" Role="Attribute" Case="Accusative" Unicode="ἀντίλυτρον" Gender="Neuter" nodeId="540020060040011" Length="1" Start="3" End="3">
+                  <Node Id="1.49" Cat="noun" Lemma="ἀντίλυτρον" StrongNumber="487" Language="G" Gender="Neuter" Number="Singular" morphId="540020060041" StrongNumberX="0487" English="a ransom" Role="Attribute" Case="Accusative" Unicode="ἀντίλυτρον" Chinese="赎价" Ref="{}" nodeId="540020060040010" Start="3" End="3" Analysis="N,,,,,ANS," />
+                </Node>
+              </Node>
+              <Node Id="1.50" Cat="ADV" Lemma="πᾶς" Rule="pp2ADV" Head="0" Substantive="False" StrongNumber="3956" Gender="Masculine" English="all" Number="Plural" morphId="540020060061" StrongNumberX="3956" Language="G" PrepLemma="" Role="Location" Case="" Unicode="πάντων," Chinese="万" nodeId="540020060050021" Length="2" Start="4" End="5">
+                <Node Id="1.51" Cat="pp" Lemma="πᾶς" Rule="PrepNp" Head="1" Substantive="False" StrongNumber="3956" Language="G" Number="Plural" morphId="540020060061" StrongNumberX="3956" Chinese="万" English="all" PrepLemma="ὑπέρ" Role="Location" Case="" Unicode="πάντων," Gender="Masculine" nodeId="540020060050020" Length="2" Start="4" End="5">
+                  <Node Id="1.52" Cat="prep" Lemma="ὑπέρ" StrongNumber="5228" English="on behalf of" morphId="540020060051" StrongNumberX="5228" PrepositionType="Located above" Language="G" Unicode="ὑπὲρ" Chinese="替" nodeId="540020060050010" Start="4" End="4" Analysis="P,,,,,G,,," />
+                  <Node Id="1.54" Cat="np" Lemma="πᾶς" Rule="Pron2NP" Head="0" Substantive="False" StrongNumber="3956" Language="G" Number="Plural" morphId="540020060061" StrongNumberX="3956" Chinese="万" English="all" Role="Location" Case="Genitive" Unicode="πάντων," Gender="Masculine" nodeId="540020060060011" Length="1" Start="5" End="5">
+                    <Node Id="1.55" OldCat="adj" Cat="pron" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Gender="Masculine" English="all" Number="Plural" morphId="540020060061" StrongNumberX="3956" Language="G" Role="Location" Case="Genitive" Unicode="πάντων," Chinese="万" Ref="{}" nodeId="540020060060010" Start="5" End="5" Analysis="RI,,,,GMP," />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+          <Node Id="1.2" Cat="CL" Lemma="μαρτύριον" Rule="S-ADV" Head="0" HasDet="True" StrongNumber="3142" Language="G" Gender="Neuter" Number="Singular" morphId="540020060081" StrongNumberX="3142" English="testimony" ClType="VerbElided" Role="Source" Case="Nominative" Unicode="μαρτύριον" Chinese="证实" nodeId="540020060070040" Length="4" Start="6" End="9">
+            <Node Id="1.3" Cat="S" Lemma="μαρτύριον" Rule="Np2S" Head="0" HasDet="True" StrongNumber="3142" Number="Singular" morphId="540020060081" StrongNumberX="3142" Chinese="证实" English="testimony" Language="G" Role="Source" Case="Nominative" Unicode="μαρτύριον" Gender="Neuter" nodeId="540020060070021" Length="2" Start="6" End="7">
+              <Node Id="1.4" Cat="np" Lemma="μαρτύριον" Rule="DetNP" Head="1" HasDet="True" StrongNumber="3142" Language="G" Gender="Neuter" Number="Singular" morphId="540020060081" StrongNumberX="3142" English="testimony" Role="Source" Case="Nominative" Unicode="μαρτύριον" Chinese="证实" nodeId="540020060070020" Length="2" Start="6" End="7">
+                <Node Id="1.5" Cat="det" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Neuter" Number="Singular" morphId="540020060071" StrongNumberX="3588" English="the" Case="Nominative" Unicode="τὸ" Chinese="这" Ref="{}" nodeId="540020060070010" Start="6" End="6" Analysis="EA,,,,NNS," />
+                <Node Id="1.6" Cat="np" Lemma="μαρτύριον" Rule="N2NP" Head="0" StrongNumber="3142" Number="Singular" morphId="540020060081" StrongNumberX="3142" Chinese="证实" English="testimony" Language="G" Role="Source" Case="Nominative" Unicode="μαρτύριον" Gender="Neuter" nodeId="540020060080011" Length="1" Start="7" End="7">
+                  <Node Id="1.7" Cat="noun" Lemma="μαρτύριον" StrongNumber="3142" Language="G" Gender="Neuter" Number="Singular" morphId="540020060081" StrongNumberX="3142" English="testimony" Role="Source" Case="Nominative" Unicode="μαρτύριον" Chinese="证实" Ref="{}" nodeId="540020060080010" Start="7" End="7" Analysis="N,,,,,NNS," />
+                </Node>
+              </Node>
+            </Node>
+            <Node Id="1.8" Cat="ADV" Lemma="καιρός" Rule="Np2ADV" Head="0" StrongNumber="2540" Language="G" Number="Plural" morphId="540020060091" StrongNumberX="2540" Chinese="时机" English="times" Role="Relation" Case="Dative" Unicode="καιροῖς" Gender="Masculine" nodeId="540020060090021" Length="2" Start="8" End="9">
+              <Node Id="1.9" Cat="np" Lemma="καιρός" Rule="NpAdjp" Head="0" StrongNumber="2540" Gender="Masculine" English="times" Number="Plural" morphId="540020060091" StrongNumberX="2540" Language="G" Role="Relation" Case="Dative" Unicode="καιροῖς" Chinese="时机" nodeId="540020060090020" Length="2" Start="8" End="9">
+                <Node Id="1.10" Cat="np" Lemma="καιρός" Rule="N2NP" Head="0" StrongNumber="2540" Language="G" Number="Plural" morphId="540020060091" StrongNumberX="2540" Chinese="时机" English="times" Role="Relation" Case="Dative" Unicode="καιροῖς" Gender="Masculine" nodeId="540020060090011" Length="1" Start="8" End="8">
+                  <Node Id="1.11" Cat="noun" Lemma="καιρός" StrongNumber="2540" Gender="Masculine" English="times" Number="Plural" morphId="540020060091" StrongNumberX="2540" Language="G" Role="Relation" Case="Dative" Unicode="καιροῖς" Chinese="时机" Ref="{}" nodeId="540020060090010" Start="8" End="8" Analysis="N,,,,,DMP," />
+                </Node>
+                <Node Id="1.12" Cat="adjp" Lemma="ἴδιος" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="2398" Number="Plural" morphId="540020060101" StrongNumberX="2398" Chinese="（适当）" English="in its own" Language="G" Case="Dative" Unicode="ἰδίοις;" Gender="Masculine" nodeId="540020060100011" Length="1" Start="9" End="9">
+                  <Node Id="1.13" OldCat="adj" Cat="det" Lemma="ἴδιος" Substantive="False" StrongNumber="2398" Language="G" Gender="Masculine" Number="Plural" morphId="540020060101" StrongNumberX="2398" English="in its own" Case="Dative" Unicode="ἰδίοις;" Chinese="（适当）" Ref="{54002006009}" nodeId="540020060100010" Start="9" End="9" RefEnglish="{times}" RefLemma="{καιρός}" RefStrong="{2540}" Analysis="EF,,,,DMP," />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002007">
+    <Trees>
+      <Tree>
+        <Node End="16" Cat="Verse" Length="17" Head="0" Start="0" nodeId="540020070010171">
+          <Node Rule="ClCl2" Unicode="λέγω" nodeId="540020070010170" Chinese="说" English="I speak" Language="G" StrongNumberX="3004" Lemma="λέγω" Cat="CL" Number="Singular" Role="Event" Start="0" Mood="Indicative" Length="17" End="16" StrongNumber="3004" Tense="Present" Frame="{A0:54001001001 A1:54002007008}" Id="1.14" morphId="540020070091" Voice="Active" Person="First" Head="1">
+            <Node Rule="ADV-VC-S-P" Unicode="κῆρυξ" nodeId="540020070010130" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Cat="CL" Number="Singular" Role="Attribute" Mood="Indicative" Length="13" Case="Nominative" StrongNumber="2783" Head="3" Gender="Masculine" Start="0" Id="1.15" End="12" morphId="540020070051">
+              <Node Rule="pp2ADV" Unicode="ὃ" nodeId="540020070010021" Chinese="这" English="which (testimony)" Language="G" StrongNumberX="3739" Lemma="ὅς" Cat="ADV" PrepLemma="" Number="Singular" Role="Direction" Id="1.16" Length="2" Case="" StrongNumber="3739" Head="0" Gender="Neuter" Start="0" End="1" morphId="540020070021">
+                <Node Rule="PrepNp" Unicode="ὃ" nodeId="540020070010020" Chinese="这" English="which (testimony)" Language="G" StrongNumberX="3739" Lemma="ὅς" Cat="pp" PrepLemma="εἰς" Number="Singular" Role="Direction" Id="1.17" Length="2" Case="" StrongNumber="3739" Head="1" Gender="Neuter" Start="0" End="1" morphId="540020070021">
+                  <Node Unicode="εἰς" nodeId="540020070010010" PrepositionType="Directed into" Chinese="（为）" English="for" Language="G" StrongNumberX="1519" Lemma="εἰς" Cat="prep" End="0" StrongNumber="1519" Analysis="P,,,,,A,,," Id="1.18" Start="0" morphId="540020070011">εἰς</Node>
+                  <Node Rule="Pron2NP" Unicode="ὃ" nodeId="540020070020011" Chinese="这" English="which (testimony)" Language="G" StrongNumberX="3739" Lemma="ὅς" Cat="np" Number="Singular" Role="Direction" Id="1.19" Length="1" Case="Accusative" StrongNumber="3739" Head="0" Gender="Neuter" Start="1" End="1" morphId="540020070021">
+                    <Node Case="Accusative" Unicode="ὃ" nodeId="540020070020010" Chinese="这" English="which (testimony)" Language="G" StrongNumberX="3739" RefStrong="{3142}" Lemma="ὅς" Gender="Neuter" Cat="pron" Number="Singular" Role="Direction" RefLemma="{μαρτύριον}" StrongNumber="3739" Analysis="RR,,,,ANS," Id="1.20" Start="1" Ref="{54002006008}" RefEnglish="{testimony}" End="1" morphId="540020070021">ὃ</Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node Rule="vp2VC" Unicode="ἐτέθην" nodeId="540020070030012" Chinese="（作了）" English="was appointed" Language="G" StrongNumberX="5087" Lemma="τίθημι" Cat="VC" Number="Singular" Start="2" Mood="Indicative" Length="1" End="2" StrongNumber="5087" Tense="Aorist" Frame="{}" Id="1.21" morphId="540020070031" Voice="Passive" Person="First" Head="0">
+                <Node Rule="V2VP" Unicode="ἐτέθην" nodeId="540020070030011" Chinese="（作了）" English="was appointed" Language="G" StrongNumberX="5087" Lemma="τίθημι" Cat="vp" Number="Singular" Start="2" Mood="Indicative" Length="1" End="2" StrongNumber="5087" Tense="Aorist" Frame="{}" Id="1.22" morphId="540020070031" Voice="Passive" Person="First" Head="0">
+                  <Node Unicode="ἐτέθην" nodeId="540020070030010" Chinese="（作了）" English="was appointed" Language="G" StrongNumberX="5087" morphId="540020070031" Lemma="τίθημι" Cat="verb" Number="Singular" Mood="Indicative" End="2" StrongNumber="5087" Tense="Aorist" ClType="Verbal" Frame="{}" Id="1.23" Start="2" Voice="Passive" Analysis="V,IAP1,,S," Person="First" SubjRef="{}">ἐτέθην</Node>
+                </Node>
+              </Node>
+              <Node Rule="Np2S" Unicode="ἐγὼ" nodeId="540020070040012" Chinese="我" English="I" Language="G" StrongNumberX="1473" Lemma="ἐγώ" Cat="S" Number="Singular" Role="Subject Matter" Length="1" Case="Nominative" StrongNumber="1473" Head="0" Id="1.24" Start="3" End="3" morphId="540020070041">
+                <Node Rule="Pron2NP" Unicode="ἐγὼ" nodeId="540020070040011" Chinese="我" English="I" Language="G" StrongNumberX="1473" Lemma="ἐγώ" Cat="np" Number="Singular" Role="Subject Matter" Length="1" Case="Nominative" StrongNumber="1473" Head="0" Id="1.25" Start="3" End="3" morphId="540020070041">
+                  <Node Case="Nominative" Unicode="ἐγὼ" nodeId="540020070040010" Chinese="我" English="I" Language="G" StrongNumberX="1473" RefStrong="{3972}" Lemma="ἐγώ" Cat="pron" Number="Singular" Role="Subject Matter" RefLemma="{Παῦλος}" StrongNumber="1473" Analysis="RP,,,1N,S," Id="1.26" Start="3" Ref="{54001001001}" RefEnglish="{Paul}" End="3" morphId="540020070041">ἐγὼ</Node>
+                </Node>
+              </Node>
+              <Node Rule="Np2P" Unicode="κῆρυξ" nodeId="540020070050091" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Cat="P" Number="Singular" Role="Attribute" Id="1.27" Length="9" Case="Nominative" StrongNumber="2783" Head="0" Gender="Masculine" Start="4" End="12" morphId="540020070051">
+                <Node Rule="Np-Appos" Unicode="κῆρυξ" nodeId="540020070050090" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Cat="np" Number="Singular" Role="Attribute" Id="1.28" Length="9" Case="Nominative" StrongNumber="2783" Head="0" Gender="Masculine" Start="4" End="12" morphId="540020070051">
+                  <Node Rule="NpaNp" Unicode="κῆρυξ" nodeId="540020070050030" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Cat="np" Number="Singular" Role="Attribute" Id="1.29" Length="3" Case="Nominative" StrongNumber="2783" Coord="True" Head="0" Gender="Masculine" Start="4" End="6" morphId="540020070051">
+                    <Node Rule="N2NP" Unicode="κῆρυξ" nodeId="540020070050011" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Cat="np" Number="Singular" Role="Attribute" Id="1.30" Length="1" Case="Nominative" StrongNumber="2783" Head="0" Gender="Masculine" Start="4" End="4" morphId="540020070051">
+                      <Node Unicode="κῆρυξ" nodeId="540020070050010" Chinese="（报信者）" English="a herald" Language="G" StrongNumberX="2783" Lemma="κῆρυξ" Gender="Masculine" Cat="noun" Number="Singular" Role="Attribute" Case="Nominative" StrongNumber="2783" Analysis="N,,,,,NMS," Id="1.31" Start="4" Ref="{}" End="4" morphId="540020070051">κῆρυξ</Node>
+                    </Node>
+                    <Node Unicode="καὶ" nodeId="540020070060010" Chinese="和" English="and" Language="G" StrongNumberX="2532" Lemma="καί" Cat="conj" End="5" StrongNumber="2532" Analysis="CC,,,,,,,," Id="1.32" Start="5" morphId="540020070061">καὶ</Node>
+                    <Node Cat="np">
+                      <Node Rule="N2NP" Unicode="ἀπόστολος" nodeId="540020070070011" Chinese="使徒" English="an apostle" Language="G" StrongNumberX="0652" Lemma="ἀπόστολος" Cat="np" Number="Singular" Id="1.33" Length="1" Case="Nominative" StrongNumber="652" Head="0" Gender="Masculine" Start="6" End="6" morphId="540020070071">
+                        <Node Unicode="ἀπόστολος" nodeId="540020070070010" Chinese="使徒" English="an apostle" Language="G" StrongNumberX="0652" Lemma="ἀπόστολος" Gender="Masculine" Cat="noun" Number="Singular" Case="Nominative" StrongNumber="652" Analysis="N,,,,,NMS," Id="1.34" Start="6" Ref="{}" End="6" morphId="540020070071">ἀπόστολος</Node>
+                      </Node>
+                      <Node Cat="pp">
+                        <Node Lemma="ἐν" morphId="540020070101" Cat="prep" English="in" StrongNumber="1722" Unicode="ἐν">ἐν</Node>
+                        <Node Cat="np">
+                          <Node Lemma="χριστός" Cat="noun" morphId="540020070111" English="Christ" StrongNumber="5547" Unicode="Χριστῷ,">Χριστῷ,</Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Rule="NpPp" Unicode="διδάσκαλος" nodeId="540020070120060" Chinese="教师" English="a teahcer" Language="G" StrongNumberX="1320" Lemma="διδάσκαλος" Cat="np" Number="Singular" Id="1.35" Length="6" Case="Nominative" StrongNumber="1320" Head="0" Gender="Masculine" Start="7" End="12" morphId="540020070141">
+                    <Node Rule="NPofNP" Unicode="διδάσκαλος" nodeId="540020070120020" Chinese="教师" English="a teahcer" Language="G" StrongNumberX="1320" Lemma="διδάσκαλος" Cat="np" Number="Singular" Id="1.36" Length="2" Case="Nominative" StrongNumber="1320" Head="0" Gender="Masculine" Start="7" End="8" morphId="540020070141">
+                      <Node Rule="N2NP" Unicode="διδάσκαλος" nodeId="540020070120011" Chinese="教师" English="a teahcer" Language="G" StrongNumberX="1320" Lemma="διδάσκαλος" Cat="np" Number="Singular" Id="1.37" Length="1" Case="Nominative" StrongNumber="1320" Head="0" Gender="Masculine" Start="7" End="7" morphId="540020070141">
+                        <Node Unicode="διδάσκαλος" nodeId="540020070120010" Chinese="教师" English="a teacher" Language="G" StrongNumberX="1320" Lemma="διδάσκαλος" Gender="Masculine" Cat="noun" Number="Singular" Case="Nominative" StrongNumber="1320" Analysis="N,,,,,NMS," Id="1.38" Start="7" Ref="{}" End="7" morphId="540020070141">διδάσκαλος</Node>
+                      </Node>
+                      <Node Rule="N2NP" Unicode="ἐθνῶν" nodeId="540020070130011" Chinese="列国" English="of gentiles" Language="G" StrongNumberX="1484" Lemma="ἔθνος" Cat="np" Number="Plural" Id="1.39" Length="1" Case="Genitive" StrongNumber="1484" Head="0" Gender="Neuter" Start="8" End="8" morphId="540020070151">
+                        <Node Unicode="ἐθνῶν" nodeId="540020070130010" Chinese="列国" English="of gentiles" Language="G" StrongNumberX="1484" Lemma="ἔθνος" Gender="Neuter" Cat="noun" Number="Plural" Case="Genitive" StrongNumber="1484" Analysis="N,,,,,GNP," Id="1.40" Start="8" Ref="{}" End="8" morphId="540020070151">ἐθνῶν</Node>
+                      </Node>
+                    </Node>
+                    <Node Rule="PrepNp" Unicode="πίστει" nodeId="540020070140040" Chinese="信仰" English="faith" Language="G" StrongNumberX="4102" Lemma="πίστις" Cat="pp" PrepLemma="ἐν" Number="Singular" Role="Location" Id="1.41" Length="4" Case="" StrongNumber="4102" Head="1" Gender="Feminine" Start="9" End="12" morphId="540020070171">
+                      <Node Unicode="ἐν" nodeId="540020070140010" PrepositionType="Located inside" Chinese="在" English="in" Language="G" StrongNumberX="1722" Lemma="ἐν" Cat="prep" End="9" StrongNumber="1722" Analysis="P,,,,,D,,," Id="1.42" Start="9" morphId="540020070161">ἐν</Node>
+                      <Node Rule="NpaNp" Unicode="πίστει" nodeId="540020070150030" Chinese="信仰" English="faith" Language="G" StrongNumberX="4102" Lemma="πίστις" Cat="np" Number="Singular" Role="Location" Id="1.43" Length="3" Case="Dative" StrongNumber="4102" Coord="True" Head="0" Gender="Feminine" Start="10" End="12" morphId="540020070171">
+                        <Node Rule="N2NP" Unicode="πίστει" nodeId="540020070150011" Chinese="信仰" English="faith" Language="G" StrongNumberX="4102" Lemma="πίστις" Cat="np" Number="Singular" Role="Location" Id="1.44" Length="1" Case="Dative" StrongNumber="4102" Head="0" Gender="Feminine" Start="10" End="10" morphId="540020070171">
+                          <Node Unicode="πίστει" nodeId="540020070150010" Chinese="信仰" English="faith" Language="G" StrongNumberX="4102" Lemma="πίστις" Gender="Feminine" Cat="noun" Number="Singular" Role="Location" Case="Dative" StrongNumber="4102" Analysis="N,,,,,DFS," Id="1.45" Start="10" Ref="{}" End="10" morphId="540020070171">πίστει</Node>
+                        </Node>
+                        <Node Unicode="καὶ" nodeId="540020070160010" Chinese="和" English="and" Language="G" StrongNumberX="2532" Lemma="καί" Cat="conj" End="11" StrongNumber="2532" Analysis="CC,,,,,,,," Id="1.46" Start="11" morphId="540020070181">καὶ</Node>
+                        <Node Rule="N2NP" Unicode="ἀληθείᾳ." nodeId="540020070170011" Chinese="真理" English="truth" Language="G" StrongNumberX="0225" Lemma="ἀλήθεια" Cat="np" Number="Singular" Id="1.47" Length="1" Case="Dative" StrongNumber="225" Head="0" Gender="Feminine" Start="12" End="12" morphId="540020070191">
+                          <Node Unicode="ἀληθείᾳ." nodeId="540020070170010" Chinese="真理" English="truth" Language="G" StrongNumberX="0225" Lemma="ἀλήθεια" Gender="Feminine" Cat="noun" Number="Singular" Case="Dative" StrongNumber="225" Analysis="N,,,,,DFS," Id="1.48" Start="12" Ref="{}" End="12" morphId="540020070191">ἀληθείᾳ.</Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node Rule="ClCl" Unicode="λέγω" nodeId="540020070080040" Chinese="说" English="I speak" Language="G" StrongNumberX="3004" Lemma="λέγω" Cat="CL" Number="Singular" Role="Event" Start="13" Mood="Indicative" Length="4" End="16" StrongNumber="3004" Tense="Present" Frame="{A0:54001001001 A1:54002007008}" Id="1.49" morphId="540020070091" Voice="Active" Person="First" Head="0">
+              <Node Rule="O-V" Unicode="λέγω" nodeId="540020070080020" Chinese="说" English="I speak" Language="G" StrongNumberX="3004" Lemma="λέγω" Cat="CL" Number="Singular" Role="Event" Start="13" Mood="Indicative" Length="2" End="14" StrongNumber="3004" Tense="Present" Frame="{A0:54001001001 A1:54002007008}" Id="1.50" morphId="540020070091" Voice="Active" Person="First" Head="1">
+                <Node Rule="Np2O" Unicode="ἀλήθειαν" nodeId="540020070080012" Chinese="实话" English="(the) truth" Language="G" StrongNumberX="0225" Lemma="ἀλήθεια" Cat="O" Number="Singular" Role="Goal" Id="1.51" Length="1" Case="Accusative" StrongNumber="225" Head="0" Gender="Feminine" Start="13" End="13" morphId="540020070081">
+                  <Node Rule="N2NP" Unicode="ἀλήθειαν" nodeId="540020070080011" Chinese="实话" English="(the) truth" Language="G" StrongNumberX="0225" Lemma="ἀλήθεια" Cat="np" Number="Singular" Role="Goal" Id="1.52" Length="1" Case="Accusative" StrongNumber="225" Head="0" Gender="Feminine" Start="13" End="13" morphId="540020070081">
+                    <Node Unicode="ἀλήθειαν" nodeId="540020070080010" Chinese="实话" English="(the) truth" Language="G" StrongNumberX="0225" Lemma="ἀλήθεια" Gender="Feminine" Cat="noun" Number="Singular" Role="Goal" Case="Accusative" StrongNumber="225" Analysis="N,,,,,AFS," Id="1.53" Start="13" Ref="{}" End="13" morphId="540020070081">ἀλήθειαν</Node>
+                  </Node>
+                </Node>
+                <Node Rule="Vp2V" Unicode="λέγω" nodeId="540020070090012" Chinese="说" English="I speak" Language="G" StrongNumberX="3004" Lemma="λέγω" Cat="V" Number="Singular" Role="Event" Start="14" Mood="Indicative" Length="1" End="14" StrongNumber="3004" Tense="Present" Frame="{A0:54001001001 A1:54002007008}" Id="1.54" morphId="540020070091" Voice="Active" Person="First" Head="0">
+                  <Node Rule="V2VP" Unicode="λέγω" nodeId="540020070090011" Chinese="说" English="I speak" Language="G" StrongNumberX="3004" Lemma="λέγω" Cat="vp" Number="Singular" Role="Event" Start="14" Mood="Indicative" Length="1" End="14" StrongNumber="3004" Tense="Present" Frame="{A0:54001001001 A1:54002007008}" Id="1.55" morphId="540020070091" Voice="Active" Person="First" Head="0">
+                    <Node SubjRefStrong="{3972}" Language="G" Voice="Active" Mood="Indicative" Unicode="λέγω" English="I speak" Tense="Present" StrongNumberX="3004" morphId="540020070091" Analysis="V,IPA1,,S," Frame="{A0:54001001001 A1:54002007008}" Cat="verb" SubjRefEnglish="{Paul}" SubjRef="{54001001001}" Number="Singular" FrameGloss="{A0:Paul A1:(the) truth}" Lemma="λέγω" Person="First" ClType="Verbal" StrongNumber="3004" Start="14" Chinese="说" nodeId="540020070090010" Id="1.56" End="14" SubjRefLemma="{Παῦλος}" Role="Event">λέγω</Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node Rule="ADV-V" Unicode="ψεύδομαι," nodeId="540020070100020" Chinese="撒谎" English="I lie" Language="G" StrongNumberX="5574" Lemma="ψεύδομαι" Cat="CL" Number="Singular" Role="Event" Start="15" Mood="Indicative" Length="2" End="16" StrongNumber="5574" Tense="Present" Frame="{A0:54001001001}" Id="1.57" morphId="540020070131" Voice="MiddlePassive" Person="First" Head="1">
+                <Node Rule="Advp2ADV" Unicode="οὐ" nodeId="540020070100012" Chinese="不" English="not" Language="G" StrongNumberX="3756" Lemma="οὐ" Cat="ADV" Role="Negation" Length="1" End="15" StrongNumber="3756" Head="0" Id="1.58" Start="15" Neg="True" morphId="540020070121">
+                  <Node Rule="Adv2Advp" Unicode="οὐ" nodeId="540020070100011" Chinese="不" English="not" Language="G" StrongNumberX="3756" Lemma="οὐ" Cat="advp" Role="Negation" Length="1" End="15" StrongNumber="3756" Head="0" Id="1.59" Start="15" morphId="540020070121">
+                    <Node Unicode="οὐ" nodeId="540020070100010" Chinese="不" English="not" Language="G" StrongNumberX="3756" Lemma="οὐ" Cat="adv" Role="Negation" End="15" StrongNumber="3756" Analysis="D,,,,,,,,," Id="1.60" Start="15" Ref="{}" morphId="540020070121">οὐ</Node>
+                  </Node>
+                </Node>
+                <Node Rule="Vp2V" Unicode="ψεύδομαι," nodeId="540020070110012" Chinese="撒谎" English="I lie" Language="G" StrongNumberX="5574" Lemma="ψεύδομαι" Cat="V" Number="Singular" Role="Event" Start="16" Mood="Indicative" Length="1" End="16" StrongNumber="5574" Tense="Present" Frame="{A0:54001001001}" Id="1.61" morphId="540020070131" Voice="MiddlePassive" Person="First" Head="0">
+                  <Node Rule="V2VP" Unicode="ψεύδομαι," nodeId="540020070110011" Chinese="撒谎" English="I lie" Language="G" StrongNumberX="5574" Lemma="ψεύδομαι" Cat="vp" Number="Singular" Role="Event" Start="16" Mood="Indicative" Length="1" End="16" StrongNumber="5574" Tense="Present" Frame="{A0:54001001001}" Id="1.62" morphId="540020070131" Voice="MiddlePassive" Person="First" Head="0">
+                    <Node SubjRefStrong="{3972}" Language="G" Voice="Middle" Mood="Indicative" Unicode="ψεύδομαι," English="I lie" Tense="Present" StrongNumberX="5574" morphId="540020070131" Analysis="V,IPM1,,S," Frame="{A0:54001001001}" Cat="verb" SubjRefEnglish="{Paul}" SubjRef="{54001001001}" Number="Singular" FrameGloss="{A0:Paul}" Lemma="ψεύδομαι" Person="First" ClType="Verbal" StrongNumber="5574" Start="16" Chinese="撒谎" nodeId="540020070110010" Id="1.63" End="16" SubjRefLemma="{Παῦλος}" Role="Event">ψεύδομαι,</Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002008">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020080020151" Length="15" Start="0" End="14">
+          <Node Id="1.1" Cat="CL" Lemma="βούλομαι" Rule="Conj-CL" Head="1" StrongNumber="1014" Voice="MiddlePassive" English="I want" Tense="Present" Number="Singular" morphId="540020080011" StrongNumberX="1014" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="βούλομαι" Chinese="愿意" Frame="{A0:54001001001 A1:54002008003}" nodeId="540020080020150" Length="15" Start="0" End="14">
+            <Node Id="1.2" Cat="conj" Lemma="οὖν" StrongNumber="3767" Language="G" morphId="540020080021" StrongNumberX="3767" English="Therefore" Unicode="οὖν," Chinese="（所义）" nodeId="540020080020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.3" Cat="CL" Lemma="βούλομαι" Rule="V-O" Head="0" StrongNumber="1014" English="I want" Tense="Present" Number="Singular" morphId="540020080011" StrongNumberX="1014" Chinese="愿意" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="βούλομαι" Voice="MiddlePassive" Frame="{A0:54001001001 A1:54002008003}" nodeId="540020080010140" Length="14" Start="1" End="14">
+              <Node Id="1.4" Cat="V" Lemma="βούλομαι" Rule="Vp2V" Head="0" StrongNumber="1014" Language="G" Voice="MiddlePassive" English="I want" Tense="Present" Number="Singular" morphId="540020080011" StrongNumberX="1014" Role="Modal" Mood="Indicative" Person="First" Chinese="愿意" Unicode="βούλομαι" Frame="{A0:54001001001 A1:54002008003}" nodeId="540020080010012" Length="1" Start="1" End="1">
+                <Node Id="1.5" Cat="vp" Lemma="βούλομαι" Rule="V2VP" Head="0" StrongNumber="1014" Tense="Present" English="I want" Number="Singular" morphId="540020080011" StrongNumberX="1014" Chinese="愿意" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="βούλομαι" Voice="MiddlePassive" Frame="{A0:54001001001 A1:54002008003}" nodeId="540020080010011" Length="1" Start="1" End="1">
+                  <Node Id="1.6" Cat="verb" Lemma="βούλομαι" StrongNumber="1014" Language="G" Person="First" Voice="Middle" Mood="Indicative" Tense="Present" Number="Singular" morphId="540020080011" StrongNumberX="1014" English="I want" ClType="Verbal" Role="Modal" Unicode="βούλομαι" Chinese="愿意" SubjRef="{54001001001}" Frame="{A0:54001001001 A1:54002008003}" nodeId="540020080010010" Start="1" End="1" SubjRefEnglish="{Paul}" SubjRefLemma="{Παῦλος}" SubjRefStrong="{3972}" FrameGloss="{A0:Paul A1:to pray}" Analysis="V,IPM1,,S," />
+                </Node>
+              </Node>
+              <Node Id="1.7" Cat="O" Lemma="προσεύχομαι" Rule="CL2Ox" Head="0" StrongNumber="4336" Voice="MiddlePassive" English="to pray" Tense="Present" morphId="540020080031" StrongNumberX="4336" Chinese="祷告" Mood="Infinitive" Language="G" Role="Event" Unicode="προσεύχεσθαι" Frame="{A0:54002008005}" nodeId="540020080030132" Length="13" Start="2" End="14">
+                <Node Id="1.9" Cat="CL" Lemma="προσεύχομαι" Rule="V-S-ADV-ADV-ADV" Head="0" StrongNumber="4336" Language="G" Voice="MiddlePassive" English="to pray" Tense="Present" morphId="540020080031" StrongNumberX="4336" Chinese="祷告" Mood="Infinitive" Role="Event" Unicode="προσεύχεσθαι" Frame="{A0:54002008005}" nodeId="540020080030130" Length="13" Start="2" End="14">
+                  <Node Id="1.10" Cat="V" Lemma="προσεύχομαι" Rule="Vp2V" Head="0" StrongNumber="4336" Tense="Present" Mood="Infinitive" morphId="540020080031" StrongNumberX="4336" Role="Event" English="to pray" Language="G" Unicode="προσεύχεσθαι" Chinese="祷告" Voice="MiddlePassive" Frame="{A0:54002008005}" nodeId="540020080030012" Length="1" Start="2" End="2">
+                    <Node Id="1.11" Cat="vp" Lemma="προσεύχομαι" Rule="V2VP" Head="0" StrongNumber="4336" Language="G" English="to pray" Tense="Present" morphId="540020080031" StrongNumberX="4336" Chinese="祷告" Mood="Infinitive" Role="Event" Unicode="προσεύχεσθαι" Voice="MiddlePassive" Frame="{A0:54002008005}" nodeId="540020080030011" Length="1" Start="2" End="2">
+                      <Node Id="1.12" Cat="verb" Lemma="προσεύχομαι" StrongNumber="4336" Tense="Present" Voice="Middle" English="to pray" morphId="540020080031" StrongNumberX="4336" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="προσεύχεσθαι" Chinese="祷告" SubjRef="{}" Frame="{A0:54002008005}" nodeId="540020080030010" Start="2" End="2" FrameGloss="{A0:men}" Analysis="V,NPM,,,,," />
+                    </Node>
+                  </Node>
+                  <Node Id="1.13" Cat="S" Lemma="ἀνήρ" Rule="Np2S" Head="0" HasDet="True" StrongNumber="435" Number="Plural" morphId="540020080051" StrongNumberX="0435" Chinese="男人" English="men" Language="G" Role="Source" Case="Accusative" Unicode="ἄνδρας" Gender="Masculine" nodeId="540020080040021" Length="2" Start="3" End="4">
+                    <Node Id="1.14" Cat="np" Lemma="ἀνήρ" Rule="DetNP" Head="1" HasDet="True" StrongNumber="435" Language="G" Gender="Masculine" Number="Plural" morphId="540020080051" StrongNumberX="0435" English="men" Role="Source" Case="Accusative" Unicode="ἄνδρας" Chinese="男人" nodeId="540020080040020" Length="2" Start="3" End="4">
+                      <Node Id="1.15" Cat="det" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Masculine" Number="Plural" morphId="540020080041" StrongNumberX="3588" English="the" Case="Accusative" Unicode="τοὺς" Chinese="" Ref="{}" nodeId="540020080040010" Start="3" End="3" Analysis="EA,,,,AMP," />
+                      <Node Id="1.16" Cat="np" Lemma="ἀνήρ" Rule="N2NP" Head="0" StrongNumber="435" Number="Plural" morphId="540020080051" StrongNumberX="0435" Chinese="男人" English="men" Language="G" Role="Source" Case="Accusative" Unicode="ἄνδρας" Gender="Masculine" nodeId="540020080050011" Length="1" Start="4" End="4">
+                        <Node Id="1.17" Cat="noun" Lemma="ἀνήρ" StrongNumber="435" Language="G" Gender="Masculine" Number="Plural" morphId="540020080051" StrongNumberX="0435" English="men" Role="Source" Case="Accusative" Unicode="ἄνδρας" Chinese="男人" Ref="{}" nodeId="540020080050010" Start="4" End="4" Analysis="N,,,,,AMP," />
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.18" Cat="ADV" Lemma="τόπος" Rule="pp2ADV" Head="0" StrongNumber="5117" Gender="Masculine" English="place (of meeting)" Number="Singular" morphId="540020080081" StrongNumberX="5117" Language="G" PrepLemma="" Role="Location" Case="" Unicode="τόπῳ," Chinese="地方" nodeId="540020080060031" Length="3" Start="5" End="7">
+                    <Node Id="1.19" Cat="pp" Lemma="τόπος" Rule="PrepNp" Head="1" StrongNumber="5117" Language="G" Number="Singular" morphId="540020080081" StrongNumberX="5117" Chinese="地方" English="place (of meeting)" PrepLemma="ἐν" Role="Location" Case="" Unicode="τόπῳ," Gender="Masculine" nodeId="540020080060030" Length="3" Start="5" End="7">
+                      <Node Id="1.20" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020080061" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="在" nodeId="540020080060010" Start="5" End="5" Analysis="P,,,,,D,,," />
+                      <Node Id="1.21" Cat="np" Lemma="τόπος" Rule="All-NP" Head="1" StrongNumber="5117" Gender="Masculine" English="place (of meeting)" Number="Singular" morphId="540020080081" StrongNumberX="5117" Language="G" Role="Location" Case="Dative" Unicode="τόπῳ," Chinese="地方" nodeId="540020080070020" Length="2" Start="6" End="7">
+                        <Node Id="1.22" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Singular" morphId="540020080071" StrongNumberX="3956" Chinese="各" English="every" Language="G" Case="Dative" Unicode="παντὶ" Gender="Masculine" nodeId="540020080070011" Length="1" Start="6" End="6">
+                          <Node Id="1.23" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Masculine" Number="Singular" morphId="540020080071" StrongNumberX="3956" English="every" Case="Dative" Unicode="παντὶ" Chinese="各" Ref="{}" nodeId="540020080070010" Start="6" End="6" Analysis="EQ,,,,DMS," />
+                        </Node>
+                        <Node Id="1.24" Cat="np" Lemma="τόπος" Rule="N2NP" Head="0" StrongNumber="5117" Language="G" Number="Singular" morphId="540020080081" StrongNumberX="5117" Chinese="地方" English="place (of meeting)" Role="Location" Case="Dative" Unicode="τόπῳ," Gender="Masculine" nodeId="540020080080011" Length="1" Start="7" End="7">
+                          <Node Id="1.25" Cat="noun" Lemma="τόπος" StrongNumber="5117" Gender="Masculine" English="place (of meeting)" Number="Singular" morphId="540020080081" StrongNumberX="5117" Language="G" Role="Location" Case="Dative" Unicode="τόπῳ," Chinese="地方" Ref="{}" nodeId="540020080080010" Start="7" End="7" Analysis="N,,,,,DMS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.26" Cat="ADV" Lemma="ἐπαίρω" Rule="CL2ADV" Head="0" StrongNumber="1869" Gender="Masculine" Mood="Participle" English="lifting up" Tense="Present" Number="Plural" morphId="540020080091" StrongNumberX="1869" Language="G" Role="Event" Case="Accusative" Unicode="ἐπαίροντας" Chinese="举起" Voice="Active" Frame="{A0:54002008005 A1:54002008011}" nodeId="540020080090031" Length="3" Start="8" End="10">
+                    <Node Id="1.27" Cat="CL" Lemma="ἐπαίρω" Rule="V-O" Head="0" StrongNumber="1869" Voice="Active" English="lifting up" Tense="Present" Number="Plural" morphId="540020080091" StrongNumberX="1869" Chinese="举起" Mood="Participle" Language="G" Role="Event" Case="Accusative" Unicode="ἐπαίροντας" Gender="Masculine" Frame="{A0:54002008005 A1:54002008011}" nodeId="540020080090030" Length="3" Start="8" End="10">
+                      <Node Id="1.28" Cat="V" Lemma="ἐπαίρω" Rule="Vp2V" Head="0" StrongNumber="1869" Gender="Masculine" Mood="Participle" Tense="Present" Number="Plural" morphId="540020080091" StrongNumberX="1869" Role="Event" English="lifting up" Language="G" Case="Accusative" Unicode="ἐπαίροντας" Chinese="举起" Voice="Active" Frame="{A0:54002008005 A1:54002008011}" nodeId="540020080090012" Length="1" Start="8" End="8">
+                        <Node Id="1.29" Cat="vp" Lemma="ἐπαίρω" Rule="V2VP" Head="0" StrongNumber="1869" Language="G" English="lifting up" Tense="Present" Number="Plural" morphId="540020080091" StrongNumberX="1869" Chinese="举起" Mood="Participle" Role="Event" Case="Accusative" Unicode="ἐπαίροντας" Gender="Masculine" Voice="Active" Frame="{A0:54002008005 A1:54002008011}" nodeId="540020080090011" Length="1" Start="8" End="8">
+                          <Node Id="1.30" Cat="verb" Lemma="ἐπαίρω" StrongNumber="1869" Gender="Masculine" Voice="Active" English="lifting up" Tense="Present" Number="Plural" morphId="540020080091" StrongNumberX="1869" Mood="Participle" Language="G" ClType="Verbal" Role="Event" Case="Accusative" Unicode="ἐπαίροντας" Chinese="举起" SubjRef="{54002008005}" Frame="{A0:54002008005 A1:54002008011}" nodeId="540020080090010" Start="8" End="8" SubjRefEnglish="{men}" SubjRefLemma="{ἀνήρ}" SubjRefStrong="{435}" FrameGloss="{A0:men A1:hands}" Analysis="V,PPA,AMP," />
+                        </Node>
+                      </Node>
+                      <Node Id="1.31" Cat="O" Lemma="χείρ" Rule="Np2O" Head="0" StrongNumber="5495" Number="Plural" morphId="540020080111" StrongNumberX="5495" Chinese="手" English="hands" Language="G" Role="Goal" Case="Accusative" Unicode="χεῖρας" Gender="Feminine" nodeId="540020080100021" Length="2" Start="9" End="10">
+                        <Node Id="1.32" Cat="np" Lemma="χείρ" Rule="AdjpNp" Head="1" StrongNumber="5495" Language="G" Gender="Feminine" Number="Plural" morphId="540020080111" StrongNumberX="5495" English="hands" Role="Goal" Case="Accusative" Unicode="χεῖρας" Chinese="手" nodeId="540020080100020" Length="2" Start="9" End="10">
+                          <Node Id="1.33" Cat="adjp" Lemma="ὅσιος" Rule="Adj2Adjp" Head="0" Substantive="False" StrongNumber="3741" Number="Plural" morphId="540020080101" StrongNumberX="3741" Chinese="虔圣" English="holy" Language="G" Case="Accusative" Unicode="ὁσίους" Gender="Feminine" nodeId="540020080100011" Length="1" Start="9" End="9">
+                            <Node Id="1.34" Cat="adj" Lemma="ὅσιος" Substantive="False" StrongNumber="3741" Language="G" Gender="Feminine" Number="Plural" morphId="540020080101" StrongNumberX="3741" English="holy" Case="Accusative" Unicode="ὁσίους" Chinese="虔圣" Ref="{}" nodeId="540020080100010" Start="9" End="9" Analysis="AA,,,,AFP," />
+                          </Node>
+                          <Node Id="1.35" Cat="np" Lemma="χείρ" Rule="N2NP" Head="0" StrongNumber="5495" Number="Plural" morphId="540020080111" StrongNumberX="5495" Chinese="手" English="hands" Language="G" Role="Goal" Case="Accusative" Unicode="χεῖρας" Gender="Feminine" nodeId="540020080110011" Length="1" Start="10" End="10">
+                            <Node Id="1.36" Cat="noun" Lemma="χείρ" StrongNumber="5495" Language="G" Gender="Feminine" Number="Plural" morphId="540020080111" StrongNumberX="5495" English="hands" Role="Goal" Case="Accusative" Unicode="χεῖρας" Chinese="手" Ref="{}" nodeId="540020080110010" Start="10" End="10" Analysis="N,,,,,AFP," />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.37" Cat="ADV" Lemma="ὀργή" Rule="pp2ADV" Head="0" StrongNumber="3709" Gender="Feminine" English="anger" Number="Singular" morphId="540020080131" StrongNumberX="3709" Language="G" PrepLemma="" Role="Negation" Case="" Unicode="ὀργῆς" Chinese="忿怒" nodeId="540020080120041" Length="4" Start="11" End="14">
+                    <Node Id="1.38" Cat="pp" Lemma="ὀργή" Rule="PrepNp" Head="1" StrongNumber="3709" Language="G" Number="Singular" morphId="540020080131" StrongNumberX="3709" Chinese="忿怒" English="anger" PrepLemma="χωρίς" Role="Negation" Case="" Unicode="ὀργῆς" Gender="Feminine" nodeId="540020080120040" Length="4" Start="11" End="14">
+                      <Node Id="1.39" Cat="prep" Lemma="χωρίς" StrongNumber="5565" English="without" morphId="540020080121" StrongNumberX="5565" PrepositionType="Directed away from" Language="G" Unicode="χωρὶς" Chinese="无" nodeId="540020080120010" Start="11" End="11" Analysis="PI,,,,G,,," />
+                      <Node Id="1.40" Cat="np" Lemma="ὀργή" Rule="NpaNp" Head="0" Coord="True" StrongNumber="3709" Gender="Feminine" English="anger" Number="Singular" morphId="540020080131" StrongNumberX="3709" Language="G" Role="Negation" Case="Genitive" Unicode="ὀργῆς" Chinese="忿怒" nodeId="540020080130030" Length="3" Start="12" End="14">
+                        <Node Id="1.41" Cat="np" Lemma="ὀργή" Rule="N2NP" Head="0" StrongNumber="3709" Language="G" Number="Singular" morphId="540020080131" StrongNumberX="3709" Chinese="忿怒" English="anger" Role="Negation" Case="Genitive" Unicode="ὀργῆς" Gender="Feminine" nodeId="540020080130011" Length="1" Start="12" End="12">
+                          <Node Id="1.42" Cat="noun" Lemma="ὀργή" StrongNumber="3709" Gender="Feminine" English="anger" Number="Singular" morphId="540020080131" StrongNumberX="3709" Language="G" Role="Negation" Case="Genitive" Unicode="ὀργῆς" Chinese="忿怒" Ref="{}" nodeId="540020080130010" Start="12" End="12" Analysis="N,,,,,GFS," />
+                        </Node>
+                        <Node Id="1.43" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020080141" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020080140010" Start="13" End="13" Analysis="CC,,,,,,,," />
+                        <Node Id="1.44" Cat="np" Lemma="διαλογισμός" Rule="N2NP" Head="0" StrongNumber="1261" Number="Singular" morphId="540020080151" StrongNumberX="1261" Chinese="争论" English="doubt" Language="G" Case="Genitive" Unicode="διαλογισμοῦ." Gender="Masculine" nodeId="540020080150011" Length="1" Start="14" End="14">
+                          <Node Id="1.45" Cat="noun" Lemma="διαλογισμός" StrongNumber="1261" Language="G" Gender="Masculine" Number="Singular" morphId="540020080151" StrongNumberX="1261" English="doubt" Case="Genitive" Unicode="διαλογισμοῦ." Chinese="争论" Ref="{}" nodeId="540020080150010" Start="14" End="14" Analysis="N,,,,,GMS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002009">
+    <Trees>
+      <Tree>
+        <Node End="21" Cat="Verse" Length="22" Head="0" Start="0" nodeId="540020090010221">
+          <Node Rule="AdvpCL" Unicode="κοσμεῖν" nodeId="540020090010220" Chinese="妆饰" English="to adorn" Language="G" StrongNumberX="2885" morphId="540020090101" Lemma="κοσμέω" Cat="CL" Role="Event" Mood="Infinitive" Length="22" End="21" StrongNumber="2885" Tense="Present" Frame="{A0:54002009003 A1:54002009012}" Id="1.46" Start="0" Voice="Active" Head="1">
+            <Node Rule="Adv2Advp" Unicode="ὡσαύτως" nodeId="540020090010011" Chinese="也是这样" English="similarly" Language="G" StrongNumberX="5615" Lemma="ὡσαύτως" Cat="advp" Role="Comparison" Length="1" End="0" StrongNumber="5615" Head="0" Id="1.47" Start="0" morphId="540020090011">
+              <Node Unicode="ὡσαύτως" nodeId="540020090010010" Chinese="也是这样" English="similarly" Language="G" StrongNumberX="5615" Lemma="ὡσαύτως" Cat="adv" Role="Comparison" End="0" StrongNumber="5615" Analysis="D,,,,,,,,," Id="1.48" Start="0" Ref="{}" morphId="540020090011">ὡσαύτως</Node>
+            </Node>
+            <Node Rule="S-ADV-ADV-V-O-ADV" Unicode="κοσμεῖν" nodeId="540020090020210" Chinese="妆饰" English="to adorn" Language="G" StrongNumberX="2885" morphId="540020090101" Lemma="κοσμέω" Cat="CL" Role="Event" Mood="Infinitive" Length="21" End="21" StrongNumber="2885" Tense="Present" Frame="{A0:54002009003 A1:54002009012}" Id="1.49" Start="1" Voice="Active" Head="3">
+              <Node Rule="Np2S" Unicode="γυναῖκας" nodeId="540020090020021" Chinese="女人" English="women" Language="G" StrongNumberX="1135" Lemma="γυνή" Cat="S" Number="Plural" Role="Source" Id="1.50" Length="2" Case="Accusative" StrongNumber="1135" Head="0" Gender="Feminine" Start="1" End="2" morphId="540020090021">
+                <Node Rule="N2NP" Unicode="γυναῖκας" nodeId="540020090030011" Chinese="女人" English="women" Language="G" StrongNumberX="1135" Lemma="γυνή" Cat="np" Number="Plural" Role="Source" Id="1.54" Length="1" Case="Accusative" StrongNumber="1135" Head="0" Gender="Feminine" Start="2" End="2" morphId="540020090021">
+                  <Node Unicode="γυναῖκας" nodeId="540020090030010" Chinese="女人" English="women" Language="G" StrongNumberX="1135" Lemma="γυνή" Gender="Feminine" Cat="noun" Number="Plural" Role="Source" Analysis="N,,,,,AFP," Case="Accusative" StrongNumber="1135" End="2" Id="1.55" Start="2" Ref="{}" morphId="540020090021">γυναῖκας</Node>
+                </Node>
+              </Node>
+              <Node Rule="pp2ADV" Unicode="καταστολῇ" nodeId="540020090040031" Chinese="（打扮）" English="appearance" Language="G" StrongNumberX="2689" Lemma="καταστολή" Cat="ADV" PrepLemma="" Number="Singular" Role="Location" Id="1.56" Length="3" Case="" StrongNumber="2689" Head="0" Gender="Feminine" Start="3" End="5" morphId="540020090041">
+                <Node Rule="PrepNp" Unicode="καταστολῇ" nodeId="540020090040030" Chinese="（打扮）" English="appearance" Language="G" StrongNumberX="2689" Lemma="καταστολή" Cat="pp" PrepLemma="ἐν" Number="Singular" Role="Location" Id="1.57" Length="3" Case="" StrongNumber="2689" Head="1" Gender="Feminine" Start="3" End="5" morphId="540020090041">
+                  <Node Unicode="ἐν" nodeId="540020090040010" PrepositionType="Located inside" Chinese="（用）" English="in" Language="G" StrongNumberX="1722" Lemma="ἐν" Cat="prep" End="3" StrongNumber="1722" Analysis="P,,,,,D,,," Id="1.58" Start="3" morphId="540020090031">ἐν</Node>
+                  <Node Rule="NpAdjp" Unicode="καταστολῇ" nodeId="540020090050020" Chinese="（打扮）" English="appearance" Language="G" StrongNumberX="2689" Lemma="καταστολή" Cat="np" Number="Singular" Role="Location" Id="1.59" Length="2" Case="Dative" StrongNumber="2689" Head="0" Gender="Feminine" Start="4" End="5" morphId="540020090041">
+                    <Node Rule="N2NP" Unicode="καταστολῇ" nodeId="540020090050011" Chinese="（打扮）" English="appearance" Language="G" StrongNumberX="2689" Lemma="καταστολή" Cat="np" Number="Singular" Role="Location" Id="1.60" Length="1" Case="Dative" StrongNumber="2689" Head="0" Gender="Feminine" Start="4" End="4" morphId="540020090041">
+                      <Node Unicode="καταστολῇ" nodeId="540020090050010" Chinese="（打扮）" English="appearance" Language="G" StrongNumberX="2689" Lemma="καταστολή" Gender="Feminine" Cat="noun" Number="Singular" Role="Location" Analysis="N,,,,,DFS," Case="Dative" StrongNumber="2689" End="4" Id="1.61" Start="4" Ref="{}" morphId="540020090041">καταστολῇ</Node>
+                    </Node>
+                    <Node Rule="Adj2Adjp" nodeId="540020090060011" Chinese="（雅素）" English="modest" Language="G" StrongNumberX="2887" Lemma="κόσμιος" Substantive="False" Unicode="κοσμίῳ" Cat="adjp" Number="Singular" Id="1.62" Length="1" Case="Dative" StrongNumber="2887" Head="0" Gender="Feminine" Start="5" End="5" morphId="540020090051">
+                      <Node Unicode="κοσμίῳ" nodeId="540020090060010" Gender="Feminine" Chinese="（雅素）" English="modest" Language="G" StrongNumberX="2887" Lemma="κόσμιος" Substantive="False" Cat="adj" Number="Singular" Analysis="AA,,,,DFS," Case="Dative" StrongNumber="2887" End="5" Id="1.63" Start="5" Ref="{}" morphId="540020090051">κοσμίῳ</Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node Rule="pp2ADV" Unicode="αἰδοῦς" nodeId="540020090070041" Chinese="廉耻" English="decency" Language="G" StrongNumberX="0127" Lemma="αἰδώς" Cat="ADV" PrepLemma="" Number="Singular" Role="Location" Id="1.64" Length="4" Case="" StrongNumber="127" Head="0" Gender="Feminine" Start="6" End="9" morphId="540020090071">
+                <Node Rule="PrepNp" Unicode="αἰδοῦς" nodeId="540020090070040" Chinese="廉耻" English="decency" Language="G" StrongNumberX="0127" Lemma="αἰδώς" Cat="pp" PrepLemma="μετά" Number="Singular" Role="Location" Id="1.65" Length="4" Case="" StrongNumber="127" Head="1" Gender="Feminine" Start="6" End="9" morphId="540020090071">
+                  <Node Unicode="μετὰ" nodeId="540020090070010" PrepositionType="Side by side" Chinese="以" English="with" Language="G" StrongNumberX="3326" Lemma="μετά" Cat="prep" End="6" StrongNumber="3326" Analysis="P,,,,,G,,," Id="1.66" Start="6" morphId="540020090061">μετὰ</Node>
+                  <Node Rule="NpaNp" Unicode="αἰδοῦς" nodeId="540020090080030" Chinese="廉耻" English="decency" Language="G" StrongNumberX="0127" Lemma="αἰδώς" Cat="np" Number="Singular" Role="Location" Id="1.67" Length="3" Case="Genitive" StrongNumber="127" Coord="True" Head="0" Gender="Feminine" Start="7" End="9" morphId="540020090071">
+                    <Node Rule="N2NP" Unicode="αἰδοῦς" nodeId="540020090080011" Chinese="廉耻" English="decency" Language="G" StrongNumberX="0127" Lemma="αἰδώς" Cat="np" Number="Singular" Role="Location" Id="1.68" Length="1" Case="Genitive" StrongNumber="127" Head="0" Gender="Feminine" Start="7" End="7" morphId="540020090071">
+                      <Node Unicode="αἰδοῦς" nodeId="540020090080010" Chinese="廉耻" English="decency" Language="G" StrongNumberX="0127" Lemma="αἰδώς" Gender="Feminine" Cat="noun" Number="Singular" Role="Location" Analysis="N,,,,,GFS," Case="Genitive" StrongNumber="127" End="7" Id="1.69" Start="7" Ref="{}" morphId="540020090071">αἰδοῦς</Node>
+                    </Node>
+                    <Node Unicode="καὶ" nodeId="540020090090010" Chinese="和" English="and" Language="G" StrongNumberX="2532" Lemma="καί" Cat="conj" End="8" StrongNumber="2532" Analysis="CC,,,,,,,," Id="1.70" Start="8" morphId="540020090081">καὶ</Node>
+                    <Node Rule="N2NP" Unicode="σωφροσύνης" nodeId="540020090100011" Chinese="（克己）" English="propriety" Language="G" StrongNumberX="4997" Lemma="σωφροσύνη" Cat="np" Number="Singular" Id="1.71" Length="1" Case="Genitive" StrongNumber="4997" Head="0" Gender="Feminine" Start="9" End="9" morphId="540020090091">
+                      <Node Unicode="σωφροσύνης" nodeId="540020090100010" Chinese="（克己）" English="propriety" Language="G" StrongNumberX="4997" Lemma="σωφροσύνη" Gender="Feminine" Cat="noun" Number="Singular" Analysis="N,,,,,GFS," Case="Genitive" StrongNumber="4997" End="9" Id="1.72" Start="9" Ref="{}" morphId="540020090091">σωφροσύνης</Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node Rule="Vp2V" Unicode="κοσμεῖν" nodeId="540020090110012" Chinese="妆饰" English="to adorn" Language="G" StrongNumberX="2885" morphId="540020090101" Lemma="κοσμέω" Cat="V" Role="Event" Mood="Infinitive" Length="1" End="10" StrongNumber="2885" Tense="Present" Frame="{A0:54002009003 A1:54002009012}" Id="1.73" Start="10" Voice="Active" Head="0">
+                <Node Rule="V2VP" Unicode="κοσμεῖν" nodeId="540020090110011" Chinese="妆饰" English="to adorn" Language="G" StrongNumberX="2885" morphId="540020090101" Lemma="κοσμέω" Cat="vp" Role="Event" Mood="Infinitive" Length="1" End="10" StrongNumber="2885" Tense="Present" Frame="{A0:54002009003 A1:54002009012}" Id="1.74" Start="10" Voice="Active" Head="0">
+                  <Node Unicode="κοσμεῖν" nodeId="540020090110010" Chinese="妆饰" English="to adorn" Language="G" StrongNumberX="2885" morphId="540020090101" Lemma="κοσμέω" SubjRef="{}" Cat="verb" Role="Event" Mood="Infinitive" End="10" StrongNumber="2885" Tense="Present" Frame="{A0:54002009003 A1:54002009012}" Analysis="V,NPA,,,,," Id="1.75" Start="10" Voice="Active" ClType="Verbal" FrameGloss="{A0:women A1:themselves}">κοσμεῖν</Node>
+                </Node>
+              </Node>
+              <Node Rule="Np2O" Unicode="ἑαυτάς," nodeId="540020090120012" Chinese="自己" English="themselves" Language="G" StrongNumberX="1438" Lemma="ἑαυτοῦ" Cat="O" Number="Plural" Role="Goal" Id="1.76" Length="1" Case="Accusative" StrongNumber="1438" Head="0" Gender="Feminine" Start="11" End="11" morphId="540020090111">
+                <Node Rule="Pron2NP" Unicode="ἑαυτάς," nodeId="540020090120011" Chinese="自己" English="themselves" Language="G" StrongNumberX="1438" Lemma="ἑαυτοῦ" Cat="np" Number="Plural" Role="Goal" Id="1.77" Length="1" Case="Accusative" StrongNumber="1438" Head="0" Gender="Feminine" Start="11" End="11" morphId="540020090111">
+                  <Node Case="Accusative" Unicode="ἑαυτάς," nodeId="540020090120010" Chinese="自己" English="themselves" Language="G" StrongNumberX="1438" RefStrong="{1135}" Lemma="ἑαυτοῦ" Gender="Feminine" Cat="pron" Number="Plural" Role="Goal" Analysis="RE,,,3AFP," RefLemma="{γυνή}" StrongNumber="1438" End="11" Id="1.78" Start="11" Ref="{54002009003}" RefEnglish="{women}" morphId="540020090111">ἑαυτάς,</Node>
+                </Node>
+              </Node>
+              <Node Rule="pp2ADV" Unicode="ἔργων" nodeId="540020090130101" Chinese="行" English="works" Language="G" StrongNumberX="2041" Lemma="ἔργον" Cat="ADV" PrepLemma="" Number="Plural" Role="Direction" Id="1.79" Length="10" Case="" StrongNumber="2041" Head="0" Gender="Neuter" Start="12" End="21" morphId="540020100081">
+                <Node Rule="AdvPp" Unicode="ἔργων" nodeId="540020090130100" Chinese="行" English="works" Language="G" StrongNumberX="2041" Lemma="ἔργον" Cat="pp" PrepLemma="διά" Number="Plural" Role="Direction" Id="1.80" Length="10" Case="" StrongNumber="2041" Coord="True" Head="1" Gender="Neuter" Start="12" End="21" morphId="540020100081">
+                  <Node Rule="Adv2Advp" Unicode="μὴ" nodeId="540020090130011" Chinese="不" English="not" Language="G" StrongNumberX="3361" Lemma="μή" Cat="advp" Role="Negation" Length="1" End="12" StrongNumber="3361" Head="0" Id="1.81" Start="12" morphId="540020090121">
+                    <Node Unicode="μὴ" nodeId="540020090130010" Chinese="不" English="not" Language="G" StrongNumberX="3361" Lemma="μή" Cat="adv" Role="Negation" End="12" StrongNumber="3361" Analysis="DO,,,,,,,," Id="1.82" Start="12" Ref="{}" morphId="540020090121">μὴ</Node>
+                  </Node>
+                  <Node Rule="PrepNp" Unicode="πλέγμασιν," nodeId="540020090140090" Chinese="编发" English="braided hair" Language="G" StrongNumberX="4117" Lemma="πλέγμα" Cat="pp" PrepLemma="ἐν" Number="Plural" Role="Location" Id="1.83" Length="9" Case="" StrongNumber="4117" Head="1" Gender="Neuter" Start="13" End="21" morphId="540020090141">
+                    <Node Unicode="ἐν" nodeId="540020090140010" PrepositionType="Located inside" Chinese="（以）" English="with" Language="G" StrongNumberX="1722" Lemma="ἐν" Cat="prep" End="13" StrongNumber="1722" Analysis="P,,,,,D,,," Id="1.84" Start="13" morphId="540020090131">ἐν</Node>
+                    <Node Rule="Conj4Np" Unicode="πλέγμασιν," nodeId="540020090150080" Chinese="编发" English="braided hair" Language="G" StrongNumberX="4117" Lemma="πλέγμα" Cat="np" Number="Plural" Role="Location" Id="1.85" Length="8" Case="Dative" StrongNumber="4117" Coord="True" Head="0" Gender="Neuter" Start="14" End="21" morphId="540020090141">
+                      <Node Rule="N2NP" Unicode="πλέγμασιν," nodeId="540020090150011" Chinese="编发" English="braided hair" Language="G" StrongNumberX="4117" Lemma="πλέγμα" Cat="np" Number="Plural" Role="Location" Id="1.86" Length="1" Case="Dative" StrongNumber="4117" Head="0" Gender="Neuter" Start="14" End="14" morphId="540020090141">
+                        <Node Unicode="πλέγμασιν," nodeId="540020090150010" Chinese="编发" English="braided hair" Language="G" StrongNumberX="4117" Lemma="πλέγμα" Gender="Neuter" Cat="noun" Number="Plural" Role="Location" Analysis="N,,,,,DNP," Case="Dative" StrongNumber="4117" End="14" Id="1.87" Start="14" Ref="{}" morphId="540020090141">πλέγμασιν,</Node>
+                      </Node>
+                      <Node Unicode="καὶ" nodeId="540020090160010" Chinese="和" English="and" Language="G" StrongNumberX="2532" Lemma="καί" Cat="conj" End="15" StrongNumber="2532" Analysis="CC,,,,,,,," Id="1.88" Start="15" morphId="540020090151">καὶ</Node>
+                      <Node Rule="N2NP" Unicode="χρυσῷ," nodeId="540020090170011" Chinese="黄金" English="gold" Language="G" StrongNumberX="5553" Lemma="χρυσός" Cat="np" Number="Singular" Id="1.89" Length="1" Case="Dative" StrongNumber="5557" Head="0" Gender="Neuter" Start="16" End="16" morphId="540020090161">
+                        <Node Unicode="χρυσῷ," nodeId="540020090170010" Chinese="黄金" English="gold" Language="G" StrongNumberX="5553" Lemma="χρυσός" Gender="Masculine" Cat="noun" Number="Singular" Analysis="N,,,,,DMS," Case="Dative" StrongNumber="5557" End="16" Id="1.90" Start="16" Ref="{}" morphId="540020090161">χρυσῷ,</Node>
+                      </Node>
+                      <Node Unicode="ἢ" nodeId="540020090180010" Chinese="或" English="or" Language="G" StrongNumberX="2228" Lemma="ἤ" Cat="conj" End="17" StrongNumber="2228" Analysis="CC,,,,,,,," Id="1.91" Start="17" morphId="540020090171">ἢ</Node>
+                      <Node Rule="N2NP" Unicode="μαργαρίταις," nodeId="540020090190011" Chinese="珍珠" English="pearls" Language="G" StrongNumberX="3135" Lemma="μαργαρίτης" Cat="np" Number="Plural" Id="1.92" Length="1" Case="Dative" StrongNumber="3135" Head="0" Gender="Masculine" Start="18" End="18" morphId="540020090181">
+                        <Node Unicode="μαργαρίταις," nodeId="540020090190010" Chinese="珍珠" English="pearls" Language="G" StrongNumberX="3135" Lemma="μαργαρίτης" Gender="Masculine" Cat="noun" Number="Plural" Analysis="N,,,,,DMP," Case="Dative" StrongNumber="3135" End="18" Id="1.93" Start="18" Ref="{}" morphId="540020090181">μαργαρίταις,</Node>
+                      </Node>
+                      <Node Unicode="ἢ" nodeId="540020090200010" Chinese="或" English="or" Language="G" StrongNumberX="2228" Lemma="ἤ" Cat="conj" End="19" StrongNumber="2228" Analysis="CC,,,,,,,," Id="1.94" Start="19" morphId="540020090191">ἢ</Node>
+                      <Node Rule="NpAdjp" Unicode="ἱματισμῷ" nodeId="540020090210020" Chinese="服饰" English="clothing" Language="G" StrongNumberX="2441" Lemma="ἱματισμός" Cat="np" Number="Singular" Id="1.95" Length="2" Case="Dative" StrongNumber="2441" Head="0" Gender="Masculine" Start="20" End="21" morphId="540020090201">
+                        <Node Rule="N2NP" Unicode="ἱματισμῷ" nodeId="540020090210011" Chinese="服饰" English="clothing" Language="G" StrongNumberX="2441" Lemma="ἱματισμός" Cat="np" Number="Singular" Id="1.96" Length="1" Case="Dative" StrongNumber="2441" Head="0" Gender="Masculine" Start="20" End="20" morphId="540020090201">
+                          <Node Unicode="ἱματισμῷ" nodeId="540020090210010" Chinese="服饰" English="clothing" Language="G" StrongNumberX="2441" Lemma="ἱματισμός" Gender="Masculine" Cat="noun" Number="Singular" Analysis="N,,,,,DMS," Case="Dative" StrongNumber="2441" End="20" Id="1.97" Start="20" Ref="{}" morphId="540020090201">ἱματισμῷ</Node>
+                        </Node>
+                        <Node Rule="Adj2Adjp" nodeId="540020090220011" Chinese="贵的" English="costly" Language="G" StrongNumberX="4185" Lemma="πολυτελής" Substantive="False" Unicode="πολυτελεῖ," Cat="adjp" Number="Singular" Id="1.98" Length="1" Case="Dative" StrongNumber="4185" Head="0" Gender="Masculine" Start="21" End="21" morphId="540020090211">
+                          <Node Unicode="πολυτελεῖ," nodeId="540020090220010" Gender="Masculine" Chinese="贵的" English="costly" Language="G" StrongNumberX="4185" Lemma="πολυτελής" Substantive="False" Cat="adj" Number="Singular" Analysis="AA,,,,DMS," Case="Dative" StrongNumber="4185" End="21" Id="1.99" Start="21" Ref="{}" morphId="540020090211">πολυτελεῖ,</Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002010">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020100010092" Length="9" Start="0" End="8">
+          <Node Id="1.79" Cat="ADV" Lemma="ἔργον" Rule="pp2ADV" Head="0" StrongNumber="2041" Gender="Neuter" English="works" Number="Plural" morphId="540020100081" StrongNumberX="2041" Language="G" PrepLemma="" Role="Direction" Case="" Unicode="ἔργων" Chinese="行" nodeId="540020100010091" Length="9" Start="0" End="8">
+            <Node Id="1.80" Cat="pp" Lemma="ἔργον" Rule="notPPbutPP" Head="1" Coord="True" StrongNumber="2041" Language="G" Number="Plural" morphId="540020100081" StrongNumberX="2041" Chinese="行" English="works" PrepLemma="διά" Role="Direction" Case="" Unicode="ἔργων" Gender="Neuter" nodeId="540020100010090" Length="9" Start="0" End="8">
+              <Node Id="1.100" Cat="conj" Lemma="ἀλλά" StrongNumber="235" Language="G" morphId="540020100011" StrongNumberX="0235" English="but" Unicode="ἀλλ’" Chinese="（如此）" nodeId="540020100010010" Start="0" End="0" Analysis="CO,,,,,,,," />
+              <Node Id="1.101" Cat="pp" Lemma="ἔργον" Rule="PrepNp" Head="1" StrongNumber="2041" Gender="Neuter" English="works" Number="Plural" morphId="540020100081" StrongNumberX="2041" Language="G" PrepLemma="διά" Role="Direction" Case="" Unicode="ἔργων" Chinese="行" nodeId="540020100070080" Length="8" Start="1" End="8">
+                <Node Id="1.102" Cat="prep" Lemma="διά" StrongNumber="1223" English="by means of" morphId="540020100071" StrongNumberX="1223" PrepositionType="Passing through midst" Language="G" Unicode="δι’" Chinese="用" nodeId="540020100070010" Start="1" End="1" Analysis="P,,,,,G,,," />
+                <Node Id="1.103" Cat="np" Lemma="ἔργον" Rule="CL-NP" Head="1" StrongNumber="2041" Language="G" Number="Plural" morphId="540020100081" StrongNumberX="2041" Chinese="行" English="works" Role="Direction" Case="Genitive" Unicode="ἔργων" Gender="Neuter" nodeId="540020100020070" Length="7" Start="2" End="8">
+                  <Node Id="1.104" Cat="CL" Lemma="πρέπω" Rule="S-V-ADV" Head="1" StrongNumber="4241" English="is proper" Tense="Present" Number="Singular" morphId="540020100031" StrongNumberX="4241" Chinese="合乎" Mood="Indicative" Language="G" Role="State" Person="Third" Unicode="πρέπει" Voice="Active" Frame="{A0:54002010002}" nodeId="540020100020050" Length="5" Start="2" End="6">
+                    <Node Id="1.105" Cat="S" Lemma="ὅς" Rule="Np2S" Head="0" StrongNumber="3739" Language="G" Gender="Neuter" Number="Singular" morphId="540020100021" StrongNumberX="3739" English="what" Role="Source" Case="Nominative" Unicode="ὃ" Chinese="" nodeId="540020100020012" Length="1" Start="2" End="2">
+                      <Node Id="1.106" Cat="np" Lemma="ὅς" Rule="Pron2NP" Head="0" StrongNumber="3739" Number="Singular" morphId="540020100021" StrongNumberX="3739" Chinese="" English="what" Language="G" Role="Source" Case="Nominative" Unicode="ὃ" Gender="Neuter" nodeId="540020100020011" Length="1" Start="2" End="2">
+                        <Node Id="1.107" Cat="pron" Lemma="ὅς" StrongNumber="3739" Language="G" Gender="Neuter" Number="Singular" morphId="540020100021" StrongNumberX="3739" English="what" Role="Source" Case="Nominative" Unicode="ὃ" Chinese="" Ref="{54002010008}" nodeId="540020100020010" Start="2" End="2" RefEnglish="{works}" RefLemma="{ἔργον}" RefStrong="{2041}" Analysis="RR,,,,NNS," />
+                      </Node>
+                    </Node>
+                    <Node Id="1.108" Cat="V" Lemma="πρέπω" Rule="Vp2V" Head="0" StrongNumber="4241" Language="G" Voice="Active" English="is proper" Tense="Present" Number="Singular" morphId="540020100031" StrongNumberX="4241" Role="State" Mood="Indicative" Person="Third" Chinese="合乎" Unicode="πρέπει" Frame="{A0:54002010002}" nodeId="540020100030012" Length="1" Start="3" End="3">
+                      <Node Id="1.109" Cat="vp" Lemma="πρέπω" Rule="V2VP" Head="0" StrongNumber="4241" Tense="Present" English="is proper" Number="Singular" morphId="540020100031" StrongNumberX="4241" Chinese="合乎" Mood="Indicative" Language="G" Role="State" Person="Third" Unicode="πρέπει" Voice="Active" Frame="{A0:54002010002}" nodeId="540020100030011" Length="1" Start="3" End="3">
+                        <Node Id="1.110" Cat="verb" Lemma="πρέπω" StrongNumber="4241" Language="G" Person="Third" Voice="Active" Mood="Indicative" Tense="Present" Number="Singular" morphId="540020100031" StrongNumberX="4241" English="is proper" ClType="Verbal" Role="State" Unicode="πρέπει" Chinese="合乎" SubjRef="{}" Frame="{A0:54002010002}" nodeId="540020100030010" Start="3" End="3" FrameGloss="{A0:what}" Analysis="V,IPA3,,S," />
+                      </Node>
+                    </Node>
+                    <Node Id="1.111" Cat="ADV" Lemma="γυνή" Rule="Np2ADV" Head="0" StrongNumber="1135" Language="G" Number="Plural" morphId="540020100041" StrongNumberX="1135" Chinese="女人" English="for women" Role="Relation" Case="Dative" Unicode="γυναιξὶν" Gender="Feminine" nodeId="540020100040031" Length="3" Start="4" End="6">
+                      <Node Id="1.112" Cat="np" Lemma="γυνή" Rule="NpAdjp" Head="0" StrongNumber="1135" Gender="Feminine" English="for women" Number="Plural" morphId="540020100041" StrongNumberX="1135" Language="G" Role="Relation" Case="Dative" Unicode="γυναιξὶν" Chinese="女人" nodeId="540020100040030" Length="3" Start="4" End="6">
+                        <Node Id="1.113" Cat="np" Lemma="γυνή" Rule="N2NP" Head="0" StrongNumber="1135" Language="G" Number="Plural" morphId="540020100041" StrongNumberX="1135" Chinese="女人" English="for women" Role="Relation" Case="Dative" Unicode="γυναιξὶν" Gender="Feminine" nodeId="540020100040011" Length="1" Start="4" End="4">
+                          <Node Id="1.114" Cat="noun" Lemma="γυνή" StrongNumber="1135" Gender="Feminine" English="for women" Number="Plural" morphId="540020100041" StrongNumberX="1135" Language="G" Role="Relation" Case="Dative" Unicode="γυναιξὶν" Chinese="女人" Ref="{}" nodeId="540020100040010" Start="4" End="4" Analysis="N,,,,,DFP," />
+                        </Node>
+                        <Node Id="1.115" Cat="adjp" Lemma="ἐπαγγέλλω" Rule="CL2Adjp" Head="0" StrongNumber="1861" Language="G" Gender="Feminine" English="professing" Tense="Present" Number="Plural" morphId="540020100051" StrongNumberX="1861" Mood="Participle" Role="Event" Case="Dative" Unicode="ἐπαγγελλομέναις" Chinese="自许" Voice="MiddlePassive" Frame="{A0:54002010004 A1:54002010006}" nodeId="540020100050021" Length="2" Start="5" End="6">
+                          <Node Id="1.116" Cat="CL" Lemma="ἐπαγγέλλω" Rule="V-O" Head="0" StrongNumber="1861" Tense="Present" Voice="MiddlePassive" English="professing" Number="Plural" morphId="540020100051" StrongNumberX="1861" Chinese="自许" Mood="Participle" Language="G" Role="Event" Case="Dative" Unicode="ἐπαγγελλομέναις" Gender="Feminine" Frame="{A0:54002010004 A1:54002010006}" nodeId="540020100050020" Length="2" Start="5" End="6">
+                            <Node Id="1.117" Cat="V" Lemma="ἐπαγγέλλω" Rule="Vp2V" Head="0" StrongNumber="1861" Language="G" Gender="Feminine" English="professing" Tense="Present" Number="Plural" morphId="540020100051" StrongNumberX="1861" Role="Event" Mood="Participle" Case="Dative" Unicode="ἐπαγγελλομέναις" Chinese="自许" Voice="MiddlePassive" Frame="{A0:54002010004 A1:54002010006}" nodeId="540020100050012" Length="1" Start="5" End="5">
+                              <Node Id="1.118" Cat="vp" Lemma="ἐπαγγέλλω" Rule="V2VP" Head="0" StrongNumber="1861" Tense="Present" English="professing" Number="Plural" morphId="540020100051" StrongNumberX="1861" Chinese="自许" Mood="Participle" Language="G" Role="Event" Case="Dative" Unicode="ἐπαγγελλομέναις" Gender="Feminine" Voice="MiddlePassive" Frame="{A0:54002010004 A1:54002010006}" nodeId="540020100050011" Length="1" Start="5" End="5">
+                                <Node Id="1.119" Cat="verb" Lemma="ἐπαγγέλλω" StrongNumber="1861" Language="G" Gender="Feminine" Voice="Middle" Mood="Participle" Tense="Present" Number="Plural" morphId="540020100051" StrongNumberX="1861" English="professing" ClType="Verbal" Role="Event" Case="Dative" Unicode="ἐπαγγελλομέναις" Chinese="自许" SubjRef="{54002010004}" Frame="{A0:54002010004 A1:54002010006}" nodeId="540020100050010" Start="5" End="5" SubjRefEnglish="{for women}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" FrameGloss="{A0:for women A1:godly  reverence}" Analysis="V,PPM,DFP," />
+                              </Node>
+                            </Node>
+                            <Node Id="1.120" Cat="O" Lemma="θεοσέβεια" Rule="Np2O" Head="0" StrongNumber="2317" Language="G" Gender="Feminine" Number="Singular" morphId="540020100061" StrongNumberX="2317" English="godly  reverence" Role="Goal" Case="Accusative" Unicode="θεοσέβειαν," Chinese="敬畏上帝" nodeId="540020100060012" Length="1" Start="6" End="6">
+                              <Node Id="1.121" Cat="np" Lemma="θεοσέβεια" Rule="N2NP" Head="0" StrongNumber="2317" Number="Singular" morphId="540020100061" StrongNumberX="2317" Chinese="敬畏上帝" English="godly  reverence" Language="G" Role="Goal" Case="Accusative" Unicode="θεοσέβειαν," Gender="Feminine" nodeId="540020100060011" Length="1" Start="6" End="6">
+                                <Node Id="1.122" Cat="noun" Lemma="θεοσέβεια" StrongNumber="2317" Language="G" Gender="Feminine" Number="Singular" morphId="540020100061" StrongNumberX="2317" English="godly  reverence" Role="Goal" Case="Accusative" Unicode="θεοσέβειαν," Chinese="敬畏上帝" Ref="{}" nodeId="540020100060010" Start="6" End="6" Analysis="N,,,,,AFS," />
+                              </Node>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.123" Cat="np" Lemma="ἔργον" Rule="NpAdjp" Head="0" StrongNumber="2041" Gender="Neuter" English="works" Number="Plural" morphId="540020100081" StrongNumberX="2041" Language="G" Role="Direction" Case="Genitive" Unicode="ἔργων" Chinese="行" nodeId="540020100080020" Length="2" Start="7" End="8">
+                    <Node Id="1.124" Cat="np" Lemma="ἔργον" Rule="N2NP" Head="0" StrongNumber="2041" Language="G" Number="Plural" morphId="540020100081" StrongNumberX="2041" Chinese="行" English="works" Role="Direction" Case="Genitive" Unicode="ἔργων" Gender="Neuter" nodeId="540020100080011" Length="1" Start="7" End="7">
+                      <Node Id="1.125" Cat="noun" Lemma="ἔργον" StrongNumber="2041" Gender="Neuter" English="works" Number="Plural" morphId="540020100081" StrongNumberX="2041" Language="G" Role="Direction" Case="Genitive" Unicode="ἔργων" Chinese="行" Ref="{}" nodeId="540020100080010" Start="7" End="7" Analysis="N,,,,,GNP," />
+                    </Node>
+                    <Node Id="1.126" Cat="adjp" Lemma="ἀγαθός" Rule="Adj2Adjp" Head="0" Substantive="False" StrongNumber="18" Number="Plural" morphId="540020100091" StrongNumberX="0018" Chinese="善" English="good" Language="G" Case="Genitive" Unicode="ἀγαθῶν." Gender="Neuter" nodeId="540020100090011" Length="1" Start="8" End="8">
+                      <Node Id="1.127" Cat="adj" Lemma="ἀγαθός" Substantive="False" StrongNumber="18" Language="G" Gender="Neuter" Number="Plural" morphId="540020100091" StrongNumberX="0018" English="good" Case="Genitive" Unicode="ἀγαθῶν." Chinese="善" Ref="{}" nodeId="540020100090010" Start="8" End="8" Analysis="AA,,,,GNP," />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002011">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020110010071" Length="7" Start="0" End="6">
+          <Node Id="1.1" Cat="CL" Lemma="μανθάνω" Rule="S-ADV-V-ADV" Head="2" StrongNumber="3129" English="Let learn" Tense="Present" Number="Singular" morphId="540020110041" StrongNumberX="3129" Chinese="学习" Mood="Imperative" Language="G" Role="Event" Person="Third" Unicode="μανθανέτω" Voice="Active" Frame="{A0:54002011001}" nodeId="540020110010070" Length="7" Start="0" End="6">
+            <Node Id="1.2" Cat="S" Lemma="γυνή" Rule="Np2S" Head="0" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020110011" StrongNumberX="1135" English="a woman" Role="Source" Case="Nominative" Unicode="γυνὴ" Chinese="女人" nodeId="540020110010012" Length="1" Start="0" End="0">
+              <Node Id="1.3" Cat="np" Lemma="γυνή" Rule="N2NP" Head="0" StrongNumber="1135" Number="Singular" morphId="540020110011" StrongNumberX="1135" Chinese="女人" English="a woman" Language="G" Role="Source" Case="Nominative" Unicode="γυνὴ" Gender="Feminine" nodeId="540020110010011" Length="1" Start="0" End="0">
+                <Node Id="1.4" Cat="noun" Lemma="γυνή" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020110011" StrongNumberX="1135" English="a woman" Role="Source" Case="Nominative" Unicode="γυνὴ" Chinese="女人" Ref="{}" nodeId="540020110010010" Start="0" End="0" Analysis="N,,,,,NFS," />
+              </Node>
+            </Node>
+            <Node Id="1.5" Cat="ADV" Lemma="ἡσυχία" Rule="pp2ADV" Head="0" StrongNumber="2271" Language="G" Number="Singular" morphId="540020110031" StrongNumberX="2271" Chinese="恬静" English="silence" PrepLemma="" Role="Location" Case="" Unicode="ἡσυχίᾳ" Gender="Feminine" nodeId="540020110020021" Length="2" Start="1" End="2">
+              <Node Id="1.6" Cat="pp" Lemma="ἡσυχία" Rule="PrepNp" Head="1" StrongNumber="2271" Gender="Feminine" English="silence" Number="Singular" morphId="540020110031" StrongNumberX="2271" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ" Chinese="恬静" nodeId="540020110020020" Length="2" Start="1" End="2">
+                <Node Id="1.7" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020110021" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="在" nodeId="540020110020010" Start="1" End="1" Analysis="P,,,,,D,,," />
+                <Node Id="1.8" Cat="np" Lemma="ἡσυχία" Rule="N2NP" Head="0" StrongNumber="2271" Language="G" Number="Singular" morphId="540020110031" StrongNumberX="2271" Chinese="恬静" English="silence" Role="Location" Case="Dative" Unicode="ἡσυχίᾳ" Gender="Feminine" nodeId="540020110030011" Length="1" Start="2" End="2">
+                  <Node Id="1.9" Cat="noun" Lemma="ἡσυχία" StrongNumber="2271" Gender="Feminine" English="silence" Number="Singular" morphId="540020110031" StrongNumberX="2271" Language="G" Role="Location" Case="Dative" Unicode="ἡσυχίᾳ" Chinese="恬静" Ref="{}" nodeId="540020110030010" Start="2" End="2" Analysis="N,,,,,DFS," />
+                </Node>
+              </Node>
+            </Node>
+            <Node Id="1.10" Cat="V" Lemma="μανθάνω" Rule="Vp2V" Head="0" StrongNumber="3129" Language="G" Voice="Active" English="Let learn" Tense="Present" Number="Singular" morphId="540020110041" StrongNumberX="3129" Role="Event" Mood="Imperative" Person="Third" Chinese="学习" Unicode="μανθανέτω" Frame="{A0:54002011001}" nodeId="540020110040012" Length="1" Start="3" End="3">
+              <Node Id="1.11" Cat="vp" Lemma="μανθάνω" Rule="V2VP" Head="0" StrongNumber="3129" Tense="Present" English="Let learn" Number="Singular" morphId="540020110041" StrongNumberX="3129" Chinese="学习" Mood="Imperative" Language="G" Role="Event" Person="Third" Unicode="μανθανέτω" Voice="Active" Frame="{A0:54002011001}" nodeId="540020110040011" Length="1" Start="3" End="3">
+                <Node Id="1.12" Cat="verb" Lemma="μανθάνω" StrongNumber="3129" Language="G" Person="Third" Voice="Active" Mood="Imperative" Tense="Present" Number="Singular" morphId="540020110041" StrongNumberX="3129" English="Let learn" ClType="Verbal" Role="Event" Unicode="μανθανέτω" Chinese="学习" SubjRef="{}" Frame="{A0:54002011001}" nodeId="540020110040010" Start="3" End="3" FrameGloss="{A0:a woman}" Analysis="V,MPA3,,S," />
+              </Node>
+            </Node>
+            <Node Id="1.13" Cat="ADV" Lemma="ὑποταγή" Rule="pp2ADV" Head="0" StrongNumber="5292" Gender="Feminine" English="subjection" Number="Singular" morphId="540020110071" StrongNumberX="5292" Language="G" PrepLemma="" Role="Location" Case="" Unicode="ὑποταγῇ;" Chinese="顺服" nodeId="540020110050031" Length="3" Start="4" End="6">
+              <Node Id="1.14" Cat="pp" Lemma="ὑποταγή" Rule="PrepNp" Head="1" StrongNumber="5292" Language="G" Number="Singular" morphId="540020110071" StrongNumberX="5292" Chinese="顺服" English="subjection" PrepLemma="ἐν" Role="Location" Case="" Unicode="ὑποταγῇ;" Gender="Feminine" nodeId="540020110050030" Length="3" Start="4" End="6">
+                <Node Id="1.15" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020110051" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="（以）" nodeId="540020110050010" Start="4" End="4" Analysis="P,,,,,D,,," />
+                <Node Id="1.16" Cat="np" Lemma="ὑποταγή" Rule="All-NP" Head="1" StrongNumber="5292" Gender="Feminine" English="subjection" Number="Singular" morphId="540020110071" StrongNumberX="5292" Language="G" Role="Location" Case="Dative" Unicode="ὑποταγῇ;" Chinese="顺服" nodeId="540020110060020" Length="2" Start="5" End="6">
+                  <Node Id="1.17" Cat="adjp" Lemma="πᾶς" Rule="Det2Adjp" Head="0" Substantive="False" StrongNumber="3956" Number="Singular" morphId="540020110061" StrongNumberX="3956" Chinese="完全" English="all" Language="G" Case="Dative" Unicode="πάσῃ" Gender="Feminine" nodeId="540020110060011" Length="1" Start="5" End="5">
+                    <Node Id="1.18" OldCat="adj" Cat="det" Lemma="πᾶς" Substantive="False" StrongNumber="3956" Language="G" Gender="Feminine" Number="Singular" morphId="540020110061" StrongNumberX="3956" English="all" Case="Dative" Unicode="πάσῃ" Chinese="完全" Ref="{}" nodeId="540020110060010" Start="5" End="5" Analysis="EQ,,,,DFS," />
+                  </Node>
+                  <Node Id="1.19" Cat="np" Lemma="ὑποταγή" Rule="N2NP" Head="0" StrongNumber="5292" Language="G" Number="Singular" morphId="540020110071" StrongNumberX="5292" Chinese="顺服" English="subjection" Role="Location" Case="Dative" Unicode="ὑποταγῇ;" Gender="Feminine" nodeId="540020110070011" Length="1" Start="6" End="6">
+                    <Node Id="1.20" Cat="noun" Lemma="ὑποταγή" StrongNumber="5292" Gender="Feminine" English="subjection" Number="Singular" morphId="540020110071" StrongNumberX="5292" Language="G" Role="Location" Case="Dative" Unicode="ὑποταγῇ;" Chinese="顺服" Ref="{}" nodeId="540020110070010" Start="6" End="6" Analysis="N,,,,,DFS," />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002012">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020120020121" Length="12" Start="0" End="11">
+          <Node Id="1.1" Cat="CL" Lemma="ἐπιτρέπω" Rule="Conj-CL" Head="1" StrongNumber="2010" Voice="Active" English="I allow" Tense="Present" Number="Singular" morphId="540020120051" StrongNumberX="2010" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="ἐπιτρέπω," Chinese="准" Frame="{A0:54001001001 A1:54002012004;54002012001;54002012007;54002012012}" nodeId="540020120020120" Length="12" Start="0" End="11">
+            <Node Id="1.2" Cat="conj" Lemma="δέ" StrongNumber="1161" Language="G" morphId="540020120021" StrongNumberX="1161" English="-" Unicode="δὲ" Chinese="且" nodeId="540020120020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.3" Cat="CL" Lemma="ἐπιτρέπω" Rule="V-O" Head="0" StrongNumber="2010" English="I allow" Tense="Present" Number="Singular" morphId="540020120051" StrongNumberX="2010" Chinese="准" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="ἐπιτρέπω," Voice="Active" Frame="{A0:54001001001 A1:54002012004;54002012001;54002012007;54002012012}" nodeId="540020120050110" Length="11" Start="1" End="11">
+              <Node Id="1.4" Cat="V" Lemma="ἐπιτρέπω" Rule="Vp2V" Head="0" StrongNumber="2010" Language="G" Voice="Active" English="I allow" Tense="Present" Number="Singular" morphId="540020120051" StrongNumberX="2010" Role="Modal" Mood="Indicative" Person="First" Chinese="准" Unicode="ἐπιτρέπω," Frame="{A0:54001001001 A1:54002012004;54002012001;54002012007;54002012012}" nodeId="540020120050012" Length="1" Start="1" End="1">
+                <Node Id="1.5" Cat="vp" Lemma="ἐπιτρέπω" Rule="V2VP" Head="0" StrongNumber="2010" Tense="Present" English="I allow" Number="Singular" morphId="540020120051" StrongNumberX="2010" Chinese="准" Mood="Indicative" Language="G" Role="Modal" Person="First" Unicode="ἐπιτρέπω," Voice="Active" Frame="{A0:54001001001 A1:54002012004;54002012001;54002012007;54002012012}" nodeId="540020120050011" Length="1" Start="1" End="1">
+                  <Node Id="1.6" Cat="verb" Lemma="ἐπιτρέπω" StrongNumber="2010" Language="G" Person="First" Voice="Active" Mood="Indicative" Tense="Present" Number="Singular" morphId="540020120051" StrongNumberX="2010" English="I allow" ClType="Verbal" Role="Modal" Unicode="ἐπιτρέπω," Chinese="准" SubjRef="{54001001001}" Frame="{A0:54001001001 A1:54002012004;54002012001;54002012007;54002012012}" nodeId="540020120050010" Start="1" End="1" SubjRefEnglish="{Paul}" SubjRefLemma="{Παῦλος}" SubjRefStrong="{3972}" FrameGloss="{A0:Paul A1:not;to teach;to have authority;silence}" Analysis="V,IPA1,,S," />
+                </Node>
+              </Node>
+              <Node Id="1.7" Cat="O" Lemma="ἡσυχία" Rule="CL2Ox" Head="0" StrongNumber="2271" Gender="Feminine" Mood="Infinitive" Number="Singular" morphId="540020120121" StrongNumberX="2271" English="silence" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ." Chinese="恬静" nodeId="540020120040101" Length="10" Start="2" End="11">
+                <Node Id="1.8" Cat="CL" Lemma="ἡσυχία" Rule="notCLbutCL2CL" Head="3" Coord="True" StrongNumber="2271" Language="G" English="silence" Number="Singular" morphId="540020120121" StrongNumberX="2271" Chinese="恬静" Mood="Infinitive" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ." Gender="Feminine" nodeId="540020120040100" Length="10" Start="2" End="11">
+                  <Node Id="1.9" Cat="advp" Lemma="οὐ" Rule="Adv2Advp" Head="0" StrongNumber="3756" morphId="540020120041" StrongNumberX="3756" English="not" Language="G" Role="Negation" Unicode="οὐκ" Chinese="不" nodeId="540020120040011" Length="1" Start="2" End="2">
+                    <Node Id="1.10" Cat="adv" Lemma="οὐ" StrongNumber="3756" Language="G" morphId="540020120041" StrongNumberX="3756" English="not" Role="Negation" Unicode="οὐκ" Chinese="不" Ref="{}" nodeId="540020120040010" Start="2" End="2" Analysis="DO,,,,,,,," />
+                  </Node>
+                  <Node Id="1.11" Cat="CL" Lemma="διδάσκω" Rule="CLaCL" Head="0" Coord="True" StrongNumber="1321" Mood="Infinitive" Tense="Present" morphId="540020120011" StrongNumberX="1321" English="to teach" Language="G" Role="Event" Unicode="διδάσκειν" Chinese="教训" Voice="Active" Frame="{A0:54002012003}" nodeId="540020120010050" Length="5" Start="3" End="7">
+                    <Node Id="1.12" Cat="CL" Lemma="διδάσκω" Rule="V-S" Head="0" StrongNumber="1321" Language="G" Voice="Active" English="to teach" Tense="Present" morphId="540020120011" StrongNumberX="1321" Chinese="教训" Mood="Infinitive" Role="Event" Unicode="διδάσκειν" Frame="{A0:54002012003}" nodeId="540020120010020" Length="2" Start="3" End="4">
+                      <Node Id="1.13" Cat="V" Lemma="διδάσκω" Rule="Vp2V" Head="0" StrongNumber="1321" Tense="Present" Mood="Infinitive" morphId="540020120011" StrongNumberX="1321" Role="Event" English="to teach" Language="G" Unicode="διδάσκειν" Chinese="教训" Voice="Active" Frame="{A0:54002012003}" nodeId="540020120010012" Length="1" Start="3" End="3">
+                        <Node Id="1.14" Cat="vp" Lemma="διδάσκω" Rule="V2VP" Head="0" StrongNumber="1321" Language="G" English="to teach" Tense="Present" morphId="540020120011" StrongNumberX="1321" Chinese="教训" Mood="Infinitive" Role="Event" Unicode="διδάσκειν" Voice="Active" Frame="{A0:54002012003}" nodeId="540020120010011" Length="1" Start="3" End="3">
+                          <Node Id="1.15" Cat="verb" Lemma="διδάσκω" StrongNumber="1321" Tense="Present" Voice="Active" English="to teach" morphId="540020120011" StrongNumberX="1321" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="διδάσκειν" Chinese="教训" SubjRef="{}" Frame="{A0:54002012003}" nodeId="540020120010010" Start="3" End="3" FrameGloss="{A0:a woman}" Analysis="V,NPA,,,,," />
+                        </Node>
+                      </Node>
+                      <Node Id="1.16" Cat="S" Lemma="γυνή" Rule="Np2S" Head="0" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020120031" StrongNumberX="1135" English="a woman" Role="Source" Case="Dative" Unicode="γυναικὶ" Chinese="妇女" nodeId="540020120030012" Length="1" Start="4" End="4">
+                        <Node Id="1.17" Cat="np" Lemma="γυνή" Rule="N2NP" Head="0" StrongNumber="1135" Number="Singular" morphId="540020120031" StrongNumberX="1135" Chinese="妇女" English="a woman" Language="G" Role="Source" Case="Dative" Unicode="γυναικὶ" Gender="Feminine" nodeId="540020120030011" Length="1" Start="4" End="4">
+                          <Node Id="1.18" Cat="noun" Lemma="γυνή" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020120031" StrongNumberX="1135" English="a woman" Role="Source" Case="Dative" Unicode="γυναικὶ" Chinese="妇女" Ref="{}" nodeId="540020120030010" Start="4" End="4" Analysis="N,,,,,DFS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node Id="1.19" Cat="conj" Lemma="οὐδέ" StrongNumber="3761" Language="G" morphId="540020120061" StrongNumberX="3761" English="nor" Role="Negation" Unicode="οὐδὲ" Chinese="也不" nodeId="540020120060010" Start="5" End="5" Analysis="CO,,,,,,,," />
+                    <Node Id="1.20" Cat="CL" Lemma="αὐθεντέω" Rule="V-O" Head="0" StrongNumber="831" Language="G" Voice="Active" English="to have authority" Tense="Present" morphId="540020120071" StrongNumberX="0831" Chinese="（压）" Mood="Infinitive" Role="Event" Unicode="αὐθεντεῖν" Frame="{A0:54002012003 A1:54002012008}" nodeId="540020120070020" Length="2" Start="6" End="7">
+                      <Node Id="1.21" Cat="V" Lemma="αὐθεντέω" Rule="Vp2V" Head="0" StrongNumber="831" Tense="Present" Mood="Infinitive" morphId="540020120071" StrongNumberX="0831" Role="Event" English="to have authority" Language="G" Unicode="αὐθεντεῖν" Chinese="（压）" Voice="Active" Frame="{A0:54002012003 A1:54002012008}" nodeId="540020120070012" Length="1" Start="6" End="6">
+                        <Node Id="1.22" Cat="vp" Lemma="αὐθεντέω" Rule="V2VP" Head="0" StrongNumber="831" Language="G" English="to have authority" Tense="Present" morphId="540020120071" StrongNumberX="0831" Chinese="（压）" Mood="Infinitive" Role="Event" Unicode="αὐθεντεῖν" Voice="Active" Frame="{A0:54002012003 A1:54002012008}" nodeId="540020120070011" Length="1" Start="6" End="6">
+                          <Node Id="1.23" Cat="verb" Lemma="αὐθεντέω" StrongNumber="831" Tense="Present" Voice="Active" English="to have authority" morphId="540020120071" StrongNumberX="0831" Mood="Infinitive" Language="G" ClType="Verbal" Role="Event" Unicode="αὐθεντεῖν" Chinese="（压）" SubjRef="{54002012003}" Frame="{A0:54002012003 A1:54002012008}" nodeId="540020120070010" Start="6" End="6" SubjRefEnglish="{a woman}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" FrameGloss="{A0:a woman A1:of(over) a man}" Analysis="V,NPA,,,,," />
+                        </Node>
+                      </Node>
+                      <Node Id="1.24" Cat="O" Lemma="ἀνήρ" Rule="Np2O" Head="0" StrongNumber="435" Language="G" Gender="Masculine" Number="Singular" morphId="540020120081" StrongNumberX="0435" English="of(over) a man" Role="Goal" Case="Genitive" Unicode="ἀνδρός," Chinese="男人" nodeId="540020120080012" Length="1" Start="7" End="7">
+                        <Node Id="1.25" Cat="np" Lemma="ἀνήρ" Rule="N2NP" Head="0" StrongNumber="435" Number="Singular" morphId="540020120081" StrongNumberX="0435" Chinese="男人" English="of(over) a man" Language="G" Role="Goal" Case="Genitive" Unicode="ἀνδρός," Gender="Masculine" nodeId="540020120080011" Length="1" Start="7" End="7">
+                          <Node Id="1.26" Cat="noun" Lemma="ἀνήρ" StrongNumber="435" Language="G" Gender="Masculine" Number="Singular" morphId="540020120081" StrongNumberX="0435" English="of(over) a man" Role="Goal" Case="Genitive" Unicode="ἀνδρός," Chinese="男人" Ref="{}" nodeId="540020120080010" Start="7" End="7" Analysis="N,,,,,GMS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.27" Cat="conj" Lemma="ἀλλά" StrongNumber="235" Language="G" morphId="540020120091" StrongNumberX="0235" English="but" Unicode="ἀλλ’" Chinese="乃是" nodeId="540020120090010" Start="8" End="8" Analysis="CO,,,,,,,," />
+                  <Node Id="1.28" Cat="CL" Lemma="ἡσυχία" Rule="VC-P" Head="1" StrongNumber="2271" Gender="Feminine" English="silence" Number="Singular" morphId="540020120121" StrongNumberX="2271" Mood="Infinitive" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ." Chinese="恬静" nodeId="540020120100030" Length="3" Start="9" End="11">
+                    <Node Id="1.29" Cat="VC" Lemma="εἰμί" Rule="vp2VC" Head="0" StrongNumber="1510" Tense="Present" Mood="Infinitive" morphId="540020120101" StrongNumberX="1511" English="to be" Language="G" Unicode="εἶναι" Chinese="（安）" Voice="Active" Frame="{}" nodeId="540020120100012" Length="1" Start="9" End="9">
+                      <Node Id="1.30" Cat="vp" Lemma="εἰμί" Rule="V2VP" Head="0" StrongNumber="1510" Language="G" English="to be" Tense="Present" morphId="540020120101" StrongNumberX="1511" Chinese="（安）" Mood="Infinitive" Unicode="εἶναι" Voice="Active" Frame="{}" nodeId="540020120100011" Length="1" Start="9" End="9">
+                        <Node Id="1.31" Cat="verb" Lemma="εἰμί" StrongNumber="1510" Tense="Present" English="to be" morphId="540020120101" StrongNumberX="1511" Mood="Infinitive" Language="G" ClType="Verbal" Unicode="εἶναι" Chinese="（安）" Voice="Active" SubjRef="{54002012003}" Frame="{}" nodeId="540020120100010" Start="9" End="9" SubjRefEnglish="{a woman}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" Analysis="V,NPA,,,,," />
+                      </Node>
+                    </Node>
+                    <Node Id="1.32" Cat="P" Lemma="ἡσυχία" Rule="pp2P" Head="0" StrongNumber="2271" Language="G" Number="Singular" morphId="540020120121" StrongNumberX="2271" Chinese="恬静" English="silence" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ." Gender="Feminine" nodeId="540020120110021" Length="2" Start="10" End="11">
+                      <Node Id="1.33" Cat="pp" Lemma="ἡσυχία" Rule="PrepNp" Head="1" StrongNumber="2271" Gender="Feminine" English="silence" Number="Singular" morphId="540020120121" StrongNumberX="2271" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="ἡσυχίᾳ." Chinese="恬静" nodeId="540020120110020" Length="2" Start="10" End="11">
+                        <Node Id="1.34" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020120111" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="（于）" nodeId="540020120110010" Start="10" End="10" Analysis="P,,,,,D,,," />
+                        <Node Id="1.35" Cat="np" Lemma="ἡσυχία" Rule="N2NP" Head="0" StrongNumber="2271" Language="G" Number="Singular" morphId="540020120121" StrongNumberX="2271" Chinese="恬静" English="silence" Role="Location" Case="Dative" Unicode="ἡσυχίᾳ." Gender="Feminine" nodeId="540020120120011" Length="1" Start="11" End="11">
+                          <Node Id="1.36" Cat="noun" Lemma="ἡσυχία" StrongNumber="2271" Gender="Feminine" English="silence" Number="Singular" morphId="540020120121" StrongNumberX="2271" Language="G" Role="Location" Case="Dative" Unicode="ἡσυχίᾳ." Chinese="恬静" Ref="{}" nodeId="540020120120010" Start="11" End="11" Analysis="N,,,,,DFS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002013">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020130020061" Length="6" Start="0" End="5">
+          <Node Id="1.1" Cat="CL" Lemma="πλάσσω" Rule="Conj-CL" Head="1" StrongNumber="4111" Voice="Passive" English="was formed" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἐπλάσθη," Chinese="塑造" Frame="{A1:54002013001}" nodeId="540020130020060" Length="6" Start="0" End="5">
+            <Node Id="1.2" Cat="conj" Lemma="γάρ" StrongNumber="1063" English="For" morphId="540020130021" StrongNumberX="1063" Language="G" Unicode="γὰρ" Chinese="因" nodeId="540020130020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.4" Cat="CL" Lemma="πλάσσω" Rule="ClCl" Head="0" StrongNumber="4111" Voice="Passive" English="was formed" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἐπλάσθη," Chinese="塑造" Frame="{A1:54002013001}" nodeId="540020130010050" Length="5" Start="1" End="5">
+              <Node Id="1.5" Cat="CL" Lemma="πλάσσω" Rule="S-ADV-V" Head="2" StrongNumber="4111" English="was formed" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" Chinese="塑造" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἐπλάσθη," Voice="Passive" Frame="{A1:54002013001}" nodeId="540020130010030" Length="3" Start="1" End="3">
+                <Node Id="1.6" Cat="S" Lemma="Ἀδάμ" Rule="Np2S" Head="0" StrongNumber="76" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020130011" StrongNumberX="0076" English="Adam" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Chinese="亚当" nodeId="540020130010012" Length="1" Start="1" End="1">
+                  <Node Id="1.7" Cat="np" Lemma="Ἀδάμ" Rule="N2NP" Head="0" StrongNumber="76" Number="Singular" Type="Proper" morphId="540020130011" StrongNumberX="0076" Chinese="亚当" English="Adam" Language="G" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Gender="Masculine" nodeId="540020130010011" Length="1" Start="1" End="1">
+                    <Node Id="1.8" Cat="noun" Lemma="Ἀδάμ" StrongNumber="76" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020130011" StrongNumberX="0076" English="Adam" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Chinese="亚当" Ref="{}" nodeId="540020130010010" Start="1" End="1" Analysis="N,,,,,NMSI" />
+                  </Node>
+                </Node>
+                <Node Id="1.9" Cat="ADV" Lemma="πρῶτος" Rule="adjp2ADV" Head="0" Substantive="False" StrongNumber="4413" Gender="Masculine" English="first" Number="Singular" morphId="540020130031" StrongNumberX="4413" Language="G" Role="Relation" Case="Nominative" Unicode="πρῶτος" Chinese="先" nodeId="540020130030012" Length="1" Start="2" End="2">
+                  <Node Id="1.10" Cat="np" Lemma="πρῶτος" Rule="N2NP" Head="0" Substantive="False" StrongNumber="4413" Language="G" Number="Singular" morphId="540020130031" StrongNumberX="4413" Chinese="先" English="first" Role="Relation" Case="Nominative" Unicode="πρῶτος" Gender="Masculine" nodeId="540020130030011" Length="1" Start="2" End="2">
+                    <Node Id="1.11" OldCat="adj" Cat="noun" Lemma="πρῶτος" Substantive="False" StrongNumber="4413" Gender="Masculine" English="first" Number="Singular" morphId="540020130031" StrongNumberX="4413" Language="G" Role="Relation" Case="Nominative" Unicode="πρῶτος" Chinese="先" Ref="{}" nodeId="540020130030010" Start="2" End="2" Analysis="NS,,,,NMS," />
+                  </Node>
+                </Node>
+                <Node Id="1.12" Cat="V" Lemma="πλάσσω" Rule="Vp2V" Head="0" StrongNumber="4111" Language="G" Voice="Passive" English="was formed" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" Role="Event" Mood="Indicative" Person="Third" Chinese="塑造" Unicode="ἐπλάσθη," Frame="{A1:54002013001}" nodeId="540020130040012" Length="1" Start="3" End="3">
+                  <Node Id="1.13" Cat="vp" Lemma="πλάσσω" Rule="V2VP" Head="0" StrongNumber="4111" Tense="Aorist" English="was formed" Number="Singular" morphId="540020130041" StrongNumberX="4111" Chinese="塑造" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἐπλάσθη," Voice="Passive" Frame="{A1:54002013001}" nodeId="540020130040011" Length="1" Start="3" End="3">
+                    <Node Id="1.14" Cat="verb" Lemma="πλάσσω" StrongNumber="4111" Language="G" Person="Third" Voice="Passive" Mood="Indicative" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" English="was formed" ClType="Verbal" Role="Event" Unicode="ἐπλάσθη," Chinese="塑造" SubjRef="{}" Frame="{A1:54002013001}" nodeId="540020130040010" Start="3" End="3" FrameGloss="{A1:Adam}" Analysis="V,IAP3,,S," />
+                  </Node>
+                </Node>
+              </Node>
+              <Node Id="1.15" Cat="CL" Lemma="Εὕα" Rule="ADV-S" Head="1" StrongNumber="2096" Number="Singular" Type="Proper" morphId="540020130061" StrongNumberX="2096" Chinese="夏娃" English="Eve" Language="G" ClType="VerbElided" Role="Goal" Case="Nominative" Unicode="Εὕα;" Gender="Feminine" nodeId="540020130050020" Length="2" Start="4" End="5">
+                <Node Id="1.16" Cat="ADV" Lemma="εἶτα" Rule="Advp2ADV" Head="0" StrongNumber="1534" morphId="540020130051" StrongNumberX="1534" English="then" Language="G" Role="Location" Unicode="εἶτα" Chinese="然后" nodeId="540020130050012" Length="1" Start="4" End="4">
+                  <Node Id="1.17" Cat="advp" Lemma="εἶτα" Rule="Adv2Advp" Head="0" StrongNumber="1534" Language="G" morphId="540020130051" StrongNumberX="1534" Chinese="然后" English="then" Role="Location" Unicode="εἶτα" nodeId="540020130050011" Length="1" Start="4" End="4">
+                    <Node Id="1.18" Cat="adv" Lemma="εἶτα" StrongNumber="1534" English="then" morphId="540020130051" StrongNumberX="1534" Language="G" Role="Location" Unicode="εἶτα" Chinese="然后" Ref="{}" nodeId="540020130050010" Start="4" End="4" Analysis="D,,,,,,,,," />
+                  </Node>
+                </Node>
+                <Node Id="1.19" Cat="S" Lemma="Εὕα" Rule="Np2S" Head="0" StrongNumber="2096" Language="G" Gender="Feminine" Number="Singular" Type="Proper" morphId="540020130061" StrongNumberX="2096" English="Eve" Role="Goal" Case="Nominative" Unicode="Εὕα;" Chinese="夏娃" nodeId="540020130060012" Length="1" Start="5" End="5">
+                  <Node Id="1.20" Cat="np" Lemma="Εὕα" Rule="N2NP" Head="0" StrongNumber="2096" Number="Singular" Type="Proper" morphId="540020130061" StrongNumberX="2096" Chinese="夏娃" English="Eve" Language="G" Role="Goal" Case="Nominative" Unicode="Εὕα;" Gender="Feminine" nodeId="540020130060011" Length="1" Start="5" End="5">
+                    <Node Id="1.21" Cat="noun" Lemma="Εὕα" StrongNumber="2096" Language="G" Gender="Feminine" Number="Singular" Type="Proper" morphId="540020130061" StrongNumberX="2096" English="Eve" Role="Goal" Case="Nominative" Unicode="Εὕα;" Chinese="夏娃" Ref="{}" nodeId="540020130060010" Start="5" End="5" Analysis="N,,,,,NFS," />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002014">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020140010112" Length="11" Start="0" End="10">
+          <Node Id="1.3" Cat="CL" Lemma="πλάσσω" Rule="that-VP" Head="1" Coord="True" StrongNumber="4111" English="was formed" Tense="Aorist" Number="Singular" morphId="540020130041" StrongNumberX="4111" Chinese="塑造" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἐπλάσθη," Voice="Passive" Frame="{A1:54002013001}" nodeId="540020140010110" Length="11" Start="0" End="10">
+            <Node Id="1.22" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020140011" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="并且" nodeId="540020140010010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.23" Cat="CL" Lemma="ἀπατάω" Rule="CLaCL" Head="0" Coord="True" StrongNumber="538" Voice="Passive" English="was deceived" Tense="Aorist" Number="Singular" morphId="540020140041" StrongNumberX="0538" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἠπατήθη," Chinese="欺骗" Frame="{A1:54002014002}" nodeId="540020140020100" Length="10" Start="1" End="10">
+              <Node Id="1.24" Cat="CL" Lemma="ἀπατάω" Rule="S-ADV-V" Head="2" StrongNumber="538" English="was deceived" Tense="Aorist" Number="Singular" morphId="540020140041" StrongNumberX="0538" Chinese="欺骗" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἠπατήθη," Voice="Passive" Frame="{A1:54002014002}" nodeId="540020140020030" Length="3" Start="1" End="3">
+                <Node Id="1.25" Cat="S" Lemma="Ἀδάμ" Rule="Np2S" Head="0" StrongNumber="76" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020140021" StrongNumberX="0076" English="Adam" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Chinese="亚当" nodeId="540020140020012" Length="1" Start="1" End="1">
+                  <Node Id="1.26" Cat="np" Lemma="Ἀδάμ" Rule="N2NP" Head="0" StrongNumber="76" Number="Singular" Type="Proper" morphId="540020140021" StrongNumberX="0076" Chinese="亚当" English="Adam" Language="G" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Gender="Masculine" nodeId="540020140020011" Length="1" Start="1" End="1">
+                    <Node Id="1.27" Cat="noun" Lemma="Ἀδάμ" StrongNumber="76" Language="G" Gender="Masculine" Number="Singular" Type="Proper" morphId="540020140021" StrongNumberX="0076" English="Adam" Role="Goal" Case="Nominative" Unicode="Ἀδὰμ" Chinese="亚当" Ref="{}" nodeId="540020140020010" Start="1" End="1" Analysis="N,,,,,NMSI" />
+                  </Node>
+                </Node>
+                <Node Id="1.28" Cat="ADV" Lemma="οὐ" Rule="Advp2ADV" Head="0" Neg="True" StrongNumber="3756" Language="G" morphId="540020140031" StrongNumberX="3756" English="not" Role="Negation" Unicode="οὐκ" Chinese="不是" nodeId="540020140030012" Length="1" Start="2" End="2">
+                  <Node Id="1.29" Cat="advp" Lemma="οὐ" Rule="Adv2Advp" Head="0" StrongNumber="3756" morphId="540020140031" StrongNumberX="3756" English="not" Language="G" Role="Negation" Unicode="οὐκ" Chinese="不是" nodeId="540020140030011" Length="1" Start="2" End="2">
+                    <Node Id="1.30" Cat="adv" Lemma="οὐ" StrongNumber="3756" Language="G" morphId="540020140031" StrongNumberX="3756" English="not" Role="Negation" Unicode="οὐκ" Chinese="不是" Ref="{}" nodeId="540020140030010" Start="2" End="2" Analysis="DO,,,,,,,," />
+                  </Node>
+                </Node>
+                <Node Id="1.31" Cat="V" Lemma="ἀπατάω" Rule="Vp2V" Head="0" StrongNumber="538" Language="G" Voice="Passive" English="was deceived" Tense="Aorist" Number="Singular" morphId="540020140041" StrongNumberX="0538" Role="Event" Mood="Indicative" Person="Third" Chinese="欺骗" Unicode="ἠπατήθη," Frame="{A1:54002014002}" nodeId="540020140040012" Length="1" Start="3" End="3">
+                  <Node Id="1.32" Cat="vp" Lemma="ἀπατάω" Rule="V2VP" Head="0" StrongNumber="538" Tense="Aorist" English="was deceived" Number="Singular" morphId="540020140041" StrongNumberX="0538" Chinese="欺骗" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="ἠπατήθη," Voice="Passive" Frame="{A1:54002014002}" nodeId="540020140040011" Length="1" Start="3" End="3">
+                    <Node Id="1.33" Cat="verb" Lemma="ἀπατάω" StrongNumber="538" Language="G" Person="Third" Voice="Passive" Mood="Indicative" Tense="Aorist" Number="Singular" morphId="540020140041" StrongNumberX="0538" English="was deceived" ClType="Verbal" Role="Event" Unicode="ἠπατήθη," Chinese="欺骗" SubjRef="{}" Frame="{A1:54002014002}" nodeId="540020140040010" Start="3" End="3" FrameGloss="{A1:Adam}" Analysis="V,IAP3,,S," />
+                  </Node>
+                </Node>
+              </Node>
+              <Node Id="1.34" Cat="conj" Lemma="δέ" StrongNumber="1161" Language="G" morphId="540020140061" StrongNumberX="1161" English="but" Unicode="δὲ" Chinese="是" nodeId="540020140060010" Start="4" End="4" Analysis="CO,,,,,,,," />
+              <Node Id="1.35" Cat="CL" Lemma="γίνομαι" Rule="S-ADV-ADV-V" Head="3" StrongNumber="1096" English="has come to be" Tense="Perfect" Number="Singular" morphId="540020140111" StrongNumberX="1096" Chinese="（陷入）" Mood="Indicative" Language="G" Role="State" Person="Third" Unicode="γέγονεν." Voice="Active" Frame="{}" nodeId="540020140050060" Length="6" Start="5" End="10">
+                <Node Id="1.36" Cat="S" Lemma="γυνή" Rule="Np2S" Head="0" HasDet="True" StrongNumber="1135" Number="Singular" morphId="540020140071" StrongNumberX="1135" Chinese="女人" English="woman" Language="G" Role="Subject Matter" Case="Nominative" Unicode="γυνὴ" Gender="Feminine" nodeId="540020140050021" Length="2" Start="5" End="6">
+                  <Node Id="1.37" Cat="np" Lemma="γυνή" Rule="DetNP" Head="1" HasDet="True" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020140071" StrongNumberX="1135" English="woman" Role="Subject Matter" Case="Nominative" Unicode="γυνὴ" Chinese="女人" nodeId="540020140050020" Length="2" Start="5" End="6">
+                    <Node Id="1.38" Cat="det" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Feminine" Number="Singular" morphId="540020140051" StrongNumberX="3588" English="the" Case="Nominative" Unicode="ἡ" Chinese="" Ref="{}" nodeId="540020140050010" Start="5" End="5" Analysis="EA,,,,NFS," />
+                    <Node Id="1.39" Cat="np" Lemma="γυνή" Rule="N2NP" Head="0" StrongNumber="1135" Number="Singular" morphId="540020140071" StrongNumberX="1135" Chinese="女人" English="woman" Language="G" Role="Subject Matter" Case="Nominative" Unicode="γυνὴ" Gender="Feminine" nodeId="540020140070011" Length="1" Start="6" End="6">
+                      <Node Id="1.40" Cat="noun" Lemma="γυνή" StrongNumber="1135" Language="G" Gender="Feminine" Number="Singular" morphId="540020140071" StrongNumberX="1135" English="woman" Role="Subject Matter" Case="Nominative" Unicode="γυνὴ" Chinese="女人" Ref="{}" nodeId="540020140070010" Start="6" End="6" Analysis="N,,,,,NFS," />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node Id="1.41" Cat="ADV" Lemma="ἐξαπατάω" Rule="CL2ADV" Head="0" StrongNumber="1818" Gender="Feminine" Mood="Participle" English="having been deceived" Tense="Aorist" Number="Singular" morphId="540020140081" StrongNumberX="1818" Language="G" Role="State" Case="Nominative" Unicode="ἐξαπατηθεῖσα," Chinese="欺骗" Voice="Passive" Frame="{A1:54002014007}" nodeId="540020140080014" Length="1" Start="7" End="7">
+                  <Node Id="1.42" Cat="CL" Lemma="ἐξαπατάω" Rule="V2CL" Head="0" StrongNumber="1818" Voice="Passive" English="having been deceived" Tense="Aorist" Number="Singular" morphId="540020140081" StrongNumberX="1818" Chinese="欺骗" Mood="Participle" Language="G" Role="State" Case="Nominative" Unicode="ἐξαπατηθεῖσα," Gender="Feminine" Frame="{A1:54002014007}" nodeId="540020140080013" Length="1" Start="7" End="7">
+                    <Node Id="1.43" Cat="V" Lemma="ἐξαπατάω" Rule="Vp2V" Head="0" StrongNumber="1818" Gender="Feminine" Mood="Participle" Tense="Aorist" Number="Singular" morphId="540020140081" StrongNumberX="1818" Role="State" English="having been deceived" Language="G" Case="Nominative" Unicode="ἐξαπατηθεῖσα," Chinese="欺骗" Voice="Passive" Frame="{A1:54002014007}" nodeId="540020140080012" Length="1" Start="7" End="7">
+                      <Node Id="1.44" Cat="vp" Lemma="ἐξαπατάω" Rule="V2VP" Head="0" StrongNumber="1818" Language="G" English="having been deceived" Tense="Aorist" Number="Singular" morphId="540020140081" StrongNumberX="1818" Chinese="欺骗" Mood="Participle" Role="State" Case="Nominative" Unicode="ἐξαπατηθεῖσα," Gender="Feminine" Voice="Passive" Frame="{A1:54002014007}" nodeId="540020140080011" Length="1" Start="7" End="7">
+                        <Node Id="1.45" Cat="verb" Lemma="ἐξαπατάω" StrongNumber="1818" Gender="Feminine" Voice="Passive" English="having been deceived" Tense="Aorist" Number="Singular" morphId="540020140081" StrongNumberX="1818" Mood="Participle" Language="G" ClType="Verbal" Role="State" Case="Nominative" Unicode="ἐξαπατηθεῖσα," Chinese="欺骗" SubjRef="{54002014007}" Frame="{A1:54002014007}" nodeId="540020140080010" Start="7" End="7" SubjRefEnglish="{woman}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" FrameGloss="{A1:woman}" Analysis="V,PAP,NFS," />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node Id="1.46" Cat="ADV" Lemma="παράβασις" Rule="pp2ADV" Head="0" StrongNumber="3847" Language="G" Number="Singular" morphId="540020140101" StrongNumberX="3847" Chinese="罪" English="transgression" PrepLemma="" Role="Location" Case="" Unicode="παραβάσει" Gender="Feminine" nodeId="540020140090021" Length="2" Start="8" End="9">
+                  <Node Id="1.47" Cat="pp" Lemma="παράβασις" Rule="PrepNp" Head="1" StrongNumber="3847" Gender="Feminine" English="transgression" Number="Singular" morphId="540020140101" StrongNumberX="3847" Language="G" PrepLemma="ἐν" Role="Location" Case="" Unicode="παραβάσει" Chinese="罪" nodeId="540020140090020" Length="2" Start="8" End="9">
+                    <Node Id="1.48" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020140091" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="在" nodeId="540020140090010" Start="8" End="8" Analysis="P,,,,,D,,," />
+                    <Node Id="1.49" Cat="np" Lemma="παράβασις" Rule="N2NP" Head="0" StrongNumber="3847" Language="G" Number="Singular" morphId="540020140101" StrongNumberX="3847" Chinese="罪" English="transgression" Role="Location" Case="Dative" Unicode="παραβάσει" Gender="Feminine" nodeId="540020140100011" Length="1" Start="9" End="9">
+                      <Node Id="1.50" Cat="noun" Lemma="παράβασις" StrongNumber="3847" Gender="Feminine" English="transgression" Number="Singular" morphId="540020140101" StrongNumberX="3847" Language="G" Role="Location" Case="Dative" Unicode="παραβάσει" Chinese="罪" Ref="{}" nodeId="540020140100010" Start="9" End="9" Analysis="N,,,,,DFS," />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node Id="1.51" Cat="V" Lemma="γίνομαι" Rule="Vp2V" Head="0" StrongNumber="1096" Language="G" Voice="Active" English="has come to be" Tense="Perfect" Number="Singular" morphId="540020140111" StrongNumberX="1096" Role="State" Mood="Indicative" Person="Third" Chinese="（陷入）" Unicode="γέγονεν." Frame="{}" nodeId="540020140110012" Length="1" Start="10" End="10">
+                  <Node Id="1.52" Cat="vp" Lemma="γίνομαι" Rule="V2VP" Head="0" StrongNumber="1096" Tense="Perfect" English="has come to be" Number="Singular" morphId="540020140111" StrongNumberX="1096" Chinese="（陷入）" Mood="Indicative" Language="G" Role="State" Person="Third" Unicode="γέγονεν." Voice="Active" Frame="{}" nodeId="540020140110011" Length="1" Start="10" End="10">
+                    <Node Id="1.53" Cat="verb" Lemma="γίνομαι" StrongNumber="1096" Language="G" Person="Third" Voice="Active" Mood="Indicative" Tense="Perfect" Number="Singular" morphId="540020140111" StrongNumberX="1096" English="has come to be" ClType="Verbal" Role="State" Unicode="γέγονεν." Chinese="（陷入）" SubjRef="{}" Frame="{}" nodeId="540020140110010" Start="10" End="10" Analysis="V,IEA3,,S," />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+  <Sentence ID="54002015">
+    <Trees>
+      <Tree>
+        <Node Cat="Verse" Head="0" nodeId="540020150020151" Length="15" Start="0" End="14">
+          <Node Id="1.1" Cat="CL" Lemma="σῴζω" Rule="Conj-CL" Head="1" StrongNumber="4982" English="she will be saved" Tense="Future" Number="Singular" morphId="540020150011" StrongNumberX="4982" Chinese="得救" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="σωθήσεται" Voice="Passive" Frame="{A1:54002012003}" nodeId="540020150020150" Length="15" Start="0" End="14">
+            <Node Id="1.2" Cat="conj" Lemma="δέ" StrongNumber="1161" Language="G" morphId="540020150021" StrongNumberX="1161" English="but" Unicode="δὲ" Chinese="然而" nodeId="540020150020010" Start="0" End="0" Analysis="CC,,,,,,,," />
+            <Node Id="1.3" Cat="CL" Lemma="σῴζω" Rule="ClCl" Head="0" StrongNumber="4982" Voice="Passive" English="she will be saved" Tense="Future" Number="Singular" morphId="540020150011" StrongNumberX="4982" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="σωθήσεται" Chinese="得救" Frame="{A1:54002012003}" nodeId="540020150010140" Length="14" Start="1" End="14">
+              <Node Id="1.4" Cat="CL" Lemma="σῴζω" Rule="V-ADV" Head="0" StrongNumber="4982" English="she will be saved" Tense="Future" Number="Singular" morphId="540020150011" StrongNumberX="4982" Chinese="得救" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="σωθήσεται" Voice="Passive" Frame="{A1:54002012003}" nodeId="540020150010040" Length="4" Start="1" End="4">
+                <Node Id="1.5" Cat="V" Lemma="σῴζω" Rule="Vp2V" Head="0" StrongNumber="4982" Language="G" Voice="Passive" English="she will be saved" Tense="Future" Number="Singular" morphId="540020150011" StrongNumberX="4982" Role="Event" Mood="Indicative" Person="Third" Chinese="得救" Unicode="σωθήσεται" Frame="{A1:54002012003}" nodeId="540020150010012" Length="1" Start="1" End="1">
+                  <Node Id="1.6" Cat="vp" Lemma="σῴζω" Rule="V2VP" Head="0" StrongNumber="4982" Tense="Future" English="she will be saved" Number="Singular" morphId="540020150011" StrongNumberX="4982" Chinese="得救" Mood="Indicative" Language="G" Role="Event" Person="Third" Unicode="σωθήσεται" Voice="Passive" Frame="{A1:54002012003}" nodeId="540020150010011" Length="1" Start="1" End="1">
+                    <Node Id="1.7" Cat="verb" Lemma="σῴζω" StrongNumber="4982" Language="G" Person="Third" Voice="Passive" Mood="Indicative" Tense="Future" Number="Singular" morphId="540020150011" StrongNumberX="4982" English="she will be saved" ClType="Verbal" Role="Event" Unicode="σωθήσεται" Chinese="得救" SubjRef="{54002012003}" Frame="{A1:54002012003}" nodeId="540020150010010" Start="1" End="1" SubjRefEnglish="{a woman}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" FrameGloss="{A1:a woman}" Analysis="V,IFP3,,S," />
+                  </Node>
+                </Node>
+                <Node Id="1.8" Cat="ADV" Lemma="τεκνογονία" Rule="pp2ADV" Head="0" HasDet="True" StrongNumber="5042" Gender="Feminine" English="childbearing" Number="Singular" morphId="540020150051" StrongNumberX="5042" Language="G" PrepLemma="" Role="Direction" Case="" Unicode="τεκνογονίας," Chinese="（生育）" nodeId="540020150030031" Length="3" Start="2" End="4">
+                  <Node Id="1.9" Cat="pp" Lemma="τεκνογονία" Rule="PrepNp" Head="1" HasDet="True" StrongNumber="5042" Language="G" Number="Singular" morphId="540020150051" StrongNumberX="5042" Chinese="（生育）" English="childbearing" PrepLemma="διά" Role="Direction" Case="" Unicode="τεκνογονίας," Gender="Feminine" nodeId="540020150030030" Length="3" Start="2" End="4">
+                    <Node Id="1.10" Cat="prep" Lemma="διά" StrongNumber="1223" English="through" morphId="540020150031" StrongNumberX="1223" PrepositionType="Passing through midst" Language="G" Unicode="διὰ" Chinese="经由" nodeId="540020150030010" Start="2" End="2" Analysis="P,,,,,G,,," />
+                    <Node Id="1.11" Cat="np" Lemma="τεκνογονία" Rule="DetNP" Head="1" HasDet="True" StrongNumber="5042" Gender="Feminine" English="childbearing" Number="Singular" morphId="540020150051" StrongNumberX="5042" Language="G" Role="Direction" Case="Genitive" Unicode="τεκνογονίας," Chinese="（生育）" nodeId="540020150040020" Length="2" Start="3" End="4">
+                      <Node Id="1.12" Cat="det" Lemma="ὁ" StrongNumber="3588" Language="G" Gender="Feminine" Number="Singular" morphId="540020150041" StrongNumberX="3588" English="the(her)" Case="Genitive" Unicode="τῆς" Chinese="" Ref="{}" nodeId="540020150040010" Start="3" End="3" Analysis="EA,,,,GFS," />
+                      <Node Id="1.13" Cat="np" Lemma="τεκνογονία" Rule="N2NP" Head="0" StrongNumber="5042" Language="G" Number="Singular" morphId="540020150051" StrongNumberX="5042" Chinese="（生育）" English="childbearing" Role="Direction" Case="Genitive" Unicode="τεκνογονίας," Gender="Feminine" nodeId="540020150050011" Length="1" Start="4" End="4">
+                        <Node Id="1.14" Cat="noun" Lemma="τεκνογονία" StrongNumber="5042" Gender="Feminine" English="childbearing" Number="Singular" morphId="540020150051" StrongNumberX="5042" Language="G" Role="Direction" Case="Genitive" Unicode="τεκνογονίας," Chinese="（生育）" Ref="{}" nodeId="540020150050010" Start="4" End="4" Analysis="N,,,,,GFS," />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node Id="1.15" Cat="CL" Lemma="μένω" Rule="sub-CL" Head="1" StrongNumber="3306" Voice="Active" English="they remain" Tense="Aorist" Number="Plural" morphId="540020150071" StrongNumberX="3306" Mood="Subjunctive" Language="G" Role="State" Person="Third" Unicode="μείνωσιν" Chinese="（持守）" Frame="{A0:54002012003}" nodeId="540020150060100" Length="10" Start="5" End="14">
+                <Node Id="1.16" Cat="conj" Lemma="ἐάν" StrongNumber="1437" English="if" morphId="540020150061" StrongNumberX="1437" Language="G" Unicode="ἐὰν" Chinese="若" nodeId="540020150060010" Start="5" End="5" Analysis="CS,,,,,,,," />
+                <Node Id="1.17" Cat="CL" Lemma="μένω" Rule="V-ADV-ADV" Head="0" StrongNumber="3306" English="they remain" Tense="Aorist" Number="Plural" morphId="540020150071" StrongNumberX="3306" Chinese="（持守）" Mood="Subjunctive" Language="G" Role="State" Person="Third" Unicode="μείνωσιν" Voice="Active" Frame="{A0:54002012003}" nodeId="540020150070090" Length="9" Start="6" End="14">
+                  <Node Id="1.18" Cat="V" Lemma="μένω" Rule="Vp2V" Head="0" StrongNumber="3306" Language="G" Voice="Active" English="they remain" Tense="Aorist" Number="Plural" morphId="540020150071" StrongNumberX="3306" Role="State" Mood="Subjunctive" Person="Third" Chinese="（持守）" Unicode="μείνωσιν" Frame="{A0:54002012003}" nodeId="540020150070012" Length="1" Start="6" End="6">
+                    <Node Id="1.19" Cat="vp" Lemma="μένω" Rule="V2VP" Head="0" StrongNumber="3306" Tense="Aorist" English="they remain" Number="Plural" morphId="540020150071" StrongNumberX="3306" Chinese="（持守）" Mood="Subjunctive" Language="G" Role="State" Person="Third" Unicode="μείνωσιν" Voice="Active" Frame="{A0:54002012003}" nodeId="540020150070011" Length="1" Start="6" End="6">
+                      <Node Id="1.20" Cat="verb" Lemma="μένω" StrongNumber="3306" Language="G" Person="Third" Voice="Active" Mood="Subjunctive" Tense="Aorist" Number="Plural" morphId="540020150071" StrongNumberX="3306" English="they remain" ClType="Verbal" Role="State" Unicode="μείνωσιν" Chinese="（持守）" SubjRef="{54002012003}" Frame="{A0:54002012003}" nodeId="540020150070010" Start="6" End="6" SubjRefEnglish="{a woman}" SubjRefLemma="{γυνή}" SubjRefStrong="{1135}" FrameGloss="{A0:a woman}" Analysis="V,SAA3,,P," />
+                    </Node>
+                  </Node>
+                  <Node Id="1.21" Cat="ADV" Lemma="πίστις" Rule="pp2ADV" Head="0" StrongNumber="4102" Gender="Feminine" English="faith" Number="Singular" morphId="540020150091" StrongNumberX="4102" Language="G" PrepLemma="" Role="Location" Case="" Unicode="πίστει," Chinese="信心" nodeId="540020150080061" Length="6" Start="7" End="12">
+                    <Node Id="1.22" Cat="pp" Lemma="πίστις" Rule="PrepNp" Head="1" StrongNumber="4102" Language="G" Number="Singular" morphId="540020150091" StrongNumberX="4102" Chinese="信心" English="faith" PrepLemma="ἐν" Role="Location" Case="" Unicode="πίστει," Gender="Feminine" nodeId="540020150080060" Length="6" Start="7" End="12">
+                      <Node Id="1.23" Cat="prep" Lemma="ἐν" StrongNumber="1722" English="in" morphId="540020150081" StrongNumberX="1722" PrepositionType="Located inside" Language="G" Unicode="ἐν" Chinese="" nodeId="540020150080010" Start="7" End="7" Analysis="P,,,,,D,,," />
+                      <Node Id="1.24" Cat="np" Lemma="πίστις" Rule="Conj3Np" Head="0" Coord="True" StrongNumber="4102" Gender="Feminine" English="faith" Number="Singular" morphId="540020150091" StrongNumberX="4102" Language="G" Role="Location" Case="Dative" Unicode="πίστει," Chinese="信心" nodeId="540020150090050" Length="5" Start="8" End="12">
+                        <Node Id="1.25" Cat="np" Lemma="πίστις" Rule="N2NP" Head="0" StrongNumber="4102" Language="G" Number="Singular" morphId="540020150091" StrongNumberX="4102" Chinese="信心" English="faith" Role="Location" Case="Dative" Unicode="πίστει," Gender="Feminine" nodeId="540020150090011" Length="1" Start="8" End="8">
+                          <Node Id="1.26" Cat="noun" Lemma="πίστις" StrongNumber="4102" Gender="Feminine" English="faith" Number="Singular" morphId="540020150091" StrongNumberX="4102" Language="G" Role="Location" Case="Dative" Unicode="πίστει," Chinese="信心" Ref="{}" nodeId="540020150090010" Start="8" End="8" Analysis="N,,,,,DFS," />
+                        </Node>
+                        <Node Id="1.27" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020150101" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020150100010" Start="9" End="9" Analysis="CC,,,,,,,," />
+                        <Node Id="1.28" Cat="np" Lemma="ἀγάπη" Rule="N2NP" Head="0" StrongNumber="26" Number="Singular" morphId="540020150111" StrongNumberX="0026" Chinese="爱心" English="love" Language="G" Case="Dative" Unicode="ἀγάπῃ," Gender="Feminine" nodeId="540020150110011" Length="1" Start="10" End="10">
+                          <Node Id="1.29" Cat="noun" Lemma="ἀγάπη" StrongNumber="26" Language="G" Gender="Feminine" Number="Singular" morphId="540020150111" StrongNumberX="0026" English="love" Case="Dative" Unicode="ἀγάπῃ," Chinese="爱心" Ref="{}" nodeId="540020150110010" Start="10" End="10" Analysis="N,,,,,DFS," />
+                        </Node>
+                        <Node Id="1.30" Cat="conj" Lemma="καί" StrongNumber="2532" Language="G" morphId="540020150121" StrongNumberX="2532" English="and" Unicode="καὶ" Chinese="和" nodeId="540020150120010" Start="11" End="11" Analysis="CC,,,,,,,," />
+                        <Node Id="1.31" Cat="np" Lemma="ἁγιασμός" Rule="N2NP" Head="0" StrongNumber="38" Number="Singular" morphId="540020150131" StrongNumberX="0038" Chinese="圣洁" English="holiness" Language="G" Case="Dative" Unicode="ἁγιασμῷ," Gender="Masculine" nodeId="540020150130011" Length="1" Start="12" End="12">
+                          <Node Id="1.32" Cat="noun" Lemma="ἁγιασμός" StrongNumber="38" Language="G" Gender="Masculine" Number="Singular" morphId="540020150131" StrongNumberX="0038" English="holiness" Case="Dative" Unicode="ἁγιασμῷ," Chinese="圣洁" Ref="{}" nodeId="540020150130010" Start="12" End="12" Analysis="N,,,,,DMS," />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node Id="1.33" Cat="ADV" Lemma="σωφροσύνη" Rule="pp2ADV" Head="0" StrongNumber="4997" Language="G" Number="Singular" morphId="540020150151" StrongNumberX="4997" Chinese="（克己）" English="propriety" PrepLemma="" Role="Location" Case="" Unicode="σωφροσύνης." Gender="Feminine" nodeId="540020150140021" Length="2" Start="13" End="14">
+                    <Node Id="1.34" Cat="pp" Lemma="σωφροσύνη" Rule="PrepNp" Head="1" StrongNumber="4997" Gender="Feminine" English="propriety" Number="Singular" morphId="540020150151" StrongNumberX="4997" Language="G" PrepLemma="μετά" Role="Location" Case="" Unicode="σωφροσύνης." Chinese="（克己）" nodeId="540020150140020" Length="2" Start="13" End="14">
+                      <Node Id="1.35" Cat="prep" Lemma="μετά" StrongNumber="3326" English="with" morphId="540020150141" StrongNumberX="3326" PrepositionType="Side by side" Language="G" Unicode="μετὰ" Chinese="（有）" nodeId="540020150140010" Start="13" End="13" Analysis="P,,,,,G,,," />
+                      <Node Id="1.36" Cat="np" Lemma="σωφροσύνη" Rule="N2NP" Head="0" StrongNumber="4997" Language="G" Number="Singular" morphId="540020150151" StrongNumberX="4997" Chinese="（克己）" English="propriety" Role="Location" Case="Genitive" Unicode="σωφροσύνης." Gender="Feminine" nodeId="540020150150011" Length="1" Start="14" End="14">
+                        <Node Id="1.37" Cat="noun" Lemma="σωφροσύνη" StrongNumber="4997" Gender="Feminine" English="propriety" Number="Singular" morphId="540020150151" StrongNumberX="4997" Language="G" Role="Location" Case="Genitive" Unicode="σωφροσύνης." Chinese="（克己）" Ref="{}" nodeId="540020150150010" Start="14" End="14" Analysis="N,,,,,GFS," />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Tree>
+    </Trees>
+  </Sentence>
+</Sentences>
