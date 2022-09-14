@@ -1,0 +1,2692 @@
+﻿Checking wordMap.tsv against what I discovered going through 
+addition.tsv, deletion.tsv and substitution.tsv (and diff.tsv) files
+which is documented in tree_modifications_edited.
+
+PROCEDURE
+
+I looked for places where I discovered that the previous analysis was partially correct, or completely wrong.
+
+For the number, it means:
+1 = perfect match (or has same lemma)
+2 = not a perfect match but is a fuzzy match
+	a. text starts with over 70% same characters, or
+	b. lemma starts with over 70% same characters, or
+	c. same Strong's number, or
+	d. same gloss
+
+For my manual edits, I used 2 if it is not a perfect match, but I felt that it was advantageous to map them.
+1. don't change the tree's skeletal structure (may change some nodes directly above the word)
+2. has the same category
+3. has the same Strong's number
+4. has the same lemma
+
+I decided to make the deletions and additions, rather than substitution (and thus mapped) if they don't satisfy the condition for 2
+
+Just because it is a 2 mapping doesn't mean we should automatically use the NA28 gloss. We should check what kind of a mapping it is.
+If it has a different lemma, Strong's number, then we probably want to find a gloss for the lemma or Strong's number, or use the existing gloss in the tree.
+
+RECORD OF CHANGES MADE
+
+
+40009004
+	Addition:	400090040101	τί	
+	Substitution:	400090040091	400090040091	ἱνατί	ἵνα
+	Comment: diff analysis is incorrect
+	NEW ANALYSIS: It is more like "ἱνατί" being split up into "ἵνα" and "τί" where "τί" takes the place in the tree of "ἱνατί"
+	=============================================
+	Addition:	400090040091	ἵνα
+	Substitution:	400090040091	400090040101	ἱνατί	τί
+	=============================================
+	Map Modifications:	Added Unicode [400090040091	400090040101    1   ἱνατί   τί]
+
+40011009
+	Addition:	400110090051	ἰδεῖν
+	Deletion:	400110090041	ἰδεῖν
+	Comment: diff analysis is incorrect
+	Comment: Looks like "ἰδεῖν" --> V and "προφήτην" --> O switched order. But they are not sisters in the original NA28 tree. 
+	=============================================
+	Substitution:	400110090041	400110090051	ἰδεῖν	ἰδεῖν
+	Substitution:	400110090051	400110090041	προφήτην	προφήτην
+	=============================================
+	Map Modifications:	Added Unicode [400110090041	400110090051    1   ἰδεῖν   ἰδεῖν]
+
+40014004
+	Addition:	400140040041	ὁ
+	Addition:	400140040051	Ἰωάννης
+	Deletion:	400140040031	ὁ
+	Deletion:	400140040041	Ἰωάννης
+	Comment: diff analysis is incorrect
+	Comment: It is more like "αὐτῷ" --> IO and "ὁ Ἰωάννης" --> S switch order
+	=============================================
+	Substitution:	400140040031	400110090041	ὁ	ὁ
+	Substitution:	400140040041	400110090051	Ἰωάννης	Ἰωάννης
+	Substitution:	400140040051	400110090031	αὐτῷ	αὐτῷ
+	=============================================
+	Map Modifications:	Added [400140040031	400140040041	1	ὁ	ὁ]
+	Map Modifications:	Added [400140040041	400140040051	1	Ἰωάννης	Ἰωάννης]
+
+40014024
+	Deletion:	400140240061	πολλοὺς
+	Deletion:	400140240071	ἀπὸ
+	Substitution:	400140240051	400140240051	σταδίους	μέσον	"middle" -> noun
+	Substitution:	400140240091	400140240071	γῆς	θαλάσσης	"sea" -> noun
+	Substitution:	400140240101	400140240081	ἀπεῖχεν	ἦν	"be" -> verb
+	Comment: the diff analysis is incorrect
+	=======================================
+	Comment: It is more like deleting "σταδίους πολλοὺς" --> ADV, "ἀπὸ τῆς γῆς" --> ADV, and "ἀπεῖχεν" --> V
+	Comment: and adding "μέσον τῆς θαλάσσης" --> P, and "ἦν" -> VC in its place
+	=======================================
+	Deletion:	400140240051	σταδίους
+	Deletion:	400140240061	πολλοὺς
+	Deletion:	400140240071	ἀπὸ
+	Deletion:	400140240091	γῆς
+	Deletion:	400140240101	ἀπεῖχεν
+	Addition:	400140240051	μέσον	"middle" -> noun
+	Addition:	400140240061	τῆς	"(of) the" -> det
+	Addition:	400140240071	θαλάσσης	"sea" -> noun
+	Addition:	400140240081	ἦν	"has been" -> verb
+	=======================================
+	Map Comment: wordMap.tsv got it correct enough
+
+
+40015004
+	Addition:	400150040041	ἐνετείλατο	-> verb (command)
+	Comment: diff analysis is incomplete.
+	====================================
+	Comment: Missing a substitution of "λέγων" for "εἶπεν"
+	====================================
+	Addition:	400150040041	ἐνετείλατο	-> verb (command)
+	Substitution:	400150040041	400150040051	εἶπεν	λέγων	"said" -> verb
+	===================================
+	Map Comment: wordMap.tsv got it correct.
+	
+40015014
+	Addition:	400150140041	εἰσιν
+	Deletion:	400150140031	τυφλοί
+	Deletion:	400150140041	εἰσιν
+	Comment: diff analysis is incorrect	
+	========================================
+	Comment: It looks more like "τυφλοί" --> adjp and "ὁδηγοὶ" swap places, also the deletion of "τυφλῶν"
+	====================================
+	Substitution:	400150140031	400150140051	τυφλοί	τυφλοί
+	Substitution:	400150140051	400150140031	ὁδηγοὶ	ὁδηγοί
+	Deletion:	400150140061	τυφλῶν	
+	========================================
+	Map Modifications:	Added Unicode [400150140031	400150140051	1	τυφλοί	τυφλοί]
+	Map Modifications:	Added [400150140041	400150140041	1	εἰσιν	εἰσιν]
+
+40015017
+	Substitution:	400150170011	400150170011	οὐ	οὔπω	"not yet" -> adv
+	====================================
+	Map Modifications:	Added Unicode [400150170011	400150170011	2	οὐ	οὔπω]
+
+40015032
+	Substitution:	400150320221	400150320221	τί	τι	"someone, something" -> pron (indefinite)
+	====================================
+	Map Modifications:	Added [400150320221	400150320221	2	τί	τι]
+
+
+40017009
+	Substitution:	400170090241	400170090241	ἐγερθῇ	ἀναστῇ	"has been raised" -> verb
+	===================================
+	Map Modifications:	Added [400170090241	400170090241	2	ἐγερθῇ	ἀναστῇ]
+
+
+40017015
+	Substitution:	400170150121	400170150121	πάσχει	ἔχει	"have, hold" -> verb
+	=================================
+	Map Modifications:	Added [400170150121	400170150121	2	πάσχει	ἔχει]
+
+40017025
+	Substitution:	400170250041	400170250041	ἐλθόντα	εἰσελθόντα	"enter" -> verb
+	=================================
+	Map Modifications:	Added Unicode [400170250041	400170250041	2	ἐλθόντα	εἰσελθόντα]
+
+40018024
+	Addition:	400180240071	αὐτῷ
+	Deletion:	400180240061	αὐτῷ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It seems more like switching the order of "αὐτῷ" --> IO and "εἷς" --> adjp
+	====================================
+	Substitution:	400180240061	400180240071	αὐτῷ	αὐτῷ
+	Substitution:	400180240071	400180240061	εἷς	εἷς
+	====================================
+	Map Modifications:	Added [400180240061	400180240071	1	αὐτῷ	αὐτῷ]
+
+
+
+40019004
+	Substitution:	400190040091	400190040091	κτίσας	ποιήσας	"having made" -> verb(V)
+	==================================
+	Map Modifications:	Added Unicode [400190040091	400190040091	2	κτίσας	ποιήσας]
+
+
+40019029
+	Addition:	400190290151	γυναῖκα
+	Addition:	400190290161	ἢ
+	Addition:	400190290231	ὀνόματός
+	Deletion:	400190290201	ὀνόματός
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It seems the differences is the addition of "ἢ γυναῖκα," and switching the order of "ὀνόματός" --> np and "μου/ἐμοῦ" --> np.
+	Comment: So it should be more like:
+	====================================
+	Addition:	400190290141	ἢ	"or" -> conj
+	Addition:	400190290151	γυναῖκα	"wife" -> noun
+	Substitution:	400190290201	400190290231	ὀνόματός	ὀνόματός
+	Substitution:	400190290211	400190290221	μου	ἐμοῦ
+	====================================
+	Map Modifications:	Changed [400190290141	400190290141	1	ἢ	ἢ] to [400190290141	400190290161	1	ἢ	ἢ]
+	Map Modifications:	Added [400190290201	400190290231	1	ὀνόματός	ὀνόματός]
+
+
+40020010
+	Addition:	400200100021	δὲ	"and, now" -> conj (coordinating)
+	Deletion:	400200100011	καὶ
+	Comment: diff analysis is not ideal.
+	====================================
+	Comment: Because they are both conjunctions, and often it seems these two are interchangeable, we will treat it as a substitution.
+	Comment: A syntactice difference is δὲ tends to be in the second position of a clause while καὶ is before a clause
+	====================================
+	Substitution	400200100011	400200100021	καὶ	δὲ
+	====================================
+	Map Modifications:	Add [400200100011	400200100021	2	καὶ	δὲ]
+
+40020019
+	Substitution:	400200190171	400200190171	ἐγερθήσεται	ἀναστήσεται	"he will be raised" -> verb
+	===============================
+	Map Modifications:	Added Unicode [400200190171	400200190171	2	ἐγερθήσεται	ἀναστήσεται]
+
+40020020
+	Substitution:	400200200171	400200200171	ἀπ’	παρ	"from close beside" -> prep
+	===============================
+	Map Modifications:	Added Unicode [400200200171	400200200171	2	ἀπ’	παρ]
+
+
+
+40020031
+	Addition:	400200310141	ἐλέησον
+	Addition:	400200310151	ἡμᾶς
+	Deletion:	400200310131	ἐλέησον
+	Deletion:	400200310141	ἡμᾶς
+	Comment: diff analysis is incorrect.
+	===============================
+	Comment: seems more like moving "Κύριε" --> np befpre "ἐλέησον ἡμᾶς" --> CL so that "Κύριε" is an address.
+	===============================
+	Substitution:	400200310131	400200310141	ἐλέησον	ἐλέησον
+	Substitution:	400200310141	400200310151	ἡμᾶς	ἡμᾶς
+	Substitution:	400200310151	400200310131	κύριε	Κύριε
+	===============================
+	Map Modifications:	Added Unicode [400200310131	400200310141	1	ἐλέησον	ἐλέησον]
+	Map Modifications:	Added Unicode [400200310141	400200310151	1	ἡμᾶς	ἡμᾶς]
+
+40020034
+	Substitution:	400200340071	400200340071	ὀμμάτων	ὀφθαλμῶν	"eyes" -> noun
+	=================================
+	Map Modifications:	Added Unicode [400200340071	400200340071	2	ὀμμάτων	ὀφθαλμῶν]
+	
+40021001
+	Substitution:	400210010101	400210010101	εἰς	πρὸς "to, towards" -> prep
+	=================================
+	Map Modifications:	Added Unicode [400210010101	400210010101	2	εἰς	πρὸς]
+
+40021025
+	Substitution:	400210250151	400210250151	ἐν	παρ	"beside, by" -> prep (dative)
+	=================================
+	Map Modifications:	Added Unicode [400210250151	400210250151	2	ἐν	παρ]
+
+40021032
+	Substitution:	400210320241	400210320241	οὐδὲ	οὐ	"not" -> adv
+	=================================
+	Map Modifications:	Added Unicode [400210320241	400210320241	2	οὐδὲ	οὐ]
+
+40022043
+	Addition:	400220430101	αὐτὸν
+	Deletion:	400220430091	αὐτὸν
+	Comment: diff analysis is incorrect.
+	=================================
+	Comment: It looks more like they just switched order of "αὐτὸν" --> O and "Κύριον" --> O2
+	=================================
+	Substitution:	400220430091	400220430101	αὐτὸν	αὐτὸν
+	Substitution:	400220430101	400220430091	κύριον	Κύριον
+	=================================
+	Map Modifications:	Added Unicode [400220430091	400220430101	1	αὐτὸν	αὐτὸν]
+
+40023008
+	Substitution:	400230080111	400230080111	διδάσκαλος	καθηγητὴς	"teacher" -> noun
+	=================================
+	Map Modifications:	Added Unicode [400230080111	400230080111	2	διδάσκαλος	καθηγητὴς]
+
+40023026
+	Deletion:	400230260091	ἵνα
+	Deletion:	400230260101	γένηται
+	Substitution:	400230260131	400230260111	ἐκτὸς	παροψίδος
+	Substitution:	400230260141	400230260121	αὐτοῦ	ἵνα
+	Substitution:	400230260151	400230260131	καθαρόν	γένηται
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It seems it is better to think of this as a new phrase "καὶ τῆς παροψίδος," inserted between "ποτηρίου" 400230260081 and "ἵνα" 400230260121 (former 400230260091)
+	Comment: Also, there is a substitution of "αὐτῶν" for "αὐτοῦ" 400230260171 (former 400230260141)
+	Comment: New diffs
+	====================================
+	Addition:	400230260091	καὶ	"and" -> conj
+	Addition:	400230260101	τῆς	"the" -> det
+	Addition:	400230260111	παροψίδος	"dish," -> noun
+	Substitution:	400230260141	400230260171	αὐτοῦ	αὐτῶν
+	====================================
+	Map Modifications:	Added [400230260091	400230260121	1	ἵνα	ἵνα]
+	Map Modifications:	Added [400230260101	400230260131	1	γένηται	γένηται]
+	Map Modifications:	Changed [400230260111	400230260091	1	καὶ	καὶ] to [400230260111	400230260141	1	καὶ	καὶ]
+	Map Modifications:	Changed [400230260121	400230260101	1	τὸ	τῆς] to [400230260121	400230260151	1	τὸ	τὸ]
+
+40023030
+	Addition:	400230300151	αὐτῶν
+	Deletion:	400230300141	αὐτῶν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is better to think of this as switching the order of "αὐτῶν" --> np(0) and "κοινωνοὶ" --> np(1)
+	====================================
+	Substitution:	400230300141	400230300151	αὐτῶν	αὐτῶν
+	Substitution:	400230300151	400230300141	κοινωνοὶ	κοινωνοὶ
+	====================================
+	Map Modifications:	Added Unicode [400230300141	400230300151	1	αὐτῶν	αὐτῶν]
+
+40024033
+	Addition:	400240330071	πάντα
+	Deletion:	400240330061	πάντα
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like switching the order of "πάντα" --> adjp and "ταῦτα," -> np
+	====================================
+	Substitution:	400240330061	400240330071	πάντα	πάντα
+	Substitution:	400240330071	400240330061	ταῦτα	ταῦτα
+	====================================
+	Map Modifications:	Added Unicode [400240330061	400240330071	1	πάντα	πάντα]
+
+40024040
+	Addition:	400240400031	δύο
+	Deletion:	400240400021	δύο
+	Comment: diff analysis is incorrect.
+	====================================
+	Coment: It seems it is more switching the order of "δύο" --> S and "ἔσονται" --> VC
+	====================================
+	Substitution:	400240400021	400240400031	δύο	δύο
+	Substitution:	400240400031	400240400021	ταῦτα	ταῦτα
+	====================================
+	Map Modifications:	Added Unicode [400240400021	400240400031	1	δύο	δύο]
+
+40025001
+	Substitution:	400250010131	400250010131	ἑαυτῶν	αυτών	"of them" -> pron
+	====================================
+	Map Modifications:	Added Unicode [400250010131	400250010131	2	ἑαυτῶν	αυτών]
+
+40026039
+	Substitution:	400260390021	400260390021	προελθὼν	προσελθὼν	"having approached" -> verb
+	====================================
+	Map Modifications:	Added [400260390021	400260390021	2	προελθὼν	προσελθὼν]
+
+40027029
+	Addition:	400270290261	Βασιλεῦ
+	Addition:	400270290271	τῶν
+	Deletion:	400270290251	βασιλεῦ
+	Comment: It seems it is more like adding "ὁ" 400270290251 before "Βασιλεῦ" 400270290261
+	=============================================
+	Addition:	400270290251	ὁ	"the" -> det
+	=============================================
+	Map Modifications:	Added [400270290251	400270290261	1	βασιλεῦ	βασιλεῦ]
+	Map Modifications:	Changed [400270290261	400270290251	1	τῶν	ὁ] to [400270290261	400270290271	1	τῶν	τῶν]
+
+40027046
+	Addition:	400270460231	τί	-> pron
+	Substitution:	400270460121	400270460121	ηλι	Ἐλωῒ	(already fixed in starting tree but it seems this was done manually)
+	Substitution:	400270460131	400270460131	ηλι	Ἐλωῒ	(already fixed in starting tree but it seems this was done manually)
+	Substitution:	400270460221	400270460221	ἱνατί	ἵνα	-> conj
+	Comment: Ἐλωῒ and lemma ἐλωῒ are not found in biblehub.com, though 1682 is found.
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It seems like it is more like "ἱνατί" is split into "ἵνα" and "τί" where "τί" is a substitution for "ἱνατί"
+	=============================================
+	Addition:	400270460221	ἵνα	"-" -> conj (subordinating)
+	Substitution:	400270460221	400270460231	ἱνατί	τί	"why" -> pron
+	=============================================
+	Map Modifications:	Added Unicode [400270460221	400270460231	1	ἱνατί	τί]
+
+40027051
+	Addition:	400270510081	εἰς
+	Addition:	400270510091	δύο
+	Deletion:	400270510121	εἰς
+	Deletion:	400270510131	δύο
+	Comment: diff analysis is incorrect.
+	=====================================
+	Comment: It is more like switching the order of "εἰς δύο" --> ADV(1) and "ἀπ’ ἄνωθεν ἕως κάτω" --> ADV(0)
+	=====================================
+	Substitution:	400270510081	400270510101	ἀπ’	ἀπ’
+	Substitution:	400270510091	400270460111	ἄνωθεν	ἄνωθεν
+	Substitution:	400270460101	400270510121	ἕως	ἕως
+	Substitution:	400270510111	400270460131	κάτω	κάτω
+	Substitution:	400270460121	400270510081	εἰς	εἰς
+	Substitution:	400270510131	400270510091	δύο	δύο
+	=====================================
+	Map Modifications:	Added Unicode [400270460121	400270510081	1	εἰς	εἰς]
+	Map Modifications:	Added Unicode [400270510131	400270510091	1	δύο	δύο]
+
+
+40028010
+	Addition:	400280100191	ἐκεῖ
+	Substitution:	400280100181	400280100181	κἀκεῖ	καὶ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "κἀκεῖ" ("and there", 2546) is split into "καὶ" ("and", 2532) and "ἐκεῖ" ("there", 1563)
+	Comment: Use the diff below:
+	====================================
+	Addition:	400280100181	καὶ	"and" -> conj
+	Substitution:	400280100181	400280100191	κἀκεῖ	ἐκεῖ	"there" -> adv
+	====================================
+	Map Modifications:	Added [400280100181	400280100191	2	κἀκεῖ	ἐκεῖ]
+
+41001010
+	Substitution:	410010100171	410010100171	εἰς	ἐπ	"on, upon" -> prep
+	====================================
+	Map Modifications:	Added [410010100171	410010100171	2	εἰς	ἐπ]
+
+41001018
+	Substitution:	410010180021	410010180021	εὐθὺς	εὐθέως	"at once" -> adv
+	====================================
+	Map Modifications:	Added [410010180021	410010180021	2	εὐθὺς	εὐθέως]
+
+41001021
+	Substitution:	410010210061	410010210061	εὐθὺς	εὐθέως	"at once" -> adv
+	====================================
+	Map Modifications:	Added [410010210061	410010210061	2	εὐθὺς	εὐθέως]
+
+41001027
+	Substitution:	410010270071	410010270071	ἑαυτοὺς	αὐτοὺς	"themselves" -> pron
+	====================================
+	Map Modifications:	Added [410010270071	410010270071	2	ἑαυτοὺς	αὐτοὺς]
+
+41002010
+	Addition:	410020100141	ἀφιέναι
+	Addition:	410020100151	ἁμαρτίας
+	Deletion:	410020100111	ἀφιέναι
+	Deletion:	410020100121	ἁμαρτίας
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like switching the order of "ἀφιέναι ἁμαρτίας" --> ADV(0) and "ἐπὶ τῆς γῆς" --> ADV(1)
+	====================================
+	Substitution:	410020100111	410020100141	ἀφιέναι	ἀφιέναι
+	Substitution:	410020100121	410020100151	ἁμαρτίας	ἁμαρτίας
+	Substitution:	410020100131	410020100111	ἐπὶ	ἐπὶ
+	Substitution:	410020100141	410020100121	τῆς	τῆς
+	Substitution:	410020100151	410020100131	τῆς	τῆς
+	====================================
+	Map Modifications:	Added [410020100111	410020100141	1	ἀφιέναι	ἀφιέναι]
+	Map Modifications:	Added [410020100121	410020100151	1	ἁμαρτίας	ἁμαρτίας]
+
+41003003
+	Addition:	410030030091	ξηράν
+	Deletion:	410030030071	ξηρὰν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: ξηρὰν changed from adj to noun, starting tree already has this fixed
+	Comment: It is more like moving "ξηρὰν" -> np, after "χεῖρα ἔχοντι" but the later is not a separate consituent.
+	====================================
+	Substitution:	410030030071	410030030091	ξηρὰν	ξηρὰν
+	Substitution:	410030030081	410030030071	χεῖρα	χεῖρα
+	Substitution:	410030030091	410030030081	ἔχοντι	ἔχοντι
+	====================================
+	Map Modifications:	Added Unicode [410030030071	410030030091	1	ξηρὰν	ξηράν]
+
+41003004
+	Deletion:	410030040071	ποιῆσαι
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It seems more like the merging of "ἀγαθὸν" (good) and "ποιῆσαι" (to do) to become "ἀγαθοποιῆσαι" (to do good)
+	Comment: Have the verb be a substitution.
+	Comment: So it should be:
+	====================================
+	Deletion:	410030040071	ἀγαθὸν
+	Substitution:	410030040081	410030040071	ποιῆσαι	ἀγαθοποιῆσαι	"to do good" -> verb
+	====================================
+	Map Modification:	Changed [410030040071	410030040071	2	ἀγαθὸν	ἀγαθοποιῆσαι] to [410030040081	410030040071	2	ποιῆσαι	ἀγαθοποιῆσαι]
+
+41003006
+	Substitution:	410030060101	410030060101	ἐδίδουν	ἐποίουν	"held" -> verb
+	=================================
+	Map Modifications:	Added Unicode [410030060101	410030060101	2	ἐδίδουν	ἐποίουν]
+
+41003032
+	Deletion:	410030320191	ἀδελφαί
+	Substitution:	410030320171	410030320171	καὶ	ἔξω
+	Substitution:	410030320181	410030320181	αἱ	ζητοῦσίν
+	Comment: Above diff analysis is incorrect. It is the deletion of "καὶ αἱ ἀδελφαί σου"
+	=========================================
+	Deletion:	410030320171	καὶ
+	Deletion:	410030320181	αἱ
+	Deletion:	410030320191	ἀδελφαί
+	Deletion:	410030320201	σου
+	=========================================
+	Map Modifications:	Deleted [410030320201	410030320191	1	σου	σε]
+	Map Modifications:	Added [410030320211	410030320171	1	ἔξω	ἔξω]
+	Map Modifications:	Added [410030320221	410030320181	1	ζητοῦσίν	ζητοῦσίν]
+	Map Modifications:	Added [410030320231	410030320191	1	σε	σε]
+
+
+41004008
+	Substitution:	410040080171	410040080171	ἓν	εἰς	-> prep
+	===================================
+	Comment: Because "ἓν" is adj and "εἰς" is prep, I think it is more like deleting "ἓν" and adding "εἰς"
+	Comment: But because the following two ἓν are mapped as exact matches, yet UGNT changes them from adj to prep, 
+	Comment: then I think I'll just leave it as a substitution 
+	===================================
+	Map Modifications:	Added Unicode [410040080171	410040080171	2	ἓν	εἰς]
+
+41005014
+	Substitution:	410050140161	410050140161	ἦλθον	ἐξῆλθον	"come out" -> verb
+	===================================
+	Map Modifications:	Added Unicode [410050140161	410050140161	2	ἦλθον	ἐξῆλθον]
+
+
+41005026
+	Substitution:	410050260111	410050260111	αὐτῆς	ἑαυτῆς	"of herself" -> pron (genitive)
+	=====================================
+	Map Modifications:	Added Unicode [410050260111	410050260111	2	αὐτῆς	ἑαυτῆς]
+
+41005027
+	Addition:	410050270031	περὶ
+	Addition:	410050270041	τοῦ
+	Deletion:	410050270021	περὶ
+	Comment: The diff analysis is incorrect. It is a simple addition of τὰ 410050270021
+	========================================
+	Comment: Starting tree already has τὰ but I think it is because of the incorrect diff analysis. out of word order as conjoined to Jesus. I think this analysis is wrong since τὰ is neuter where as Jesus is masculine so gender does not agree, also the τοῦ det is still there
+	========================================
+	Addition:	410050270021	τὰ	"that" -> pron
+	=========================================
+	Map Modifications:	Added [410050270021	410050270031	1	περὶ	περὶ]
+	Map Modifications:	Changed [410050270031	410050270021	1	τοῦ	τὰ] to [410050270031	410050270041	1	τοῦ	τοῦ]
+
+41006023
+	Deletion:	410060230051	ὅ
+	Deletion:	410060230061	τι
+	Substitution:	410060230041	410060230041	πολλὰ	ὅτι	"that, 3754" -> conj (subordinating)
+	Commment: diff analysis is incorrect.
+	=====================================
+	Comment: It is more like the delition of "πολλὰ" and the combining of "ὅ" and "τι" to form "ὅτι"
+	====================================
+	Deletion:	410060230041	πολλὰ
+	Deletion:	410060230051	ὅ
+	Deletion:	410060230061	τι	
+	Addition:	410060230041	ὅτι	"that" -> conj (subordinating)
+	=====================================
+	Map Comment: wordMap.tsv got it right
+
+41006026
+	Substitution:	410060260111	410060260111	ἀνακειμένους	συνανακειμένους	-> verb
+	=====================================
+	Map Modifications:	Added Unicode [410060260111	410060260111	2	ἀνακειμένους	συνανακειμένους]
+
+41006036
+	Substitution:	410060360131	410060360131	τί	τι	"what" -> pron
+	=====================================
+	Map Modifications:	Added Unicode [410060360131	410060360131	2	τί	τι]
+
+
+41007009
+	Substitution:	410070090141	410070090141	στήσητε	τηρήσητε	"(you all) might observe" -> verb (subjunctive)
+	=====================================
+	Map Modifications:	Added Unicode [410070090141	410070090141	2	στήσητε	τηρήσητε]
+
+41007024
+	Addition:	410070240101	Σιδῶνος
+	Addition:	410070240111	καὶ
+	Comment: diff analysis is not quite correct
+	============================================
+	Comment: it seems better to think of it as adding "καὶ Σιδῶνος" 
+	====================================
+	Addition:	410070240091	καὶ	"and" -> conj
+	Addition:	410070240101	Σιδῶνος.	"of Sidon" -> noun
+	============================================
+	Map Modifications:	Changed [410070240091	410070240091	1	Καὶ	καὶ] to [410070240091	410070240111	1	Καὶ	καὶ]
+
+41007029
+	Deletion:	410070290101	ἐκ
+	Substitution:	410070290121	410070290111	θυγατρός	δαιμόνιον
+	Substitution:	410070290131	410070290121	σου	ἐκ
+	Substitution:	410070290151	410070290141	δαιμόνιον	θυγατρός
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like switching the order of "τὸ δαιμόνιον" -> S and "ἐκ τῆς θυγατρός σου" -> ADV
+	====================================
+	Substitution:	410070290101	410070290121	ἐκ	ἐκ
+	Substitution:	410070290111	410070290131	τῆς	τῆς
+	Substitution:	410070290121	410070290141	θυγατρός	θυγατρός
+	Substitution:	410070290131	410070290151	σου	σου
+	Substitution:	410070290141	410070290101	τὸ	τὸ
+	Substitution:	410070290151	410070290111	δαιμόνιον	δαιμόνιον
+	====================================
+	Map Modifications:	Added Unicode [410070290101	410070290121	1	ἐκ	ἐκ]
+	Map Modifications:	Added Unicode [410070290111	410070290131	1	τῆς	τῆς]
+	Map Modifications:	Added Unicode [410070290121	410070290141	1	θυγατρός	θυγατρός]
+	Map Modifications:	Added Unicode [410070290131	410070290151	1	σου	σου]
+	Map Modifications:	Added Unicode [410070290141	410070290101	1	τὸ	τὸ]
+	Map Modifications:	Added Unicode [410070290151	410070290111	1	δαιμόνιον	δαιμόνιον]
+
+41008001
+	Deletion:	410080010171	λέγει	(INCORRECT)
+	Substitution:	410080010121	410080010121	τί	τι	"anything" -> pron
+	Modifications:	changed τί -> pron Unicode to "τι", Lemma to "τις", StrongNumber to 5100, morphId to 410080010121
+	Comment: diff analysis is incorrect
+	===============================
+	Comment: The diff is wrong about the deletion. It should be the addition of "αὐτοῦ," 410080010171
+	====================================
+	Addition:	410080010171	αὐτοῦ	"of him" -> pron
+	===============================
+	Map Modifications:	Added [410080010171	410080010181	1	λέγει	λέγει]
+	Map Modifications:	Changed [410080010181	410080010171	1	αὐτοῖς	αὐτοῦ] to [410080010181	410080010191	1	αὐτοῖς	αὐτοῦ]
+
+41008002
+	Substitution:	410080020141	410080020141	τί	τι	"anything" -> pron
+	=====================================
+	Map Modifications:	Added Unicode [410080020141	410080020141	2	τί	τι]
+
+41008017
+	Addition:	410080170031	ὁ
+	Addition:	410080170051	λέγει
+	Comment: The diff analysis is incorrect.
+	========================================
+	Comment: It is the addition of:
+	===============================
+	Addition:	410080170031	ὁ	"-" -> det
+	Addition:	410080170041	Ἰησοῦς	"Jesus" -> noun	
+	Map Modifications:	Changed [410080170031	410080170041	2	λέγει	Ἰησοῦς] to [410080170031	410080170051	1	λέγει	λέγει]
+
+41008032
+	Addition:	410080320091	ὁ
+	Addition:	410080320101	Πέτρος
+	Deletion:	410080320081	ὁ
+	Deletion:	410080320091	Πέτρος
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like switching the order of "ὁ Πέτρος" --> S and "αὐτὸν" --> O (or "αὐτὸν" before "ὁ Πέτρος")
+	====================================
+	Substitution:	410080320081	410080320091	ὁ	ὁ
+	Substitution:	410080320091	410080320101	Πέτρος	Πέτρος
+	Substitution:	410080320101	410080320081	αὐτὸν	αὐτὸν
+	====================================
+	Map Modifications:	Added Unicode [410080320081	410080320091	1	ὁ	ὁ]
+	Map Modifications:	Added Unicode [410080320091	410080320101	1	Πέτρος	Πέτρος]
+
+41009001
+	Addition:	410090010111	ὧδε
+	Deletion:	410090010101	ὧδε
+	Comment: diff analysis is incorrect.
+	====================================
+	Substitution:	410090010101	410090010111	ὧδε	ὧδε
+	Substitution:	410090010111	410090010101	τῶν	τῶν
+	====================================
+	Map Modifications:	Added [410090010101	410090010111	1	ὧδε	ὧδε]
+	
+41010026
+	Substitution:	410100260071	410100260071	ἑαυτούς	αὐτόν	"him" -> pron (accusative)
+	=====================================
+	Map Modifications:	Added Unicode [410100260071	410100260071	2	ἑαυτούς	αὐτόν]
+
+41010037
+	Addition:	410100370161	σου	"of you" -> pron (genitive)
+	Substitution:	410100370151	410100370151	ἀριστερῶν	εὐωνύμων	"left" -> noun
+	==========================================
+	Map Modification:	Added [410100370151	410100370151	2	ἀριστερῶν	εὐωνύμων]
+
+41010052
+	Addition:	410100520021	δὲ	"and" -> conj (coordinating)
+	Deletion:	410100520011	καὶ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "καὶ" is changed to "δὲ" but since "δὲ" is usually in the second position though it is first in the clause in the tree.
+	====================================
+	Substitution:	410100520011	410100520021	καὶ	δὲ
+	====================================
+	Map Modifications:	Added Unicode [410100520011	410100520021	2	καὶ	δὲ]
+
+
+41011002
+	Addition:	410110020231	οὔπω
+	Deletion:	410110020221	οὔπω
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like move "οὔπω" -> ADV to after "ἀνθρώπων" --> np, but in the original NA28 the tree already is in this order to avoid splitting S, and so no need to change the tree
+	====================================
+	Substitution:	410110020221	410110020231	οὔπω	οὔπω
+	Substitution:	410110020231	410110020221	ἀνθρώπων	ἀνθρώπων
+	===================================
+	Map Modifications:	Added Unicode [410110020221	410110020231	1	οὔπω	οὔπω]
+
+41011007
+	Substitution:	410110070021	410110070021	φέρουσιν	ἤγαγον	"(they) brought" -> verb
+	================================
+	Map Modifications:	Added Unicode [410110070021	410110070021	2	φέρουσιν	ἤγαγον]
+
+41012036
+	Addition:	410120360121	τῷ
+	Addition:	410120360131	Κυρίῳ
+	Deletion:	410120360101	κύριος
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Should be just the addition of "ὁ" 410120360101
+	====================================
+	Addition:	410120360101	ὁ
+	========================================
+	Map Modifications:	Added [410120360101	410120360111	1	κύριος	Κύριος]
+	Map Modifications:	Changed [410120360111	410120360101	1	τῷ	ὁ] to [410120360111	410120360121	1	τῷ	τῷ]
+	Map Modifications:	Changed [410120360121	410120360111	1	κυρίῳ	Κύριος] to [410120360121	410120360131	1	κυρίῳ	Κυρίῳ]
+	
+41012037
+	Addition:	410120370091	αὐτοῦ
+	Addition:	410120370101	ἐστιν
+	Deletion:	410120370081	αὐτοῦ
+	Deletion:	410120370091	ἐστιν
+	Deletion:	410120370121	ὁ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like moved "υἱός" 410120370101 -> np is moved to before "αὐτοῦ" -> np. 
+	====================================
+	Substitution:	410120370081	410120370091	αὐτοῦ	αὐτοῦ
+	Substitution:	410120370101	410120370081	υἱός	υἱός
+	Deletion:	410120370121	ὁ
+	====================================
+	Map Modifications:	Added [410120370081	410120370091	1	αὐτοῦ	αὐτοῦ]
+	Map Modificaitons:	Added [410120370091	410120370101	1	ἐστιν	ἐστιν]
+
+41015014
+	Addition:	410150140091	ἐποίησεν
+	Deletion:	410150140081	ἐποίησεν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: The order in the NA28 tree is not the word order.
+	Comment: It is more like putting "τί" and "κακόν" next to each other (since "γὰρ" is moved before "τί" in the tree) so "τί κακόν" --> O is before "ἐποίησεν" --> V
+	====================================
+	Substitution:	410150140081	410150140091	ἐποίησεν	ἐποίησεν
+	Substitution:	410150140091	410150140081	κακόν	κακόν
+	====================================
+	Map Modifications:	Added Unicode [410150140081	410150140091	1	ἐποίησεν	ἐποίησεν]
+
+
+41016001
+	Deletion:	410160010051	Μαρία
+	Deletion:	410160010071	Μαγδαληνὴ
+	Deletion:	410160010081	καὶ
+	Deletion:	410160010121	Ἰακώβου
+	Substitution:	410160010111	410160010081	τοῦ	Μαγδαληνὴ
+	Substitution:	410160010141	410160010101	Σαλώμη	Μαρία
+	Substitution:	410160010151	410160010111	ἠγόρασαν	ἡ
+	Substitution:	410160010161	410160010121	ἀρώματα	Ἰακώβου
+	Substitution:	410160010171	410160010131	ἵνα	καὶ
+	Substitution:	410160010181	410160010141	ἐλθοῦσαι	Σαλώμη
+	Substitution:	410160010191	410160010151	ἀλείψωσιν	ἠγόρασαν
+	Substitution:	410160010201	410160010161	αὐτόν	ἀρώματα
+	Comment: The diff analysis is incorrect (more complicated). Should be the following:
+	=======================================
+	Addition:	410160010051	ἡ	"-" -> det
+	Deletion:	410160010111	τοῦ
+	=======================================
+	Map Modifications:	Changed [410160010061	410160010051	1	ἡ	ἡ] to [410160010061	410160010071	1	ἡ	ἡ]
+	Map Modifications:	Changed [410160010091	410160010061	1	Μαρία	Μαρία] to [410160010091	410160010101	1	Μαρία	Μαρία]
+	Map Modifications:	Changed [410160010101	410160010071	1	ἡ	ἡ] to [410160010101	410160010111	1	ἡ	ἡ]
+	Map Modifications:	Changed [410160010131	410160010091	1	καὶ	καὶ] to [410160010131	410160010131	1	καὶ	καὶ]
+	Map Modifications:	Added [410160010051	410160010061	1	Μαρία	Μαρία]
+	Map Modifications:	Added [410160010071	410160010081	1	Μαγδαληνὴ	Μαγδαληνὴ]
+	Map Modifications:	Added [410160010081	410160010091	1	καὶ	καὶ]
+	Map Modifications:	Added [410160010121	410160010121	1	Ἰακώβου	Ἰακώβου]
+	Map Modifications:	Added [410160010141	410160010141	1	Σαλώμη	Σαλώμη]
+	Map Modifications:	Added [410160010151	410160010151	1	ἠγόρασαν	ἠγόρασαν]
+	Map Modifications:	Added [410160010161	410160010161	1	ἀρώματα	ἀρώματα]
+	Map Modifications:	Added [410160010171	410160010171	1	ἵνα	ἵνα]
+	Map Modifications:	Added [410160010181	410160010181	1	ἐλθοῦσαι	ἐλθοῦσαι]
+	Map Modifications:	Added [410160010191	410160010191	1	ἀλείψωσιν	ἀλείψωσιν]
+	Map Modifications:	Added [410160010201	410160010201	1	αὐτόν	αὐτόν]
+
+41016017
+	Addition:	410160170061	ταῦτα
+	Deletion:	410160170051	ταῦτα
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ταῦτα" is moved to after "παρακολουθήσει", but the order in NA28 tree already has "ταῦτα" moved forward in the tree so now it looks like it will have to be moved even further forward in the tree
+	Substitution:	410160170051	410160170061	ταῦτα	ταῦτα
+	Substitution:	410160170061	410160170051	παρακολουθήσει	παρακολουθήσει
+	====================================
+	Map Modifications:	Added Unicode [410160170051	410160170061	1	ταῦτα	ταῦτα]
+
+41016018
+	Substitution:	410160180011	410160180011	καὶ	ὄφεις
+	Substitution:	410160180021	410160180021	ἐν	ἀροῦσιν
+	Substitution:	410160180031	410160180031	ταῖς	κἂν
+	Substitution:	410160180041	410160180041	χερσὶν	θανάσιμόν
+	Substitution:	410160180051	410160180051	ὄφεις	τι
+	Substitution:	410160180061	410160180061	ἀροῦσιν	πίωσιν
+	Substitution:	410160180071	410160180071	κἂν	οὐ
+	Substitution:	410160180081	410160180081	θανάσιμόν	μὴ
+	Substitution:	410160180091	410160180091	τι	αὐτοὺς
+	Substitution:	410160180101	410160180101	πίωσιν	βλάψῃ
+	Substitution:	410160180111	410160180111	οὐ	ἐπὶ
+	Substitution:	410160180121	410160180121	μὴ	ἀρρώστους
+	Substitution:	410160180131	410160180131	αὐτοὺς	χεῖρας
+	Substitution:	410160180141	410160180141	βλάψῃ	ἐπιθήσουσιν
+	Substitution:	410160180151	410160180151	ἐπὶ	καὶ
+	Substitution:	410160180161	410160180161	ἀρρώστους	καλῶς
+	Substitution:	410160180171	410160180171	χεῖρας	ἕξουσιν
+	Comment: The diff analysis is incorrect. It is more like "καὶ ἐν ταῖς χερσὶν" is deleted at the beginning of the verse
+	========================================
+	Deletion:	410160180011	καὶ
+	Deletion:	410160180021	ἐν
+	Deletion:	410160180031	ταῖς
+	Deletion:	410160180041	χερσὶν
+	Comment: There were no mappings for this verse in wordMap.tsv so creating from scratch
+	========================================
+	Map Modifications:	Added [410160180051	410160180011	1	ὄφεις	ὄφεις]
+	Map Modifications:	Added [410160180061	410160180021	1	ἀροῦσιν	ἀροῦσιν]
+	Map Modifications:	Added [410160180071	410160180031	1	κἂν	κἂν]
+	Map Modifications:	Added [410160180081	410160180041	1	θανάσιμόν	θανάσιμόν]
+	Map Modifications:	Added [410160180091	410160180051	1	τι	τι]
+	Map Modifications:	Added [410160180101	410160180061	1	πίωσιν	πίωσιν]
+	Map Modifications:	Added [410160180111	410160180071	1	οὐ	οὐ]
+	Map Modifications:	Added [410160180121	410160180081	1	μὴ	μὴ]
+	Map Modifications:	Added [410160180131	410160180091	1	αὐτοὺς	αὐτοὺς]
+	Map Modifications:	Added [410160180141	410160180101	1	βλάψῃ	βλάψῃ]
+	Map Modifications:	Added [410160180151	410160180111	1	ἐπὶ	ἐπὶ]
+	Map Modifications:	Added [410160180161	410160180121	1	ἀρρώστους	ἀρρώστους]
+	Map Modifications:	Added [410160180171	410160180131	1	χεῖρας	χεῖρας]
+	Map Modifications:	Added [410160180181	410160180141	1	ἐπιθήσουσιν	ἐπιθήσουσιν]
+	Map Modifications:	Added [410160180191	410160180151	1	καὶ	καὶ]
+	Map Modifications:	Added [410160180201	410160180161	1	καλῶς	καλῶς]
+	Map Modifications:	Added [410160180211	410160180171	1	ἕξουσιν	ἕξουσιν]
+
+42001021
+	Addition:	420010210131	αὐτόν
+	Comment: Diff analysis is incorrect. It is more like switched order of "αὐτόν" --> S and "ἐν τῷ ναῷ" --> ADV
+	====================================
+	Substitution:	420010210131	420010210141	ἐν	ἐν
+	Substitution:	420010210141	420010210151	τῷ	τῷ
+	Substitution:	420010210151	420010210161	ναῷ	ναῷ
+	Substitution:	420010210161	420010210131	αὐτόν	αὐτόν
+	====================================
+	Map Modifications:	Added Unicode [420010210161	420010210131	1	αὐτόν	αὐτόν]
+
+42001042
+	Substitution:	420010420031	420010420031	κραυγῇ	φωνῇ	"voice" -> noun
+	======================================
+	Map Modifications:	Added Unicode [420010420031	420010420031	2	κραυγῇ	φωνῇ]
+
+42003033
+	Substitution:	420030330041	420030330041	Ἀδμὶν	Ἀδμεὶν	"of Admin" -> noun
+	Substitution:	420030330061	420030330061	Ἀρνὶ	Ἀρνεὶ	"of arni" -> noun
+	================================
+	Map Modifications:	Added [420030330041	420030330041	1	Ἀδμὶν	Ἀδμεὶν]
+	Map Modifications:	Added [420030330061	420030330061	1	Ἀρνὶ	Ἀρνεὶ]
+
+42005003
+	Addition:	420050030191	ἐδίδασκεν
+	Deletion:	420050030221	ἐδίδασκεν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐδίδασκεν" --> V and "ἐκ τοῦ πλοίου" --> ADV(0) switching order
+	====================================
+	Substitution:	420050030191	420050030201	ἐκ	ἐκ
+	Substitution:	420050030201	420050030211	τοῦ	τοῦ
+	Substitution:	420050030211	420050030221	πλοίου	πλοίου
+	Substitution:	420050030221	420050030191	ἐδίδασκεν	ἐδίδασκεν
+	====================================
+	Map Modifications:	Added Unicode [420050030221	420050030191	1	ἐδίδασκεν	ἐδίδασκεν]
+
+42005012
+	Addition:	420050120161	καὶ
+	Deletion:	420050120171	δὲ
+	Comment: The diff analysis is incorrect.
+	========================================
+	Comment: It should be:
+	For wordMap, a substitution where they are different words but same category has 2 after the morphIds.
+	========================================
+	Substitution:	420050120171	420050120161	δὲ	καὶ
+	========================================
+	Map Modifications:	Changed [420050120161	420050120161	1	ἰδὼν	ἰδὼν] to [420050120161	420050120171	1	ἰδὼν	ἰδὼν]
+	Map Modifications:	Changed [420050120171	420050120171] to [420050120171	420050120161	2	δὲ	καὶ]
+
+42005021
+	Addition:	420050210191	ἁμαρτίας
+	Deletion:	420050210181	ἁμαρτίας
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἁμαρτίας" --> O and "ἀφεῖναι" --> V switched places.
+	====================================
+	Substitution:	420050210181	420050210191	ἁμαρτίας	ἁμαρτίας
+	Substitution:	420050210191	420050210181	ἀφεῖναι	ἀφεῖναι
+	====================================
+	Map Modifications:	Changed [420050210181	420050210191	1	δύναται	δύναται] to [420050210181	420050210191	1	ἁμαρτίας	ἁμαρτίας]
+
+42005029
+	Substitution:	420050290051	420050290051	Λευὶς	Λευεὶς	"Levi" -> noun
+	================================
+	Map Modifications:	Added Unicode [420050290051	420050290051	2	Λευὶς	Λευεὶς]
+
+42009018
+	Addition:	420090180221	λέγουσιν
+	Deletion:	420090180201	λέγουσιν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "λέγουσιν" --> V and "οἱ ὄχλοι" --> S switched order
+	====================================
+	Substitution:	420090180201	420090180221	λέγουσιν	λέγουσιν
+	Substitution:	420090180211	420090180201	οἱ	οἱ
+	Substitution:	420090180221	420090180211	ὄχλοι	ὄχλοι
+	====================================
+	Map Modifications:	Added Unicode [420090180201	420090180221	1	λέγουσιν	λέγουσιν]
+
+42009062
+	Addition:	420090620091	αὐτοῦ	"of him" -> pron
+	Deletion:	420090620031	πρὸς
+	Deletion:	420090620041	αὐτὸν
+	====================================
+	Map Modifications:	Deleted [420090620041	420090620091]
+
+42010030
+	Substitution:	420100300021	420100300021	ὁ	δὲ
+	Comment: diff analysis is incorrect.
+	================================
+	Comment: It is more like a deletion and an addition:
+	================================
+	Addition:	420100300021	δὲ	"-" -> conj (coordinating)
+	Deletion:	420100300021	ὁ
+	===============================
+	Map Modifications:	Deleted [420100300021	420100300021]
+
+42010039
+	Deletion:	420100390071	ἣ
+	Substitution:	420100390141	420100390131	κυρίου	Ἰησοῦ
+	================================
+	Map Modifications:	Added Unicode [420100390141	420100390131	2	κυρίου	Ἰησοῦ]
+
+42011014
+	Addition:	420110140111	ἐλάλησεν
+	Substitution:	420110140051	420110140051	καὶ	κωφόν
+	Substitution:	420110140061	420110140061	αὐτὸ	ἐγένετο
+	Substitution:	420110140071	420110140071	ἦν	δὲ
+	Substitution:	420110140081	420110140081	κωφόν	τοῦ
+	Substitution:	420110140091	420110140091	ἐγένετο	δαιμονίου
+	Substitution:	420110140101	420110140101	δὲ	ἐξελθόντος
+	Substitution:	420110140121	420110140131	δαιμονίου	κωφός
+	Substitution:	420110140131	420110140141	ἐξελθόντος	καὶ
+	Substitution:	420110140141	420110140151	ἐλάλησεν	ἐθαύμασαν
+	Substitution:	420110140161	420110140171	κωφὸς	ὄχλοι
+	Comment: The diff analysis is mostly incorrect. It should be deletion of "καὶ αὐτὸ ἦν"
+	===============================================
+	Deletion:	420110140051	καὶ
+	Deletion:	420110140061	αὐτὸ
+	Deletion:	420110140071	ἦν
+	===============================================
+	Map Modifications:	Changed [420110140111	420110140121	1	τοῦ	ὁ] to [420110140111	420110140081	1	τοῦ	τοῦ]
+	Map Modifications:	Changed [420110140151	420110140161	1	ὁ	οἱ] to [420110140151	420110140121	1	ὁ	οἱ]
+	Map Modifications:	Added [420110140081	420110140051	1	κωφόν	κωφόν]
+	Map Modifications:	Added [420110140091	420110140061	1	ἐγένετο	ἐγένετο]
+	Map Modifications:	Added [420110140101	420110140071	1	δὲ	δὲ]
+	Map Modifications:	Added [420110140121	420110140091	1	δαιμονίου	δαιμονίου]
+	Map Modifications:	Added [420110140131	420110140101	1	ἐξελθόντος	ἐξελθόντος]
+	Map Modifications:	Added [420110140141	420110140111	1	ἐλάλησεν	ἐλάλησεν]
+	Map Modifications:	Added [420110140161	420110140131	1	κωφὸς	κωφός]
+	Map Modifications:	Added [420110140171	420110140141	1	καὶ	καὶ]
+	Map Modifications:	Added [420110140181	420110140151	1	ἐθαύμασαν	ἐθαύμασαν]
+	Map Modifications:	Added [420110140191	420110140161	1	οἱ	οἱ]
+	Map Modifications:	Added [420110140201	420110140171	2	ὄχλοι	ὄχλοι]
+
+42011032
+	Substitution:	420110320021	420110320021	Νινευῖται	Νινευεῖται	"Ninevites" -> noun
+	================================
+	Map Modifications:	Added Unicode [420110320021	420110320021	1	Νινευῖται	Νινευεῖται]
+
+42011048
+	Deletion:	420110480031	ἐστε
+	Substitution:	420110480021	420110480021	μάρτυρές	μαρτυρεῖτε	"(you all) testify" -> verb
+	================================
+	Map Modifications:	Added Unicode [420110480021	420110480021	2	μάρτυρές	μαρτυρεῖτε]
+
+42012001
+	Addition:	420120010231	τῶν
+	Addition:	420120010241	Φαρισαίων
+	Comment: The diff analysis is incorrect. It is more like "τῶν Φαρισαίων" --> np(0) is moved before "ἥτις ἐστὶν ὑπόκρισις" --> CL(0)
+	========================================
+	Comment: np(0) is combined with "ζύμης" --> np(1) to form "leaven of the Pharisees"
+	Comment: But the np and CL are not sisters so some links will need to be broken in order to swap places in the tree
+	========================================
+	Substitution:	420120010231	420120010251	1	ἥτις	ἥτις
+	Substitution:	420120010241	420120010261	ἐστὶν	ἐστὶν
+	Substitution:	420120010251	420120010271	ὑπόκρισις	ὑπόκρισις
+	Substitution:	420120010261	420120010231	τῶν	τῶν
+	Substitution:	420120010271	420120010241	Φαρισαίων	Φαρισαίων
+	========================================
+	Map Modifications:	Added Unicode [420120010261	420120010231	1	τῶν	τῶν]
+	Map Modifications:	Added Unicode [420120010271	420120010241	1	Φαρισαίων	Φαρισαίων]
+
+42012056
+	Substitution:	420120560051	420120560051	γῆς	οὐρανοῦ
+	Substitution:	420120560081	420120560081	οὐρανοῦ	γῆς
+	Comment: The diff analysis is incorrect. It is more like "τῆς γῆς" --> np(0) and "τοῦ οὐρανοῦ" --> np(1) switched order
+	========================================
+	Substitution:	420120560051	420120560081	γῆς	γῆς
+	Substitution:	420120560081	420120560051	οὐρανοῦ	οὐρανοῦ
+	========================================
+	Map Modifications:	Added Unicode [420120560041	420120560071	1	τῆς	τῆς]
+	Map Modifications:	Added Unicode [420120560051	420120560081	1	γῆς	γῆς]
+	Map Modifications:	Changed [420120560071	420120560041	1	τοῦ	τῆς] to [420120560071	420120560041	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [420120560081	420120560051	1	οὐρανοῦ	οὐρανοῦ]
+
+42013007
+	Addition:	420130070241	τί	"why" -> pron
+	Deletion:	420130070221	οὖν
+	Substitution:	420130070241	420130070231	ἱνατί	ἵνα	"-" -> conj
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: splitting "ἱνατί" -> adv into "ἵνα" -> conj and "τί" -> pron
+	Comment: So more like:
+	====================================
+	Addition:	420130070231	ἵνα	"-" -> conj
+	Substitution:	420130070241	420130070241	ἱνατί	τί	"why" -> pron
+	===============================
+	Map Modifications:	Added Unicode [420130070241	420130070241	2	ἱνατί	τί]
+
+42013035
+	Addition:	420130350131	ἴδητέ
+	Deletion:	420130350121	ἴδητέ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἴδητέ" --> V and "με" --> O switched order
+	====================================
+	Substitution:	420130350121	420130350131	ἴδητέ	ἴδητέ
+	Substitution:	420130350131	420130350121	με	με
+	====================================
+	Map Modifications:	Added Unicode [420130350121	420130350131	1	ἴδητέ	ἴδητέ]
+
+42014026
+	Substitution:	420140260281	420140260281	τε	δὲ	"-" -> conj (coordinating)
+	================================
+	Map Modifications:	Added [420140260281	420140260281	2	τε	δὲ]
+
+42014027
+	Substitution:	420140270061	420140270061	ἑαυτοῦ	αὐτοῦ	"of himself" -> pron
+	================================
+	Map Modifications:	Added [420140270061	420140270061	2	ἑαυτοῦ	αὐτοῦ]
+	
+42015012
+	Deletion:	420150120171	δὲ
+	Substitution:	420150120161	420150120161	ὁ	καὶ	"and" -> conj
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: it is more like delete "ὁ" and substitute "δὲ" with "καὶ" where the former is a subordinating conj but latter is a coordinating conj
+	===================================
+	Deletion:	420150120161	ὁ
+	Substitution:	420150120171	420150120161	δὲ	καὶ	"and" -> conj
+	====================================
+	Map Modifications:	Added Unicode [420150120171	420150120161	2	δὲ	καὶ]
+
+42016027
+	Addition:	420160270051	σε
+	Deletion:	420160270041	σε
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like between "σε" --> O and "οὖν" -> conj switched order
+	===================================
+	Substitution:	420160270041	420160270051	σε	σε
+	Substitution:	420160270051	420160270041	οὖν	οὖν
+	====================================
+	Map Modifications:	Added Unicode [420160270041	420160270051	1	σε	σε]
+
+42017030
+	Deletion:	420170300031	αὐτὰ
+	Substitution:	420170300021	420170300021	τὰ	ταὐτὰ	"even thus, so" -> adv
+	Comment: diff analysis is incorrect.
+	===================================
+	Comment: It is more like "τὰ" -> det  and "αὐτὰ" -> pron merged into "ταὐτὰ" -> adv
+	Comment: Since this will require a very different tree structure, best to treat it as separate deletions and additions
+	===================================
+	Deletion:	420170300021	τὰ
+	Deletion:	420170300031	αὐτὰ
+	Addition:	420170300021	ταὐτὰ
+	===================================
+	Map Comment: wordMap.tsv got it right
+
+42018004
+	Addition:	420180040081	δὲ
+	Deletion:	420180040071	δὲ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like moving "δὲ" to after "ταῦτα"
+	Substitution:	420180040071	420180040081	δὲ	δὲ
+	Substitution:	420180040081	420180040071	ταῦτα	ταῦτα
+	====================================
+	Map Modifications:	Added Unicode [420180040071	420180040081	1	δὲ	δὲ]
+
+42018011
+	Addition:	420180110051	πρὸς
+	Addition:	420180110061	ἑαυτὸν
+	Deletion:	420180110041	πρὸς
+	Deletion:	420180110051	ἑαυτὸν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "πρὸς ἑαυτὸν" --> ADV and "ταῦτα" --> O switched order
+	Substitution:	420180110041	420180110051	πρὸς	πρὸς
+	Substitution:	420180110051	420180110061	ἑαυτὸν	ἑαυτὸν
+	Substitution:	420180110061	420180110041	ταῦτα	ταῦτα
+	=====================================
+	Map Modifications:	Added Unicode [420180110041	420180110051	1	πρὸς	πρὸς]
+	Map Modifications:	Added Unicode [420180110051	420180110061	1	ἑαυτὸν	ἑαυτὸν]
+
+42018028
+	Substitution:	420180280081	420180280081	τὰ	πάντα	"all" -> pron
+	Substitution:	420180280091	420180280091	ἴδια	καὶ	"and" -> conj (coordinating)
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like replacing "τὰ ἴδια" --> np with "πάντα" --> np, and adding "καὶ" -> conj (coordinating)
+	Comment: Since the two np's will require a different structure, and they have different Cat's, will treate as separate deletions and addition
+	====================================
+	Addition:	420180280081	πάντα
+	Addition:	420180280091	καὶ
+	Deletion:	420180280081	τὰ
+	Deletion:	420180280091	ἴδια
+	===================================
+	Map Comment: wordMap.tsv got it right
+	
+42019036
+	Substitution:	420190360071	420190360071	αὐτῶν	ἑαυτῶν	"of themselves" -> pron
+	===================================
+	Map Modifications:	Added Unicode [420190360071	420190360071	2	αὐτῶν	ἑαυτῶν]
+
+42020026
+	Substitution:	420200260051	420200260051	αὐτοῦ	τοῦ
+	===================================
+	Map Modifications:	Added Unicode [420200260051	420200260051	2	αὐτοῦ	τοῦ]
+
+42020027
+	Substitution:	420200270071	420200270071	[ἀντι]λέγοντες	λέγοντες	"saying" -> verb
+	===================================
+	Map Modifications:	Added [420200270071	420200270071	2	[ἀντι]λέγοντες	λέγοντες]
+
+42020033
+	Addition:	420200330011	ἐν
+	Deletion:	420200330021	γυνὴ
+	Deletion:	420200330041	ἐν
+	Deletion:	420200330051	τῇ
+	Comment: diff analysis is incorrect.
+	========================================
+	Comment: It is more like deletion of "ἡ γυνὴ" --> S and moving "ἐν" and "τῇ" before "οὖν" -> conj, which is a second place conjunction and is at the beginning of the tree 
+	========================================
+	Deletion:	420200330011	ἡ
+	Deletion:	420200330021	γυνὴ
+	Substitution:	420200330041	420200330011	ἐν	ἐν
+	Substitution:	420200330051	420200330021	τῇ	τῇ
+	========================================
+	Map Modifications:	Deleted [420200330011	420200330021	1	ἡ	τῇ]
+	Map Modifications:	Added [420200330041	420200330011	1	ἐν	ἐν]
+	Map Modifications:	Added [420200330051	420200330021	1	τῇ	τῇ]
+
+42020042
+	Addition:	420200420111	τῷ
+	Addition:	420200420121	Κυρίῳ
+	Deletion:	420200420091	κύριος
+	Comment: The diff analysis is incorrect. It is really addition of just ὁ 420200420091
+	========================================
+	Addition:	420200420091	ὁ
+	========================================
+	Map Modifications:	Added [420200420091	420200420101	1	κύριος	Κύριος]
+	Map Modifications:	Changed [420200420101	420200420091	1	τῷ	ὁ] to [420200420101	420200420111	1	τῷ	τῷ]
+	Map Modifications:	Changed [420200420111	420200420101	1	κυρίῳ	Κύριος] to [420200420111	420200420121	1	κυρίῳ	Κυρίῳ]
+
+42020044
+	Addition:	420200440091	αὐτοῦ
+	Deletion:	420200440081	αὐτοῦ
+	Comment: It is more like "αὐτοῦ" --> np(0) and "υἱός" --> np(1) switched order
+	========================================
+	Substitution:	420200440081	420200440091	αὐτοῦ	αὐτοῦ
+	Substitution:	420200440091	420200440081	υἱός	υἱός
+	========================================
+	Map Modifications:	Added Unicode [420200440081	420200440091	1	αὐτοῦ	αὐτοῦ]
+
+42021011
+	Addition:	420210110151	ἀπ
+	Addition:	420210110161	οὐρανοῦ
+	Deletion:	420210110141	ἀπ’
+	Deletion:	420210110151	οὐρανοῦ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like moving "ἀπ’ οὐρανοῦ" --> pp to between "σημεῖα" --> np(0) and "μεγάλα" --> np(1)
+	====================================
+	Substitution:	420210110141	420210110151	ἀπ’	ἀπ’
+	Substitution:	420210110151	420210110161	οὐρανοῦ	οὐρανοῦ
+	Substitution:	420210110161	420210110141	σημεῖα	σημεῖα
+	====================================
+	Map Modifications:	Added Unicode [420210110141	420210110151	1	ἀπ’	ἀπ’]
+	Map Modifications:	Added Unicode [420210110151	420210110161	1	οὐρανοῦ	οὐρανοῦ]
+	
+42021015
+	Substitution:	420210150141	420210150141	ἅπαντες	πάντες	"all" -> pron	
+	====================================
+	Map Modifications:	Added Unicode [420210150141	420210150141	2	ἅπαντες	πάντες]
+
+42022050
+	Addition:	420220500121	ἀφεῖλεν
+	Deletion:	420220500081	ἀρχιερέως
+	Deletion:	420220500091	τὸν
+	Deletion:	420220500111	καὶ
+	Deletion:	420220500121	ἀφεῖλεν
+	Substitution:	420220500141	420220500101	οὖς	ἀρχιερέως
+	Substitution:	420220500151	420220500111	αὐτοῦ	καὶ
+	Substitution:	420220500171	420220500141	δεξιόν	οὖς
+	Comment: The diff analysis is incorrect. It is "τοῦ ἀρχιερέως" --> np(0) and "τὸν δοῦλον" --> np(1) switched order
+	========================================
+	Substitutions:	420220500071	420220500091	τοῦ	τοῦ
+	Substitutions:	420220500081	420220500101	ἀρχιερέως	ἀρχιερέως
+	Substitutions:	420220500091	420220500071	τὸν	τὸν
+	Substitutions:	420220500101	420220500081	δοῦλον	δοῦλον
+	========================================
+	Map Modifications:	Added Unicode [420220500071	420220500091	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [420220500081	420220500101	1	ἀρχιερέως	ἀρχιερέως]
+	Map Modifications:	Added Unicode [420220500091	420220500071	1	τὸν	τὸν]
+	Map Modifications:	Added Unicode [420220500111	420220500111	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [420220500121	420220500121	1	ἀφεῖλεν	ἀφεῖλεν]
+	Map Modifications:	Added Unicode [420220500131	420220500131	1	τὸ	τὸ]
+	Map Modifications:	Added Unicode [420220500141	420220500141	1	οὖς	οὖς]
+	Map Modifications:	Added Unicode [420220500151	420220500151	1	αὐτοῦ	αὐτοῦ]
+	Map Modifications:	Added Unicode [420220500161	420220500161	1	τὸ	τὸ]
+	Map Modifications:	Added Unicode [420220500171	420220500171	1	δεξιόν	δεξιόν]
+
+42023034
+	Addition:	420230340011	διαμεριζόμενοι
+	Addition:	420230340021	δὲ
+	Substitution:	420230340021	420230340041	δὲ	ἱμάτια
+	Substitution:	420230340031	420230340051	Ἰησοῦς	αὐτοῦ
+	Substitution:	420230340041	420230340061	ἔλεγεν	ἔβαλον
+	Substitution:	420230340051	420230340071	πάτερ	κλῆρον
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like deleting "ὁ δὲ Ἰησοῦς ἔλεγεν πάτερ ἄφες αὐτοῖς οὐ γὰρ οἴδασιν τί ποιοῦσιν" --> CL
+	====================================
+	Deletion:	420230340011	ὁ
+	Deletion:	420230340021	δὲ
+	Deletion:	420230340031	Ἰησοῦς
+	Deletion:	420230340041	ἔλεγεν
+	Deletion:	420230340051	πάτερ
+	Deletion:	420230340061	ἄφες
+	Deletion:	420230340071	αὐτοῖς
+	Deletion:	420230340081	οὐ
+	Deletion:	420230340091	γὰρ
+	Deletion:	420230340101	οἴδασιν
+	Deletion:	420230340111	τί
+	Deletion:	420230340121	ποιοῦσιν
+	Substitution:	420230340191	420230340071	κλήρους	κλῆρον
+	====================================
+	Map Modifications:	Deleted [420230340011	420230340031	1	ὁ	τὰ]
+	Map Modifications:	Added [420230340131	420230340011	1	διαμεριζόμενοι	διαμεριζόμενοι]
+	Map Modifications:	Added [420230340141	420230340021	1	δὲ	δὲ]
+	Map Modifications:	Added [420230340151	420230340031	1	τὰ	τὰ]
+	Map Modifications:	Added [420230340161	420230340041	1	ἱμάτια	ἱμάτια]
+	Map Modifications:	Added [420230340171	420230340051	1	αὐτοῦ	αὐτοῦ]
+	Map Modifications:	Added [420230340181	420230340061	1	ἔβαλον	ἔβαλον]
+	Map Modifications:	Added [420230340191	420230340071	1	κλήρους	κλῆρον]
+
+42023042
+	Substitution:	420230420081	420230420081	εἰς	ἐν	"into" -> prep
+	====================================
+	Map Modifications:	Added Unicode [420230420081	420230420081	2	εἰς	ἐν]
+
+42024046
+	Substitution:	420240460011	420240460011	καὶ	ὅτι
+	Substitution:	420240460021	420240460021	εἶπεν	οὕτως
+	Substitution:	420240460031	420240460031	αὐτοῖς	γέγραπται
+	Substitution:	420240460041	420240460041	ὅτι	παθεῖν
+	Substitution:	420240460051	420240460051	οὕτως	τὸν
+	Substitution:	420240460061	420240460061	γέγραπται	Χριστὸν
+	Substitution:	420240460071	420240460071	παθεῖν	καὶ
+	Substitution:	420240460081	420240460081	τὸν	ἀναστῆναι
+	Substitution:	420240460091	420240460091	χριστὸν	ἐκ
+	Substitution:	420240460101	420240460101	καὶ	νεκρῶν
+	Substitution:	420240460111	420240460111	ἀναστῆναι	τῇ
+	Substitution:	420240460121	420240460121	ἐκ	τρίτῃ
+	Substitution:	420240460131	420240460131	νεκρῶν	ἡμέρᾳ
+	Comment: The diff analysis is incorrect. It is deletion of "καὶ εἶπεν αὐτοῖς" (420240460011-420240460031)
+	========================================
+	Deletion:	420240460011	καὶ
+	Deletion:	420240460021	εἶπεν
+	Deletion:	420240460031	αὐτοῖς
+	========================================
+	Map Modificaitons:	Added Unicode [420240460041	420240460011	1	ὅτι	ὅτι]
+	Map Modificaitons:	Added Unicode [420240460051	420240460021	1	οὕτως	οὕτως]
+	Map Modificaitons:	Added Unicode [420240460061	420240460031	1	γέγραπται	γέγραπται]
+	Map Modificaitons:	Added Unicode [420240460071	420240460041	1	παθεῖν	παθεῖν]
+	Map Modificaitons:	Added Unicode [420240460081	420240460051	1	τὸν	τὸν]
+	Map Modificaitons:	Added Unicode [420240460091	420240460061	1	χριστὸν	Χριστὸν]
+	Map Modificaitons:	Added Unicode [420240460101	420240460071	1	καὶ	καὶ]
+	Map Modificaitons:	Added Unicode [420240460111	420240460081	1	ἀναστῆναι	ἀναστῆναι]
+	Map Modificaitons:	Added Unicode [420240460121	420240460091	1	ἐκ	ἐκ]
+	Map Modificaitons:	Added Unicode [420240460131	420240460101	1	νεκρῶν	νεκρῶν]
+	Map Modificaitons:	Added Unicode [420240460141	420240460111	1	τῇ	τῇ]
+	Map Modificaitons:	Added Unicode [420240460151	420240460121	1	τρίτῃ	τρίτῃ]
+	Map Modificaitons:	Added Unicode [420240460161	420240460131	1	ἡμέρᾳ	ἡμέρᾳ]
+
+43006023
+	Substitution:	430060230031	430060230031	πλοιά[ρια]	πλοῖα	"boats" -> noun, πλοιά[ρια] 4142 is "little boats"
+	==================================
+	Map Modifications:	Added Unicode [430060230031	430060230031	2	πλοιά[ρια]	πλοῖα]
+
+43007008
+	Substitution:	430070080071	430070080071	οὐκ	οὔπω	"not yet" -> adv
+	==================================
+	Map Modifications:	Added Unicode [430070080071	430070080071	2	οὐκ	οὔπω]
+
+43007052
+	Addition:	430070520161	προφήτης
+	Deletion:	430070520191	προφήτης
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "προφήτης" --> S and "ἐκ τῆς Γαλιλαίας" -> ADV(0) switched order
+	====================================
+	Substitution:	430070520161	430060520171	ἐκ	ἐκ
+	Substitution:	430060520171	430060520181	τῆς	τῆς
+	Substitution:	430060520181	430070520191	Γαλιλαίας	Γαλιλαίας
+	Substitution:	430070520191	430070520161	προφήτης	προφήτης
+	====================================
+	Map Modifications:	Added Unicode [430070520191	430070520161	1	προφήτης	προφήτης]
+
+43008003
+	Addition:	430080030111	εἰλημμένην
+	Deletion:	430080030081	γυναῖκα
+	Substitution:	430080030101	430080030091	μοιχείᾳ	ἁμαρτίᾳ
+	Substitution:	430080030111	430080030101	κατειλημμένην	γυναῖκα
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "γυναῖκα" --> np moved to after "ἐπὶ ἁμαρτίᾳ" --> ADV
+	Comment: Also 430080030111 "κατειλημμένην" changed to "εἰλημμένην"
+	==================================== 
+	Substitution:	430080030081	430080030101	γυναῖκα	γυναῖκα
+	Substitution:	430080030091	430080030081	ἐπὶ	ἐπὶ
+	Substitution:	430080030101	430080030091	μοιχείᾳ	μοιχείᾳ	"sin" -> noun (266)	
+	Substitution:	430080030111	430080030111	κατειλημμένην	εἰλημμένην "having been taken" -> verb (2983) 
+	====================================
+	Map Modifications:	Added [430080030081	430080030101	1	γυναῖκα	γυναῖκα]
+	Map Modifications:	Added [430080030101	430080030091	1	μοιχείᾳ	μοιχείᾳ]
+	Map Modifications:	Added [430080030111	430080030111	2	κατειλημμένην	εἰλημμένην]
+
+43008004
+	Substitution:	430080040031	430080040031	διδάσκαλε	ἐκπειράζοντες
+	Substitution:	430080040041	430080040041	αὕτη	αὐτὸν
+	Substitution:	430080040061	430080040061	γυνὴ	ἱερεῖς
+	Substitution:	430080040071	430080040071	κατείληπται	ἵνα
+	Substitution:	430080040081	430080040081	ἐπ’	ἔχωσιν
+	Substitution:	430080040091	430080040091	αὐτοφώρῳ	κατηγορίαν
+	Substitution:	430080040101	430080040101	μοιχευομένη	αὐτοῦ
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It is more like "ἐκπειράζοντες αὐτὸν οἱ ἱερεῖς ἵνα ἔχωσιν κατηγορίαν αὐτοῦ" is inserted
+	========================================
+	Addition:	430080040031	ἐκπειράζοντες	"testing" -> verb
+	Addition:	430080040041	αὐτὸν	"him" -> pron
+	Addition:	430080040051	οἱ	"the" -> det
+	Addition:	430080040061	ἱερεῖς	"priests" -> noun
+	Addition:	430080040071	ἵνα	"in order that" -> conj
+	Addition:	430080040081	ἔχωσιν	"(they) might have" -> verb
+	Addition:	430080040091	κατηγορίαν	"an accusation" -> noun
+	Addition:	430080040101	αὐτοῦ	"of him" -> pron
+	========================================
+	Map Modifications:	Deleted [430080040051	430080040051	1	ἡ	οἱ]
+	Map Modifications:	Added [430080040031	430080040111	1	διδάσκαλε	Διδάσκαλε]
+	Map Modifications:	Added [430080040041	430080040121	1	αὕτη	αὕτη]
+	Map Modifications:	Added [430080040051	430080040131	1	ἡ	ἡ]
+	Map Modifications:	Added [430080040061	430080040141	1	γυνὴ	γυνὴ]
+	Map Modifications:	Added [430080040071	430080040151	1	κατείληπται	κατείληπται]
+	Map Modifications:	Added [430080040081	430080040161	1	ἐπ’	ἐπ’]
+	Map Modifications:	Added [430080040091	430080040171	2	αὐτοφώρῳ	αὐτοφόρῳ]
+	Map Modifications:	Added [430080040101	430080040181	1	μοιχευομένη	μοιχευομένη]
+
+43008005
+	Addition:	430080050011	Μωσῆς
+	Addition:	430080050021	δὲ
+	Addition:	430080050121	νῦν
+	Deletion:	430080050021	δὲ
+	Deletion:	430080050061	Μωϋσῆς
+	Deletion:	430080050071	ἐνετείλατο
+	Substitution:	430080050051	430080050061	ἡμῖν	ἐκέλευσεν
+	Substitution:	430080050121	430080050111	οὖν	δὲ
+	Comment: The diff analysis is partially incorrect.
+	==================================================
+	Substitution:	430080050061	430080050011	Μωϋσῆς	Μωσῆς	"Moses" -> noun
+	Substitution:	430080050011	430080050031	ἐν	ἐν	"in" -> prep
+	Substitution:	430080050071	430080050061	ἐνετείλατο	ἐκέλευσεν	"he commanded" -> verb
+	Deletion:	430080050051	ἡμῖν
+	Substitution:	430080050121	430080050111	οὖν	δὲ	"-" -> conj (coordinating)
+	Addition:	430080050111	δὲ	"-" -> conj
+	Addition:	430080050121	νῦν	"now" -> adv
+	========================================
+	Map Modifications:	Added [430080050021	430080050021	1	δὲ	δὲ]
+	Map Modifications:	Added [430080050061	430080050011	1	Μωϋσῆς	Μωσῆς]
+	Map Modifications:	Added [430080050071	430080050061	1	ἐνετείλατο	ἐκέλευσεν]
+
+43008006
+	Substitution:	430080060011	430080060011	τοῦτο	Ὁ
+	Substitution:	430080060031	430080060031	ἔλεγον	Ἰησοῦς
+	Substitution:	430080060041	430080060041	πειράζοντες	κάτω
+	Substitution:	430080060051	430080060051	αὐτόν	κύψας
+	Substitution:	430080060061	430080060061	ἵνα	τῷ
+	Substitution:	430080060071	430080060071	ἔχωσιν	δακτύλῳ
+	Substitution:	430080060081	430080060081	κατηγορεῖν	κατέγραφεν
+	Substitution:	430080060091	430080060091	αὐτοῦ	εἰς
+	Substitution:	430080060111	430080060111	δὲ	γῆν
+	Comment: The diff analysis is the wrong.
+	========================================
+	Comment: It is more like "τοῦτο δὲ ἔλεγον πειράζοντες αὐτόν ἵνα ἔχωσιν κατηγορεῖν αὐτοῦ" is deleted
+	Comment: The deleted portion looks similar, but not the same, as what got added in 43008004
+	========================================
+	Deletion:	430080060011	τοῦτο
+	Deletion:	430080060021	δὲ
+	Deletion:	430080060031	ἔλεγον
+	Deletion:	430080060041	πειράζοντες
+	Deletion:	430080060051	αὐτόν
+	Deletion:	430080060061	ἵνα
+	Deletion:	430080060071	ἔχωσιν
+	Deletion:	430080060081	κατηγορεῖν
+	Deletion:	430080060091	αὐτοῦ
+	========================================
+	Map Modifications:	Changed [430080060101	430080060011	1	δὲ	δὲ] to [430080060101	430080060021	1	δὲ	δὲ]
+	Map Modifications:	Changed [430080060111	430080060021	1	ὁ	τὴν] to [430080060111	430080060011	1	ὁ	Ὁ]
+	Map Modifications:	Added Unicode [430080060121	430080060031] to [430080060121	430080060031	1	Ἰησοῦς	Ἰησοῦς]
+	Map Modifications:	Added Unicode [430080060131	430080060041] to [430080060131	430080060041	1	κάτω	κάτω]
+	Map Modifications:	Added Unicode [430080060141	430080060051] to [430080060141	430080060051	1	κύψας	κύψας]
+	Map Modifications:	Added Unicode [430080060151	430080060061] to [430080060151	430080060061	1	τῷ	τῷ]
+	Map Modifications:	Added Unicode [430080060161	430080060071] to [430080060161	430080060071	1	δακτύλῳ	δακτύλῳ]
+	Map Modifications:	Added Unicode [430080060171	430080060081] to [430080060171	430080060081	1	κατέγραφεν	κατέγραφεν]
+	Map Modifications:	Added Unicode [430080060181	430080060091] to 430080060181	430080060091	1	εἰς	εἰς]
+	Map Modifications:	Added Unicode [430080060191	430080060101] to [430080060191	430080060101	1	τὴν	τὴν]
+	Map Modifications:	Added Unicode [430080060201	430080060111] to [430080060201	430080060111	1	γῆν	γῆν]
+
+
+43008008
+	Deletion:	430080080041	ἔγραφεν
+	Deletion:	430080080051	εἰς
+	Substitution:	430080080071	430080080051	γῆν	δακτύλῳ
+	Comment: The file ugnt.normalized.tsv data for 430080080031 and 430080080061 do not seem correct. They are verbs but the Lemma is "Christian (5546)"
+	Comment: The diff analysis is partially incorrect. It should be:
+	==================================================
+	Addition:	430080080041	τῷ
+	Addition:	430080080051	δακτύλῳ
+	Substitution:	430080080041	430080080061	ἔγραφεν	κατέγραφεν (actually same word, different form, 1125)
+	========================================
+	Map Modifications:	Changed [430080080061	430080080041	1	τὴν	τῷ] to [430080080061	430080080081	1	τὴν	τὴν]
+	Map Modifications:	Added [430080080041	430080080061	1	ἔγραφεν	κατέγραφεν]
+	Map Modifications:	Added [430080080051	430080080071	1	εἰς	εἰς]
+	Map Modifications:	Added [430080080071	430080080091	1	γῆν	γῆν]
+
+43008009
+	Addition:	430080090011	Ἕκαστος
+	Addition:	430080090021	δέ
+	Deletion:	430080090031	ἀκούσαντες
+	Substitution:	430080090021	430080090041	δὲ	Ἰουδαίων
+	Substitution:	430080090051	430080090061	εἷς	ἀρξάμενοι
+	Substitution:	430080090061	430080090071	καθ’	ἀπὸ
+	Substitution:	430080090071	430080090081	εἷς	τῶν
+	Substitution:	430080090081	430080090091	ἀρξάμενοι	πρεσβυτέρων
+	Substitution:	430080090091	430080090101	ἀπὸ	ὥστε
+	Substitution:	430080090101	430080090111	τῶν	πάντας
+	Substitution:	430080090111	430080090121	πρεσβυτέρων	ἐξελθεῖν
+	Comment: The diff analysis is incorrect, should be:
+	========================================
+	Substitution:	430080090011	430080090031	οἱ	τῶν	(actually the same word, different form and position, 3588)
+	Substitution:	430080090041	430080090051	ἐξήρχοντο	ἐξήρχετο (actually the same word, different form and position, 1831)
+	Addition:	430080090011	Ἕκαστος	"each" -> adj
+	Addition:	430080090041	Ἰουδαίων	"Jews" -> noun
+	Deletion:	430080090031	ἀκούσαντες		"ἀκούσαντες" --> ADV
+	Deletion:	430080090051	εἷς				"εἷς καθ’ εἷς" --> ADV
+	Deletion:	430080090061	καθ’
+	Deletion:	430080090071	εἷς
+	Addition:	430080090101	ὥστε	"so then" -> conj (subordinating)
+	Addition:	430080090111	πάντας	"every" -> adj
+	Addition:	430080090121	ἐξελθεῖν;	"departed" -> verb
+	=========================================
+	Map Modifications:	Added [430080090021	430080090021	1	δὲ	δέ]
+	Map Modifications:	Added [430080090081	430080090061	1	ἀρξάμενοι	ἀρξάμενοι]
+	Map Modifications:	Added [430080090091	430080090071	1	ἀπὸ	ἀπὸ]
+	Map Modifications:	Added [430080090101	430080090081	1	τῶν	τῶν]
+	Map Modifications:	Added [430080090111	430080090091	1	πρεσβυτέρων	πρεσβυτέρων]
+
+43008010
+	Substitution:	430080100061	430080100061	αὐτῇ	τῇ	"to (her)" -> pron
+	================================
+	Map Modifications:	Added [430080100061	430080100061	2	αὐτῇ	τῇ]
+	Comment: Again, it seems the English gloss could be improved and made more consistent. I think εἰσιν -> verb English gloss should be "(they) are" and not "are [they]" since it is a copula verb and so "they" is the implicit subject
+
+43008011
+	Addition:	430080110031	αὐτῷ
+	Addition:	430080110081	εἶπεν
+	Deletion:	430080110021	δὲ
+	Deletion:	430080110061	εἶπεν
+	Deletion:	430080110071	δὲ
+	Deletion:	430080110151	καὶ
+	Substitution:	430080110011	430080110011	ἡ	Κἀκείνη
+	Substitution:	430080110091	430080110071	Ἰησοῦς	δὲ
+	Substitution:	430080110141	430080110131	πορεύου	ὕπαγε
+	Comment: The diff analysis is incorrect. The one below is better:
+	========================================
+	Deletion:	430080110011	ἡ
+	Addition:	430080110031	αὐτῷ	"to him" -> pron (IO)
+	Deletion:	430080110091	Ἰησοῦς
+	Deletion:	430080110151	καὶ
+	Substitution:	430080110021	430080110011	δὲ	Κἀκείνη	"and she" -> conj	
+	Substitution:	430080110081	430080110061	ὁ	ὁ
+	Substitution:	430080110141	430080110131	πορεύου	ὕπαγε	"depart" -> verb
+	=======================================
+	Map Modifications:	Added [430080110021	430080110011	2	δὲ	Κἀκείνη]
+	Map Modifications:	Added [430080110071	430080110071	1	δὲ	δὲ]
+	Map Modifications:	Added [430080110141	430080110131	2	πορεύου	ὕπαγε]
+
+43013025
+	Substitution:	430130250011	430130250011	ἀναπεσὼν	ἐπιπεσών	"haing lain" -> verb
+	================================
+	Map Modifications:	Added [430130250011	430130250011	2	ἀναπεσὼν	ἐπιπεσών]
+
+43013032
+	Addition:	430130320061	ἐν
+	Addition:	430130320071	αὐτῷ
+	Deletion:	430130320051	ἐν
+	Deletion:	430130320091	θεὸς
+	Substitution:	430130320011	430130320011	εἰ	καὶ
+	Substitution:	430130320081	430130320091	ὁ	εὐθὺς
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It should be deletion of "εἰ ὁ θεὸς ἐδοξάσθη ἐν αὐτῷ" --> CL at the beginning of the verse
+	========================================
+	Deletion:	430130320011	εἰ
+	Deletion:	430130320021	ὁ
+	Deletion:	430130320031	θεὸς
+	Deletion:	430130320041	ἐδοξάσθη
+	Deletion:	430130320051	ἐν
+	Deletion:	430130320061	αὐτῷ
+	========================================
+	Map Modifications:	Added Unicode [430130320071	430130320011	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [430130320081	430130320021	1	ὁ	ὁ]
+	Map Modifications:	Added Unicode [430130320091	430130320031	1	θεὸς	Θεὸς]
+	Map Modifications:	Added Unicode [430130320101	430130320041	1	δοξάσει	δοξάσει]
+	Map Modifications:	Added Unicode [430130320111	430130320051	1	αὐτὸν	αὐτὸν]
+	Map Modifications:	Added Unicode [430130320121	430130320061	1	ἐν	ἐν]
+	Map Modifications:	Added Unicode [430130320131	430130320071	1	αὐτῷ	αὐτῷ]
+	Map Modifications:	Added Unicode [430130320141	430130320081	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [430130320151	430130320091	1	εὐθὺς	εὐθὺς]
+	Map Modifications:	Added Unicode [430130320161	430130320101	1	δοξάσει	δοξάσει]
+	Map Modifications:	Added Unicode [430130320171	430130320111	1	αὐτόν	αὐτόν]
+
+43015010
+	Addition:	430150100161	ἐντολὰς
+	Deletion:	430150100141	ἐντολὰς
+	Deletion:	430150100151	τοῦ
+	Substitution:	430150100171	430150100151	μου	τὰς
+	Comment: The diff analysis is not correct, is is more like:
+	==========================================
+	Comment: switched order of "τὰς ἐντολὰς" --> np(0) and "τοῦ πατρός" --> np(1)
+	==========================================
+	Substitution:	430150100131	430150100151	τὰς	τὰς
+	Substitution:	430150100141	430150100161	ἐντολὰς	ἐντολὰς
+	Substitution:	430150100151	430150100131	τοῦ	τοῦ
+	Substitution:	430150100161	430150100141	πατρός	Πατρός
+	Deletion:	430150100171	μου
+	==========================================
+	Map Modifications:	Added Unicode [430150100131	430150100151	1	τὰς	τὰς]
+	Map Modifications:	Added Unicode [430150100141	430150100161	1	ἐντολὰς	ἐντολὰς]
+	Map Modifications:	Added Unicode [430150100151	430150100131	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [430150100161	430150100141	1	πατρός	Πατρός]
+
+
+
+
+43018016
+	Addition:	430180160161	ἦν	"has been" -> verb (copula?)
+	Substitution:	430180160151	430180160151	ὁ	ὅς	"who" -> pron
+	Comment: diff analysis is not correct.
+	====================================
+	Comment: Since the above substitution is for different Cat and StrongNumber, I think it should be a deletion and addition
+	====================================
+	Deletion:	430180160151	ὁ
+	Addition:	430180160151	ὅς
+	Addition:	430180160161	ἦν	"has been" -> verb (copula?)
+	====================================
+	Map Comment: wordMap.tsv got it right
+
+43018017
+	Addition:	430180170071	τῷ
+	Addition:	430180170081	Πέτρῳ
+	Deletion:	430180170041	Πέτρῳ
+	Deletion:	430180170051	ἡ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "τῷ Πέτρῳ" --> IO and "ἡ παιδίσκη ἡ θυρωρός" --> S switched order
+	====================================
+	Substitution:	430180170031	430180170071	τῷ	τῷ
+	Substitution:	430180170041	430180170081	Πέτρῳ	Πέτρῳ
+	Substitution:	430180170051	430180170031	ἡ	ἡ
+	Substitution:	430180170061	430180170041	παιδίσκη	παιδίσκη
+	Substitution:	430180170071	430180170051	ἡ	ἡ
+	Substitution:	430180170081	430180170061	θυρωρός	θυρωρός
+	====================================
+	Map Modifications:	Added Unicode [430180170031	430180170071	1	τῷ	τῷ]
+	Map Modifications:	Added Unicode [430180170041	430180170081	1	Πέτρῳ	Πέτρῳ]
+	Map Modifications:	Added Unicode [430180170051	430180170031	1	ἡ	ἡ]
+	Map Modifications:	Added Unicode [430180170061	430180170041	1	παιδίσκη	παιδίσκη]
+
+43018038
+	Addition:	430180380211	αἰτίαν
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It is moving "αἰτίαν" --> O before "εὑρίσκω" --> V
+	Substitution:	430180380241	430180380211	αἰτίαν	αἰτίαν
+	Substitution:	430180380211	430180380221	εὑρίσκω	εὑρίσκω
+	Substitution:	430180380221	430180380241	ἐν	ἐν
+	Substitution:	430180380231	430180380251	αὐτῷ	αὐτῷ
+	========================================
+	Map Modifications:	Added Unicode [430180380241	430180380211	1	αἰτίαν	αἰτίαν]
+
+43019004
+	Deletion:	430190040011	Καὶ
+	Deletion:	430190040181	οὐδεμίαν
+	Deletion:	430190040201	εὑρίσκω
+	Comment: The diff analysis is particially correct. Below is the correct analysis:
+	================================
+	Deletion:	430190040011	Καὶ
+	Deletion:	430190040181	οὐδεμίαν
+	Move: switched order of "ἐν αὐτῷ" --> ADV and "εὑρίσκω" --> V
+	Substitution:	430190040201	430190040211	εὑρίσκω	εὑρίσκω
+	Substitution:	430190040211	430190040181	ἐν	ἐν
+	Substitution:	430190040221	430190040191	αὐτῷ	αὐτῷ	
+	Addition:	430190040201	οὐχ	"not" -> adv
+	===============================
+	Map Modifications:	Added [430190040201	430190040211	1	εὑρίσκω	εὑρίσκω]
+
+43019015
+	Addition:	430190150011	οἱ
+	Addition:	430190150021	δὲ
+	Deletion:	430190150021	οὖν
+	Deletion:	430190150031	ἐκεῖνοι
+	Comment: diff analysis is incorrect.
+	===================================
+	Comment: It is more like:
+	Substitution:	430190150021	430190150021	οὖν	δὲ	"but" -> conj (coordinating)
+	Substitution:	430190150031	430190150011	ἐκεῖνοι	οἱ	"they" -> pron (masculine, plural)
+	===================================
+	Map Modifications:	Added [430190150021	430190150021	2	οὖν	δὲ]
+	Map Modifications:	Added [430190150031	430190150011	2	ἐκεῖνοι	οἱ]
+
+43019016
+	Substitution:	430190160091	430190160091	οὖν	δὲ	"and" -> conj (coordinating)
+	========================================
+	Comment: The diff missed the following added word:
+	========================================
+	Addition:	430190160121	ἀπήγαγον	"(they) led [him] away" -> verb
+	Substitution:	430190160091	430190160091	οὖν	δὲ	"and" -> conj (coordinating)
+	========================================
+	Map Modifications:	Added [430190160091	430190160091	2	οὖν	δὲ]
+
+43019026
+	Substitution:	430190260161	430190260161	ἴδε	ἰδοὺ	"behold" -> intj
+	=======================================
+	Map Modifications:	Added Unicode [430190260161	430190260161	2	ἴδε	ἰδοὺ]
+
+43021018
+	Addition:	430210180241	σε
+	Deletion:	430210180231	σε
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "σε" --> O and "ζώσει" --> V switched order
+	Substitution:	430210180231	430210180241	σε	σε
+	Substitution:	430210180241	430210180231	ζώσει	ζώσει
+	====================================
+	Map Modifications:	Added [430210180231	430210180241	1	σε	σε]
+
+44001011
+	Substitution:	440010110081	440010110081	[ἐμ]βλέποντες	βλέποντες	"looking" -> verb
+	===================================
+	Map Modifications:	Added [440010110081	440010110081	1	[ἐμ]βλέποντες	βλέποντες]
+
+44001015
+	Substitution:	440010150201	440010150201	ὡσεὶ	ὡς	"about" -> adv
+	=================================
+	Map Modifications:	Added Unicode [440010150201	440010150201	2	ὡσεὶ	ὡς]
+
+44002005
+	Substitution:	440020050031	440020050031	εἰς	ἐν	"in" -> prep
+	Comment: Also missed another substitution.
+	===========================================
+	Substitution:	440020050011	440020050011	Ἦσαν	ἦσαν
+	Substitution:	440020050031	440020050031	εἰς	ἐν	"in" -> prep
+	===========================================
+	Map Modifications:	Added Unicode [440020050031	440020050031	2	εἰς	ἐν]
+
+44003019
+	Substitution:	440030190051	440030190051	εἰς	πρὸς	"in order that" -> prep
+	================================
+	Map Modifications:	Added Unicode [440030190051	440030190051	2	εἰς	πρὸς]
+
+44004025
+	Addition:	440040250141	τί	"why" -> pron
+	Substitution:	440040250131	440040250131	ἱνατί	ἵνα	"that" -> conj (subordinating)
+	Comment: diff analysis is incorrect.
+	=====================================
+	Comment: It is more like splitting "ἱνατί" -> adv into "ἵνα" -> conj and "τί" -> pron
+	=====================================
+	Addition:	440040250131	ἵνα	"that" -> conj (subordinating)
+	Substitution:	440040250131	440040250141	ἱνατί	τί	"why" -> pron
+	=====================================
+	Map Modifications:	Added Unicode [440040250131	440040250141	2	ἱνατί	τί]
+
+44004032
+	Substitution:	440040320241	440040320241	ἅπαντα	πάντα	"all, every [thing]" -> pron
+	=================================
+	Map Modifications:	Added Unicode [440040320241	440040320241	2	ἅπαντα	πάντα]	adj to pron so 2
+
+44004037
+	Substitution:	440040370101	440040370101	πρὸς	παρὰ	"beside" -> prep
+	=================================
+	Map Modifications:	Added Unicode [440040370101	440040370101	2	πρὸς	παρὰ]
+
+44005012
+	Substitution:	440050120181	440050120181	ἅπαντες	πάντες	"all" -> pron
+	===================================
+	Map Modifications:	Added Unicode [440050120181	440050120181	2	ἅπαντες	πάντες] adj to pron so 2
+
+44007026
+	Addition:	440070260181	τί	"why" -> pron
+	Substitution:	440070260171	440070260171	ἱνατί	ἱνα	"-" -> conj (subordinating)
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like splitting "ἱνατί" -> adv into "ἵνα" -> conj and "τί" -> pron
+	Comment: It should be:
+	====================================
+	Addition:	440070260171	ἱνα	"-" -> conj (subordinating)
+	Substitution:	440070260171	440070260181	ἱνατί	τί	"why" -> pron
+	====================================
+	Map Modifications:	Added [440070260171	440070260181	2	ἱνατί	τί]
+
+44009021
+	Substitution:	440090210131	440090210131	εἰς	ἐν	"in" -> prep
+	====================================
+	Map Modifications:	Added Unicode [440090210131	440090210131	2	εἰς	ἐν]
+
+44009037
+	Addition:	440090370131	ἔθηκαν
+	Deletion:	440090370121	ἔθηκαν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἔθηκαν" --> V and "αὐτὴν" --> O switched order
+	====================================
+	Substitution:	440090370121	440090370131	ἔθηκαν	ἔθηκαν
+	Substitution:	440090370131	440090370121	αὐτὴν	αὐτὴν
+	====================================
+	Map Modifications:	Added [440090370121	440090370131	1	ἔθηκαν	ἔθηκαν]
+	Map Modifications:	Changed [440090370121	440090370131	1	αὐτὴν	αὐτὴν] to [440090370131	440090370121	1	αὐτὴν	αὐτὴν]
+
+44013011
+	Substitution:	440130110181	440130110181	τε	δὲ	"and" -> conj (coordinating)
+	====================================
+	Map Modifications:	Added Unicode [440130110181	440130110181	2	τε	δὲ]
+
+44013014
+	Substitution:	440130140131	440130140131	[εἰσ]ελθόντες	ἐλθόντες	"having come" -> verb
+	====================================
+	Map Modifications:	Added Unicode [440130140131	440130140131	2	[εἰσ]ελθόντες	ἐλθόντες]
+
+44013052
+	Substitution:	440130520021	440130520021	τε	δὲ	"and" -> conj (coordinating)
+	====================================
+	Map Modifications:	Added Unicode [440130520021	440130520021	2	τε	δὲ]
+
+44014014
+	Substitution:	440140140111	440140140111	αὐτῶν	ἑαυτῶν	"of themselves" -> pron
+	====================================
+	Map Modifications:	Added Unicode [440140140111	440140140111	2	αὐτῶν	ἑαυτῶν]
+
+44015004
+	Substitution:	440150040041	440150040041	Ἰερουσαλὴμ	Ἱεροσόλυμα	"Jerusalem" -> noun
+	Substitution:	440150040061	440150040061	ἀπὸ	ὑπὸ	"by" -> prep
+	====================================
+	Map Modifications:	Added Unicode [440150040041	440150040041	2	Ἰερουσαλὴμ	Ἱεροσόλυμα]
+	Map Modifications:	Added Unicode [440150040061	440150040061	2	ἀπὸ	ὑπὸ]
+
+44015006
+	Substitution:	440150060021	440150060021	τε	δὲ	"and" -> conj (coordinating)
+	====================================
+	Map Modifications:	Added Unicode [440150060021	440150060021	2	τε	δὲ]
+
+44015016
+	Substitution:	440150160131	440150160131	κατεσκαμμένα	κατεστραμμένα	"having been overturned" -> verb
+	====================================
+	Map Modifications:	Added Unicode [440150160131	440150160131	2	κατεσκαμμένα	κατεστραμμένα]
+
+44016012
+	Addition:	440160120081	μερίδος
+	Deletion:	440160120071	μερίδος
+	Comment: diff analysis is incorrect.
+	Comment: It is more like moving "μερίδος" --> np after "τῆς" -> det, which makes it an adjunct np of "Μακεδονίας" --> np
+	====================================
+	Substitution:	440160120071	440160120081	μερίδος	μερίδος
+	Substitution:	440160120081	440160120071	τῆς	τῆς
+	====================================
+	Map Modifications:	Added Unicode [440160120071	440160120081	1	μερίδος	μερίδος]
+
+44016028
+	Deletion:	440160280031	μεγάλῃ
+	Substitution:	440160280051	440160280041	ὁ	μεγάλῃ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like switching "μεγάλῃ" and "φωνῇ"
+	====================================
+	Deletion:	440160280051	ὁ
+	Substitution:	440160280031	440160280041	μεγάλῃ	μεγάλῃ
+	Substitution:	440160280041	440160280031	φωνῇ	φωνῇ
+	====================================
+	Map Modifications:	Added Unicode [440160280031	440160280041	1	μεγάλῃ	μεγάλῃ]
+
+44018023
+	Substitution:	440180230131	440180230131	ἐπιστηρίζων	στηρίζων	"strengthening" -> verb
+	====================================
+	Map Modifications:	Added Unicode [440180230131	440180230131	2	ἐπιστηρίζων	στηρίζων]
+
+44020005
+	Substitution:	440200050031	440200050031	προελθόντες	προσελθόντες	"having come" -> verb
+	====================================
+	Map Modifications:	Added Unicode [440200050031	440200050031	2	προελθόντες	προσελθόντες]
+
+44020006
+	Substitution:	440200060211	440200060211	ὅπου	οὗ	"where" -> adv
+	====================================
+	Map Modifications:	Added Unicode [440200060211	440200060211	2	ὅπου	οὗ]
+
+	Modifications:	changed ὅπου -> adv Unicode to "οὗ", Lemma to "οὗ", StrongNumber to 3757
+44020030
+	Substitution:	440200300141	440200300141	αὐτῶν	ἑαυτῶν	"themselves" -> pron
+	====================================
+	Map Modifications:	Added [440200300141	440200300141	2	αὐτῶν	ἑαυτῶν]
+
+44021023
+	Substitution:	440210230131	440210230131	ἐφ’	ἀφ	"from" -> prep
+	====================================
+	Map Modifications:	Added Unicode [440210230131	440210230131	2	ἐφ’	ἀφ]
+
+44023007
+	Substitution:	440230070041	440230070041	εἰπόντος	λαλοῦντος	"having said" -> verb
+	====================================
+	Map Modifications:	Added Unicode [440230070041	440230070041	2	εἰπόντος	λαλοῦντος]
+
+44023018
+	Substitution:	440230180201	440230180201	νεανίσκον	νεανίαν	"young man" -> noun
+	====================================
+	Map Modifications:	Added Unicode [440230180201	440230180201	2	νεανίσκον	νεανίαν]
+
+44023023
+	Addition:	440230230041	δύο
+	Deletion:	440230230031	δύο
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "δύο" --> nump and "τινὰς" --> np switch places.
+	====================================
+	Substitution:	440230230031	440230230041	δύο	δύο
+	Substitution:	440230230041	440230230031	τινὰς	τινας
+	====================================
+	Map Modifications:	Added Unicode [440230230031	440230230041	1	δύο	δύο]
+
+44025014
+	Substitution:	440250140181	440250140181	τίς	τὶς	"a certain" -> det
+	====================================
+	Map Modifications:	Added Unicode [440250140181	440250140181	2	τίς	τὶς]
+
+44026029
+	Deletion:	440260290281	ἐγώ
+	Substitution:	440260290271	440260290271	καὶ	κἀγὼ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: it is more like:
+	====================================
+	Deletion:	440260290271	καὶ
+	Substitution:	440260290281	440260290271	ἐγώ	κἀγὼ	"I also" -> pron
+	====================================
+	Map Modifications:	Added Unicode [440260290281	440260290271	2	ἐγώ	κἀγὼ]
+
+45007017
+	Substitution:	450070170091	450070170091	οἰκοῦσα	ἐνοικοῦσα	"dwelling" -> verb
+	====================================
+	Map Modifications:	Added Unicode [450070170091	450070170091	2	οἰκοῦσα	ἐνοικοῦσα]
+
+45008011
+	Addition:	450080110181	Χριστὸν
+	Addition:	450080110191	Ἰησοῦν	"Jesus" -> noun
+	Deletion:	450080110161	Χριστὸν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like Χριστὸν is moved rather than deleted and added
+	Comment: switched order of "Χριστὸν" --> O and "ἐκ νεκρῶν" --> ADV
+	====================================
+	Substitution:	450080110161	450080110181	Χριστὸν	Χριστὸν
+	Substitution:	450080110171	450080110161	ἐκ	ἐκ
+	Substitution:	450080110181	450080110171	νεκρῶν	νεκρῶν
+	====================================
+	Map Modifications:	Added [450080110161	450080110181	1	Χριστὸν	Χριστὸν]
+
+45008024
+	Substitution:	450080240141	450080240141	τίς	τις
+	====================================
+	Map Modifications:	Added Unicode [450080240141	450080240141	2	τίς	τις]
+
+45008028
+	Deletion:	450080280101	εἰς
+	Deletion:	450080280111	ἀγαθόν
+	Substitution:	450080280131	450080280111	κατὰ	Θεὸς
+	Substitution:	450080280141	450080280121	πρόθεσιν	εἰς
+	Substitution:	450080280151	450080280131	κλητοῖς	ἀγαθόν
+	Substitution:	450080280161	450080280141	οὖσιν	τοῖς
+	Comment: The diff analysis is incorrect.
+	========================================
+	Comment: It should be is:
+	========================================
+	Addition:	450080280101	ὁ	"-" -> det
+	Addition:	450080280111	Θεὸς	"God" -> noun
+	========================================
+	Map Modifications:	Added [450080280101	450080280121	1	εἰς	εἰς]
+	Map Modifications:	Added [450080280111	450080280131	1	ἀγαθόν	ἀγαθόν]
+	Map Modifications:	Changed [450080280121	450080280101	1	τοῖς	ὁ] to [450080280121	450080280141	1	τοῖς	τοῖς]
+
+45010005
+	Deletion:	450100050081	τοῦ
+	Comment: diff analysis missed one.
+	==================================
+	There is also:
+	Substitution:	450100050171	450100050161	αὐτοῖς	αὐτῇ	"it" -> pron
+	Deletion:	450100050081	τοῦ
+	=================================
+	Map Comment: wordMap.tsv got it right
+
+45015023
+	Substitution:	450150230181	450150230181	πολλῶν	ἱκανῶν	"sufficient, fit" -> noun
+	====================================
+	Map Modifications:	Added Unicode [450150230181	450150230181	2	πολλῶν	ἱκανῶν]
+
+46001002
+	Addition:	460010020091	τῇ
+	Addition:	460010020101	οὔσῃ
+	Deletion:	460010020061	οὔσῃ
+	Deletion:	460010020121	Ἰησοῦ
+	Substitution:	460010020051	460010020051	τῇ	ἡγιασμένοις
+	Substitution:	460010020081	460010020071	Κορίνθῳ	Χριστῷ
+	Substitution:	460010020091	460010020081	ἡγιασμένοις	Ἰησοῦ
+	Substitution:	460010020111	460010020121	Χριστῷ	Κορίνθῳ
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It is more like "τῇ οὔσῃ ἐν Κορίνθῳ" --> np(0) with "ἡγιασμένοις ἐν Χριστῷ Ἰησοῦ" --> np(1) switched order
+	Substitution:	460010020051	460010020091	τῇ	τῇ
+	Substitution:	460010020061	460010020101	οὔσῃ	οὔσῃ
+	Substitution:	460010020071	460010020111	ἐν	ἐν
+	Substitution:	460010020081	460010020121	Κορίνθῳ	Κορίνθῳ
+	Substitution:	460010020091	460010020051	ἡγιασμένοις		ἡγιασμένοις
+	Substitution:	460010020101	460010020061	ἐν	ἐν
+	Substitution:	460010020111	460010020071	Χριστῷ	Χριστῷ
+	Substitution:	460010020121	460010020081	Ἰησοῦ	Ἰησοῦ
+	========================================
+	Map Modifications:	Added Unicode [460010020051	460010020091	1	τῇ	τῇ]
+	Map Modifications:	Added Unicode [460010020061	460010020101	1	οὔσῃ	οὔσῃ]
+	Map Modifications:	Added Unicode [460010020071	460010020111	1	ἐν	ἐν]
+	Map Modifications:	Added Unicode [460010020081	460010020121	1	Κορίνθῳ	Κορίνθῳ]
+	Map Modifications:	Added Unicode [460010020091	460010020051	1	ἡγιασμένοις	ἡγιασμένοις]
+	Map Modifications:	Added Unicode [460010020101	460010020061	1	ἐν	ἐν]
+	Map Modifications:	Added Unicode [460010020111	460010020071	1	Χριστῷ	Χριστῷ]
+	Map Modifications:	Added Unicode [460010020121	460010020081	1	Ἰησοῦ	Ἰησοῦ]
+
+46002010
+	Substitution:	460020100021	460020100021	δὲ	γὰρ	"for" -> conj (coordinating)
+	========================================
+	Map Modifications:	Added Unicode [460020100021	460020100021	2	δὲ	γὰρ]
+
+46005002
+	Substitution:	460050020181	460050020181	πράξας	ποιήσας	"having done" -> verb
+	========================================
+	Map Modifications:	Added Unicode [460050020181	460050020181	2	πράξας	ποιήσας]
+
+46007034
+	Addition:	460070340101	σώματι
+	Addition:	460070340111	καὶ
+	Addition:	460070340211	πῶς
+	Addition:	460070340221	ἀρέσῃ
+	Deletion:	460070340021	μεμέρισται
+	Deletion:	460070340031	καὶ
+	Deletion:	460070340051	γυνὴ
+	Deletion:	460070340201	σώματι
+	Deletion:	460070340211	καὶ
+	Substitution:	460070340011	460070340011	καὶ	μεριμνᾷ
+	Substitution:	460070340071	460070340041	ἄγαμος	Κυρίου
+	Substitution:	460070340081	460070340051	καὶ	ἵνα
+	Substitution:	460070340091	460070340061	ἡ	ᾖ
+	Substitution:	460070340101	460070340071	παρθένος	ἁγία
+	Substitution:	460070340111	460070340081	μεριμνᾷ	καὶ
+	Substitution:	460070340141	460070340131	κυρίου	πνεύματι
+	Substitution:	460070340151	460070340141	ἵνα	ἡ
+	Substitution:	460070340161	460070340151	ᾖ	δὲ
+	Substitution:	460070340171	460070340161	ἁγία	γαμήσασα
+	Substitution:	460070340181	460070340171	καὶ	μεριμνᾷ
+	Substitution:	460070340231	460070340201	πνεύματι	κόσμου
+	Substitution:	460070340251	460070340241	δὲ	ἀνδρί
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It should be the deletion of "καὶ μεμέρισται καὶ ἡ γυνὴ ἡ ἄγαμος καὶ ἡ παρθένος" (460070340011-460070340101) at the beginning of the verse
+	Deletion:	460070340011	καὶ
+	Deletion:	460070340021	μεμέρισται
+	Deletion:	460070340031	καὶ
+	Deletion:	460070340041	ἡ
+	Deletion:	460070340051	γυνὴ
+	Deletion:	460070340061	ἡ
+	Deletion:	460070340071	ἄγαμος
+	Deletion:	460070340081	καὶ
+	Deletion:	460070340091	ἡ
+	Deletion:	460070340101	παρθένος
+	=========================================
+	Map Modifications:	Added Unicode [460070340111	460070340011	1	μεριμνᾷ	μεριμνᾷ]
+	Map Modifications:	Added Unicode [460070340121	460070340021	1	τὰ	τὰ]
+	Map Modifications:	Added Unicode [460070340131	460070340031	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [460070340141	460070340041	1	κυρίου	Κυρίου]
+	Map Modifications:	Added Unicode [460070340151	460070340051	1	ἵνα	ἵνα]
+	Map Modifications:	Added Unicode [460070340161	460070340061	1	ᾖ	ᾖ]
+	Map Modifications:	Added Unicode [460070340171	460070340071	1	ἁγία	ἁγία]
+	Map Modifications:	Added Unicode [460070340181	460070340081	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [460070340191	460070340091	1	τῷ	τῷ]
+	Map Modifications:	Added Unicode [460070340201	460070340101	1	σώματι	σώματι]
+	Map Modifications:	Added Unicode [460070340211	460070340111	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [460070340221	460070340121	1	τῷ	τῷ]
+	Map Modifications:	Added Unicode [460070340231	460070340131	1	πνεύματι	πνεύματι]
+	Map Modifications:	Added Unicode [460070340241	460070340141	1	ἡ	ἡ]
+	Map Modifications:	Added Unicode [460070340251	460070340151	1	δὲ	δὲ]
+	Map Modifications:	Added Unicode [460070340261	460070340161	1	γαμήσασα	γαμήσασα]
+	Map Modifications:	Added Unicode [460070340271	460070340171	1	μεριμνᾷ	μεριμνᾷ]
+	Map Modifications:	Added Unicode [460070340281	460070340181	1	τὰ	τὰ]
+	Map Modifications:	Added Unicode [460070340291	460070340191	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [460070340301	460070340201	1	κόσμου	κόσμου]
+	Map Modifications:	Added Unicode [460070340311	460070340211	1	πῶς	πῶς]
+	Map Modifications:	Added Unicode [460070340321	460070340221	1	ἀρέσῃ	ἀρέσῃ]
+	Map Modifications:	Added Unicode [460070340331	460070340231	1	τῷ	τῷ]
+	Map Modifications:	Added Unicode [460070340341	460070340241	1	ἀνδρί	ἀνδρί]
+	Map Modifications:	Added Unicode [460070350011	460070350011	1	τοῦτο	τοῦτο]
+
+46010004
+	Addition:	460100040161	πέτρα
+	Deletion:	460100040151	πέτρα
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "πέτρα" and "δὲ" switching places, so δὲ is in the second position of the clause but the tree will be the same
+	====================================
+	Substitution:	460100040151	460100040161	πέτρα	πέτρα
+	Substitution:	460100040161	460100040151	δὲ	δὲ
+	====================================
+	Map Modifications:	Added Unicode [460100040151	460100040161	1	πέτρα	πέτρα]
+
+46010009
+	Substitution:	460100090041	460100090041	Χριστόν	Κύριον	"Lord" -> noun
+	====================================
+	Map Modifications:	Added Unicode [460100090041	460100090041	2	Χριστόν	Κύριον]
+
+46010029
+	Addition:	460100290121	τί	"why" -> pron
+	Substitution:	460100290111	460100290111	ἱνατί	ἵνα	"that, -" -> conj
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like spliting "ἱνατί" into "ἵνα" and "τί"
+	Comment: It should be:
+	====================================
+	Addition:	460100290111	ἵνα	"-" -> conj
+	Substitution:	460100290111	460100290121	ἱνατί	τί	"why" -> pron
+	====================================
+	Map Modifications:	Added Unicode [460100290111	460100290121	2	ἱνατί	τί]
+
+46012006
+	Addition:	460120060051	καὶ	"and" -> conj (coordinating)
+	Deletion:	460120060061	δὲ
+	Comment: diff analysis is not as good.
+	====================================
+	Comment: The diff doesn't change the tree since δὲ was coordinating (instead of subordinating)
+	Comment: So it probably best to treat this as a substitution, which is what wordMap.tsv already has it as.
+	====================================
+	Substitution:	460120060061	460120060051	δὲ	καὶ	"and" -> conj (coordinating)
+	====================================
+	Map Modifications:	Added Unicode [460120060061	460120060051	2	δὲ	καὶ]
+
+46015053
+	Substitution:	460150530011	460150530011	Δεῖ	δεῖ	"(it) compels" -> verb
+	====================================
+	Map Modifications:	Added [460150530011	460150530011	2	Δεῖ	δεῖ]
+	Modifications:	changed Δεῖ -> verb Unicode to "δεῖ", Lemma to "δέω", StrongNumber to 1210, English to "(it) compels"
+
+46016010
+	Substitution:	460160100171	460160100171	κἀγώ	ἐγὼ	"I" -> pron (emphatic)
+	====================================
+	Map Modifications:	Added Unicode [460160100171	460160100171	2	κἀγώ	ἐγὼ]
+
+46016017
+	Substitution:	460160170131	460160170131	ὑμέτερον	ὑμῶν	"your" -> pron
+	====================================
+	Map Modifications:	Added Unicode [460160170131	460160170131	2	ὑμέτερον	ὑμῶν]
+
+47005010
+	Substitution:	470050100251	470050100251	φαῦλον	κακὸν	"evil" -> noun
+	====================================
+	Map Modifications:	Added Unicode [470050100251	470050100251	2	φαῦλον	κακὸν]
+
+48001003
+	Addition:	480010030101	ἡμῶν
+	Deletion:	480010030081	ἡμῶν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like moving "ἡμῶν"-> np to after "καὶ Κυρίου", but this splits a conjoined constituent.
+	====================================
+	Substitution:	480010030081	480010030101	ἡμῶν	ἡμῶν
+	Substitution:	480010030091	480010030081	καὶ	καὶ
+	Substitution:	480010030101	480010030091	κυρίου	Κυρίου
+	====================================
+	Map Modifications:	Added Unicode [480010030081	480010030101	1	ἡμῶν	ἡμῶν]
+
+48001004
+	Substitution:	480010040041	480010040041	ὑπὲρ	περὶ	"conerning, about" -> prep
+	====================================
+	Map Modifications:	Added Unicode [480010040041	480010040041	2	ὑπὲρ	περὶ]
+
+48001015
+	Deletion:	480010150051	θεὸς
+	Deletion:	480010150061	ὁ
+	Comment: The diff analysis is half correct.
+	===========================================
+	Comment: It is more like deleting "ὁ θεὸς"  --> np (480010150041-480010150051)
+	Deletion:	480010150041	ὁ
+	Deletion:	480010150051	θεὸς
+	==========================================
+	Map Modifications:	Changed [480010150041	480010150041	1	ὁ	ὁ] to [480010150061	480010150041	1	ὁ	ὁ]
+
+48002014
+	Substitution:	480020140231	480020140231	οὐχὶ	οὐκ	"not" -> adv
+	===================================
+	Map Modifications:	Added Unicode [480020140231	480020140231	2	οὐχὶ	οὐκ]
+
+48003021
+	Deletion:	480030210071	τοῦ
+	Deletion:	480030210081	θεοῦ
+	Substitution:	480030210191	480030210171	ἐκ	ἐν	"in, by, at, with, on" -> prep
+	===================================
+	Map Modifications:	Added [480030210191	480030210171	2	ἐκ	ἐν]
+
+48005002
+	Substitution:	480050020011	480050020011	Ἴδε	ἴδε	"behold" -> intj
+	===================================
+	Map Modifications:	Added [480050020011	480050020011	1	Ἴδε	ἴδε]
+
+49002005
+	Substitution:	490020050081	490020050081	τῷ	ἐν	"in, with" -> prep
+	Comment: diff analysis is incorrect.
+	====================================
+	It is more like this because they are different parts of speech and changes the tree:
+	Deletion:	490020050081	τῷ
+	Addition:	490020050081	ἐν
+	=============================================
+	Map Modifications:	Deleted [490020050081	490020050081]
+
+49005014
+	Addition:	490050140031	ἔγειρε
+	Deletion:	490050140081	λέγει
+	Deletion:	490050140091	ἔγειρε
+	Substitution:	490050140011	490050140011	πᾶν	διὸ
+	Substitution:	490050140021	490050140021	γὰρ	λέγει
+	Substitution:	490050140041	490050140051	φανερούμενον	καθεύδων
+	Substitution:	490050140051	490050140061	φῶς	καὶ
+	Substitution:	490050140061	490050140071	ἐστιν	ἀνάστα
+	Substitution:	490050140071	490050140081	διὸ	ἐκ
+	Substitution:	490050140111	490050140101	καθεύδων	νεκρῶν
+	Substitution:	490050140131	490050140121	ἀνάστα	ἐπιφαύσει
+	Substitution:	490050140141	490050140131	ἐκ	σοι
+	Substitution:	490050140161	490050140151	νεκρῶν	Χριστός
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It is more like deleting "πᾶν γὰρ τὸ φανερούμενον φῶς ἐστιν" --> CL (490050140011-490050140061)
+	Deletion:	490050140011	πᾶν
+	Deletion:	490050140021	γὰρ
+	Deletion:	490050140031	τὸ
+	Deletion:	490050140041	φανερούμενον
+	Deletion:	490050140051	φῶς
+	Deletion:	490050140061	ἐστιν
+	========================================
+	Map Modifications:	Added Unicode [490050140071	490050140011	1	διὸ	διὸ]
+	Map Modifications:	Added Unicode [490050140081	490050140021	1	λέγει	λέγει]
+	Map Modifications:	Added Unicode [490050140091	490050140031	1	ἔγειρε	ἔγειρε]
+	Map Modifications:	Added Unicode [490050140101	490050140041	1	ὁ	ὁ]
+	Map Modifications:	Added Unicode [490050140111	490050140051	1	καθεύδων	καθεύδων]
+	Map Modifications:	Added Unicode [490050140121	490050140061	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [490050140131	490050140071	1	ἀνάστα	ἀνάστα]
+	Map Modifications:	Added Unicode [490050140141	490050140081	1	ἐκ	ἐκ]
+	Map Modifications:	Added Unicode [490050140151	490050140091	1	τῶν	τῶν]
+	Map Modifications:	Added Unicode [490050140161	490050140101	1	νεκρῶν	νεκρῶν]
+	Map Modifications:	Added Unicode [490050140171	490050140111	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [490050140181	490050140121	1	ἐπιφαύσει	ἐπιφαύσει]
+	Map Modifications:	Added Unicode [490050140191	490050140131	1	σοι	σοι]
+	Map Modifications:	Added Unicode [490050140201	490050140141	1	ὁ	ὁ]
+	Map Modifications:	Added Unicode [490050140211	490050140151	1	Χριστός	Χριστός]
+
+
+52002013
+	Addition:	520020130251	ἐστὶν
+	Deletion:	520020130241	ἐστιν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐστιν" --> VC and "ἀληθῶς" --> P switched order
+	====================================
+	Substitution:	520020130241	520020130251	ἐστιν	ἐστὶν
+	Substitution:	520020130251	520020130241	ἀληθῶς	ἀληθῶς
+	====================================
+	Map Modifications:	Added Unicode [520020130241	520020130251	2	ἐστιν	ἐστὶν]
+
+52003002
+	Substitution:	520030020081	520030020081	συνεργὸν	διάκονον	"servant, minister" -> noun
+	====================================
+	Map Modifications:	Added Unicode [520030020081	520030020081	2	συνεργὸν	διάκονον]
+
+52005010
+	Substitution:	520050100031	520050100031	ὑπὲρ	περὶ	"concerning, about, for" -> prep
+	====================================
+	Map Modifications:	Added Unicode [520050100031	520050100031	2	ὑπὲρ	περὶ]
+
+53002006
+	Substitution:	530020060121	530020060121	ἑαυτοῦ	αὐτοῦ	"of it" -> pron
+	====================================
+	Map Modifications:	Added Unicode [530020060121	530020060121	2	ἑαυτοῦ	αὐτοῦ]
+
+54001001
+	Addition:	540010010111	Κυρίου
+	Addition:	540010010121	Ἰησοῦ
+	Deletion:	540010010121	Ἰησοῦ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: Switched order of "Χριστοῦ Ἰησοῦ" to "Ἰησοῦ Χριστοῦ", also added "Κυρίου" before it so it is "Lord Jesus Christ"
+	====================================
+	Addition:	540010010111	Κυρίου
+	Substitution:	540010010111	540010010131	Χριστοῦ	Χριστοῦ
+	====================================
+	Map Modifications:	Added [540010010121	540010010121	1	Ἰησοῦ	Ἰησοῦ]
+
+54001016
+	Addition:	540010160111	Χριστὸς
+	Deletion:	540010160101	Χριστὸς
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: Switched order of "Χριστὸς Ἰησοῦς" to "Ἰησοῦς Χριστὸς"
+	====================================
+	Substitution:	540010160101	540010160111	Χριστὸς	Χριστὸς
+	Substitution:	540010160111	540010160101	Ἰησοῦς	Ἰησοῦς
+	====================================
+	Map Modifications:	Added [540010160101	540010160111	1	Χριστὸς	Χριστὸς]
+
+55002003
+	Deletion:	550020030051	Χριστοῦ
+	Comment: The diff analysis is incomplete
+	===========================
+	Comment: It is actually switching positions between "Χριστοῦ" --> np and "Ἰησοῦ" --> np
+	===========================
+	Substitution:	550020030051	550020030061	Χριστοῦ	Χριστοῦ
+	Substitution:	550020030061	550020030051	Ἰησοῦ	Ἰησοῦ
+	===========================
+	Map Modifications:	Added Unicode [550020030051	550020030061	1	Χριστοῦ	Χριστοῦ]
+
+55003012
+	Addition:	550030120071	εὐσεβῶς
+	Deletion:	550030120061	εὐσεβῶς
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "εὐσεβῶς" --> ADV(0) and "ζῆν" --> V switched order
+	====================================
+	Substitution:	550030120061	550020030071	εὐσεβῶς	εὐσεβῶς
+	Substitution:	550020030071	550020030061	ζῆν	ζῆν
+	====================================
+	Map Modifications:	Added Unicode [550030120061	550020030071	1	εὐσεβῶς	εὐσεβῶς]
+
+56002003
+	Substitution:	560020030081	560020030081	μὴ	μηδὲ	"and not" -> adv
+	================================
+	Map Modifications:	Added Unicode [560020030081	560020030081	2	μὴ	μηδὲ]
+
+57001025
+	Addition:	570010250051	ἡμῶν	"of us" -> pron
+	Comment: The diff analysis is incomplete. 
+	==========================================
+	Comment: There is also the addition of "ἀμήν!" at the end.
+	Addition:	570010250051	ἡμῶν	"of us" -> pron
+	Addition:	570010250121	ἀμήν!	"Amen!" -> intj (exclamation)
+	==========================================
+	Map Comment: wordMap.tsv got it right
+
+58001008
+	Substitution:	580010080231	580010080231	σου	αὐτοῦ	"of him" -> pron
+	================================
+	Map Modifications:	Added Unicode [580010080231	580010080231	2	σου	αὐτοῦ]
+
+58011032
+	Addition:	580110320071	με
+	Deletion:	580110320061	με
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: I think "με" is moved just to put "γὰρ" in the second position of the clause
+	Substitution:	580110320061	580110320071	με	με
+	Substitution:	580110320071	580110320061	γὰρ	γὰρ
+	====================================
+	Map Modifications:	Added Unicode [580110320061	580110320071	1	με	με]
+
+58012027
+	Deletion:	580120270071	τῶν
+	Comment: The diff analyais is incorrect.
+	========================================
+	Comment: It should be:
+	Deletion:	580120270061	τὴν
+	========================================
+	Map Modifications:	Changed [580120270071	580120270061	1	τὴν	τῶν] to [580120270071	580120270061	1	τῶν	τῶν]
+
+59001020
+	Substitution:	590010200071	590010200071	κατεργάζεται	ἐργάζεται	"works, produces" -> verb
+	====================================
+	Map Modifications:	Added Unicode [590010200071	590010200071	2	κατεργάζεται	ἐργάζεται]
+
+59002003
+	Addition:	590020030231	ἢ
+	Addition:	590020030241	κάθου
+	Deletion:	590020030221	ἢ
+	Deletion:	590020030231	κάθου
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐκεῖ," --> ADV moves to before "ἢ," --> conj
+	Substitution:	590020030221	590020030231	ἢ	ἢ
+	Substitution:	590020030231	590020030241	κάθου	κάθου
+	Substitution:	590020030241	590020030221	ἐκεῖ	ἐκεῖ
+	====================================
+	Map Modifications:	Added [590020030221	590020030231	1	ἢ	ἢ]
+	Map Modifications:	Changed [590020030231	590020030241	1	ἐκεῖ	ἐκεῖ] to [590020030231	590020030241	1	κάθου	κάθου]
+	Map Modifications:	Changed [590020030241	590020030231] to [590020030241	590020030221	1	ἐκεῖ	ἐκεῖ]
+
+59004013
+	Substitution:	590040130011	590040130011	Ἄγε	ἄγε	"lead, bring" -> verb
+	================================
+	Map Modifications:	Added [590040130011	590040130011	2	Ἄγε	ἄγε]
+
+59005001
+	Substitution:	590050010011	590050010011	Ἄγε	ἄγε	"lead, bring" -> verb
+	================================
+	Map Modifications:	Added [590050010011	590050010011	2	Ἄγε	ἄγε]
+
+60003018
+	Substitution:	600030180071	600030180071	ἔπαθεν	ἀπέθανεν	"died" -> verb
+	=================================
+	Map Modifications:	Added Unicode [600030180071	600030180071	2	ἔπαθεν	ἀπέθανεν]
+
+60005001
+	Substitution:	600050010021	600050010021	τοὺς	οὖν	"therefore" -> conj (coordinating)
+	Comment: The diff analysis is incorrect.
+	========================================
+	Comment: It is more like deleting τοὺς -> det and adding οὖν -> conj, they are in different places in the tree, different Cat and StrongNumber
+	Addition:	600050010021	οὖν	"therefore" -> conj (coordinating)
+	Deletion:	600050010021	τοὺς	"therefore" but should be "the" -> det (NA28 tree has wrong Strong as 3767, which is what οὖν is, but it is 3588 in the NA28 morphology)
+	========================================
+	Map Modifications:	Deleted [600050010021	600050010021]
+
+61001001
+	Substitution:	610010010011	610010010011	Συμεὼν	Σίμων	"Simon" -> noun
+	================================
+	Map Modifications:	Added Unicode [610010010011	610010010011	2	Συμεὼν	Σίμων]
+
+61001003
+	Substitution:	610010030201	610010030201	ἰδίᾳ	διὰ	"through, by" -> prep 
+	Comment: diff analysis is incorrect.
+	================================
+	Words have different Cat and StrongNumber and changes tree (top node pp instead of np)
+	Should be:
+	Deletion:	610010030201	ἰδίᾳ
+	Addition:	610010030201	διὰ
+	================================
+	Map Modifications:	Deleted [610010030201	610010030201]
+
+61002006
+	Substitution:	610020060111	610020060111	ἀσεβεῖν	ἀσεβέσιν	"ungodly people" -> noun
+	================================
+	It is tempting to make this a deletion and addition rather than a substitution because of the change in Cat and StrongNumber
+	But the meaning is very similar "unglodly" and it doesn't change the tree structure that much (both go to --> O)
+	So I will just mark it as a 2
+	================================
+	Map Modifications:	Added Unicode [610020060111	610020060111	2	ἀσεβεῖν	ἀσεβέσιν]
+
+61002018
+	Substitution:	610020180111	610020180111	ὄντως	ὀλίγως	"barely, just" -> adv
+	=================================
+	Map Modifications:	Added Unicode [610020180111	610020180111	2	ὄντως	ὀλίγως]
+
+62004012
+	Addition:	620040120181	ἐν
+	Addition:	620040120191	ἡμῖν
+	Deletion:	620040120171	ἐν
+	Deletion:	620040120181	ἡμῖν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐν ἡμῖν" --> ADV and "τετελειωμένη" --> vp switched places
+	Substitution:	620040120171	620040120181	ἐν	ἐν
+	Substitution:	620040120181	620040120191	ἡμῖν	ἡμῖν
+	Substitution:	620040120191	620040120171	τετελειωμένη	τετελειωμένη
+	====================================
+	Map Modifications:	Added Unicode [620040120171	620040120181	1	ἐν	ἐν]
+	Map Modifications:	Added Unicode [620040120181	620040120191	1	ἡμῖν	ἡμῖν]
+
+62005005
+	Addition:	620050050031	δέ
+	Deletion:	620050050021	δέ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "δέ" is moved to after "ἐστιν", but that moves it out of its traditional second position of the clause "τίς ἐστιν δέ ὁ νικῶν τὸν κόσμον," --> CL
+	Substitution:	620050050021	620050050031	δέ	δέ
+	Substitution:	620050050031	620050050021	ἐστιν	ἐστιν
+	====================================
+	Map Modifications:	Added Unicode [620050050021	620050050031	1	δέ	δέ]
+	
+62005015
+	Substitution:	620050150081	620050150081	ἐὰν	ἂν		"-" -> ptcl
+	================================
+	Map Modifications:	Added Unicode [620050150081	620050150081	2	ἐὰν	ἂν]
+
+63001005
+	Addition:	630010050101	γράφων
+	Addition:	630010050111	σοι
+	Deletion:	630010050091	γράφων
+	Deletion:	630010050101	σοι
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like moving "καινὴν" after "ἐντολὴν" to make it consistent with the tree since they form one constituent in the tree, "ἐντολὴν καινὴν" --> np
+	Substitution:	630010050091	630010050101	γράφων	γράφων
+	Substitution:	630010050101	630010050111	σοι	σοι
+	Substitution:	630010050111	630010050091	καινὴν	καινὴν
+	====================================
+	Map Modifications:	Added Unicode [630010050091	630010050101	1	γράφων	γράφων]
+	Map Modifications:	Added Unicode [630010050101	630010050111	1	σοι	σοι]
+
+63001012
+	Deletion:	630010120251	ᾖ
+	Comment: The diff analysis is incomplete.
+	=========================================
+	Comment: It is more like "ᾖ" -> verb and "πεπληρωμένη" -> verb switched order
+	Substitution:	630010120251	630010120261	ᾖ	ᾖ
+	Substitution:	630010120261	630010120251	πεπληρωμένη	πεπληρωμένη
+	=========================================
+	Map Modifications:	Added Unicode [630010120251	630010120261	1	ᾖ	ᾖ]
+
+65001016
+	Substitution:	650010160081	650010160081	ἑαυτῶν	αὐτῶν	"of them" -> pron
+	================================
+	Map Modifications:	Added Unicode [650010160081	650010160081	2	ἑαυτῶν	αὐτῶν]
+
+66003016
+	Addition:	660030160081	οὔτε
+	Addition:	660030160091	ζεστὸς
+	Deletion:	660030160071	ζεστὸς
+	Deletion:	660030160081	οὔτε
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ζεστὸς" --> np(0) and "ψυχρός" --> np(1) switching places around "οὔτε" -> conj
+	Substitution:	660030160071	660030160091	ζεστὸς	ζεστὸς
+	Substitution:	660030160091	660030160071	ψυχρός	ψυχρός
+	====================================
+	Map Modifications:	Added Unicode [660030160071	660030160091	1	ζεστὸς	ζεστὸς]
+	Map Modifications:	Added [660030160081	660030160081	1	οὔτε	οὔτε]
+
+66009016
+	Addition:	660090160101	μυριάδων
+	Substitution:	660090160081	660090160081	δισμυριάδες	δύο
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like:
+	Addition:	660090160081	δύο	"two" -> det
+	Substitution:	660090160081	660090160091	δισμυριάδες	μυριάδες	"ten thousand, myriads" -> noun
+	====================================
+	Map Modifications:	Added [660090160081	660090160091	2	δισμυριάδες	μυριάδες]
+	Map Modifications:	Changed [660090160091	660090160091	1	μυριάδων	μυριάδες] to [660090160091	660090160101	1	μυριάδων	μυριάδων]
+
+66011002
+	Deletion:	660110020261	καὶ
+	Substitution:	660110020091	660110020091	ἔξωθεν	ἔξω	"outside" -> adv
+	================================
+	Map Modifications:	Added Unicode [660110020091	660110020091	2	ἔξωθεν	ἔξω]
+
+66011011
+	Substitution:	660110110141	660110110141	ἐν	εἰς	"into" -> prep
+	================================
+	Map Modifications:	Added Unicode [660110110141	660110110141	2	ἐν	εἰς]
+
+66011019
+	Addition:	660110190251	ἀστραπαὶ
+	Addition:	660110190271	φωναὶ
+	Addition:	660110190281	καὶ
+	Deletion:	660110190171	αὐτοῦ
+	Deletion:	660110190181	ἐν
+	Substitution:	660110190201	660110190181	ναῷ	Κυρίου
+	Substitution:	660110190211	660110190191	αὐτοῦ	ἐν
+	Substitution:	660110190221	660110190201	καὶ	τῷ
+	Substitution:	660110190231	660110190211	ἐγένοντο	ναῷ
+	Substitution:	660110190241	660110190221	ἀστραπαὶ	αὐτοῦ
+	Substitution:	660110190261	660110190241	φωναὶ	ἐγένοντο
+	Comment: The diff analysis is incorrect. 
+	========================================
+	Comment: It should be:
+	Substitution:	660110190171	660110190171	αὐτοῦ	τοῦ	"of the" -> det
+	Addition:	660110190181	Κυρίου	"Lord" -> noun
+	========================================
+	Map Modifications:	Added [660110190171	660110190171	2	αὐτοῦ	τοῦ]
+	Map Modifications:	Added [660110190181	660110190191	1	ἐν	ἐν]
+	Map Modifications:	Changed [660110190191	660110190171	1	τῷ	τοῦ] to [660110190191	660110190201	1	τῷ	τῷ]
+
+66012003
+	Addition:	660120030121	μέγας
+	Deletion:	660120030111	μέγας
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "μέγας" -> adj(0) and "πυρρὸς" -> adj(1) switching places in the tree.
+	Substitution:	660120030111	660120030121	μέγας	μέγας
+	Substitution:	660120030121	660120030111	πυρρὸς	πυρρὸς
+	====================================
+	Map Modifications:	Added Unicode [660120030111	660120030121	1	μέγας	μέγας]
+
+66013013
+	Addition:	660130130091	καταβαίνειν
+	Deletion:	660130130121	καταβαίνειν
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐκ τοῦ οὐρανοῦ" --> ADV and "καταβαίνειν" --> V switched order
+	Substitution:	660130130091	660130130101	ἐκ	ἐκ
+	Substitution:	660130130101	660130130111	τοῦ	τοῦ
+	Substitution:	660130130111	660130130121	οὐρανοῦ	οὐρανοῦ
+	Substitution:	660130130121	660130130091	καταβαίνειν	καταβαίνειν
+	====================================
+	Map Modifications:	Added Unicode [660130130121	660130130091	1	καταβαίνειν	καταβαίνειν]
+
+66015003
+	Substitution:	660150030361	660150030361	ἐθνῶν	αἰώνων	"ages" -> noun
+	================================
+	Map Modifications:	Added Unicode [660150030361	660150030361	2	ἐθνῶν	αἰώνων]
+	
+66016003
+	Deletion:	660160030211	τὰ
+	Substitution:	660160030191	660160030191	ζωῆς	ζῶσα	"is living" -> verb
+	=================================
+	Map Modifications:	Added Unicode [660160030191	660160030191	2	ζωῆς	ζῶσα]
+
+66017007
+	Addition:	660170070111	ἐρῶ
+	Deletion:	660170070101	ἐρῶ
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "ἐρῶ" --> V and "σοι" --> IO switched order
+	====================================
+	Substitution:	660170070101	660170070111	ἐρῶ	ἐρῶ
+	Substitution:	660170070111	660170070101	σοι	σοι
+	====================================
+	Map Modifications:	Added Unicode [660170070101	660170070111	1	ἐρῶ	ἐρῶ]
+
+66017013
+	Deletion:	660170130091	ἐξουσίαν
+	Deletion:	660170130101	αὐτῶν
+	Substitution:	660170130121	660170130101	θηρίῳ	ἐξουσίαν
+	Substitution:	660170130131	660170130111	διδόασιν	αὐτῶν
+	Comment: The diff analysis is incorrect.
+	====================================
+	Comment: It should be:
+	====================================
+	Addition:	660170130091	τὴν	"the" -> det
+	====================================
+	Map Modifications:	Added [660170130091	660170130101	1	ἐξουσίαν	ἐξουσίαν]
+	Map Modifications:	Added [660170130101	660170130111	1	αὐτῶν	αὐτῶν]
+	Map Modifications:	Changed [660170130111	660170130091	1	τῷ	τὴν] to [660170130111	660170130121	1	τῷ	τῷ]
+	Map Modifications:	Added [660170130121	660170130131	1	θηρίῳ	θηρίῳ]
+	Map Modifications:	Added [660170130131	660170130141	1	διδόασιν	διδόασιν]
+
+66018002
+	Deletion:	660180020081	ἔπεσεν
+	Substitution:	660180020271	660180020261	φυλακὴ	μεμισημένου
+	Comment: The diff analysis is missing the deletion of "καὶ φυλακὴ παντὸς θηρίου ἀκαθάρτου" at the end, and substitution is incorrect
+	====================================
+	Comment: It should be:
+	====================================
+	Deletion:	660180020081	ἔπεσεν
+	Deletion:	660180020261	καὶ
+	Deletion:	660180020271	φυλακὴ
+	Deletion:	660180020281	παντὸς
+	Deletion:	660180020291	θηρίου
+	Deletion:	660180020301	ἀκαθάρτου	
+	====================================
+	Map Modifications:	Changed [660180020261	660180020251	1	καὶ	καὶ] to [660180020311	660180020251	1	καὶ	καὶ]
+	Map Modifications:	Added [660180020321	660180020261	1	μεμισημένου	μεμισημένου]
+
+66018003
+	Substitution:	660180030101	660180030101	πέπωκαν	πέπτωκαν	"fall" -> verb
+	====================================
+	Map Modifications:	Added Unicode [660180030101	660180030101	2	πέπωκαν	πέπτωκαν]
+
+66019009
+	Deletion:	660190090221	τοῦ
+	Deletion:	660190090231	θεοῦ
+	Comment: The diff is incorrect.
+	====================================
+	Comment: It is more like "τοῦ θεοῦ" --> np and "εἰσιν" --> VC switched order
+	Substitution:	660190090221	660190090231	τοῦ	τοῦ
+	Substitution:	660190090231	660190090241	θεοῦ	θεοῦ
+	Substitution:	660190090241	660190090221	εἰσιν	εἰσιν
+	====================================
+	Map Modifications:	Added Unicode [660190090221	660190090231	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [660190090231	660190090241	1	θεοῦ	θεοῦ]
+
+66019011
+	Addition:	660190110161	καλούμενος
+	Deletion:	660190110151	καλούμενος
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: It is more like "καλούμενος" --> VC and "πιστὸς" --> np switch places, but must leave the tree the same
+	Substitution:	660190110151	660190110161	καλούμενος	καλούμενος
+	Substitution:	660190110161	660190110151	πιστὸς	πιστὸς
+	====================================
+	Map Modifications:	Added Unicode [660190110151	660190110161	1	καλούμενος	καλούμενος]
+
+66020003
+	Addition:	660200030281	λυθῆναι
+	Deletion:	660200030271	λυθῆναι
+	Comment: diff analysis is incorrect.
+	====================================
+	Comment: Is is more like "λυθῆναι" --> V and "αὐτὸν" --> S switched order
+	Substitution:	660200030271	660200030281	λυθῆναι	λυθῆναι
+	Substitution:	660200030281	660200030271	αὐτὸν	αὐτὸν
+	====================================
+	Map Modifications:	Added Unicode [660200030271	660200030281	1	λυθῆναι	λυθῆναι]
+
+66020012
+	Addition:	660200120061	μεγάλους
+	Addition:	660200120071	καὶ	"and" -> conj (coordinating)
+	Deletion:	660200120051	τοὺς
+	Deletion:	660200120061	μεγάλους
+	Comment: The diff analysis is incorrect.
+	====================================
+	Comment: It should be:
+	Deletion:	660200120051	τοὺς
+	Addition:	660200120051	καὶ	"also" -> adv
+	====================================
+	Map Modifications:	Added [660200120061	660200120061	1	μεγάλους	μεγάλους]
+	Map Modifications:	Changed [660200120071	660200120051	1	καὶ	καὶ] to [660200120071	660200120071	1	καὶ	καὶ]
+
+66021003
+	Addition:	660210030311	μετ
+	Deletion:	660210030301	μετ’
+	Deletion:	660210030311	αὐτῶν
+	Comment: The diff analysis is not correct. 
+	====================================
+	Comment: It is more like switching the order of "μετ’ αὐτῶν" --> P and "ἔσται" --> VC and deleting "αὐτῶν θεός" --> CL
+	Substitution:	660210030301	660210030311	μετ’	μετ’
+	Substitution:	660210030311	660210030321	αὐτῶν	αὐτῶν
+	Substitution:	660210030321	660210030301	ἔσται	ἔσται
+	Deletion:	660210030331	αὐτῶν
+	Deletion:	660210030341	θεός
+	====================================
+	Map Modifications:	Added Unicode [660210030301	660210030311	1	μετ’	μετ’]
+	Map Modifications:	Added Unicode [660210030311	660210030321	1	αὐτῶν	αὐτῶν]
+
+66021012
+	Deletion:	660210120211	ὀνόματα
+	Deletion:	660210120221	τῶν
+	Comment: The diff analysis is partially correct.
+	====================================
+	Comment: It should be:
+	====================================
+	Deletion:	660210120201	τὰ
+	Deletion:	660210120211	ὀνόματα
+	====================================
+	Map Modifications:	Changed [660210120201	660210120201	1	τὰ	τῶν] to [660210120221	660210120201	1	τῶν	τῶν]
+
+66022008
+	Addition:	660220080151	ἔμπροσθεν
+	Addition:	660220080171	ποδῶν
+	Addition:	660220080181	τοῦ
+	Deletion:	660220080041	ἀκούων
+	Deletion:	660220080051	καὶ
+	Deletion:	660220080091	ὅτε
+	Substitution:	660220080121	660220080091	ἔβλεψα	ὅτε
+	Substitution:	660220080131	660220080101	ἔπεσα	ἤκουσα
+	Substitution:	660220080141	660220080111	προσκυνῆσαι	καὶ
+	Substitution:	660220080151	660220080121	ἔμπροσθεν	ἔβλεψα
+	Substitution:	660220080161	660220080131	τῶν	ἔπεσα
+	Substitution:	660220080171	660220080141	ποδῶν	προσκυνῆσαι
+	Comment: The diff analysis is incorrect. 
+	====================================
+	Comment: It more like moving "ἀκούων καὶ" to after "βλέπων ταῦτα", and switching the order of "ἀκούων" and "καὶ"
+	Comment: So it should be:
+	====================================
+	Substitution:	660220080041	660220080071	ἀκούων	ἀκούων
+	Substitution:	660220080051	660220080061	καὶ	καὶ
+	Substitution:	660220080061	660220080041	βλέπων	βλέπων
+	Substitution:	660220080071	660220080051	ταῦτα	ταῦτα
+	====================================
+	Map Modifications:	Added Unicode [660220080041	660220080071	1	ἀκούων	ἀκούων]
+	Map Modifications:	Changed [660220080051	660220080081] to [660220080051	660220080061	1	καὶ	καὶ]
+	Map Modifications:	Changed [660220080081	660220080061	1	καὶ	καὶ] to [660220080081	660220080081	1	καὶ	καὶ]
+	Map Modifications:	Added Unicode [660220080091	660220080091	1	ὅτε	ὅτε]
+	Map Modifications:	Added Unicode [660220080141	660220080141	1	προσκυνῆσαι	προσκυνῆσαι]
+	Map Modifications:	Added Unicode [660220080151	660220080151	1	ἔμπροσθεν	ἔμπροσθεν]
+	Map Modifications:	Added Unicode [660220080161	660220080161	1	τῶν	τῶν]
+	Map Modifications:	Added Unicode [660220080171	660220080171	1	ποδῶν	ποδῶν]
+	Map Modifications:	Added Unicode [660220080181	660220080181	1	τοῦ	τοῦ]
+	Map Modifications:	Added Unicode [660220080191	660220080191	1	ἀγγέλου	ἀγγέλου]
+
+66022021
+	Substitution:	660220210071	660220210071	πάντων	τῶν
+	Comment: The diff analysis is incorrect.
+	====================================
+	Comment: It should be:
+	====================================
+	Deletion:	660220210071	πάντων
+	Addition:	660220210071	τῶν	"the" -> det
+	Addition:	660220210081	ἁγίων.	"people set apart by God" -> noun	
+	Addition:	660220210091	ἀμήν!	"Amen!" -> intj
+	====================================
+	Map Comment: wordMap.tsv got it right

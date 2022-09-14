@@ -1,0 +1,93 @@
+NOTES ON SYSTEMATIC ISSUES
+
+ISSUES THAT ARE EASY TO FIX
+
+1. UGNT has No "num" Category
+	a. These have been automatically changed to "det" but sometimes the upper nodes have been corrected but sometimes not.
+	b. change [det -> nump np(0) -> np(1)] to [det np(0) -> np(1)]
+	c. change [det(0) -> nump(0)] -> np(0) conj np(1) -> np(2) where [det(1) -> nump(1)] -> np(1) to [det(0) ->] np(0) and [det(1) ->] np(1)
+	d. maybe the general rules of change [det -> nump ->] np to [det ->] np will work
+	e. replace [det -> nump] -> nump(0) with [det -> np] -> nump(0) (conjoined nump's), and after all of these are done, replace nump(0) with np
+	f. for some reason, it automatically changed the rule from Num2Nump to Det2Nump even though the latter rule doesn't exist
+
+2. Coordinating Versus Subordinating Conjunctions
+	a. In my mind, coordinating conjunction should look like: X conj X -> X
+	b. In my mind, subordinating conjunctions (complementizers) should look like: conj X -> Y
+	c. It doesn't seem like these two types of conjunctions are consistently represented in the trees.
+	d. For example, "γὰρ" in 41010014 is marked as a coordinating conjunction, but is in the tree like a subordinating conjunction.
+	
+3. Changes in Category not Flagged as Differences (i.e., Substitutions, or Deletion and Addition) Because StrongNumber Didn't Change
+	a. I noticed some words, but didn't throughly check all words, that changed category but were not automatically fixed in the starting tree.
+	b. For example, in 41009001, a det changed to pronoun (i.e., {det CL -> np} changed to {pron CL -> np}) but there is no {pron CL -> np} rule, so needed to add {pron -> np} in the tree since there is a {np CL -> np} rule
+	c. For example, in 41016019, a conj changed to adv (i.e., {conj CL -> CL} changed to {adv CL -> CL} but there is no {adv CL -> CL) rule, so needed to add {adv - advp} in the tree since there is a {advp CL -> CL} rule
+	d. These will be caught later when we try to "confirm" the tree by finding the rule used to create each node, but there could be 1000's of these.
+	e. Probably should write a program that can fix these automatically (i.e., should have been skipped over in the original process), possibly as part of rule checking process
+	f. There is a file, "catdiff.tsv" which lists these. This will be helpful if doing an automatic "fixing" of the trees.
+	
+4. Strong's Number That Have a "5" as the Last Digit
+	a. Normally, a UGNT StrongNumber is GXXXX0 where XXXX is the Strong's Number. But there are cases where it is GXXXX5.
+	b. Looking at StrongNumberX, it seems the "5" indicates a subsense
+	
+ISSUES THAT ARE HARDER (TAKE MORE TIME) TO FIX
+
+1. Consistency of Glossing
+	a. I think glossing missing subjects should be in parentheses to show agreement with the missing subject
+	b. I think glossing case in either nouns or det when there is no explicit prep should be in parentheses (e.g. "(of) him" for bare genitive pronoun)
+	c. I think a good principle is use "()" to include gloss to clarify meaning but not for specifics about the gloss language. So the number "six hundred (and) sixty six" does not need the "(and)" since it is not needed to understand the meaning, but use "()" to include missing subjects (from agreement in the verb) or prep (from case of the noun)
+	d. I think a good principle is to use "[]" to include gloss for extra gloss words that are not necessary to understand the meaning, but included anyway (I think these should be very limited in use) since the purpose of a gloss is not to do alignment but to help understand the original language.
+	e. Chinese glosses seem to follow a different standard than the English glosses
+
+2. Glossing Using Morphology or Common Translations
+	a. I think I saw someplace that it said the glossing was actually taken from most common translations, 
+	b. I also recall it says glosses are there to help someone understand the original language better.
+	c. Using common translations may not help someone understand the original language since the translation may not have been based off of the specific text or morphology that we are glossing.
+	d. I think a gloss should be an attempt to reflect the morphology of the original language with some consideration of some common translations so someone can better understand the original language (the whole purpose of trees, right?).
+	e. Seeing how things have been translated can be a different part of the study of the original language.
+	
+3. Glossing Punctuations
+	a. Should punctuations be glossed?
+	b. Sometimes where English punctuations would occur match the original language but sometimes not. 
+	c. It may also depend on whether we show punctuations for the original language (which is currently done).
+	d. Because word order in the tree doesn't always follow text word order, the punctuations that show up in the tree may give the incorrect impression.
+	
+4. Glossing Genitive Determiners and Nouns
+	a. In most of the cases, it seems "of" is used in the gloss of det and noun to indicate it is genitive. As noted above, it is not clear if it should be "(of)" or "of" or "[of]"
+	b. But for pronouns, we also have the choice of using "of him" or "his", "of you" or "your", etc. I've seen both used.
+	c. I'm wondering if we can make a distinction that if the pronoun is before the noun, then we use the single word gloss. If it is after the noun, we include the "of". This makes it "read" more like English. "your hand" and "hand of you"/"hand of yours"
+
+5. Glossing Conjunctions
+	a. Often "ὅτι" is glossed as "-" (no gloss) but I think I have sometimes glossed it as "that" since it is a subordinating conjunction. We will probably want to be consistent.
+	b. Often "δὲ" is glossed as "and" and "*" (42005003) when it is coordinating, but as "but" when it is correlative. I might have sometimes glossed it as "*" or "-", not sure.
+
+6. Use of "*" and "~" in the English Gloss
+	a. I'm not sure what is the meaning of "*" and "~" in the English gloss. 
+	b. Sometimes you see "*" all alone for the English gloss and it seems like it may mean there is no good English gloss.
+	c. Sometimes I think "~" indicates putting two English glosses for two different Greek words into the English gloss for one Greek word
+	d. But sometimes it is not so clear (e.g., 41015014)
+	
+7. Curently, punctuations as part of "Unicode" but that means two words that are the same may not have the same Unicode. 
+	a. It may be better to have a "Text" attribute where punctuations are included since we may want to search and compare using Unicode. 
+	b. Maybe UnicodeLemma is Unicode without punctuations. This may be an artifact of where the text in a node was Michigan Code, and so Unicode is the equivalent of the text.
+
+8. Places where I have questions about the NA28 tree (analysis, grammar)
+	a. I think some CL's are the complement/argument of a verb (e.g., complements of "saying") so should be a sister to the V, but instead are a sister to V's parent CL
+	b. There are places where there are separate ADV (i.e. sister to each other and V) but I think one modifies the other ADV (i.e., they are not independent, e.g., 41006048)
+	c. I am not sure about the difference between two np's that are sisters under an np (i.e., np np -> np) and a relative clause (i.e., np CL -> np) since sometimes CL -> np, then np np -> np
+	d. The analysis for object control verbs doesn't seem right (e.g., 41007037). The verb "make" seems to take an O (accusative np) and a CL (infinitive verb) where the CL subject is controlled by the upper O
+	e. The analysis for subject control verbs doesn't seem right (e.g., 41008032). The verb "began" has a CL -> O, where I think it should be something more like CL -> COMP or CL -> VI (Verb Infinitive, since VC for Verb Copula is already taken)
+	f. There are cases (e.g., 42001028) where it seems that a verb may take an accusative pp as an O "approach towards her". Is this possible in Greek?
+	
+ISSUES THAT PROBABLY CANNOT BE DEALT WITH NOW
+
+1. Constituents in one verse that should be attached to a node in another verse
+
+
+ISSUES THAT ARE RELATED TO THE UGNT DATA/Morphology
+
+1. Instance-Based Assignment of Category
+	a. In principle, I think a word can have more than one category and which category it serves/has depends on the context in the sentence and intended meaning.
+	b. For example, sometimes words can serve as a noun or a verb.
+	c. But it seems to me that the grammar has taken the approach of making those lexical/categorical ambiguities part of the syntax/grammar.
+	d. Yet, there are times where it seems UGNT does not let grammar/syntax deal with it but instead choses the category for an instance to avoid having to have the grammar accomodate the ambiguity.
+	e. For example, sometimes ὁ is a det and sometimes it is a pron when there is no noun present. It seems that this could be handled in grammar by making the head noun optional, implying that the noun can be understood from the context. But UGNT (sometimes?) chooses to change the category to pron in this situation.
+	

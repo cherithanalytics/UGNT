@@ -1,0 +1,239 @@
+Unique Types (25), Instances (64):
+1 (1): adjp -> P -> CL -> O -> CL
+2 (1): adv -> advp -> ADV -> CL -> ADV
+3 (32): CL -> ADV -> CL
+4 (1): CL -> ADV -> CL -> np -> pp -> ADV -> CL -> adjp -> np -> CL
+5 (1): CL -> ADV -> CL -> np -> S -> CL
+6 (2): CL -> CL
+7 (1): CL -> np -> ADV -> CL
+8 (2): CL -> np -> O -> CL
+9 (1): CL -> np -> O -> CL -> ADV -> CL
+10 (1): CL -> np -> pp -> ADV -> CL
+11 (1): CL -> np -> pp -> ADV -> CL -> np -> S -> CL
+12 (1): CL -> np -> pp -> ADV -> CL -> O -> CL
+13 (3): CL -> np -> S -> CL
+14 (5): CL -> O -> CL
+15 (1): CL -> P -> CL
+16 (1): noun -> np -> np -> ADV
+17 (1): np -> CL -> np -> S
+18 (1): np -> np -> pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+19 (1): np -> O -> CL -> np -> S
+20 (1): np -> P -> CL -> CL
+21 (1): pp -> ADV -> CL -> ADV
+22 (1): pp -> ADV -> CL -> np -> IO -> CL
+23 (1): pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+24 (1): pp -> np -> pp -> ADV
+25 (1): verb -> vp -> V -> CL -> ADV -> CL
+
+
+Summary of principles used:
+1. Chose the lowest functional node unless the lowest node was several layers down from it (i.e. lots of other phrasal nodes)
+2. Chose the lowest CL if it served as a relative clause, not putting an np above it since it is misleading that the CL is an np.
+3. I was initially tempted to make all of the verses that were part of the sentence be "true" to having a constituent a direct
+child of Verse if it is a child to a node outside of the verse, but I eventually decided to leave it attached to a node in the 
+verse as long as it still makes a valid structure with a grammar rule, and assume the person will have to imagine how it gets
+connected.
+4. I sometimes added a functional node above a phrasal node in a verse that is part of the same sentence 
+even if there may be some repeated (but left out) phrasal nodes inbetween.
+
+Stat: verseId 40015005 has CL -> np -> S -> CL
+Changed to [S -> Verse] and deleted top CL's parent CL, and connected top CL's grandparent CL and sibling CL
+
+Stat: verseId 40015035 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 40027033 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 40027062 has pp -> ADV -> CL -> ADV
+Changed to lower [ADV -> Verse] since ADV is part of CL in following verse
+For 40027062 added CL [-> ADV] -> Verse above top CL since that serves as the ADV of 40027062
+
+Stat: verseId 41006054 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse] and [CL -> Verse]
+
+Stat: verseId 41007019 has CL -> CL
+Changed to lower [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 42001055 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 42020047 has CL -> np -> pp -> ADV -> CL
+Changed to lower [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 43005029 has CL -> np -> S -> CL
+Changed to lower [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 43008003 has CL -> ADV -> CL
+Changed to [ADV -> Verse]
+
+Stat: verseId 43017023 has CL -> CL
+Changed to lower [CL -> Verse] following [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 44001021 has np -> CL -> np -> S
+Changed to [CL -> Verse] 
+Changed 44017024 to CL [-> np -> S] -> Verse
+We need the S in one or the other verse, but to avoid two np's, it is best to put the [np -> S] in the following verse.
+
+Stat: verseId 44001022 has CL -> ADV -> CL -> np -> pp -> ADV -> CL -> adjp -> np -> CL
+Changed lower [ADV -> Verse] remaining [CL -> Verse]
+
+Stat: verseId 44002030 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 44006006 has CL -> np -> O -> CL
+Changed lower [CL -> Verse] since CL is relative clause to np in previous verse
+
+Stat: verseId 44010007 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse] and middle [CL -> Verse]
+
+Stat: verseId 44015029 has CL -> np -> pp -> ADV -> CL -> np -> S -> CL
+Changed lowest [CL -> Verse] and middle [CL -> Verse]
+
+Stat: verseId 44017027 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 44021005 has CL -> ADV -> CL
+Changed to [ADV -> Verse] /* and [conj -> Verse] first [CL -> Verse] a middle CL that is {CL conj -> CL} [CL -> Verse] */
+Changed 44021006 first [CL -> Verse]
+
+Stat: verseId 44023034 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 44025003 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 44026005 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 44026017 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+Changed 44026018 to CL [-> ADV] -> Verse since that CL serves as the ADV in this verse
+
+Stat: verseId 44028026 has verb -> vp -> V -> CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 45001010 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 45015009 has CL -> np -> pp -> ADV -> CL -> O -> CL
+Changed to lowest [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 45015016 has pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+Changed to lowest [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 45015024 has CL -> np -> ADV -> CL
+Changed to lowest [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 46005005 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+Changed 46005004 CL [-> ADV] -> Verse since the whole CL serves as an ADV in 46005003
+
+Stat: verseId 46005010 has CL -> O -> CL
+Changed to lower [O -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 46015002 has CL -> np -> O -> CL
+Changed to lower [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 48001016 has CL -> O -> CL
+Changed to [O -> Verse] and middle [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 48005023 has np -> P -> CL -> CL
+Changed to [P -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 49003019 has CL -> O -> CL
+Changed to lower [O -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 49005016 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 49006006 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse] and removing upper [CL] and attaching parent CL and child CL of upper CL 
+
+Stat: verseId 49006020 has CL -> np -> O -> CL -> ADV -> CL
+Changed to lowest [CL -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 50002007 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 50002016 has CL -> ADV -> CL
+Changed to [ADV -> Verse]
+
+Stat: verseId 50003013 has CL -> ADV -> CL
+Changed to [O ADV -> CL(0)] and [conj CL(0) -> CL(1)] since I think the original analysis where the O is in its own CL is incorrect.
+It should be in the same CL as the V in the following verse, i.e., "I pursue one thing".
+
+Stat: verseId 51001006 has np -> np -> pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+Changed to lowest [np -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 51002014 has CL -> ADV -> CL
+Changed to [ADV -> Verse]
+
+Stat: verseId 51003013 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and following [CL -> Verse]
+
+Stat: verseId 52001002 has adv -> advp -> ADV -> CL -> ADV
+Changed to lower [ADV -> Verse]
+
+Stat: verseId 52001004 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 52002007 has CL -> ADV -> CL
+Changed to [ADV -> Verse]
+
+Stat: verseId 52004011 has CL -> O -> CL
+Changed to [O -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 53001008 has pp -> np -> pp -> ADV
+Changed to lower [pp -> Verse] and remaining [ADV -> Verse]
+
+Stat: verseId 54005010 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 54006019 has CL -> O -> CL
+changed to [O -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 55002025 has CL -> ADV -> CL -> np -> S -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 56002005 has adjp -> P -> CL -> O -> CL
+Changed to [P -> Verse] and remainging [CL -> Verse]
+
+Stat: verseId 56002010 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 57001008 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 58006004 has np -> O -> CL -> np -> S
+Changed to [O -> Verse] and [conj -> Verse] and [P -> Verse]
+Changed 58006005 to [CL -> Verse] to remove the np inbetween since other places I left CL alone if it is an orphaned relative clause.
+
+Stat: verseId 58007027 has CL -> np -> S -> CL
+Changed to lower [CL -> Verse] and remaining [CL -> Verse] since lower CL is a relative clause
+
+Stat: verseId 58010019 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and removed top CL and connected top CL's parent CL and child CL
+Changed 58010020 to CL [-> ADV] -> Verse since whole CL serves as ADV and to be consistent with 58010019 and 58010021
+
+Stat: verseId 58011026 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 58011038 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 60002001 has CL -> ADV -> CL
+Changed to [ADV -> Verse] and [conj -> Verse]
+
+Stat: verseId 60002008 has CL -> P -> CL
+Changed to [P -> Verse] and remaining [CL -> Verse]
+
+Stat: verseId 63001002 has pp -> ADV -> CL -> np -> IO -> CL
+Changed to [ADV -> Verse]
+
+Stat: verseId 64001005 has noun -> np -> np -> ADV
+Changed to [noun -> np -> ADV]
+Changed 64001006 to np [-> ADV] -> Verse to make it consistent with 64001005
+
+Stat: verseId 66019013 has CL -> ADV -> CL
+Changed to [ADV -> Verse]

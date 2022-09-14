@@ -1,0 +1,542 @@
+PROCEDURE
+
+1. Used the data in diffCat.tsv to know where to look.
+2. I used the NA28 trees in the folder NA28VerseTrees as a reference.
+5. I used the trees in UGNTVerseTrees/Pass2 as the starting point for making changes. These trees are different from the NA28 trees in the following ways:
+	a. morphIds for the most part have been updated (except words to be deleted, and sometimes for substitutions)
+	b. The Unicode, Lemma, StrongNumber for substitutions (morphId was not updated for substitutions).
+	c. The Unicode, Lemma, StrongNumber, and morophId for the UGNT words that could be matched to NA28 words.
+4. I would first compare what I see in Beyond Compare to the addtions, deletions, and substitutions to see if they were correct, documenting any corrections to the diff analysis.
+5. On occasion (I did not always do this step), I would check the words that had slight Unicode differences but not flagged as different to see if there were changes in category, case, tense, mood, person, number, etc.
+6. If there was potentially more than one "good" analysis, I would document that, chose one, and make changes to the tree based upon the one I chose.
+7. If there were some changes that required tree structures I had not seen before, I would check the existing grammar in greekgrammarNA28122319.cs (Randall said this was the one used to create the NA28 trees).
+8. If I had questions, I marked a verse with "Q:" followed by my question.
+9. If I wanted to record comments, I marked a verse with "Comment:" followed by my comment.
+10. Marked a verse with "Comment: CHECK TREE" for all verses that I felt should be checked by someone with a better understanding of Greek and/or the grammar.
+11. Marked a verse with "ERROR:" if I think there may be an ERROR in the UGNT data
+12. For substitutions, often the starting tree would already have it updated correctly, but not always. So I documented what was changed regardless of whether it was automatic or I had to do it manually.
+
+
+NOTATION
+
+1. To indicate a tree fragment that is a path from a terminal node up the tree through parent nodes:
+	a. "->" indicate a branch going up the tree in order to be consistent with the notation in the grammar file (i.e., it is a constituents to parent contraction rule, not an expansion rule).
+	b. square brackets enclose the fragment being referred to
+2. To indicate a subtree of constituents and parent, curly brackes are used to enclose the notation.
+3. To indicate a subtree that is more complex:
+	a. double quotes are used to indicate a surface Unicode string
+	b. "-->" is to indicates smallest subtree that includes the surface Unicode string on the left that leads to the category on the right that spans the whole string (possibly spans more).
+4. If a node is referred to more than once, and more than one node with the same category is referred to, the one referred to more than once will be indexed with "Cat(#)" where "Cat" is the category of the node, and "#" is a unique digit 
+
+NOTES:
+
+1. Unless otherwise stated, description of modifications is from the "Pass 2" trees that resulted from the modifications documented in the "diff_modifications_edited.txt" file, and not the NA28 tree.
+	For the most part, it was the same as the starting point trees, and many times, it was already corrected when fixing the trees based upon diff.tsv, addition.tsv, deletiong.tsv, and substitution.tsv files.
+2. The morphId next to the category change is the one in the NA28 tree, not the starting tree or the "Pass 2" trees.
+
+RECORD OF CHANGES MADE
+
+400050220231	noun	ptcl
+	Comment: Okay. There is a {ptcl -> np} rule
+
+
+400070140011	pron	conj
+	Comment: Okay. Fixed during fixing diff's
+
+
+400090040091	adv	pron
+	Comment: Okay. Fixed during fixing diff's
+
+
+400130300041	prep	adv
+	Comment: Okay. Fixed during fixing diff's
+
+
+400150160041	noun	adv
+	Modifications:	changed ἀκμὴν -> [noun -> np] -> ADV to ἀκμὴν -> [adv -> advp] -> ADV
+400150170011	ptcl	adv
+	Comment: Okay. Fixed during fixing diff's
+
+400200090091	prep	adv
+	Comment: Okay. Already fixed in starting tree
+	Modifications:	changed [ἀνὰ -> prep -> adv] -> advp -> ADV to [ἀνὰ -> adv] -> advp -> ADV
+400200100121	prep	adv
+	Comment: Okay. Fixed during fixing diff's
+
+
+400250390051	verb	noun
+	ἀσθενοῦντα "having sickness" -> verb (770) to ἀσθενῆ "sickness" -> noun (772)
+	Comment: biblehub.com has ἀσθενῆ as an adj
+	Modifications:	changed ἀσθενῆ -> noun -> [vp -> V -> CL] -> P to ἀσθενῆ -> noun -> [np] -> P, English to "sickness"
+
+400270460141	adv	ptcl
+	Comment: Unicode and StrongNumber are the same, only Cat changed
+	Comment: there is no {ptcl -> advp} rule but there is a {ptcl -> adv} rule
+	Modifications:	changed λεμὰ -> [ptcl -> advp] -> ADV to λεμὰ -> [ptcl -> adv -> advp] -> ADV
+	Comment: The two Ἐλωῒ before this word did not have the correct Cat (ptcl) in the starting tree.
+	Comment: I didn't catch this when fixing the diff's. There is a {ptcl -> np} rule.
+	Modifications: changed Ἐλωῒ -> [noun] -> np -> CL to Ἐλωῒ -> [ptcl] -> np -> CL for 400270460121 and 400270460131
+400270460151	verb	ptcl
+	Comment: This goes with the previous word and is part of a transliteration of Aramic (I think).
+	Comment: The translation later in the verse in Greek means, "My God, my God, why have you forsaken me?"
+	Comment: So it seems it should be a verb. We effectively make it a veb with {ptcl -> intj} and {intj -> vp} rules.
+	Modifications:	changed σαβαχθάνει? -> [ptcl -> vp] -> V -> CL to σαβαχθάνει? -> [ptcl -> intj -> vp] -> V -> CL
+	Q: Or is it better to make it into a P, kind of like "forsaken" in "I am forsaken", so it is like "Why am I forsaken?"?
+	Comment: CHECK TREE
+400270460221	adv	pron
+	Comment: Okay. Fixed during fixing diff's
+400270570091	det	adv
+	Comment: Same Unicode and StrongNumber, just different Cat
+	Comment: Not exactly sure how to analyze this. My best guess is this word should be ADV and leave the following np as a P since there is an {ADV P -> CL} rule
+	Modifications:	changed τοὔνομα -> adv -> [np -> S] -> CL(0) to changed τοὔνομα -> adv -> [advp -> ADV] -> CL(0)
+	Comment: CHECK TREE
+
+410030040071	adj	verb
+	Comment: The original diff analysis was wrong. I was previously [adj verb] repalced with just [verb] so not necessarily a Cat changed
+	Comment: Okay. Fixed during fixing diff's
+410030340061	noun	adv
+	Comment: There is no {adv -> np} rule so must change np to advp
+	Modifications:	changed κύκλῳ -> adv -> [np] -> ADV to κύκλῳ -> adv -> [advp] -> ADV
+
+
+410040080171	adj	prep
+410040080201	adj	prep
+410040080231	adj	prep
+	Comment: The above three Cat diff's should be dealt with together
+	Comment: Okay. Fixed during fixing diff's
+410040200191	adj	prep
+410040200221	adj	prep
+410040200251	adj	prep
+	Comment: The above three Cat diff's should be dealt with together
+	Comment: The next three is the same situation as the three above in verse 40004008, but this verse was not in the diff list so it hasn't been fixed.
+	Modifications:	changed ἓν -> prep -> [adjp -> np -> S -> CL -> CL]-> CL(0) to ἓν -> prep -> [pp(0) -> ADV(0) -> ADV(4)] -> CL(0), English to "in"
+	Modifications:	changed τριάκοντα -> noun -> np [-> O ->] ADV(0) to τριάκοντα -> noun -> np [-> pp(0)]
+	Comment: Made the similar changes to the following two [prep noun] pairs
+	Modifications:	changed καρποφοροῦσιν -> verb -> vp -> [V(0) -> CL] -> CL(0) to καρποφοροῦσιν -> verb -> vp -> [V(0)] -> CL(0)
+	Comment: CHECK TREE
+
+
+410050410091	noun	ptcl
+	Comment: It seems this and the following category changes are similar to 400270460141 and 400270460541 above.
+	Comment: But in this case, the first word is a noun that changes to a ptcl, and is like an explicit S of a imperative, or an address.
+	Comment: there is a {ptcl -> np} rule and {ptcl -> intj} rule.
+	Comment: Looking at the translation into Greek later in the verse, it seems more like an intj rather than an S, but the current structure seems okay for an address.
+	Comment: Okay. No need for any change.
+	Comment: CHECK TREE
+410050410101	verb	ptcl
+	Comment: There are a variety of rules that change ptcl to another category (intj, np, adv, pron, conj, S, P)
+	Comment: But the original was an imperative unlike the verb 400270460541, so I will chose to try and keep it as a verb.
+	Comment: We will use the two rules {ptcl -> intj} and {intj -> vp} to accomplish this.
+	Modifications:	changed κοῦμ -> [ptcl -> vp] -> V to κοῦμ -> [ptcl -> intj -> vp] -> V
+	Comment: CHECK TREE
+
+
+410060060111	noun	adv
+	Comment: There is no rule {adv -> np}
+	Modifications:	changed κύκλῳ -> adv -> [np] -> ADV to κύκλῳ -> adv -> [advp] -> ADV
+410060360071	noun	adv
+	Comment: There is no rule {adv -> np}
+	Modifications:	changed κύκλῳ -> adv -> [np -> advp] -> np(0) to κύκλῳ -> adv -> [advp] -> np(0)
+
+
+410070110121	noun	ptcl
+	Comment: It seems like they are changing all Aramic (or foreign) words into ptcl
+	Comment: In this case, it stands alone and seems to be a noun.
+	Comment: There is a {ptcl -> np} rule so no need to change the tree. But the Greek is lowercase so changing the English.
+	Modification: κορβᾶν, -> noun English to "korban"
+410070340101	verb	ptcl
+	Comment: There are a variety of rules that change ptcl to another category (intj, np, adv, pron, conj, S, P)
+	Comment: But the original was an imperative like the verb 410050410101, so I will chose to try and keep it as a verb.
+	Comment: We will use the two rules {ptcl -> intj} and {intj -> vp} to accomplish this.
+	Modifications:	changed ἐφφαθά -> [ptcl -> vp] -> V to ἐφφαθά -> [ptcl -> intj -> vp] -> V
+	Comment: CHECK TREE
+
+
+410080170031	verb	noun
+	Comment: The diff analysis was incorrect, which caused this Cat diff to also be incorrect.
+	Comment: There is no Cat change to fix.
+	Comment: But we need to undo the improper change of the Cat for λέγει
+	Modifications:	changed λέγει -> [noun] -> vp to λέγει -> [verb] -> vp
+
+410110130101	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule
+	Comment: So we need to add an advp node above this new adv node.
+	Modifications:	changed ἄρα -> adv [->] CL(0) to ἄρα -> adv [-> advp ->] CL(0)
+	Comment: This word and εἰ 410110130091 are not in order in the tree. Should the order in the tree follow the word order in the text?
+	Comment: CHECK TREE
+
+
+410130300111	prep	conj
+	Comment: The Unicode and StrongNumber are the same, only Cat changed.
+	Comment: It is a subordinating conj.
+	Comment: Although there is a {conj np -> np} rule, I think it is best to use the {conj CL -> CL} rule along with {CL -> ADV} rule
+	Modifications:	changed "οὗ ταῦτα πάντα γένηται." --> CL [-> np ->] pp(0) -> ADV to "οὗ ταῦτα πάντα γένηται." --> CL [->] pp(0)
+	Modifications:	changed μέχρις -> conj -> [pp(0)] -> ADV to μέχρις -> conj -> [CL] -> ADV
+	Comment: CHECK TREE
+
+
+410140050071	prep	adv
+	Comment: There is no {adv np -> pp} rule but there is {advp np -> np} rule and {np -> ADV} rule
+	Modifications:	changed ἐπάνω -> adv -> [pp] -> ADV to ἐπάνω -> adv -> [advp -> np] -> ADV
+410140360031	noun	intj
+	Comment: Because of the punctuations, I will treat this as two separate address, "Abba" and "Father" so each will
+	Modifications:	changed "ὁ Πατήρ," --> np(0) [-> np -> CL(0)] -> CL(1) to "ὁ Πατήρ" --> np(0) [-> CL(0)] -> CL(1)
+	Modifications:	created [CL(2)], connected CL(1) to CL(2), connected CL(2) to np(1) where "Ἀββά," --> np(1)
+	Q: Should the two address CL's be combined first before being combined with the third CL?
+	Comment: CHECK TREE
+
+
+410150340101	noun	ptcl
+410150340111	noun	ptcl
+410150340121	adv	ptcl
+410150340131	verb	ptcl
+	Comment: This is a similar passage as in 40027046 where Jesus is speaking Aramic and UGNT has changed all the words into ptcl's
+	Comment: But unlike in 40027046, Ἐλωῒ is changed to a ptcl and not left as a noun, but leaving it as a noun in 40027046 was a mistake.
+	Comment: I have gone back to correct 40027046.
+	Comment: Nothing needs to be done for 410150340101 and 410150340111 since there is a {ptcl -> np} rule
+	Comment: There is no {ptcl -> advp} rule but there is a {ptcl -> adv} rule
+	Modifications:	changed λεμὰ -> [ptcl -> advp] -> ADV to λεμὰ -> [ptcl -> adv -> advp] -> ADV
+	Comment: There is no {ptcl -> vp} rule but there is {ptcl -> intj} and {intj -> vp}
+	Modifications:	changed σαβαχθάνει? -> [ptcl -> vp] -> V -> CL to σαβαχθάνει? -> [ptcl -> intj -> vp] -> V -> CL
+	Comment: We may want to just not even try to parse the ptcl for foreign phrases (i.e., just make it {ptcl ptcl ptcl ptcl -> CL}
+	Comment: CHECK TREE
+
+
+420010600071	adv	intj
+	Comment: There are rules to change intj to vp, V, np, and CL. To keep the fix simple, I will use the {intj -> CL} rule.
+	Modifications:	changed οὐχί -> [intj -> advp -> ADV] -> CL to οὐχί -> [intj] -> CL
+
+
+420050120161	verb	conj
+	Comment: This Cat diff does not exist but due to the wrong diff analysis.
+	Comment: Okay, nothing needs to be done.
+420050120171	conj	verb
+	Comment: This Cat diff does not exist but due to the wrong diff analysis.
+	Comment: Okay, nothing needs to be done.
+
+
+420090120191	noun	adv
+	Comment: There is no {adv -> np} rule, but since above it is {np -> advp} we just need to remove the np level.
+	Modifications:	changed κύκλῳ -> [adv -> np -> advp] -> np(0) to κύκλῳ -> [adv -> advp] -> np(0)
+420090140161	prep	adv
+	Comment: There is no {adv np -> pp} rule but there is a {advp np -> np} rule
+	Comment: Need to add an advp level and the np will need to be propogated upwards as well.
+	Modifications:	changed ἀνὰ -> [adv -> pp] -> pp(0) -> np(0) to ἀνὰ -> [adv -> advp -> np(1)] -> pp(0) -> np(0), English from "fifty each" to "each"
+	Modifications:	changed πεντήκοντα -> noun -> np -> np(1) -> [pp(0)] -> np(0) to πεντήκοντα -> noun -> np -> np(1) -> [np] -> np(0), English from "*" to "fifty"
+	Modificattions:
+	Comment: Not sure if the right branching np's is the correct structure
+	Comment: CHECK TREE
+	
+
+420100010131	prep	adv
+	Comment: Okay. Fixed during fixing diff's
+	Modifications:	ἀνὰ -> adv English from "-" to "each"
+420100300021	det	conj
+	Comment: This Cat change does not exist. It is from an incorrect diff analysis. It is a deletion of the det and adding a conj
+	Comment: Okay. Nothing needs to be changed.
+
+
+420110480021	noun	verb
+	Comment: Okay. Fixed during fixing diff's
+
+
+420130070241	adv	pron
+	Comment: Okay. Fixed during fixing diff's 
+
+
+420180070041	ptcl	adv
+420180070051	ptcl	adv
+	Comment: There is no {adv -> CL} rule but there are {adv -> advp} and {advp -> CL} rules, so need to add an advp node above adv.
+	Modifications:	changed μὴ -> [adv -> CL(0)] -> CL(1) to μὴ -> [adv -> advp(0) -> CL(0)] -> CL(1)
+	Modifications:	changed οὐ -> [adv -> CL(1)] -> CL(2) to μὴ -> [adv -> advp -> CL(1)] -> CL(2)
+	Comment: Since the tree is not a pure syntactic tree (i.e., words are moved around) but tries to reflect the semantic meaning.
+	Comment: I think the last CL "μακροθυμεῖ ἐπ’ αὐτοῖς?", along with the conj, should be inside of "μὴ" rather than only the previous CL being inside of "μὴ" (i.e. "will he not have patience with them?
+	Comment: The English gloss of "δὲ" has the [will not] so it is outide the following clauses, but that is not represented in the tree.
+	Comment: Or if we don't want to change the in this way, then maybe just moving "μὴ" to before "οὐ" would achieve this effect, but I personally don't like changing word order if not necessary.
+	Modifications:	deleted CL(1) [->] CL(2) [->] CL(3), connected CL(3) to CL(1)
+	Modifications:	inserted (CL(2) between CL(0) and CL(4) where {advp(0) CL(4) -> CL(0)}
+	Modifications:	changed δὲ -> conj English from "now [will not]" to "now"
+	Modifications:	changed μὴ -> adv English from "*" to "[will] not"
+	Comment: CHECK TREE
+
+
+420190170041	ptcl	adv
+	Comment: The starting tree was already fixed automatically.
+	Comment: Okay, nothing needs to be done.
+	
+
+430020060141	prep	adv
+	Comment: The starting tree was already fixed automatically.
+	Comment: Okay, nothing needs to be done.
+	Comment: I recall that in other places "ἀνὰ" as an adv/advp before an np was a adjunct modifier of the np. 
+	Comment: That is not the case here, but maybe it should be.
+	Comment: CHECK TREE
+
+
+430070260091	ptcl	adv
+	Comment: There is no {adv -> CL} rule but there are {adv -> advp} and {advp -> CL} rules, so need to add an advp node above adv.
+	Modifications:	changed μήποτε -> [adv -> CL] -> Verse to μήποτε -> [adv -> advp -> CL] -> Verse
+
+
+430090090081	adv	intj
+	Comment: There is no {intj -> advp} but there is {intj -> CL}
+	Modfications:	changed οὐχί -> [intj -> advp -> ADV -> CL] -> CL to οὐχί -> [intj -> CL] -> CL
+
+
+430180110201	ptcl	adv
+430180110211	ptcl	adv
+	Comment: There is no {adv -> CL} rule but there are {adv -> advp} and {advp -> CL} rules, so need to add an advp node above adv.
+	Modifications:	changed οὐ -> [adv -> CL(0)] -> CL to οὐ -> [adv -> advp -> CL(0)] -> CL
+	Modifications:	changed μὴ -> [adv -> CL] -> CL(0) to μὴ -> [adv -> advp -> CL] -> CL(0)
+	Comment: Would it make more sense to combine the two negations as conjoined/adjunct advp's under the same CL?
+	Comment: The current tree makes it a double negative, as opposed if they are adjuncts, it would be more as an emphasis rather than double negation.
+	Comment: CHECK TREE
+
+
+430210020271	num	adj
+	Comment: The starting tree is missing this word. I will document changes from the NA28 tree.
+	Comment: In other places, UGNT changes Cat num to det. Why is it changed to adj here?
+	Comment: There is no {adj -> nump} rule, but we do have an {adjp -> np} rule that we can use.
+	Modifications: changed δύο -> [num -> nump] -> np to δύο -> [adj -> adjp] -> np
+	Comment: CHECK TREE
+430210110151	num	adj
+430210110161	num	adj
+	Comment: In other places, UGNT changes Cat num to det. Why is it changed to adj here?
+	Comment: There is no {adj -> nump} rule, but we do have {adj -> adjp}, {adjp adjp adjp -> adjp} and {np adjp -> np} that we can use.
+	Modifications:	
+	Comment: CHECK TREE
+
+
+440040250131	adv	pron
+	Comment: Not really a change in category since the diff analysis had the wrong substitution
+	Comment: Okay. Fixed during fixing diff's 
+
+
+440050370061	noun	adj
+	Comment: There is no {adj -> np} rule so but there is a {adjp -> np} rule
+	Modifications:	changed Γαλιλαῖος -> [adj -> np(0)] -> np(1) to Γαλιλαῖος -> [adj -> adjp -> np(0)] -> np(1)
+
+
+440080040021	ptcl	adv
+Comment: biblehub.com has it as a ptcl.
+	Comment: There is an {adv -> conj} rule so there is no need to fix the tree.
+	Comment: But there is also a {advp CL -> CL} rule
+	Comment: So the question is does this still function more like a subordinating conj or subordinating advp?
+	Comment: biblehub.com says it is untranslatable but could be something like indeed, verily as a conjunction, so I will leave it as a conjunction.
+	Comment: CHECK TREE
+440080220131	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule so we need to insert an advp node
+	Modficiations:	changed ἄρα -> [adv -> CL(0)] -> CL(1) to ἄρα -> [adv -> advp ->  CL(0)] -> CL(1)
+
+
+440160370221	adv	intj
+	Comment: There is no {intj -> advp} rule but there is a {intj -> CL} rule so using this rule is simpler
+	Modification:	changed οὔ -> [intj -> advp -> ADV -> CL(0)] -> CL(1) to οὔ -> [intj -> CL(0)] -> CL(1)
+
+
+440170270051	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule so we need to insert an advp node
+	Modficiations:	changed ἄρα -> [adv -> CL(0)] -> CL(1) to ἄρα -> [adv -> advp ->  CL(0)] -> CL(1)
+	Comment: I happened to notice that 440170270041 εἰ changed from ptcl to conj, but it does not show up here. Why?
+
+440190390041	adv	pron
+	Comment: There is no {pron -> advp} rule, but there is {pron -> np} and {np -> ADV} so will change advp to np node
+	Modifications:	changed ἑτέρων -> pron -> [advp] -> ADV -> CL to ἑτέρων -> pron -> [np] -> ADV -> CL
+
+
+440240050061	noun	adj
+	Comment: There is no {adj -> np} rule, but there is {adjp -> np} rule
+	Modifications:	changed λοιμὸν -> [adj -> np(0)] -> np(1) to λοιμὸν -> [adj -> adjp -> np(0)] -> np(1)
+
+
+450030270111	adv	intj
+	Comment: There is no {intj -> advp} rule but there is a {intj -> CL} rule so using this rule is simpler
+	Modification:	changed οὐχί -> [intj -> advp -> ADV -> CL(0)] -> CL(1) to οὐχί -> [intj -> CL(0)] -> CL(1)
+
+450080150161	noun	intj
+	Comment: There is an {intj -> np} rule so there is nothing that needs to be fixed.
+	Comment: But the punctuations suggest that "Ἀββά," and "ὁ Πατήρ!" are do not make a single np that is a CL but they are two CL's.
+	Modifications:	deleted "ὁ Πατήρ!" --> np(0) [-> np ->] CL(0) -> CL(1), connected CL(0) to np(0)
+	Modifications:	created [CL(2)], connected CL(1) to CL(2), connected CL(2) to np(1) where "Ἀββά," --> np(1)
+	Modifications:	changed Ἀββά -> noun English from "Abba" to "Abba,"
+	Comment: CHECK TREE
+
+
+450150190151	noun	adv
+	Comment: Previously went from {np -> advp} so now we can just go directly from {adv -> advp}
+	Modifications:	κύκλῳ -> [adv -> np -> advp] -> pp to κύκλῳ -> [adv -> advp] -> pp
+
+
+460030010101	prep	conj (subordinating)
+	Comment: There is a {conj -> prep} rule that is also used for 460030010121
+	Comment: NA28 tree has this one as prep but the second one as conj, so it was consistent even though they are the same word (5613)
+	Comment: It seems the easiest is to just add prep above conj, though that negates why UGNT would change it to a conj unless it was in order to be consistent
+	Modifications:	changed ὡς -> [conj -> pp(0)] -> pp(1) to ὡς -> [conj -> prep -> pp(0)] -> pp(1)
+	Comment: CHECK TREE
+
+
+460040080101	verb	ptcl
+	Comment: There are rules to raise ptcl to intj, np, adv, pron, conj, S and P.
+	Comment: Easiest solution is to go from {ptcl -> intj} and then {intj -> CL} so the top CL stays the same
+	Comment: Another choice that is also easy is to just go from {ptcl -> conj} and then {conj CL -> CL} which is the structure of the following [conj CL]
+	Comment: biblehub.com states this is actually a verb meaning "would that" and must be followed by an indicative verb.
+	Comment: I think I will go the conj route
+	Modifications:	changed ὄφελόν -> ptcl -> [vp -> V -> CL] -> CL(0) to ὄφελόν -> ptcl -> [conj] -> CL(0)
+	Comment: CHECK TREE
+
+460050030021	ptcl	adv
+	Comment: There is an {adv -> conj} rule so no need to change since it was originally {ptcl -> conj}
+	Comment: Okay. Nothing needs to change.
+
+
+460100290111	adv	pron
+	Comment: Okay. Fixed during fixing diff's
+
+460140270121	prep	adv
+	Comment: There is no {adv np -> pp} rule but there is a {adv -> prep} rule
+	Modifications:	changed ἀνὰ -> [adv -> pp(0)] -> pp to ἀνὰ -> [adv -> prep -> pp(0)] -> pp
+	Comment: But this seems to negate why UGNT changed it to adv.
+	Comment: There is an {advp np -> np} rules so is the intention to make it go from pp to np?
+	Comment: CHECK TREE
+
+
+460160220091	noun	ptcl
+460160220101	verb	ptcl
+	Comment: This is another case where it seems UGNT has changed Cat to ptcl for foreign words.
+	Comment: There are rules to raise ptcl to intj, np, adv, pron, conj, S and P.
+	Comment: There are no punctuations in between these two words so no sense they have to be two CL's
+	Comment: So we can make them {S P -> CL}
+	Modifications:	changed μαράνα -> ptcl -> [np -> CL] -> CL(0) to μαράνα -> ptcl -> [S] -> CL(0)
+	Modifications:	changed θά! -> ptcl -> [vp -> V -> CL] -> CL(0) to θά! -> ptcl -> [P] -> CL(0)
+	Comment: CHECK TREE 
+
+
+470110010011	verb	ptcl
+	Comment: This seems similar to 460040080101, and for that situation, I chose to utilize {ptcl -> conj}
+	Modifications:	changed ὄφελον -> ptcl -> [vp -> V -> CL] -> CL(0) to ὄφελον -> ptcl -> [conj] -> CL(0)
+	Comment: CHECK TREE
+470110230061	prep	adv
+	Comment: The starting tree is already correct.
+	Comment: Okay. Nothing needs to change.
+
+
+480020070021	det	adv
+	Comment: There is no {adv -> np} rule, but {np -> ADV} and we have {advp -> ADV} so just need to change np to advp
+	Modifications:	changed τοὐναντίον -> adv -> [np] -> ADV -> CL to τοὐναντίον -> adv -> [advp] -> ADV -> CL
+
+
+480040060181	noun	intj
+	Comment: This is very similar to 410140360031 (see those comments).
+	Modifications:	changed "ὁ Πατήρ!" --> np(0) [-> np -> CL(0)] -> CL(1) to "ὁ Πατήρ" --> np(0) [-> CL(0)] -> CL(1)
+	Modifications:	created [CL(2)], connected CL(1) to CL(2), connected CL(2) to np(1) where "Ἀββά," --> np(1)
+	Q: Should the two address CL's be combined first before being combined with the third CL?
+	Comment: CHECK TREE
+480040190061	prep	conj (subordinating)
+	Comment: There is no rule {conj np -> pp} but we do have a rule that is {conj -> prep} so we can just add a prep above the conj
+	Comment: But doing this seems to negate why UGNT has it as a conj rather than a prep.
+	Q: Would it be better to make it {CL -> ADV} and have {conj CL -> CL}?
+	Comment: I think it is best to use it as a conj if it makes sense, and I think it does in this situation.
+	Modifications:	deleted "οὗ μορφωθῇ Χριστὸς ἐν ὑμῖν—" --> CL(0) [-> np -> pp] -> ADV
+	Modifications:	created [CL(1)], connected ADV to CL(1), connected CL(1) to conj and CL(0)
+	Comment: CHECK TREE
+
+
+480050120011	verb	ptcl
+	Comment: This seems similar to 460040080101, and for that situation (though this time there is a parallel clause following this one), and I chose to utilize {ptcl -> conj}
+	Modifications:	changed ὄφελον -> ptcl -> [vp -> V -> CL] -> CL(0) to ὄφελον -> ptcl -> [conj] -> CL(0)
+	Comment: CHECK TREE
+
+
+490020050081	det	prep
+	Comment: Okay. Fixed during fixing diff's
+	
+
+
+550020250061	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule so just insert an advp node above adv
+	Modifications:	changed μήποτε -> [adv -> CL(0)] -> CL(1) to μήποτε -> [adv -> advp -> CL(0)] -> CL(1)
+
+
+580020160031	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule so just insert an advp node above adv
+	Modifications:	changed δήπου -> [adv -> CL(0)] -> CL(1) to δήπου -> [adv -> advp -> CL(0)] -> CL(1)
+
+
+590030120011	ptcl	adv
+	Comment: There is no {adv CL -> CL} rule but there is a {advp CL -> CL} rule so just insert an advp node above adv
+	Modifications:	changed μὴ -> [adv -> CL(0)] -> CL(1) to μὴ -> [adv -> advp -> CL(0)] -> CL(1)
+
+
+600010210041	adj	verb
+	Comment: There is not a {verb -> adjp}, only {verb -> vp} and {verb -> intj}
+	Comment: It seems making this into a relative clause matches how it is translated in NIV
+	Comment: In 1Jn5:10, there is a similar construction at the beginning of the verse, and so the pp of belief should be ADV, and "through him" should also be ADV
+	Comment: There is also a det to pron change 600010210011 that is not listed here.
+	Comment: There is a {pron np -> np} rule so no need to fix the tree for this change,
+	Comment: but given the analysis that we now have a relative clause we should add an np above pron
+	Modifications:	changed τοὺς -> [pron -> np(0)] -> Verse to τοὺς -> [pron -> np(1) -> np(0)] -> Verse, English to "the [ones]"	Modifications:	changed "δι’ αὐτοῦ" --> [pp -> np(0) -> np(1)] to 
+	Modifications:	changed πιστεύοντας -> [verb -> adjp -> np -> np -> np] -> np(0) -> Verse to πιστεύοντας -> [verb -> vp -> V -> CL(0)] -> np(0) -> Verse
+	Modifications:	created [ADV(0)], connected CL(0) to ADV(0), connected ADV(0) to pp(0) where pp(0) spans the rest of the verse after "πιστεύοντας"
+	Modifications:	created [ADV(1)], connected CL(0) to ADV(1), connected ADV(1) to pp(1) where "δι’ αὐτοῦ" --> pp(1)
+	Comment: CHECK TREE
+	
+	
+600030090101	det	adv
+	Comment: There is no {adv -> np} rule but there is an {advp -> ADV} rule so just repalce np with advp node above the adv node
+	Modifications:	changed τοὐναντίον -> adv -> [np] -> ADV -> CL to τοὐναντίον -> adv -> [advp] -> ADV -> CL
+
+
+600050010021	det	conj
+	Comment: This Cat change is based upon an incorrect analysis. 
+	Comment: Okay. Fixed during fixing diff's 
+
+
+610010030201	adj	prep
+	Comment: Okay. Fixed during fixing diff's  
+
+
+610020060111	verb	noun
+	Comment: Okay. Fixed during fixing diff's
+
+
+650010130091	noun	adj
+	Comment: The starting tree is completely blank except for Verse node as a parent of an empty node! The NA28 tree is complete.
+	Comment: What happened here? Are there other verses that are like this?
+	Comment: Rather than creating the whole verse by hand, I will copy and paste the part of the tree from NA28 that is under S/Verse
+	Comment: There is no {adj -> np} rule, but there is a {np adjp -> np} rule so just need to replace the np node with an adjp node above adj
+	Modifications:	changed πλανῆται -> adj -> [np] -> np(0) to πλανῆται -> adj -> [adjp] -> np(0)
+
+
+660030150111	verb	ptcl
+	Comment: This seems similar to 460040080101, and for that situation, I chose to utilize {ptcl -> conj}
+	Modifications:	changed ὄφελον -> ptcl -> [vp -> V -> CL] -> CL(0) to ὄφελον -> ptcl -> [conj] -> CL(0)
+	Comment: CHECK TREE
+
+660040060161	noun	prep
+	Comment: There is no {prep -> np} rule, but there is a {pp np -> np} rule, remove interveninig np's between prep and higher pp
+	Modifications:	deleted κύκλῳ -> prep(0) [-> np(0) -> np(1) ->] pp(0), connected pp(0) to prep(0) and np(2) where {np(0) np(2) -> np(1)}
+660040080101	prep	adv
+	Comment: The starting tree is already correct.
+	Comment: Okay. Nothing needs to change.
+
+
+660050110081	noun	prep
+	Comment: There is no {prep -> np} rule, but there is a {pp -> ADV} rule, so make it into a pp
+	Modifications:	changed κύκλῳ -> prep(0) [-> np(0) -> np(1) ->]ADV(0) to κύκλῳ -> prep(0) [-> pp(0) ->] ADV(0)
+	Modifications:	connected pp(0) to np(2) where {np(0) np(2) -> np(1)}
+
+
+660070110061	noun	prep
+	Comment: There is no {prep -> np} rule, but there is a {pp -> ADV} rule, so make it into a pp
+	Modifications:	changed κύκλῳ -> prep(0) [-> np(0) -> np(1) ->]ADV(0) to κύκλῳ -> prep(0) [-> pp(0) ->] ADV(0)
+	Modifications:	connected pp(0) to np(2) where {np(0) np(2) -> np(1)}
+
+
+660160030191	noun	verb
+	Comment: Okay. Fixed during fixing diff's
+
+
+660210210071	prep	adv
+	Comment: The starting tree is already correct.
+	Comment: Okay. Nothing needs to change.
+

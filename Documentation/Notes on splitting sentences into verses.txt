@@ -1,0 +1,789 @@
+Characterizations of orphaned tree fragments
+
+In NA28, there are structures that are not part of the grammar that are a result of how sentences trees were split into verse trees.
+
+Here is part of the data in Errors.CheckTreeStructure_NA28.txt before using "ignoreStructures" in CheckTrees.cs.
+
+Unique Errors (14), Instances (1939):
+1 (2): adjp -> adjp
+2 (1): ADV -> ADV
+3 (1): ADV O2 -> CL
+4 (1): ADV S ADV ADV V O IO -> CL
+5 (1): advp CL -> vp
+6 (1700): CL -> CL
+7 (1): CL conj CL -> vp
+8 (1): conj adjp -> adjp
+9 (1): conj ADV -> ADV
+10 (5): conj pp -> pp
+11 (214): np -> np
+12 (1): O2 ADV -> CL
+13 (9): pp -> pp
+14 (1): V ADV IO ADV S -> CL
+
+==========================================
+Where it was discovered that it is best to retain the original NA28 structure, but where the starting trees (from some kind of auto update)
+changed the tree, I will "unfix" the tree by making it the same as in NA28 (where possible and desireable).
+
+56001007
+	Modifications:	changed [np adjp(0) -> adjp(1) -> P] to [adjp(0) -> adjp(2), np adjp(2) -> adjp(1) -> P]
+56001008
+	Modifications:	changed [adjp(0) -> Verse] to [adjp(0) -> adjp(1) -> Verse]
+
+==========================================
+
+1 (2): adjp -> adjp
+Error: No grammar rule to match adjp -> adjp structure in tree in verse 56001007
+Error: No grammar rule to match adjp -> adjp structure in tree in verse 56001008
+
+These two instances are a result of splitting:
+    {adjp(0) conj adjp(1) -> adjp(2)} and {adjp(3) adjp(2) -> adjp(4)
+into:
+    {adjp(0) -> adjp(2)} 
+and 
+	{conj adjp(1) -> adjp(2)} and {adjp(2) -> adjp(4)
+	
+If we collapse the two {adjp -> adjp}, then reconstructing the relationship would most likely give the wrong result.
+So it seems that it may be best to leave this repetition as it is.
+But with further consideration, if the original analysis has it be {adjp(3) adjp(0) conj adjp(1) -> adjp(4)},
+then removing both repetitions would lead to this reconstruction, which seem reasonable, but we would have to add another rule.
+The original analysis seems to lead towards the {adjp(0) conj adjp(1) -> adjp(2)} being a "not X but Y" analysis 
+even though there is not a separate adv or conj at the front.
+So conclusion is still to not collapse these.
+
+==========================================
+
+2 (1): ADV -> ADV
+Error: No grammar rule to match ADV -> ADV structure in tree in verse 50001027
+There is {CL -> ADV(0) -> ADV(1)} and {... ADV(1) -> CL(0) -> CL(1)} at the end of the verse.
+The following verse starts with {conj ADV(2) -> ADV(1) -> CL(0)} and {CL(0) CL(2) -> CL(1)}
+It seems like the things should be left alone since everything is needed to reconstruct the original sentence and there are no longer X -> X... sequences.
+
+
+==========================================
+
+3 (1): ADV O2 -> CL
+Error: No grammar rule to match ADV O2 -> CL structure in tree in verse 57001016
+There is {ADV O2 -> CL(0)} and {CL(0) CL(1) -> CL(2) -> S} at the beginning of the verse.
+The previous verse ends with {ADV O V -> CL(0) -> CL(2)} and {conj CL(2) -> CL(3)}
+Again, I think we should leave the verse alone since it will be needed to reconstruct the sentence tree.
+
+==========================================
+
+4 (1): ADV S ADV ADV V O IO -> CL
+Error: No grammar rule to match ADV S ADV ADV V O IO -> CL structure in tree in verse 40027003
+The whole verse is this portion {ADV S ADV ADV V O IO -> CL(0)} and does not have a rule because it is missing ADV at the end.
+The following sentence doesn't have an ADV at the beginning, but rather a {CL(1) CL(2) -> CL(3) -> S}
+But I think it is missing a {CL(3) -> ADV(0) -> CL(0)} since the previous verse is missing an ADV at the end, which ADV(0) could fulfill.
+Otherwise, there is nothing else that probably needs to change.
+
+==========================================
+
+5 (1): advp CL -> vp
+Error: No grammar rule to match advp CL -> vp structure in tree in verse 48001016
+At the end of there verse, there is {V IO -> CL(0) -> CL(1)} and {advp CL(1) -> vp -> V(0)} and {ADV V(0) -> CL(2)}
+At the beginning of the following verse, there is {ADV V ADV ADV -> CL(3) -> CL(1)} and {CL(1) conj CL(4) -> vp} (see comment for {CL conj CL -> vp} below.
+So combined, it would form {advp CL(1) conj CL(4) -> vp} which does have a rule [notCLbutCL], which both vp's have as their rule.
+But the head is 1 in both vp's, but that is incorrect for the original rule (should be 3). 
+The following verse also has {vp -> V -> CL(2) -> S}, which matches the nodes above the vp in this verse, 
+though it is not complete if you wanted to match the right edge of this verse all the way up to S.
+
+==========================================
+
+6 (1700): CL -> CL
+Two many to investigate, but from what I've seen, this is often do to having children CL's split up in rules like {CL CL ... -> CL} between verses.
+
+==========================================
+
+7 (1): CL conj CL -> vp
+Error: No grammar rule to match CL conj CL -> vp structure in tree in verse 48001017
+See comments for {advp CL -> vp} above.
+
+==========================================
+
+8 (1): conj adjp -> adjp
+Error: No grammar rule to match conj adjp(0) -> adjp(1) structure in tree in verse 56001008
+The whole verse is spaned by {conj adjp -> adjp -> adjp -> S}
+The previous verse ends with {adjp adjp adjp adjp adjp -> adjp(2) -> adjp(1)} and {adjp(3) adjp(1) -> adjp(4) -> P}
+The previous verse for adjp(1) has the wrong rule. It has it as [adjp2adjp] (no such rule) instead of [AdjpaAdjp]
+
+
+==========================================
+
+9 (1): conj ADV -> ADV
+Error: No grammar rule to match conj ADV -> ADV structure in tree in verse 50001028
+See comment on {ADV -> ADV}
+
+==========================================
+
+10 (5): conj pp -> pp
+Error: No grammar rule to match conj pp -> pp structure in tree in verse 49006019
+{conj pp(0) -> pp(1) -> ADV(0) -> CL(0)}, previous verse {pp(2) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0)}
+[Conj2Pp]
+Error: No grammar rule to match conj pp -> pp structure in tree in verse 53002010
+{conj pp(0) -> pp(1) -> ADV(0)} and {ADV(0) ... -> CL(0), previous verse {pp(2) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0)}
+[Conj2Pp]
+Error: No grammar rule to match conj pp -> pp structure in tree in verse 54002010
+{conj pp(0) -> pp(1) -> ADV(0) -> S}, previous verse {advp pp(2) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0)}
+[notPPbutPP]
+Error: No grammar rule to match conj pp -> pp structure in tree in verse 58009012
+{conj pp(0) -> pp(1)} and {pp(1) conj pp(2) -> pp(3) -> ADV(0)}, previous verse {pp(4) -> pp(1) -> pp(3) -> ADV(0)} and {... ADV(0) -> CL(0)}
+[Conj2Pp]
+Error: No grammar rule to match conj pp -> pp structure in tree in verse 66001005
+{conj pp(0) -> pp(1) -> ADV(0)} and {ADV(0) CL -> S}, previous verse {pp(2) conj pp(3) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0)}
+[Conj3Pp]
+Should leave it as it is.
+
+==========================================
+
+11 (214): np -> np
+
+==========================================
+
+12 (1): O2 ADV -> CL
+Error: No grammar rule to match O2 ADV -> CL structure in tree in verse 56003002
+{O2 ADV -> CL -> S} spans the whole verse, where {CL CL CL -> CL(0) -> O2}
+previous verse has {V O O2 -> CL -> S} where {CL CL CL -> CL(0) -> O2}
+So I think the original had {CL CL CL CL CL CL -> CL(0) -> O2}
+
+==========================================
+
+13 (9): pp -> pp
+Error: No grammar rule to match pp -> pp structure in tree in verse 41003007
+Error: No grammar rule to match pp -> pp structure in tree in verse 45003025
+Error: No grammar rule to match pp -> pp structure in tree in verse 45003026
+Error: No grammar rule to match pp -> pp structure in tree in verse 49006018
+Error: No grammar rule to match pp -> pp structure in tree in verse 53002009
+Error: No grammar rule to match pp -> pp structure in tree in verse 54002001
+Error: No grammar rule to match pp -> pp structure in tree in verse 54002002
+Error: No grammar rule to match pp -> pp structure in tree in verse 58009011
+Error: No grammar rule to match pp -> pp structure in tree in verse 58009011
+
+41003007 - {pp -> pp(0) -> ADV} at end of verse, and following verse has {conj pp... -> pp(0) -> ADV(0)} and {ADV(0) ... -> CL -> Verse}
+This should be left alone since the leading ADV of the following verse is not really an orphaned fragment of the verse since it is needed for the parent CL of the following verse.
+You could say that the ADV of this verse is an orphaned fragment of the following verse, but it is more than just the ADV but the {conj CL -> CL} belongs to the following verse.
+So probably best to leave this alone.
+
+45003025 & 4500326
+In the first verse, it is {pp(0) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL -> Verse}
+In the second verse, it is {pp(2) -> pp(1)}, and {pp(1) ... -> pp(3) -> Verse}
+Best to leave it as it is.
+
+49006018
+At the end of the verse, it is {pp(0) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0) -> CL(1)} (so it also has a CL -> CL fragment)
+and the following verse has {pp(1) -> ADV(0) -> CL(0)} and {CL(0) CL(2) -> CL(1)}
+So it is best to leave both the pp -> pp and CL -> CL in there so the correct sentence tree can be reconstructed.
+See comment on 49006019
+
+53002009
+There is {pp(0) -> pp(1) -> ADV(0} and {... ADV(0) -> CL(0) -> Verse}
+The following verse has {conj pp -> pp(1) -> ADV(0)} and {ADV(0) ... -> CL(0) -> Verse}
+What is strange is the rule for CL(0) in the two verses are exactly the same [ADV-ADV-ADV] but this only fits the in the second verse.
+The first verse should have the rule [S-VC-P-ADV-ADV-ADV] for CL(0). So whatever split the verse somehow messed it up.
+But beyond that, I would have thought that the rule for the second verse should have also been [S-VC-P-ADV-ADV-ADV], but maybe it changed it so it would fit the actual tree.
+See comment on 53002010
+
+54002001 & 54002002
+Error: No grammar rule to match pp -> pp structure in tree in verse 54002001
+Error: No grammar rule to match pp -> pp structure in tree in verse 54002002
+First verse ends with {pp(0) -> pp(1) -> ADV(0)} and {... ADV(0) -> CL(0) -> CL(1) -> O}
+Second verse starts with {pp(2) -> pp(1) -> ADV(0) -> CL(0)} and {CL(0) CL(2) -> CL(1) -> S}
+So it seems it was {pp(0) pp(2) -> pp(1)} using rule [2Pp]
+Should leave it alone so we can reconstruct the sentence
+
+58009011
+Error: No grammar rule to match pp -> pp structure in tree in verse 58009011
+See comment on 58009012
+
+
+==========================================
+
+14 (1): V ADV IO ADV S -> CL
+Error: No grammar rule to match V ADV IO ADV S -> CL structure in tree in verse 49003010
+Verse ends with {V ADV IO ADV S -> CL(0)} and {conj CL(0) -> CL(1) -> CL(2) -> S}
+The following verse has {pp -> ADV -> S} which spans the whole verse, so it is likely ADV is at the end so it is rule [V-ADV-IO-ADV-S-ADV]
+It would have been better if the following verse was {pp -> ADV -> CL(0) -> S} so there was a single common node between the verses
+
+==========================================
+
+
+OTHER NOTES (some taken from Telegram conversations with Andi)
+
+Sure, nor problem. I noticed this but just left them as they were. But I also noticed that in some places, 
+they got collapsed (i.e., they are different from the NA28 trees), and for some of them, I put the nodes back in, 
+but only after I realized they were due to splitting sentence trees. But before that, I remember manually removing 
+some of these repetitive nodes and have not gone back to put them back. So removing them makes sense since the 
+current trees are a mixture of having the nodes and not having them.
+
+This will also reduce some of the need for the program to ignore some constituent structures when checking structures 
+against the grammar because they are artifacts of splitting sentences into verses (though I don't think it will eliminate 
+the need for ignoring some structures).
+
+Hmm...looking at Col1:6, simplifying this kind of structure will be tricky. In my mind, I was thinking of places 
+where I saw CL -> CL -> CL... or np -> np -> np... because of splitting sentence trees into verse trees. 
+But Col1:6 is more complicated. This example almost makes me think it is better to go back to Sentence trees and 
+find a way to mark sentence trees into verses (i.e., use morphId to help identify verses) because there doesn't seem 
+to be a good way to do this since the np tree at the very bottom is not really part of the top CL really.
+
+I might be tempted to leave make it np -> pp -> ADV -> CL CL -> CL -> Verse, but there is no prep for the pp since that 
+is part of the previous verse.
+
+Making it np -> ADV -> CL CL -> CL gets rid of that problem, but it may be semantically weird to have the np be ADV.
+
+The cleanest way would maybe be to have it be np CL -> CL -> Verse since it shows that it is a stranded np from the 
+previous verse connected to the CL of the present verse, but this would require having a new rule np CL -> CL, which 
+we probably don't want to do.
+
+We could try to make it np CL -> Verse, and since Verse on the RHS, then it is okay since we have no rules that have 
+Verse on the RHS and we can just say this verse has an np node and a CL node. Since splitting sentences into verse will 
+always result in this kind of orphaned structure for the following or previous verse, it is most likely always at the top 
+of the tree like this.
+
+Do you have a list of the verses that have these orphaned sentence tree fragments?
+
+=================================
+ANDI: I don't have a list, but I think we can automatically detect them and fix them.
+
+ANDI: [In reply to Charles Lee]
+In each case we would like to keep a functional category, an xp, and a terminal node, such as CL -> O -> np -> noun.
+Keep the lowest functional category.  Sometimes the functional category may not make sense, but it should make sense 
+in a larger context.
+=================================
+
+In the Col1:6 example, the question becomes do you want the highest functional category or the lowest. Also, do you want 
+to keep the structure below it fit the grammar, or is it okay to have structure that doesn't follow the grammar. 
+Currently, I ignore the structure that doesn't follow the grammar as long as it is part of the NA28 trees.
+
+There are S* -> CL, V* -> CL, O* -> CL, IO* -> CL, and ADV* -> CL rules, but no O2* -> CL rule, so we may need 
+to add that last rule.
+
+Okay, I will keep the lowest functional category.
+
+But do I use it to replace the topmost node, or keep the topmost node? Either way, it may require a new rule or ignore 
+a particular structure.
+
+=================================
+ANDI: If the top node is CL, keep that CL and the lowest functional category.
+ANDI: Otherwise just the lowest functional category.
+=================================
+
+If the top node is not CL, then should the lowest functional category be a child of Verse?
+
+I don't know if there is an orphan fragment that is at the end of a verse (I think I recall seeing one but not sure), 
+but if the fragment at the end of a verse is due to a left-branching structure, should it be handled in the same way?
+
+=================================
+ANDI: Yes.
+=================================
+
+I think I will write something to try and identify the different verses that have these orphaned tree fragments and 
+then maybe we'll have a better idea of what we are dealing with rather than me thinking of all the possible scenarios and 
+how to deal with them.
+
+Okay.
+
+To make sure I understand you, when you say the "top node is CL" do you mean the top node of the sequence where 
+below this top node, each node only has one child? That is, the top node of something like np -> pp -> ADV(0), 
+then ADV(0) CL(0) -> CL(1), is ADV(0) and not CL(1). I'm using the arrows like they are used in the grammar 
+(i.e., not in CFG expansion notation).
+
+=================================
+ANDI: In this case, keep ADV(0) and CL(0).  CL(1) has other children, right?  This will mean this ADV is part of a CL.
+ANDI: Keep CL(1), of course.
+=================================
+
+September 8
+I've started to investigate the parts where a sentence was split. I notice there are repetitions where I must have 
+already reduced them manually, but these are the simple ones (like CL -> CL -> CL... to just CL -> CL). I think I left 
+at least a single repetition to indicate that this is due to splitting of a sentence. The more complicated repetitions 
+(of a sequence or more complicated embedding) are still in the trees. I will do what you stated yesterday regarding 
+keeping a top CL and then directly to the lowest functional node, and if there is no top CL, then just to the lowest functional node.
+
+=================================
+ANDI: This extra step may delay the release a bit, but hopefully not too much.
+=================================
+
+I will do this throughout, which will change something like np -> P -> CL -> CL (e.g. in Gal5:23) into just np -> P -> CL.
+
+=================================
+ANDI: We need to announce the release before we go to Missio Nexus.
+=================================
+
+I looked at Col1:6 and Col1:5, and it seems that I should have left the the  repetitions like np -> np... alone since it is 
+meaningful in these two verses since we will leave the ADV since it is the lowest functional node, and having the extra np 
+is needed to properly relate the np in Col1:6 to the sister np in Col1:5. I had manually removed the repeated np's and 
+just left two of them, but having just two repeated np's will give the incorrect relationship.
+
+So my question is should I check whether the structure under the lowest functional node is correct to give the proper 
+relationship to the tree fragment of the following/preceding verse tree under the same functional node?
+
+=================================
+ANDI: No.  That would take too long.
+=================================
+
+Complicated situations like this is why I think I previously thought it might be best just to take the lowest node that 
+spans the orphaned tree fragment and to attach it as a child of "Verse" since it is the easiest way to indicate it belongs 
+to the previous/following verse but makes no claims as to where it belongs in that tree.
+
+=================================
+ANDI: That works.
+=================================
+
+Yes, it would not only take too long, but would leave long repetitions in the trees, and I think that is what you wanted to get rid of.
+
+I hate to keep bringing up different cases, but I just saw another one that any automatic method may not catch all of the situations 
+(and maybe that is okay).
+
+=================================
+ANDI: That's OK.
+=================================
+
+In Mat24:3 and Mat27:4, (NA28 trees) the top structure of Mat24:3 (ADV S ADV ADV V O IO -> CL)  got flagged as not have 
+a grammatical rule, and the reason why is it should have one mor e ADV child. So I looked to see if there is an ADV node 
+at the beginning of Mat27:4 there is no ADV node that I could see. It could be that the first top CL node should go to ADV 
+but that is not in the tree of Mat 27:4. Looking at the tree of Mat 37:4, it looks perfectly normal with no indication there 
+is an orphaned tree fragment from the previous verse, except for the fact that there are two children of the S/Verse node.
+
+I've discovered that the rules in the NA28 trees don't always match what I would have thought would be the rule for verses 
+that are part of split sentences.
+
+For example, 2Th2:9 has a top CL that has the rule ADV-ADV-ADV with the head 0, even though it is {S VC P ADV -> CL}. 
+The original sentence looks like that CL should be {S VC P ADV ADV ADV -> CL}. Also, for 2Th2:9, the top CL has the rule ADV-ADV-ADV 
+with head 0, which fits the tree as it is, but I would have thought it would have kept the original rule and head when 
+it was part of the sentence tree.
+
+So what I'm wondering is when the sentence trees were split, what was the principle by which the rule and head for the nodes 
+were kept or changed?
+
+=================================
+ANDI: It was a very simple process that chops up or merges sentence trees.  No adjustment to Head/Cat.  I was looking for 
+the code I wrote but was not able to find it.  Randall used that program to convert sent trees to verse trees.  
+I need to ask Randall to get the name of that program.
+ANDI: The program that converts sentence trees to verse trees is Projects\VersifyGreekTrees.
+=================================
+
+September 9
+Okay, I'll take a look at that program. If there were no adjustments to head, I assume there were no adjustments to rule.
+
+I asked the question not because it has a big impact on what I need to do, but more out of curiosity. Since splitting 
+the sentence trees into verse trees could have tree fragments that don't follow any rules in the grammar 
+(that is what I discovered when I checked the tree structure against the grammar), I had thought rules and heads would 
+not change at all in the split trees. It would just be understood that the rules don't apply to the split parts of the sentences. 
+I go through and check the rules and assign new rules if it no longer matches anyway, so whatever was there before 
+that is not correct doesn't really matter since I assign the correct rule.
+
+Oh, that may not be a 100% correct. If the structure was one that existed and didn't have a rule in NA28, I currently ignore 
+that structure when assigning rules/heads. This means there still could be incorrect rules/heads in the tees. Hmm...I think 
+if it is important to have the new UGNT trees all have rules and heads that are consistent with a grammar file, 
+then I will need to not ignore those structures and create new "fake/partial" rules in the grammar to account for those cases.
+
+But this should be done after we do the new breaking up of verses so that orphan fragments are not incorporated into the verse directly, 
+but are a separate child under Verse (potentially with no functional category as the first node).
+
+
+=================================
+ANDI: This is can be after we have the UGNT sentence trees.
+=================================
+
+Oh, so is the eventual goal is to have UGNT sentence trees in addition to UGNT verse trees?
+
+It seems it is easier to break up sentence trees than to reconstruct them from verse trees, especially after we have simplified 
+the verse trees.
+
+If so, then I think I'll need to keep a copy/version of the UGNT verse trees before we simplify them for release?
+
+I had originally thought I'd simplify them early in the process rather than later, but I guess I should do it later, 
+and possibly have to redo some other processing (assigning rules, nodeId, etc.) on the version before I simplify them 
+so I have a coherent copy of the verse trees that are not simplified (i.e., retains details we can use to reconstruct sentence trees).
+
+I was checking to see how much of the NA28 repeated structure (e.g. adjp -> adjp) were in the UGNT trees since I'm thinking 
+that some of these should remain in the UGNT trees since they give us indications of how to reconstruct the sentence trees. 
+However, I've discovered that for many (I'm not sure if they are all), the auto creation of the starting point for UGNT trees 
+removed these repetitions of nodes.
+
+Below are the repetition structures I'm talking about in NA28 that are a result of splitting sentence trees to verse trees.
+
+(2): adjp -> adjp
+(1): ADV -> ADV
+(1700): CL -> CL
+(214): np -> np
+(9): pp -> pp
+The numbers in parentheses are the number of instances.
+
+For all but CL -> CL and np -> np, I could probably manually correct them, but it won't be meaningful unless we can recover 
+all of these that were removed.
+
+It is not possible to modify the program that auto changed NA28 trees to the starting UGNT trees since there was lots of 
+manual modifications to these trees since (we wouldn't want to have to redo these).
+
+It should be possible for me to process the NA28 trees and write out the exact places where these repetitions occurred, 
+and then to write a program to check the UGNT trees and make sure these repetitions are added back, but that will take a few days, 
+delaying the release of UGNT trees.
+
+Do you think it is important enough that the UGNT trees we release (or the ones we keep for ourselves) have enough 
+details/structures in them so that one could write a program to automatically reconstruct the sentence trees?
+
+I suppose we could release UGNT trees that have all of these repetitions removed, and then later work on fixing the UGNT trees 
+that we want to use that will have these repetitions (or at least the instances we want to keep) in them.
+
+=================================
+ANDI: Yes.  Release the verse trees first.  We will worry about the sentence trees later.
+=================================
+
+
+
+
+
+REPETITIVE nodes
+Here are the results for looking at all of the trees for repetitive unitary nodes (repeat any node category)
+
+Unique Types (25), Instances (64):
+1 (1): adjp -> P -> CL -> O -> CL
+2 (1): adv -> advp -> ADV -> CL -> ADV
+3 (32): CL -> ADV -> CL
+4 (1): CL -> ADV -> CL -> np -> pp -> ADV -> CL -> adjp -> np -> CL
+5 (1): CL -> ADV -> CL -> np -> S -> CL
+6 (2): CL -> CL
+7 (1): CL -> np -> ADV -> CL
+8 (2): CL -> np -> O -> CL
+9 (1): CL -> np -> O -> CL -> ADV -> CL
+10 (1): CL -> np -> pp -> ADV -> CL
+11 (1): CL -> np -> pp -> ADV -> CL -> np -> S -> CL
+12 (1): CL -> np -> pp -> ADV -> CL -> O -> CL
+13 (3): CL -> np -> S -> CL
+14 (5): CL -> O -> CL
+15 (1): CL -> P -> CL
+16 (1): noun -> np -> np -> ADV
+17 (1): np -> CL -> np -> S
+18 (1): np -> np -> pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+19 (1): np -> O -> CL -> np -> S
+20 (1): np -> P -> CL -> CL
+21 (1): pp -> ADV -> CL -> ADV
+22 (1): pp -> ADV -> CL -> np -> IO -> CL
+23 (1): pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+24 (1): pp -> np -> pp -> ADV
+25 (1): verb -> vp -> V -> CL -> ADV -> CL
+
+Instances below:
+
+Stat: verseId 40015005 has CL -> np -> S -> CL
+The top CL matches following verse
+Following verse needs no change since CL is already directly under Verse, and Verse matches the CL above top CL
+
+Stat: verseId 40015035 has CL -> ADV -> CL
+The top CL matches following verse
+Following verse needs no change since all of following verse is part of the same sentence
+
+Stat: verseId 40027033 has CL -> ADV -> CL
+The top CL matches following verse
+Following verse needs no change since CL is already directly under Verse, and Verse matches the CL above top CL
+
+Stat: verseId 40027062 has pp -> ADV -> CL -> ADV
+The CL matches following verse
+Following verse needs no change since CL is already directly under Verse
+40027062 is missing a second CL between the two ADV's since Verse matches the CL above top CL
+
+Stat: verseId 41006054 has CL -> ADV -> CL
+Tthe top CL matches following verse
+Following verse needs no change since all of following verse is part of the same sentence
+
+Stat: verseId 41007019 has CL -> CL
+The top CL matches previous verse
+Previous verse needs no change since all of the previous verse is part of the same sentence
+Not sure whether the second CL in 41007019 should be a different sentence or not.
+
+Stat: verseId 42001055 has CL -> ADV -> CL
+The top CL matches previous verse
+Previous verse needs no change since all of the previous verse is part of the same sentence
+It seems the top CL should be directly under Verse, and the second CL should also be directly under Verse (i.e. the verse has two orphaned fragments of the previous verse)
+
+Stat: verseId 42020047 has CL -> np -> pp -> ADV -> CL
+The pp matches previous verse.
+The bottom CL is the relative clause to the np in the previous verse.
+So need to insert np between pp and np of the previous verse.
+Or maybe there is is a missing np node between pp and np of the previous verse (should have an np -> np repetition) to match np's since we want a {np CL -> np} structure.
+Should attach bottom np directly to Verse, and the second CL should also be directly to Verse
+
+Stat: verseId 43005029 has CL -> np -> S -> CL
+The S matches previous verse
+The bottom CL is the relative clause to the np in the previous verse.
+So need to insert np between S and np of the previous verse.
+Or maybe there is is a missing np node between S and np of the previous verse (should have an np -> np repetition) to match np's since we want a {np CL -> np} structure.
+Should attach bottom np directly to Verse, and the second CL should also be directly to Verse
+
+Stat: verseId 43008003 has CL -> ADV -> CL
+The top CL matches the following verse.
+The first CL of the following verse should be directly attached to Verse.
+The second CL of the following verse should be directly attached to Verse.
+But the second CL of the following verse seems like it is also part of this verse but there should be another CL above the top CL.
+
+Stat: verseId 43017023 has CL -> CL
+The top CL matches the previous verse, but not sure which one.
+
+Stat: verseId 44001021 has np -> CL -> np -> S
+The top np should have the second CL of the following verse as a relative clause.
+This requires making this unitary fragment actually {np CL -> np -> S} where the CL is the second CL in the following verse.
+So we could change it to np -> np -> S so we know can "guess" the second CL is the right child of the top np.
+
+Stat: verseId 44001022 has CL -> ADV -> CL -> np -> pp -> ADV -> CL -> adjp -> np -> CL
+The second from the bottom CL matches lowest right edge CL of the previous verse or,
+The pp matches the lowest right edge pp of the previous verse, which requires the np under it to be inserted between pp and np of the previous verse.
+There is more bove the pp because it shows where the second CL is supposed to attach, which is as a relative clause of the top np in the previous verse.
+So we could just make the lowest ADV attach directly to the Verse, and make the second CL attach directly to the verse.
+
+Stat: verseId 44002030 has CL -> ADV -> CL
+The top CL matches the following verse.
+The second CL of the following verse seems to be part of this verse, but seems to need an extra CL node
+
+Stat: verseId 44006006 has CL -> np -> O -> CL
+The O matches the previous verse, but the np under the O should be inserted between the O and np in the previous verse
+or the previous verse needs an extra np between the O and np and then it would be the np that matches.
+It seems the splitting program splits it first and then actually removes repeating phrase nodes at the location of the split,
+or it cuts out that node and the attache parent and child of that node.
+
+Stat: verseId 44010007 has CL -> ADV -> CL
+The top CL matches the top CL of the following verse.
+
+Stat: verseId 44015029 has CL -> np -> pp -> ADV -> CL -> np -> S -> CL
+The top S matches the previous verse, but the np under the S should be inserted between the S and np in the previous verse
+Lowest CL is a relative clause to an np in the previous verse
+
+Stat: verseId 44017027 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the second CL from the top on the right edge.
+
+Stat: verseId 44021005 has CL -> ADV -> CL
+The top CL matches the following verse, most likely the second CL from the top on the left edge.
+
+Stat: verseId 44023034 has CL -> ADV -> CL
+The top CL matches the following verse, most likely the third CL from the top on the left edge.
+
+Stat: verseId 44025003 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the bottom CL on the right edge.
+
+Stat: verseId 44026005 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the bottom CL on the right edge.
+
+Stat: verseId 44026017 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the second CL from the top on the right edge.
+
+Stat: verseId 44028026 has verb -> vp -> V -> CL -> ADV -> CL
+The top CL matches the previous verse, most liekly the lowest CL on the right edge.
+
+Stat: verseId 45001010 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the lowest CL on the right edge.
+
+Stat: verseId 45015009 has CL -> np -> pp -> ADV -> CL -> O -> CL
+The second from top CL (one above ADV) matches the previous verse, most liekly the second CL (the one under O) on the right edge.
+
+Stat: verseId 45015016 has pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+The bottom CL matches the previous verse, most likely the lowest CL on the right edge.
+The rest of it is there probably to let you know where the second CL attaches.
+
+Stat: verseId 45015024 has CL -> np -> ADV -> CL
+The top CL matches the previous verse, most likely the lowest CL on the right edge.
+The second CL seems to attach higher up, but there is no clue where, or it could be a separate clause. 
+So it may be okay to attach the top CL and the second CL directly to Verse.
+
+Stat: verseId 46005005 has CL -> ADV -> CL
+The top CL matches the previous verse, most likely the top CL of the previous verse.
+
+Stat: verseId 46005010 has CL -> O -> CL
+The bottom CL matches the previous verse, most likely the lowest CL on the right edge.
+
+Stat: verseId 46015002 has CL -> np -> O -> CL
+The O matches the previous verse, most likely the O on the right edge
+But there seems to have been an np and CL deleted from this sequence
+The lowest CL should be the daughter of the CL under the lowest np on the right edge of the previous verse.
+
+Stat: verseId 48001016 has CL -> O -> CL
+The top CL matches the previous verse, most likely the third CL on the right edge.
+
+Stat: verseId 48005023 has np -> P -> CL -> CL
+The np matches the previous verse, most likely the np under P on the right edge.
+
+Stat: verseId 49003019 has CL -> O -> CL
+I think the O matches the previuos verse, most likely the lowest O on the right edge.
+However, the bottom CL should be a sister to the CL under the lowest O in the previous verse, so an additional CL should be added.
+
+Stat: verseId 49005016 has CL -> ADV -> CL
+
+
+Stat: verseId 49006006 has CL -> ADV -> CL
+
+
+Stat: verseId 49006020 has CL -> np -> O -> CL -> ADV -> CL
+
+
+Stat: verseId 50002007 has CL -> ADV -> CL
+
+
+Stat: verseId 50002016 has CL -> ADV -> CL
+
+
+Stat: verseId 50003013 has CL -> ADV -> CL
+
+
+Stat: verseId 51001006 has np -> np -> pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+
+
+Stat: verseId 51002014 has CL -> ADV -> CL
+
+
+Stat: verseId 51003013 has CL -> ADV -> CL
+
+
+Stat: verseId 52001002 has adv -> advp -> ADV -> CL -> ADV
+
+
+Stat: verseId 52001004 has CL -> ADV -> CL
+
+
+Stat: verseId 52002007 has CL -> ADV -> CL
+
+
+Stat: verseId 52004011 has CL -> O -> CL
+
+
+Stat: verseId 53001008 has pp -> np -> pp -> ADV
+
+
+Stat: verseId 54005010 has CL -> ADV -> CL
+
+
+Stat: verseId 54006019 has CL -> O -> CL
+
+
+Stat: verseId 55002025 has CL -> ADV -> CL -> np -> S -> CL
+
+
+Stat: verseId 56002005 has adjp -> P -> CL -> O -> CL
+
+
+Stat: verseId 56002010 has CL -> ADV -> CL
+
+
+Stat: verseId 57001008 has CL -> ADV -> CL
+
+
+Stat: verseId 58006004 has np -> O -> CL -> np -> S
+This sentence tree spans verse 4-6, and the rest of the CL for the O is in verse 6!
+If we collapse this to have O as the top node (we don't want it to be CL since S is the current top node), it will be more confusing since the sister to it will be P.
+We 
+
+Stat: verseId 58007027 has CL -> np -> S -> CL
+
+
+Stat: verseId 58010019 has CL -> ADV -> CL
+
+
+Stat: verseId 58011026 has CL -> ADV -> CL
+
+
+Stat: verseId 58011038 has CL -> ADV -> CL
+
+
+Stat: verseId 60002001 has CL -> ADV -> CL
+
+
+Stat: verseId 60002008 has CL -> P -> CL
+
+
+Stat: verseId 63001002 has pp -> ADV -> CL -> np -> IO -> CL
+
+
+Stat: verseId 64001005 has noun -> np -> np -> ADV
+Matches with following verse at top np
+
+
+Stat: verseId 66019013 has CL -> ADV -> CL
+
+
+================================================
+How to collapse the unary tree fragment
+  * Some will lead to a wrong interpretation of the trees unless we move the fragment to the top Verse node
+  * Some will lead to a wrong interpretation of the trees even if we move the fragment to the top Verse node
+  * The different strategies for collapsing are:
+	1. Original idea:
+		a. If the top node is CL, collapse down to the lowest CL that has a single child that is a functional node, 
+		b. otherwise, for functional top nodes, collapse down to the lowest node that is the same Cat as the top node.
+	2. Modified idea:
+		Collapse the top node to the lowest node with the same Category.
+	3. Added to (1) or (2) above, also collapse internal nodes that have the same Category. [Andi wants this]
+
+Final decision on 9/12 is to manually edit the 64 instances so that we take the lowest functional node and attach it directly to the verse
+and manually edit the remaining portion so it makes sense, removing any redundant unary fragments that were caused by removing the orphaned portion.
+Don't worry about not being able to reconstruct the sentence trees from these trees since the current version is not suitable either.
+If we are going to create sentence trees for UGNT, it will need to start with modifying NA28 sentence trees to match UGNT morphology and text and 
+not start with the current UGNT verse trees.
+
+Andi also said don't worry about documenting the changes since that will add to the time required to make manual modifications.
+
+Do the modifications on the last version of the manually modified UGNT trees so that the automated processes to create the release trees
+can still be used without having to make manual modifications again if we changed any part of the automated processes.
+
+Unique Types (25), Instances (64):
+1 (1): adjp -> P -> CL -> O -> CL
+   ==> adjp -> P -> CL
+2 (1): adv -> advp -> ADV -> CL -> ADV
+   ==> adv -> advp -> ADV
+3 (32): CL -> ADV -> CL
+   ==>  CL -> ADV -> CL
+or ==>  CL
+4 (1): CL -> ADV -> CL -> np -> pp -> ADV -> CL -> adjp -> np -> CL
+   ==> CL -> ADV -> CL
+or ==> CL
+5 (1): CL -> ADV -> CL -> np -> S -> CL
+   ==> CL -> ADV -> CL
+or ==> CL
+6 (2): CL -> CL
+   ==> CL
+7 (1): CL -> np -> ADV -> CL
+   ==> CL -> np -> ADV -> CL
+or ==> CL
+8 (2): CL -> np -> O -> CL
+   ==> CL -> np -> O -> CL
+or ==> CL
+9 (1): CL -> np -> O -> CL -> ADV -> CL
+   ==> CL -> np -> O -> CL
+or ==> CL
+10 (1): CL -> np -> pp -> ADV -> CL
+   ==>  CL -> np -> pp -> ADV -> CL
+or ==>  CL
+11 (1): CL -> np -> pp -> ADV -> CL -> np -> S -> CL
+   ==>  CL -> np -> pp -> ADV -> CL
+or ==>  CL
+12 (1): CL -> np -> pp -> ADV -> CL -> O -> CL
+   ==>  CL -> np -> pp -> ADV -> CL
+or ==>  CL
+13 (3): CL -> np -> S -> CL
+   ==>  CL -> np -> S -> CL
+or ==>  CL
+14 (5): CL -> O -> CL
+   ==>  CL -> O -> CL
+or ==>  CL
+15 (1): CL -> P -> CL
+   ==>  CL -> P -> CL
+or ==>  CL
+16 (1): noun -> np -> np -> ADV
+   ==>  noun -> np -> ADV
+17 (1): np -> CL -> np -> S
+   ==>  np -> CL -> np -> S
+or ==>  np -> S
+18 (1): np -> np -> pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+   ==>  np-> np -> pp -> ADV -> CL
+or ==>  np -> pp -> ADV -> CL
+19 (1): np -> O -> CL -> np -> S
+   ==>  np -> O -> CL -> np -> S
+or ==>  np -> O [not good]
+20 (1): np -> P -> CL -> CL
+   ==>  np -> P -> CL
+21 (1): pp -> ADV -> CL -> ADV
+   ==>  pp -> ADV
+22 (1): pp -> ADV -> CL -> np -> IO -> CL
+   ==>  pp -> ADV -> CL
+23 (1): pp -> ADV -> CL -> np -> pp -> ADV -> CL -> ADV -> CL
+   ==>  pp -> ADV -> CL
+24 (1): pp -> np -> pp -> ADV
+   ==>  pp -> np -> pp -> ADV
+or ==>  pp -> ADV
+25 (1): verb -> vp -> V -> CL -> ADV -> CL
+   ==>  verb -> vp -> V -> CL
