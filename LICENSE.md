@@ -1,13 +1,13 @@
-*unfoldingWord® Greek New Testament*
+*CherithAnalytics® Unlocked Greek New Testament Trees*
 
-*Copyright © 2022 by unfoldingWord*
+*Copyright © 2022 by Cherith Analytics*
 
 This work is made available under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-unfoldingWord® is a registered trademark of unfoldingWord. Use of the unfoldingWord name or logo requires the written permission of unfoldingWord. Under the terms of the CC BY-SA license, you may copy and redistribute this unmodified work as long as you keep the unfoldingWord® trademark intact. If you modify a copy or translate this work, thereby creating a derivative work, you must remove the unfoldingWord® trademark.
+CherithAnalytics® is a registered trademark of Cherith Analytics. Use of the Cherith Analytics name or logo requires the written permission of Cherith Analytics. Under the terms of the CC BY-SA license, you may copy and redistribute this unmodified work as long as you keep the CherithAnalytics® trademark intact. If you modify a copy or translate this work, thereby creating a derivative work, you must remove the CherithAnalytics® trademark.
 
-On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt)”. You must also make your derivative work available under the same license (CC BY-SA).
+On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You must also make your derivative work available under the same license (CC BY-SA).
 
-If you would like to notify unfoldingWord regarding your translation of this work, please contact us at [unfoldingword.org/contact](https://www.unfoldingword.org/contact).
+If you would like to notify Cherith Analytics regarding your modification or translation of this work, please contact us at [cherith.io](https://cherith.io/).
 
-The unfoldingWord® Greek New Testament is based on the Bunning Heuristic Prototype Greek New Testament, from https://greekcntr.org/, which is licensed as CC BY-SA 4.0. You may see the changes that we made at [https://git.door43.org/unfoldingWord/ugnt](https://git.door43.org/unfoldingWord/ugnt).
+The CherithAnalytics® Unlocked Greek New Testament Trees are based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
