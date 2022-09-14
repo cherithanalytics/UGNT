@@ -9,9 +9,7 @@ References on UGNT are available from unfoldingWord at [unfoldingword.org/for-tr
 
 The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT Trees comes directly from the unfoldingWord data, and so any issues with this data is the sole responsibility of unfoldingWord.  Cherith Analytics modified the data in a few places, which are documented in the Documentation folder, and so any issues with the modifications are the sole responsibility of Cherith Analytics.
 
-The UGNT Trees are also based on existing unreleased Greek NT trees.
-
-Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
+The UGNT Trees are also based on existing unreleased Greek NT trees. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
 
 Below is the description of the repository contents:
 
