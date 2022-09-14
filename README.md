@@ -1,5 +1,8 @@
 # UGNT-Trees
-These are trees based upon the Unlocked Greek New Testament (UGNT) text and morphology.
+These are trees based upon the Unlocked Greek New Testament (UGNT) text and morphology. UGNT data and reference material below:
+
+1. [UGNT Original Data](https://git.door43.org/unfoldingWord/el-x-koine_ugnt)
+2. [UGNT References](https://www.unfoldingword.org/for-translators/content#UGNT)
 
 Documentation/ - folder for documentation
   * UGNT/ - folder with files used to do automatic adjust of trees from NA28 to UGNT
