@@ -8,7 +8,7 @@ CherithAnalytics® is a registered trademark of Cherith Analytics. Use of the Ch
 
 On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You must also make your derivative work available under the same license (CC BY-SA).
 
-If you would like to notify Cherith Analytics regarding your modification or translation of this work, please contact us at [cherith.io](https://cherith.io/).
+If you would like to notify Cherith Analytics regarding your modification or translation of this work, please contact Cherith Analytics at [cherith.io](https://cherith.io/).
 
 The CherithAnalytics® Unlocked Greek New Testament Trees are based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
