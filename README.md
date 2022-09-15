@@ -3,20 +3,10 @@
 
 **Copyright © 2022 by Cherith Analytics**
 
-The UGNT Trees are based upon the unfoldingWord® Greek New Testament (UGNT) text and morphology, version 0.27. The original work by unfoldingWord is available from [git.door43.org/unfoldingWord/el-x-koine_ugnt](https://git.door43.org/unfoldingWord/el-x-koine_ugnt). [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+The repository is used for both development and the creation of release zip files. It is a private repository.
 
-References on UGNT are available from unfoldingWord at [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+Repository Contents:
 
-The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT Trees comes directly from the unfoldingWord data, and so any issues with this data is the sole responsibility of unfoldingWord.  Cherith Analytics modified the data in a few places, which are documented in the Documentation folder, and so any issues with the modifications are the sole responsibility of Cherith Analytics.
+**Development/** - folder that contains files used in the development of the UGNT trees
 
-The UGNT Trees are also based on existing unreleased Greek NT trees. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
-
-Below is the description of the repository contents:
-
-**Documentation/** - folder for documentation
-  * **Modifications-to-UGNT-Morphology.txt** - documents places where modifications were made to the unfoldingWord UGNT morphology data.
-  * **ugnt.glosses.tsv** - contains the English gloss used for each instance of the words.
-
-**Trees/** - folder for the most recent version of UGNT Trees.
-
-See [UGNT Trees License](https://github.com/cherithanalytics/UGNT-Trees/blob/main/LICENSE.md) for license information.
+**ugnt-trees-v1.0/** - folder for release version 1.0 of the UGNT trees.
