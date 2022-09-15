@@ -1,8 +1,4 @@
 # UGNT-Trees
-**CherithAnalytics® Unlocked Greek New Testament Trees**
-
-**Copyright © 2022 by Cherith Analytics**
-
 The repository is used for both development and the creation of release zip files. It is a private repository.
 
 Repository Contents:
