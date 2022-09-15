@@ -1,10 +1,18 @@
-# UGNT-Trees
-These are trees based upon the Unlocked Greek New Testament (UGNT) text and morphology. UGNT data and reference material below:
+# Documentation
 
-1. [UGNT Original Data](https://git.door43.org/unfoldingWord/el-x-koine_ugnt)
-2. [UGNT References](https://www.unfoldingword.org/for-translators/content#UGNT)
+Content:
 
-Documentation/ - folder for documentation
+Grammar/ - folder for documentation
+
+Modifications/ - folder for
+
+Notes/ - folder for
+
+Reports/ - folder for
+
+UGNT/ - folder with
+
+
   * UGNT/ - folder with files used to do automatic adjust of trees from NA28 to UGNT
   * ErrorReports/ - folder with files generated to report errors as well as documentation of how errors were fixed
     - Errors.CheckMorphDataAgainstTextUGNT.txt - lists the inconsistent (not perfect string match) between what is in the text file "ugnt.normalized.test.txt" and what is in "ugnt.normalized-edited.tsv"
