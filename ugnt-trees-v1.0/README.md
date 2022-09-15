@@ -15,10 +15,8 @@ The UGNT Trees are also based on existing unreleased Greek NT trees. Issues rela
 
 Below is the description of the repository contents:
 
-**Documentation/** - folder for documentation
-  * **Modifications-to-UGNT-Morphology.md** - documents places where modifications were made to the unfoldingWord UGNT morphology.
+**Documentation/** - folder with documentation
+  * **Modifications-to-UGNT-Morphology.md** - lists the modifications that were made to the unfoldingWord UGNT morphology.
   * **ugnt.glosses.tsv** - contains the English gloss used for each instance of the words.
 
-**Trees/** - folder for the most recent version of UGNT Trees.
-
-See [UGNT Trees License](https://github.com/cherithanalytics/UGNT-Trees/blob/main/ugnt-trees-v1.0/LICENSE.md) for license information.
+**Trees/** - folder with the UGNT Trees.
