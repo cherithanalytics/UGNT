@@ -1,15 +1,8 @@
-This file documents the changes made to the UGNT morphology v0.27 for Unicode, Lemma, Strong, Analysis, Gloss.
+**Modifications Made to unfoldingWord UGNT morphology version 0.27**
 
-The current modifications are only to Lemma and Strong (he Strong modification for morphId 410070370021 was corrected in v0.29).
+Modifications to version 0.27 have only been made to Lemma and Strong for the instances below:
 
-The morphId is a CherithAnalytics created index to the instance based morphology.
-The morphId is 12 digits long with the format BBCCCVVVWWWP where:
-    BB = two digits for the book with 40 for Matthew
-    CCC = three digits for the chapter
-    VVV = three digits for the verse
-    WWW = three digits for the word
-    P = one digit for the part of the word
-
+```
             morphId         Unicode         Lemma           Strong      Analysis        Gloss
 Original:   410070370021    ὑπέρπερισσῶς    ὑπέρπερισσῶς    52490       D,,,,,,,,,      -
 Modified:   410070370021    ὑπέρπερισσῶς    ὑπέρπερισσῶς    G52490      D,,,,,,,,,      -
@@ -37,3 +30,14 @@ Modified:   440080370201    Χριστὸν         χριστός         G5547
 
 Original:   450160240071    χριστοῦ         Χριστιανός      G55470      N,,,,,GMS,	    -
 Modified:   450160240071    χριστοῦ         χριστός         G55470      N,,,,,GMS,	    -
+
+The morphId is a CherithAnalytics created index to the instance based morphology.
+The morphId is 12 digits with the format BBCCCVVVWWWP where:
+    BB = two digits for the book (with 40 for Matthew)
+    CCC = three digits for the chapter
+    VVV = three digits for the verse
+    WWW = three digits for the word
+    P = one digit for the part of the word
+```
+
+The Strong modification above for morphId 410070370021 was corrected in version 0.29
