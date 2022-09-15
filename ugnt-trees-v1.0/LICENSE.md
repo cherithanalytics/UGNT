@@ -7,12 +7,39 @@
 
 Use of the Cherith Analytics logo requires the written permission of Cherith Analytics.
 
-Under the terms of the CC BY-SA license, you may copy and redistribute this unmodified work as long as you keep the Cherith Analytics name intact. If you modify a copy or translate this work, thereby creating a derivative work, you must remove the CherithAnalytics® trademark.
 
-On the derivative work, you must indicate what changes you have made and attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You must also make your derivative work available under the same license (CC BY-SA). You may not in any way suggest that the licensor endorses you or your use.
+If you would like to notify Cherith Analytics regarding your modification of this work, please contact Cherith Analytics at [cherith.io](https://cherith.io/).
 
-If you would like to notify Cherith Analytics regarding your modification or translation of this work, please contact Cherith Analytics at [cherith.io](https://cherith.io/).
+**Attribution:**
 
-The CherithAnalytics® Unlocked Greek New Testament Trees are based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+The CherithAnalytics Unlocked Greek New Testament Trees is a derivative work based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
 The trees are also based on unreleased Greek New Testament trees.
+
+# License
+
+## Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+This is a human-readable summary of (and not a substitute for) the [license](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+
+### You are free to:
+
+ * **Share** — copy and redistribute the material in any medium or format
+ * **Adapt** — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+### Under the following terms:
+
+ * **Attribution** — You must attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+ * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+### Notices:
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
