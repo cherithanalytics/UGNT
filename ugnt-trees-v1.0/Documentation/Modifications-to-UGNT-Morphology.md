@@ -35,8 +35,8 @@ The morphId is a CherithAnalytics created index to the instance based morphology
 The morphId is 12 digits with the format BBCCCVVVWWWP where:
     BB = two digits with leading zeros for the book (with 40 for Matthew)
     CCC = three digits with leading zeros for the chapter number
-    VVV = three digits with leading zeros for the verse
-    WWW = three digits with leading zeros for the word
+    VVV = three digits with leading zeros for the verse number
+    WWW = three digits with leading zeros for the word number
     P = one digit for the part of the word
 ```
 
