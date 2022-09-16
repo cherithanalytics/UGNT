@@ -5,8 +5,7 @@
 
 The [UGNT Trees](https://github.com/cherithanalytics/UGNT-Trees) © 2022 by [Cherith Analytics](https://cherith.io/) is made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA license). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-Use of the Cherith Analytics logo requires the written permission of Cherith Analytics.
-
+The Cherith Analytics logo is copyrighted.
 
 If you would like to notify Cherith Analytics regarding your modification of this work, please contact Cherith Analytics at [cherith.io](https://cherith.io/).
 
