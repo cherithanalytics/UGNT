@@ -15,36 +15,37 @@ The UGNT Trees are also based on the unreleased Greek New Testament trees develo
 
 Below is the description of the Trees folder:
 
-**XXXCCC.trees.xml** - tree files with trees for book XXX of the New Testament and chapter CCC in XML format.
-  * XXX
+**XXXCCC.trees.xml** - tree files with trees each verse of each chapter of a book.  and chapter CCC in XML format.
+  * XXX - three characters for book XXX of the New Testament according to the list below:
 ```
-{"Mat", 40 },
-{"Mrk", 41 },
-{"Luk", 42 },
-{"Jhn", 43 },
-{"Act", 44 },
-{"Rom", 45 },
-{"1Co", 46 },
-{"2Co", 47 },
-{"Gal", 48 },
-{"Eph", 49 },
-{"Php", 50 },
-{"Col", 51 },
-{"1Th", 52 },
-{"2Th", 53 },
-{"1Tm", 54 },
-{"2Tm", 55 },
-{"Tit", 56 },
-{"Phm", 57 },
-{"Heb", 58 },
-{"Jms", 59 },
-{"1Pe", 60 },
-{"2Pe", 61 },
-{"1Jn", 62 },
-{"2Jn", 63 },
-{"3Jn", 64 },
-{"Jud", 65 },
-{"Rev", 66 },
+XXX
+Mat = Mathew
+Mrk = Mark
+Luk = Luke
+Jhn = John
+Act = Acts
+Rom = Romans
+1Co = 1 Corinthians
+2Co - 2 Corinthians
+Gal - Galations
+Eph - Ephesians
+Php - Philipians
+Col - Colosians
+1Th - 1 Theselonians
+2Th - 2 Thesolnians
+1Tm - 1 Timothy
+2Tm - 2 Timothy
+Tit - Titus
+Phm - Philemon
+Heb - Hebrew,
+Jms - James
+1Pe - 1 Peter
+2Pe - 2 Peter
+1Jn - 1 John
+2Jn - 2 John
+3Jn - 3 John
+Jud - Jude
+Rev - Revelations
 ```
   * CCC - three digit with leading zeros for the chapter number.
 
