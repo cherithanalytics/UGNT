@@ -21,6 +21,6 @@ Below is the description of the repository contents:
 
 **Trees/** - folder with the UGNT Trees.
 
-**README.md** - this file
-
 **LICENSE.md** - the license for the Cherith Analytics UGNT Trees.
+
+**README.md** - this file
