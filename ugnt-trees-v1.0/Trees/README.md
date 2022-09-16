@@ -51,10 +51,10 @@ Rev - Revelations
 
 **README.md** - this file
 
+# Trees File Content
 
-Below is the description of the content of each tree file.
 
-* Tree Structure and Content *
+** Tree Structure and Content **
 
 
 ```
