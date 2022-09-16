@@ -13,7 +13,7 @@ The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT
 
 The UGNT Trees are also based on the unreleased Greek New Testament trees developed by GBI.LLC. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
 
-Below is the description of the Trees folder:
+# Trees Folder Content
 
 **XXXCCC.trees.xml** - tree files with trees each verse of each chapter of a book.  and chapter CCC in XML format.
   * XXX - three characters for book XXX of the New Testament according to the list below:
@@ -54,7 +54,7 @@ Rev - Revelations
 
 Below is the description of the content of each tree file.
 
-**Tree Structure and Content**
+* Tree Structure and Content *
 
 
 ```
