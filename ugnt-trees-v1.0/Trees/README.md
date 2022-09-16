@@ -15,11 +15,45 @@ The UGNT Trees are also based on the unreleased Greek New Testament trees develo
 
 Below is the description of the Trees folder:
 
-**XXXCCC.trees.xml** - files with trees for book XXX of the New Testament and chapter CCC.
+**XXXCCC.trees.xml** - tree files with trees for book XXX of the New Testament and chapter CCC in XML format.
   * XXX
+```
+{"Mat", 40 },
+            {"Mrk", 41 },
+            {"Luk", 42 },
+            {"Jhn", 43 },
+            {"Act", 44 },
+            {"Rom", 45 },
+            {"1Co", 46 },
+            {"2Co", 47 },
+            {"Gal", 48 },
+            {"Eph", 49 },
+            {"Php", 50 },
+            {"Col", 51 },
+            {"1Th", 52 },
+            {"2Th", 53 },
+            {"1Tm", 54 },
+            {"2Tm", 55 },
+            {"Tit", 56 },
+            {"Phm", 57 },
+            {"Heb", 58 },
+            {"Jms", 59 },
+            {"1Pe", 60 },
+            {"2Pe", 61 },
+            {"1Jn", 62 },
+            {"2Jn", 63 },
+            {"3Jn", 64 },
+            {"Jud", 65 },
+            {"Rev", 66 },
+```
   * CCC - three digit with leading zeros for the chapter number.
 
-**Tree Structure**
+**README.md** - this file
+
+
+Below is the description of the content of each tree file.
+
+**Tree Structure and Content**
 
 
 ```
