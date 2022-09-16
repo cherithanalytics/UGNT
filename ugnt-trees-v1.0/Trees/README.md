@@ -47,15 +47,26 @@ Jms - James
 Jud - Jude
 Rev - Revelations
 ```
-  * CCC - three digit with leading zeros for the chapter number.
+  * CCC - three digits with leading zeros for the chapter number.
 
 **README.md** - this file
 
 # Trees File Structure and Content
 
-
 **Tree Structure**
 
+* The top node is "Sentences", which includes one child node for each verse.
+* The next node down is "Sentence", which is the top node for each verse.
+  - ID = attribute indicating the verse using Cherith Analystics created verseId index
+```
+The verseId is 12 digits with the format BBCCCVVVWWWP where:
+    BB = two digits for the book number (with 40 for Matthew)
+    CCC = three digits with leading zeros for the chapter number
+    VVV = three digits with leading zeros for the verse number
+```
+* Trees - node containing a child node for individual variation of trees that span the verse (only one variation included in released trees)
+* Tree - node containinng child nodes for the trees that span the verse
+* Node - the top node of a tree that fully or partially spans the verse
 
 **Tree Content**
 
@@ -82,7 +93,7 @@ ptcl = particle
 
 * Cat - see the description above in Non-terminal nodes
 * Id - see the description above in Non-terminal nodes
-* morphId - CherithAnalytics created index to the instance based morphology.
+* morphId - the Cherith Analytics created index to the instance based morphology.
 ```
 The morphId is 12 digits with the format BBCCCVVVWWWP where:
     BB = two digits for the book number (with 40 for Matthew)
