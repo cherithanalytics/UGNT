@@ -32,7 +32,7 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ### Under the following terms:
 
- * **Attribution** — You must attribute the work as follows: “The original work by Cherith Analytics is available from [drive.google.com/drive/folders/ugnt-trees-v1.0](https://drive.google.com/drive/folders/10J8IotLgbp-1Wxxd_on169X06SYa87wW?usp=sharing)”. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ * **Attribution** — You must attribute the work as follows: “The original work by Cherith Analytics is available from [drive.google.com/drive/folders/ugnt-trees-v1.0](https://drive.google.com/drive/folders/12X5gmeq8jAQTYxdbakmIax5JygM0DYUX?usp=sharing)”. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
  * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 
