@@ -1,4 +1,4 @@
-# UGNT-Trees
+# Trees
 
 ![cherithLogoBlue-100x100](https://user-images.githubusercontent.com/105679741/190519269-28c4bc1c-fb8f-4c8f-b119-8aa8188c98d6.png)
 **CherithAnalytics Unlocked Greek New Testament Trees**
@@ -13,14 +13,12 @@ The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT
 
 The UGNT Trees are also based on the unreleased Greek New Testament trees developed by GBI.LLC. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
 
-Below is the description of the repository contents:
+Below is the description of the Trees folder:
 
-**Documentation/** - folder with documentation
-  * **Modifications-to-UGNT-Morphology.md** - lists the modifications that were made to the unfoldingWord UGNT morphology.
-  * **ugnt.glosses.tsv** - Cherith Glosses for the Greek New Testament are glosses that show the meaning of each word in the whole UGNT text in its specific context. They are created to help people who do not know Greek to understand the text. The glosses are in English only. They are compiled by consulting all the major English translations and selecting the most common term in each case. It is therefore a "majority gloss" where alternative meanings are not included.
+**XXXCCC.trees.xml** - files with trees for book XXX of the New Testament and chapter CCC.
+  * XXX
+  * CCC - three digit with leading zeros for the chapter number.
 
-**Trees/** - folder with the UGNT Trees.
+**Tree Structure**
 
-**LICENSE.md** - the license for the Cherith Analytics UGNT Trees.
 
-**README.md** - this file
