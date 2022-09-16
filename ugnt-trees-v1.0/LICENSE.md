@@ -1,5 +1,5 @@
 ![cherithLogoBlue-100x100](https://user-images.githubusercontent.com/105679741/190519812-31d791fd-087e-4d00-b8e1-7eb3f5d23e38.png)
-**CherithAnalytics Unlocked Greek New Testament Trees**
+**Cherith Analytics Unlocked Greek New Testament Trees**
 
 **Copyright © 2022 by Cherith Analytics**
 
