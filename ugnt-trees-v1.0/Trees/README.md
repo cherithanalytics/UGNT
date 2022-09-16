@@ -58,9 +58,9 @@ Rev - Revelations
 
 
 **Tree Content**
-Non-Terminal Nodes
 
-Terminal Nodes - Terminal nodes in the tree are for each UGNT word. It includes attributes for:
+*Non-Terminal Nodes* - Non-terminal nodes in the tree are all the nodes above terminal nodes.
+
 * Cat - Category (UGNT Part of Speech)
 ```
 noun = noun
@@ -74,7 +74,14 @@ adv = adverb
 conj = conjunction
 ptcl = particle
 ```
-* Id - See description above for Non-terminal nodes
+* Id - a unique number for each node in a tree, starting with 1 and incrementing by 1, going top-down, left-to-right through the tree.
+* Rule - The name of the grammar rule in Cherith Analytics grammar for New Testament Greek
+* Head - The zero-based index (left-to-right) of the child node that is the semanitc head.
+
+*Terminal Nodes* - Terminal nodes in the tree are for each UGNT word. It includes attributes for:
+
+* Cat - see the description above in Non-terminal nodes
+* Id - see the description above in Non-terminal nodes
 * morphId - CherithAnalytics created index to the instance based morphology.
 ```
 The morphId is 12 digits with the format BBCCCVVVWWWP where:
