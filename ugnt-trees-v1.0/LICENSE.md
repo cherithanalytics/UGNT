@@ -11,7 +11,7 @@ If you would like to notify Cherith Analytics regarding your modification of thi
 
 **Attribution:**
 
-The CherithAnalytics Unlocked Greek New Testament Trees is a derivative work based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+The Cherith Analytics Unlocked Greek New Testament Trees is a derivative work based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
 The UGNT trees are also based on unreleased Greek New Testament trees developed by [Global Bible Initiative, LLC](https://gbi.llc).
 
