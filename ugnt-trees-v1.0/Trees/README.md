@@ -59,7 +59,7 @@ Rev - Revelations
 * The next node down is "Sentence", which is the top node for each verse.
   - ID = attribute indicating the verse using Cherith Analystics created verseId index
 ```
-The verseId is 8 digits with the format BBCCCVVVWWWP where:
+The verseId is 8 digits with the format BBCCCVVV where:
     BB = two digits for the book number (with 40 for Matthew)
     CCC = three digits with leading zeros for the chapter number
     VVV = three digits with leading zeros for the verse number
