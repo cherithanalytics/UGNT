@@ -15,7 +15,7 @@ The UGNT Trees are also based on the unreleased Greek New Testament trees develo
 
 # Trees Folder Content
 
-**XXXCCC.trees.xml** - tree files with trees each verse of each chapter of a book.  and chapter CCC in XML format.
+**XXXCCC.trees.xml** - tree files with trees each verse of each chapter of a book.  and chapter CCC in XML format
   * XXX - three characters for book XXX of the New Testament according to the list below:
 ```
 XXX
@@ -47,7 +47,7 @@ Jms - James
 Jud - Jude
 Rev - Revelations
 ```
-  * CCC - three digits with leading zeros for the chapter number.
+  * CCC - three digits with leading zeros for the chapter number
 
 **README.md** - this file
 
@@ -55,18 +55,18 @@ Rev - Revelations
 
 **Tree Structure**
 
-* **Sentences** - he top node is which includes one child node for each verse.
-* **Sentence** - the top node for each verse.
-  - **ID** = attribute indicating the verse using Cherith Analystics created verseId index.
+* **Sentences** - he top node is which includes one child node for each verse
+* **Sentence** - the top node for each verse
+  - **ID** = attribute indicating the verse using Cherith Analystics created verseId index
 ```
 The verseId is 8 digits with the format BBCCCVVV where:
     BB = two digits for the book number (with 40 for Matthew)
     CCC = three digits with leading zeros for the chapter number
     VVV = three digits with leading zeros for the verse number
 ```
-* **Trees** - node containing a child node for individual variation of trees that span the verse (only one variation included in released trees).
-* **Tree** - node containinng child nodes for the trees that span the verse.
-* **Node** - the node of a tree that fully or partially spans the verse.
+* **Trees** - node containing a child node for individual variation of trees that span the verse (only one variation included in released trees)
+* **Tree** - node containinng child nodes for the trees that span the verse
+* **Node** - the node of a tree that fully or partially spans the verse
 
 **Tree Content**
 
@@ -85,9 +85,9 @@ adv = adverb
 conj = conjunction
 ptcl = particle
 ```
-* **Id** - a unique number for each node in a tree, starting with 1 and incrementing by 1, going top-down, left-to-right through the tree.
+* **Id** - a unique number for each node in a tree, starting with 1 and incrementing by 1, going top-down, left-to-right through the tree
 * **Rule** - The name of the grammar rule in Cherith Analytics grammar for New Testament Greek
-* **Head** - The zero-based index (left-to-right) of the child node that is the semanitc head.
+* **Head** - The zero-based index (left-to-right) of the child node that is the semanitc head
 
 *Terminal Nodes* - Terminal nodes in the tree are for each UGNT word. It includes attributes for:
 
@@ -102,8 +102,8 @@ The morphId is 12 digits with the format BBCCCVVVWWWP where:
     WWW = three digits with leading zeros for the word number
     P = one digit for the part of the word
 ```
-* **Unicode** - Unicode of the UGNT text (includes punctuations).
-* **Lemma** - Unicode of the UGNT lemma of the word.
+* **Unicode** - Unicode of the UGNT text (includes punctuations)
+* **Lemma** - Unicode of the UGNT lemma of the word
 * **Lang** - Single character for the UGNT language of the text (currently always "G" for Greek)
 * **StrongNumber** - UGNT Strong number in the format GNNNNN
   - G = specifies the language
