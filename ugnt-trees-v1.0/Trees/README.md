@@ -55,24 +55,24 @@ Rev - Revelations
 
 **Tree Structure**
 
-* The top node is "Sentences", which includes one child node for each verse.
-* The next node down is "Sentence", which is the top node for each verse.
-  - ID = attribute indicating the verse using Cherith Analystics created verseId index
+* **Sentences** - he top node is which includes one child node for each verse.
+* **Sentence** - the top node for each verse.
+  - **ID** = attribute indicating the verse using Cherith Analystics created verseId index.
 ```
 The verseId is 8 digits with the format BBCCCVVV where:
     BB = two digits for the book number (with 40 for Matthew)
     CCC = three digits with leading zeros for the chapter number
     VVV = three digits with leading zeros for the verse number
 ```
-* Trees - node containing a child node for individual variation of trees that span the verse (only one variation included in released trees)
-* Tree - node containinng child nodes for the trees that span the verse
-* Node - the top node of a tree that fully or partially spans the verse
+* **Trees** - node containing a child node for individual variation of trees that span the verse (only one variation included in released trees).
+* **Tree** - node containinng child nodes for the trees that span the verse.
+* **Node** - the node of a tree that fully or partially spans the verse.
 
 **Tree Content**
 
 *Non-Terminal Nodes* - Non-terminal nodes in the tree are all the nodes above terminal nodes.
 
-* Cat - Category (UGNT Part of Speech)
+* **Cat** - Category (UGNT Part of Speech)
 ```
 noun = noun
 adj = adjective
@@ -85,15 +85,15 @@ adv = adverb
 conj = conjunction
 ptcl = particle
 ```
-* Id - a unique number for each node in a tree, starting with 1 and incrementing by 1, going top-down, left-to-right through the tree.
-* Rule - The name of the grammar rule in Cherith Analytics grammar for New Testament Greek
-* Head - The zero-based index (left-to-right) of the child node that is the semanitc head.
+* **Id** - a unique number for each node in a tree, starting with 1 and incrementing by 1, going top-down, left-to-right through the tree.
+* **Rule** - The name of the grammar rule in Cherith Analytics grammar for New Testament Greek
+* **Head** - The zero-based index (left-to-right) of the child node that is the semanitc head.
 
 *Terminal Nodes* - Terminal nodes in the tree are for each UGNT word. It includes attributes for:
 
-* Cat - see the description above in Non-terminal nodes
-* Id - see the description above in Non-terminal nodes
-* morphId - the Cherith Analytics created index to the instance based morphology.
+* **Cat** - see the description above in Non-terminal nodes
+* **Id** - see the description above in Non-terminal nodes
+* **morphId** - the Cherith Analytics created index to the instance based morphology.
 ```
 The morphId is 12 digits with the format BBCCCVVVWWWP where:
     BB = two digits for the book number (with 40 for Matthew)
@@ -102,19 +102,19 @@ The morphId is 12 digits with the format BBCCCVVVWWWP where:
     WWW = three digits with leading zeros for the word number
     P = one digit for the part of the word
 ```
-* Unicode - Unicode of the UGNT text (includes punctuations).
-* Lemma - Unicode of the UGNT lemma of the word.
-* Lang - Single character for the UGNT language of the text (currently always "G" for Greek)
-* StrongNumber - UGNT Strong number in the format GNNNNN
+* **Unicode** - Unicode of the UGNT text (includes punctuations).
+* **Lemma** - Unicode of the UGNT lemma of the word.
+* **Lang** - Single character for the UGNT language of the text (currently always "G" for Greek)
+* **StrongNumber** - UGNT Strong number in the format GNNNNN
   - G = specifies the language
   - NNNNN = five digits, where the first four digits is the traditional Strong's Number and the fifth digit is a specific UGNT subvariant designation
-* Morph = the UGNT morphological analysis code (see unfoldingWord's documentation on UGNT morphology)
+* **Morph** = the UGNT morphological analysis code (see unfoldingWord's documentation on UGNT morphology)
 * Spelling out the UGNT morphological analysis code (the node attributes below are not always present in a particular instances of a terminal node)
-  - Type : part of speech subtype
-  - Mood
-  - Tense
-  - Voice
-  - Person
-  - Case
-  - Gender
-  - Number
+  - **Type** : part of speech subtype
+  - **Mood**
+  - **Tense**
+  - **Voice**
+  - **Person**
+  - **Case**
+  - **Gender**
+  - **Number**
