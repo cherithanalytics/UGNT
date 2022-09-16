@@ -20,3 +20,7 @@ Below is the description of the repository contents:
   * **ugnt.glosses.tsv** - contains the English gloss used for each instance of the words.
 
 **Trees/** - folder with the UGNT Trees.
+
+README.md - this file
+
+LICENSE.md - the license for the Cherith Analytics UGNT Trees.
