@@ -55,7 +55,7 @@ Rev - Revelations
 
 **Tree Structure**
 
-* **Sentences** - the top node,which includes one child node for each verse
+* **Sentences** - the top node, which includes one child node for each verse
 * **Sentence** - the top node for each verse
   - **ID** = attribute indicating the verse using Cherith Analystics created verseId index
 ```
