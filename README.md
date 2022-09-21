@@ -21,7 +21,7 @@ Below is the description of the repository contents:
   * **README.md** - readme file for the Documentation folder
 
 **Trees/** - folder with the UGNT Trees
-* **BBBCCC.trees.xml** - a file with trees for each verse of a chapter (CCC) of a book (BBB) in XML format
+* **BBBCCC.trees.xml** - file with trees for each verse of a chapter (CCC) of a book (BBB) in XML format
 * **LICENSE.md** - the license for the UGNT Trees
 * **README.md** - readme file for the Trees folder
 
