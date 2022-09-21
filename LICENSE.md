@@ -1,9 +1,9 @@
 ![cherithLogoBlue-100x100](https://user-images.githubusercontent.com/105679741/190519812-31d791fd-087e-4d00-b8e1-7eb3f5d23e38.png)
-**Cherith Analytics Unlocked Greek New Testament Trees**
+**UGNT Trees**
 
 **Copyright © 2022 by Cherith Analytics**
 
-The [UGNT Trees](https://github.com/cherithanalytics/UGNT-Trees) © 2022 by [Cherith Analytics](https://cherith.io/) is made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA license). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+The [UGNT Trees](https://github.com/cherithanalytics/UGNT-Trees) © 2022 by [Cherith Analytics](https://cherith.io/) are made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA license). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 The Cherith Analytics logo is copyrighted.
 
@@ -11,7 +11,7 @@ If you would like to notify Cherith Analytics regarding your modification of thi
 
 **Attribution:**
 
-The Cherith Analytics Unlocked Greek New Testament Trees is a derivative work based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+The UGNT Trees are a derivative work based on the unfoldingWord® Greek New Testament. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
 The UGNT Trees are also heavily based on multiple Greek New Testament trees developed by [Global Bible Initiative, LLC](https://www.gbi.llc) for internal use.
 
