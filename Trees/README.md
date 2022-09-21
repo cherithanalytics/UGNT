@@ -49,6 +49,8 @@ Rev - Revelations
 ```
   * CCC - three digits with leading zeros for the chapter number
 
+**LICENSE.md** - the license for the UGNT Trees
+
 **README.md** - this file
 
 # Trees File Structure and Content
