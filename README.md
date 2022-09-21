@@ -16,7 +16,7 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 Below is the description of the repository contents:
 
 **Documentation/** - folder with documentation
-  * **Modifications-to-UGNT-Morphology.md** - lists the modifications that were made to the unfoldingWord UGNT morphology.
+  * **Modifications-to-UGNT-Morphology.md** - lists the modifications that were made to a copy of unfoldingWord's UGNT morphology that was used to develop the UGNT Trees
   * **ugnt.glosses.tsv** - Cherith Glosses for the Greek New Testament are glosses that show the meaning of each word in the whole UGNT text in its specific context. They are created to help people who do not know Greek to understand the text. The glosses are in English only. They are compiled by consulting all the major English translations and selecting the most common term in each case. It is therefore a "majority gloss" where alternative meanings are not included.
 
 **Trees/** - folder with the UGNT Trees.
