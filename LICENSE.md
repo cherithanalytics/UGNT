@@ -11,7 +11,7 @@ If you would like to notify Cherith Analytics regarding your modification of thi
 
 **Attribution:**
 
-The UGNT Trees are a derivative work based on the unfoldingWord® Greek New Testament (UGNT). The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
+The UGNT Trees are a derivative work based on the unfoldingWord® Greek New Testament (UGNT) text and morphology. The original work by unfoldingWord is available from [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
 The UGNT Trees are also heavily based on multiple Greek New Testament trees developed by [Global Bible Initiative, LLC](https://www.gbi.llc) for internal use.
 
