@@ -15,10 +15,10 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 
 # Trees Folder Content
 
-**XXXCCC.trees.xml** - a file with trees for each verse of a chapter of a book in XML format
-  * XXX - three characters for book XXX of the New Testament according to the list below:
+**BBBCCC.trees.xml** - a file with trees for each verse of a chapter (CCC) of a book (BBB) in XML format
+  * BBB - three characters for book BBB of the New Testament according to the list below:
 ```
-XXX
+BBB
 Mat = Mathew
 Mrk = Mark
 Luk = Luke
