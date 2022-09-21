@@ -72,7 +72,7 @@ The verseId is 8 digits with the format BBCCCVVV where:
 
 *Non-Terminal Nodes* - Non-terminal nodes in the tree are all the nodes above terminal nodes.
 
-* **Cat** - Category (UGNT Part of Speech)
+* **Cat** - Category (UGNT's Part of Speech)
 ```
 noun = noun
 adj = adjective
