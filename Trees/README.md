@@ -15,7 +15,7 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 
 # Trees Folder Content
 
-**BBBCCC.trees.xml** - a file with trees for each verse of a chapter (CCC) of a book (BBB) in XML format
+**BBBCCC.trees.xml** - file with trees for each verse of a chapter (CCC) of a book (BBB) in XML format
   * BBB - three characters for book BBB of the New Testament according to the list below:
 ```
 BBB
