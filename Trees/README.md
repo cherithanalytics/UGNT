@@ -1,7 +1,7 @@
-# Trees
+# UGNT-Trees/Trees
 
 ![cherithLogoBlue-100x100](https://user-images.githubusercontent.com/105679741/190519269-28c4bc1c-fb8f-4c8f-b119-8aa8188c98d6.png)
-**Cherith Analytics Unlocked Greek New Testament Trees**
+**UGNT Trees**
 
 **Copyright © 2022 by Cherith Analytics**
 
