@@ -64,8 +64,8 @@ The verseId is 8 digits with the format BBCCCVVV where:
     CCC = three digits with leading zeros for the chapter number
     VVV = three digits with leading zeros for the verse number
 ```
-* **Trees** - node containing child nodes for each variation of trees that span the verse (only one variation included in the released trees)
-* **Tree** - node containinng child nodes for the trees that span the verse
+* **Trees** - node containing child nodes for each variation of contiguous trees that span the verse (only one variation included in the released trees)
+* **Tree** - node containinng child nodes for the contiguous trees that span the verse
 * **Node** - the node of a tree that fully or partially spans the verse
 
 **Tree Content**
