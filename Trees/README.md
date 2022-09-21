@@ -15,7 +15,7 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 
 # Trees Folder Content
 
-**XXXCCC.trees.xml** - tree files with trees for each verse of each chapter of a book in XML format
+**XXXCCC.trees.xml** - a file with trees for each verse of a chapter of a book in XML format
   * XXX - three characters for book XXX of the New Testament according to the list below:
 ```
 XXX
