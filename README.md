@@ -25,4 +25,6 @@ Below is the description of the repository contents:
 * **LICENSE.md** - the license for the UGNT Trees
 * **README.md** - readme file for the Trees folder
 
+**LICENSE.md** - the license for the UGNT Trees
+
 **README.md** - this file
