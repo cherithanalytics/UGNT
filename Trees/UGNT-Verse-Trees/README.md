@@ -105,8 +105,8 @@ The morphId is 12 digits with the format BBCCCVVVWWWP where:
     P = one digit for the part of the word
     
 Because words in the trees may be in a different order from the order they appear in the text, 
-the first word of a verse in the text is not necessarily the first word in a tree, and likewise, 
-the last word of a verse in the text is not necessarily the last word in a tree.
+the word number of a word, wich indicates the order it appears in the text, does not necessarily 
+indicate the order the word appears in a tree.
 ```
 * **Unicode** - Unicode of the UGNT text (includes punctuations)
 * **Lemma** - Unicode of the UGNT lemma of the word
