@@ -58,18 +58,22 @@ Rev - Revelations
 
 * **Sentences** - the top node, which includes one child node for each sentence
 * **Sentence** - the top node for each sentence
-  - **ID** = attribute indicating the verse using Cherith Analystics created sentenceId index
+  - **ID** = attribute indicating the sentence identification using Cherith Analystics created SentenceId index
 ```
-The sentenceId is the word range of the sentence (sentence may span verses and chapters) in the format BBBC1:V1:W1-C2:V2:W2:
+The SentenceId is the word range of the sentence (a sentence may span verses and chapters) in the format BBBC1:V1:W1-C2:V2:W2:
     BBB =  three characters for book BBB of the New Testament according to the list above:
-    C1 = lowest word's chapter number
-    V1 = lowest word's verse number in its chapter
-    W1 = lowest word's word number in its verse
-    C2 = lowest word's chapter number (1-3 digits)
-    V2 = lowest word's verse number in its chapter
-    W2 = lowest word's word number in its verse
+    C1 = first word's chapter number
+    V1 = first word's verse number in its chapter
+    W1 = first word's word number in its verse
+    C2 = last word's chapter number (1-3 digits)
+    V2 = last word's verse number in its chapter
+    W2 = last word's word number in its verse
     [numbers are 1-3 digits]
 
+Because words in the trees may be in a different order from the order they appear in the text, 
+the first word of a sentence in the text is not necessarily the first word in a tree, and likewise, 
+the last word of a sentence in the text is not necessarily the last word in a tree.
+```
 * **Trees** - node containing a child node for each variation of contiguous trees that span the verse (only one variation included in the released trees)
 * **Tree** - node containinng child nodes for the contiguous trees that span the verse
 * **Node** - the node of a tree that fully or partially spans the verse
