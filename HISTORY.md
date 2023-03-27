@@ -7,7 +7,7 @@
 
 Below is the description of the change history of the release versions in reverse chronological order:
 
-**Releave v1.1.0/**
+**Release v1.1.0/**
   * Initial release of the sentence trees.
   * The following verse trees have been changed from Release v1.1.0:
     * Act 10:37 (VerseId = 44010037)
@@ -16,6 +16,6 @@ Below is the description of the change history of the release versions in revers
     * Eph 5:13 (VerseId = 49005013)
     * Col 2:21 (VerseId = 51002021)
 
-**Releave v1.0.0/**
+**Release v1.0.0/**
   * Initial release of the verse trees.
 
