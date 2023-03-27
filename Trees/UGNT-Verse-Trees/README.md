@@ -103,6 +103,10 @@ The morphId is 12 digits with the format BBCCCVVVWWWP where:
     VVV = three digits with leading zeros for the verse number
     WWW = three digits with leading zeros for the word number
     P = one digit for the part of the word
+    
+Because words in the trees may be in a different order from the order they appear in the text, 
+the first word of a verse in the text is not necessarily the first word in a tree, and likewise, 
+the last word of a verse in the text is not necessarily the last word in a tree.
 ```
 * **Unicode** - Unicode of the UGNT text (includes punctuations)
 * **Lemma** - Unicode of the UGNT lemma of the word
