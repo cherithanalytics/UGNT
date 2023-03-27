@@ -15,60 +15,8 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 
 # UGNT-Sentence-Trees Folder Content
 
-**BBBsentugnt.xml** - file with sentence trees for each book (bbb) in XML format
-  * bbb - three characters for book bbb of the New Testament according to the list below:
-```
-bbb
-mat = Mathew
-mrk = Mark
-luk = Luke
-jhn = John
-act = Acts
-rom = Romans
-1co = 1 Corinthians
-2co - 2 Corinthians
-gal - Galations
-eph - Ephesians
-php - Philipians
-col - Colosians
-1th - 1 Theselonians
-2th - 2 Thesolnians
-1tm - 1 Timothy
-2tm - 2 Timothy
-tit - Titus
-phm - Philemon
-heb - Hebrew,
-jms - James
-1pe - 1 Peter
-2pe - 2 Peter
-1jn - 1 John
-2jn - 2 John
-3jn - 3 John
-jud - Jude
-rev - Revelations
-```
-
-**LICENSE.md** - the license for the UGNT Trees
-
-**README.md** - this file
-
-# Trees File Structure and Content
-
-**Tree Structure**
-
-* **Sentences** - the top node, which includes one child node for each sentence
-* **Sentence** - the top node for each sentence
-  - **ID** = attribute indicating the verse using Cherith Analystics created sentenceId index
-```
-The sentenceId is the word range of the sentence (sentence may span verses and chapters) in the format BBBC1:V1:W1-C2:V2:W2:
-    BBB =  three characters for book bbb of the New Testament according to the list below:
-    C1 = lowest word's chapter number
-    V1 = lowest word's verse number in its chapter
-    W1 = lowest word's word number in its verse
-    C2 = lowest word's chapter number (1-3 digits)
-    V2 = lowest word's verse number in its chapter
-    W2 = lowest word's word number in its verse
-    [numbers are 1-3 digits]
+**BBBsentugnt.xml** - file with sentence trees for each book (BBB) in XML format
+  * BBB - three **LOWERCASE** characters for book BBB of the New Testament according to the list below:
 ```
 BBB
 Mat = Mathew
@@ -99,6 +47,28 @@ Jms - James
 Jud - Jude
 Rev - Revelations
 ```
+
+**LICENSE.md** - the license for the UGNT Trees
+
+**README.md** - this file
+
+# Trees File Structure and Content
+
+**Tree Structure**
+
+* **Sentences** - the top node, which includes one child node for each sentence
+* **Sentence** - the top node for each sentence
+  - **ID** = attribute indicating the verse using Cherith Analystics created sentenceId index
+```
+The sentenceId is the word range of the sentence (sentence may span verses and chapters) in the format BBBC1:V1:W1-C2:V2:W2:
+    BBB =  three characters for book BBB of the New Testament according to the list above:
+    C1 = lowest word's chapter number
+    V1 = lowest word's verse number in its chapter
+    W1 = lowest word's word number in its verse
+    C2 = lowest word's chapter number (1-3 digits)
+    V2 = lowest word's verse number in its chapter
+    W2 = lowest word's word number in its verse
+    [numbers are 1-3 digits]
 
 * **Trees** - node containing a child node for each variation of contiguous trees that span the verse (only one variation included in the released trees)
 * **Tree** - node containinng child nodes for the contiguous trees that span the verse
