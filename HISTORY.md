@@ -5,7 +5,7 @@
 
 **Copyright © 2023 by Cherith Analytics**
 
-Below is the description of the release versions in reverse chronological order:
+Below is the description of the change history of the release versions in reverse chronological order:
 
 **Releave v1.1.0/**
   * Initial release of the sentence trees.
