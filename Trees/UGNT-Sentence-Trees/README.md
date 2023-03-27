@@ -60,7 +60,8 @@ Rev - Revelations
 * **Sentence** - the top node for each sentence
   - **ID** = attribute indicating the sentence identification using Cherith Analystics created SentenceId index
 ```
-The SentenceId is the word range of the sentence (a sentence may span verses and chapters) in the format BBBC1:V1:W1-C2:V2:W2:
+The SentenceId is the word range of the sentence (a sentence may span verses and chapters)
+in the format BBBC1:V1:W1-C2:V2:W2:
     BBB =  three characters for book BBB of the New Testament according to the list above:
     C1 = first word's chapter number
     V1 = first word's verse number in its chapter
@@ -111,6 +112,10 @@ The morphId is 12 digits with the format BBCCCVVVWWWP where:
     VVV = three digits with leading zeros for the verse number
     WWW = three digits with leading zeros for the word number
     P = one digit for the part of the word
+    
+Because words in the trees may be in a different order from the order they appear in the text, 
+the word number of a word, wich indicates the order it appears in the text, does not necessarily 
+indicate the order the word appears in a tree.
 ```
 * **Unicode** - Unicode of the UGNT text (includes punctuations)
 * **Lemma** - Unicode of the UGNT lemma of the word
