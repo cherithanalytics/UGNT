@@ -21,8 +21,8 @@ Below is the description of the repository contents:
   * **README.md** - readme file for the Documentation folder
 
 **Trees/** - folder with the UGNT Trees
-* **UGNT-Sentence-Trees/ - folder with UGNT sentence trees
-* **UGNT-Verse-Trees/ - folder with UGNT verse trees
+* **UGNT-Sentence-Trees/** - folder with UGNT sentence trees
+* **UGNT-Verse-Trees/** - folder with UGNT verse trees
 
 **LICENSE.md** - the license for the UGNT Trees
 
