@@ -9,7 +9,7 @@ Below is the description of the change history of the release versions in revers
 
 **Release v1.1.0/**
   * Initial release of the sentence trees.
-  * The following verse trees have been changed from Release v1.1.0:
+  * The following verse trees have been changed from Release v1.0.0:
     * Act 10:37 (VerseId = 44010037)
     * Act 19:41 (VerseId = 44019041)
     * 1Co 7:33 (VerseId = 46007033)
