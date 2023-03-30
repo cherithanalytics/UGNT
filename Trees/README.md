@@ -13,14 +13,18 @@ The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT
 
 The UGNT Trees are also heavily based on multiple Greek New Testament trees developed by [Global Bible Initiative, LLC](https://www.gbi.llc) for internal use. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
 
-# Trees Folder Content
+## Trees Folder Content
 
 **Trees/** - folder with the UGNT Trees
 * **UGNT-Sentence-Trees/** - folder with UGNT sentence trees
 * **UGNT-Verse-Trees/** - folder with UGNT verse trees
 * **CSV/** - folder with CSV files generated from the UGNT Trees, corresponding to the UGNT-Sentence-Trees and UGNT-Verse-Trees folders
 
-NOTE: the CSV files are separated by PIPES (`|`) and not commas (`,`) to avoid issues with commas in the data, for example, in this line there is a comma in the text content (`Παῦλος,`), and commas in the morph data (`N,,,,,NMS,`):
+## Notes about CSV files
+
+The CSV files are generated from the UGNT Trees using a modified script originally created by [James Tauber](https://jktauber.com/2015/07/02/converting-gbi-syntax-trees-dependency-analysis/).
+
+The fields are separated by PIPES (`|`) and not commas (`,`) to avoid issues with unescaped or unexpected content commas in the data, for example, in this line there is a comma in the text content (`Παῦλος,`), and commas in the morph data (`N,,,,,NMS,`):
 
 ```csv
 460010010011|Παῦλος,|None|CL|Cat="noun"|Id="9"|morphId="460010010011"|Unicode="Παῦλος,"|Lemma="Παῦλος"|Lang="G"|StrongNumber="G39720"|Morph="N,,,,,NMS,"|Case="Nominative"|Gender="Masculine"|Number="Singular"|English="Paul"
