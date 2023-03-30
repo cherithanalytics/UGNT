@@ -18,3 +18,19 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 **Trees/** - folder with the UGNT Trees
 * **UGNT-Sentence-Trees/** - folder with UGNT sentence trees
 * **UGNT-Verse-Trees/** - folder with UGNT verse trees
+* **CSV/** - folder with CSV files generated from the UGNT Trees, corresponding to the UGNT-Sentence-Trees and UGNT-Verse-Trees folders
+
+NOTE: the CSV files are separated by PIPES (`|`) and not commas (`,`) to avoid issues with commas in the data, for example, in this line there is a comma in the text content (`Παῦλος,`), and commas in the morph data (`N,,,,,NMS,`):
+
+```csv
+460010010011|Παῦλος,|None|CL|Cat="noun"|Id="9"|morphId="460010010011"|Unicode="Παῦλος,"|Lemma="Παῦλος"|Lang="G"|StrongNumber="G39720"|Morph="N,,,,,NMS,"|Case="Nominative"|Gender="Masculine"|Number="Singular"|English="Paul"
+```
+
+For most dependency-related applications, users will likely only need the first four columns, which contain traditional dependency information:
+
+| token_id | text | head_id | relation |
+| --- | --- | --- | --- |
+| 460010010021 | κλητὸς | 460010010031 | adjp |
+| 460010010031 | ἀπόστολος | 460010010011 | np |
+
+Since not every token has identical values in the base data, all additional fields have the header of attribute name encoded directly (e.g., `Gender="Masculine"`), and the files themselves do not have headers.
