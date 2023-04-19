@@ -1,4 +1,4 @@
-# UGNT-Trees/Trees
+# UGNT/Trees
 
 ![cherithLogoBlue-100x100](https://user-images.githubusercontent.com/105679741/190519269-28c4bc1c-fb8f-4c8f-b119-8aa8188c98d6.png)
 **UGNT Trees**
@@ -15,6 +15,5 @@ The UGNT Trees are also heavily based on multiple Greek New Testament trees deve
 
 # Trees Folder Content
 
-**Trees/** - folder with the UGNT Trees
 * **UGNT-Sentence-Trees/** - folder with UGNT sentence trees
 * **UGNT-Verse-Trees/** - folder with UGNT verse trees
