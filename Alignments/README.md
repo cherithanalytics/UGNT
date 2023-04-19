@@ -15,7 +15,7 @@ The UGNT Alignments are also heavily based on multiple Greek New Testament align
 
 Below is the description of the repository contents:
 
-**NET/** - folder with the alignments for the NET translation of the New Testament
+**NET/** - folder with the alignments to the NET translation of the New Testament
 
 **LICENSE.md** - the license for the UGNT Alignments
 
