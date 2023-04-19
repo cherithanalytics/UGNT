@@ -9,7 +9,7 @@ The UGNT Trees and Alignments are based upon the unfoldingWord® Greek New Testa
 
 References on UGNT are available from unfoldingWord at [unfoldingword.org/ugnt](https://www.unfoldingword.org/ugnt).
 
-The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT Trees comes directly from the unfoldingWord data, and so any issues with this data is the sole responsibility of unfoldingWord.  Cherith Analytics modified the data in a few places, which are documented in the Documentation folder, and so any issues with the modifications are the sole responsibility of Cherith Analytics.
+The morphological data (text, lemma, UGNT Strong's number, analysis) in the UGNT Trees and Alignments comes directly from the unfoldingWord data, and so any issues with this data is the sole responsibility of unfoldingWord.  Cherith Analytics modified the data in a few places, which are documented in the Documentation folder, and so any issues with the modifications are the sole responsibility of Cherith Analytics.
 
 The UGNT Trees and Alignments are also heavily based on multiple Greek New Testament trees and alignments developed by [Global Bible Initiative, LLC](https://www.gbi.llc) for internal use. Issues related to syntax or other data in the UGNT Trees are the sole responsibility of Cherith Analytics and will be fixed in future releases.
 
