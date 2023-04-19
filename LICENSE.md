@@ -31,7 +31,7 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ### Under the following terms:
 
- * **Attribution** — You must attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT-Trees](https://github.com/cherithanalytics/UGNT-Trees)”. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ * **Attribution** — You must attribute the work as follows: “The original work by Cherith Analytics is available from [github.com/cherithanalytics/UGNT](https://github.com/cherithanalytics/UGNT)”. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
  * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 
